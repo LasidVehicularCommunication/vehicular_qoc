@@ -1,0 +1,4 @@
+OMNETPP_INCL_DIR=/home/clovis/TCC/omnetpp-6.0/include
+
+
+export PATH=$PATH:/home/clovis/TCC/omnetpp-6.0/bin

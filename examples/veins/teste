@@ -1,0 +1,102 @@
+void Icarqoc::sendMessageApplication(ForwardingNode* fowardNode,
+        int64_t destination, double timetoLiveApp, unsigned int pMsgType,
+        int64_t lastNodeNext, int64_t lastNextNodeRequestMsg)
+{
+    int sizeNodeICRM=1;
+
+    if (simTime()< this->oKnownGlobal->finishSimulation)
+    {
+        //preparing transmition wsm message
+            ICRMessage * wsm = new ICRMessage();
+
+            //prepareing icmessage
+            wsm->setMsgType(pMsgType);
+            //wsm->numMsg = ++seqMsg;
+            wsm->setName("data");
+
+            //User priority with which this packet was sent (note the AC mapping rules in Mac1609_4::mapUserPriority)
+            wsm->setUserPriority(7);
+            //Unique number to identify the service
+            wsm->setPsid(-1);
+
+            //populateWSM(wsm);
+            wsm->setKind(pMsgType);
+
+            //Channel Number on which this packet was sent
+            wsm->setChannelNumber(static_cast<int>(Channels::SCH1));
+
+            wsm->setMsgLifeTime(simTime() + timetoLiveApp);
+            wsm->setTimestamp(simTime());
+            wsm->setHopNumber(1);
+
+            // agent next data
+            RemoteAgent * fowardAgent = NULL;
+
+           if (fowardNode!= NULL)
+           {
+               if (fowardNode->getFowardId() != -1)
+               {
+                   fowardAgent = this->oIcarContext->agentGroup->getRemoteAgent(fowardNode->getFowardId());
+                   if (fowardAgent != NULL){
+                       sizeNodeICRM++;
+                   }
+               }
+           }
+
+
+           RemoteAgent * destinyNode=NULL;
+           if (destination!=-1){
+               destinyNode = this->oIcarContext->agentGroup->getRemoteAgent(destination);
+               if (destinyNode!=NULL)
+                   if (destinyNode->getId()!=-1)
+                   {
+                      sizeNodeICRM++;
+                   }
+           }
+
+
+            wsm->setRouteNodesArraySize(sizeNodeICRM);
+
+            wsm->getRouteNodes(0).prepareICRNode(myData);
+
+            // forwarding data
+            std::string ruleRouting = "-1";
+            if (fowardNode!= NULL)
+            {
+                if (fowardNode->getFowardId() != -1)
+                {
+                    ruleRouting = fowardNode->getRule();
+                    wsm->getRouteNodes(1).prepareICRNode(fowardAgent);
+                    ruleRouting = fowardNode->getRule();
+                }
+            }
+
+
+            if (destinyNode!=NULL)
+                if (destinyNode->getId()!=-1)
+                {
+                    wsm->getRouteNodes(sizeNodeICRM-1).prepareICRNode(destinyNode);
+                }
+
+            this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgTransmittedMsg();
+
+            sendICRMessage(wsm, "transmitting", ruleRouting ,false);
+
+            /*int calcRang = rand() % 2;
+            if ((this->oKnownGlobal->lostMessageRate!=0
+                     && calcRang ==0
+                     && (this->lostMsgAmount
+                     <= (this->oKnownGlobal->lostMessageRate/100)*oKnownGlobal->maxMsgAmountVehicle)))
+             {
+                 ++this->lostMsgAmount;
+                 std::cout << endl << "sendMessageApplicationR veic= " << this->myData->getId()<< "  Mensagem = " << seqMsg <<"  Rand " << calcRang << " lostMsgAmount= " << this->lostMsgAmount
+                         << "  percent calc = "
+                         << (this->oKnownGlobal->lostMessageRate/100)*oKnownGlobal->maxMsgAmountVehicle
+                         << " Taxa = " << double (this->oKnownGlobal->lostMessageRate/100)
+                         << " MaxMsg = " << oKnownGlobal->maxMsgAmountVehicle;
+             }else sendICRMessage(wsm, "transmitting", ruleRouting ,false);
+                     */
+        }// end finishing transmitting time,
+
+
+}
