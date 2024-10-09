@@ -20,7 +20,11 @@ namespace veins{
 
 QoCAgentPair::QoCAgentPair(AgentPair * c, simtime_t dataValidity) {
     // TODO Auto-generated constructor stub
+    std::cout << endl << "begin  QoCAgentPair "<< endl;
+
     this->timeliness = new TimelinessAgentPair(c, dataValidity);
+    std::cout << endl << "end  QoCAgentPair "<< endl;
+
 
 }
 

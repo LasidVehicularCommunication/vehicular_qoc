@@ -28,9 +28,9 @@ AgentPair* AgentPairList::getAgentPair(int64_t sourceId, int64_t destinationId){
 
     bool find=false;
     unsigned int index = 0;
-    //std::cout << "OLDbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId  <<std::endl;
+    std::cout << "OLDbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId  <<std::endl;
 
-    //if (!this->agentPairs.empty())
+    if (!this->agentPairs.empty())
     {
 
         while (!find && this->agentPairs.size() > index)
@@ -39,14 +39,20 @@ AgentPair* AgentPairList::getAgentPair(int64_t sourceId, int64_t destinationId){
             c = dynamic_cast<AgentPair*>(agentPairs[index]);
 
             if (c!=NULL)
+            {
                 if (c->getAgentS()->getId() == sourceId && c->getAgentD()->getId()==destinationId)
+                {
                    find=true;
-                else c=NULL;
+                }else
+                {
+                    c=NULL;
+                }
+            }
 
             ++index;
         }
    }
-    //std::cout << "OLDXXXXbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
+    std::cout << "OLDXXXXbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
 
     return c;
 }
@@ -319,20 +325,32 @@ std::string AgentPairList::infoTraceAgentPairList(){
 AgentPair * AgentPairList::updatePairListFromMsg(long numMsg, Agent* agentS, Agent* agentD, simtime_t pMsgReceivingTime, simtime_t msgSendingTime,
         RadiusEstimatorAgentPair * pRadiusEstimator, int neighbor, int event, simtime_t dataValidity, double pPeriodApp, double powerReceived_dbm, double snr)
 {
-    AgentPair * pair = getAgentPair(agentS->getId(), agentD->getId());
 
-    if (pair==NULL){
-       pair = new AgentPair(agentS, agentD, pMsgReceivingTime, msgSendingTime,  pRadiusEstimator, neighbor,
-                                  0, dataValidity, pPeriodApp, powerReceived_dbm, snr);
-       pair->addReceivedMsg();
-       pair->setCurrentMsgNumber(numMsg);
+    AgentPair * pair = NULL;
+    std::cout << endl << "begin updateAgentPairsFromMsg "<< endl;
 
-       this->agentPairs.push_back(pair);
-    }else{
-        pair->setCurrentMsgNumber(numMsg);
-        pair->updateAgentPair(pMsgReceivingTime, msgSendingTime, neighbor, 0, dataValidity, powerReceived_dbm, snr);
+    if ((agentS != NULL) && (agentD!=NULL))
+    {
+        pair = getAgentPair(agentS->getId(), agentD->getId());
+
+        if (pair==NULL){
+            std::cout << endl << "begin AgentPair updateAgentPairsFromMsg "<< endl;
+
+           pair = new AgentPair(agentS, agentD, pMsgReceivingTime, msgSendingTime,  pRadiusEstimator, neighbor,
+                                      0, dataValidity, pPeriodApp, powerReceived_dbm, snr);
+           std::cout << endl << "end AgentPair updateAgentPairsFromMsg "<< endl;
+
+           pair->addReceivedMsg();
+           pair->setCurrentMsgNumber(numMsg);
+
+           this->agentPairs.push_back(pair);
+           std::cout << endl << "end AgentPair updateAgentPairsFromMsg "<< endl;
+
+        }else{
+            pair->setCurrentMsgNumber(numMsg);
+            pair->updateAgentPair(pMsgReceivingTime, msgSendingTime, neighbor, 0, dataValidity, powerReceived_dbm, snr);
+        }
     }
-
 
     return pair;
 

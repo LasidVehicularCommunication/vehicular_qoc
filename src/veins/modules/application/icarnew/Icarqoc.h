@@ -121,7 +121,7 @@ public:
            virtual void initialize(int stage);
            virtual void finish();
            void receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj, cObject* details) override;
-           void scheduleLoad(double appPeriod, int AppTypeId, char * name,  cMessage *m1 );
+           void scheduleLoad(double appPeriod, int AppTypeId, string name,  cMessage *m1 );
            std::string getMsgHeaderInfoTrace(ICMessage * wsm, std::string evento, bool header, simtime_t pEventTime);
            void loadMonitor(cMessage *msg);
            void scheduleLoadMobility();

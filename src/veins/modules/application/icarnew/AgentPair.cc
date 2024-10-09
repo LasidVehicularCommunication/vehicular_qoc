@@ -56,6 +56,8 @@ AgentPair::AgentPair(Agent* agentS, Agent* agentD, simtime_t msgReceivingTime, s
 
  if (agentS->getSetRadius()<=0)
  {
+     std::cout << endl << "begin  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+
      if (powerReceived_dbm<0 && powerReceived_dbm>-200){
          this->setCalcRadius();
      }
@@ -64,7 +66,13 @@ AgentPair::AgentPair(Agent* agentS, Agent* agentD, simtime_t msgReceivingTime, s
 
  this->setCommnunicationState(0);
  updateCommnunicationState();
+
  this->qoCAgentPair = new QoCAgentPair(this,dataValidity);
+
+ std::cout << endl << "end  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+
+
+
  //this->qoCAgentPair = new QoCAgentPair();
  //std::cout << endl << "testando "<< endl;
 }

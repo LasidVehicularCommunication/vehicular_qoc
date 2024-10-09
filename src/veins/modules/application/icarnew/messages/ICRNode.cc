@@ -26,22 +26,46 @@ ICRNode::~ICRNode() {
     // TODO Auto-generated destructor stub
 }
 
-void ICRNode::prepareICRNode(Agent* a) {
+//void ICRNode::prepareICRNode(const Agent& a) {
 
-    this->maxSpeed = a->getMobilityInfo()->getMaxSpeed();
-    this->angle = a->getMobilityInfo()->getAngle();
-    this->aceleration = a->getMobilityInfo()->getAcceleration();
-    this->posTimeStamp = a->getMobilityInfo()->getActualMove()->getStartTime();
-    this->speed = a->getMobilityInfo()->getActualMove()->getSpeed();
-    this->posX = a->getMobilityInfo()->getActualMove()->getStartPos().x;
-    this->posY = a->getMobilityInfo()->getActualMove()->getStartPos().y;
-    this->posZ = a->getMobilityInfo()->getActualMove()->getStartPos().z;
-    this->msgTimeStamp = simTime();
-    this->nodeId = a->getId();
+    /*maxSpeed = a->getMobilityInfo()->getMaxSpeed();
+    angle = a->getMobilityInfo()->getAngle();
+    aceleration = a->getMobilityInfo()->getAcceleration();
+    posTimeStamp = a->getMobilityInfo()->getActualMove()->getStartTime();
+    speed = a->getMobilityInfo()->getActualMove()->getSpeed();
+    posX = a->getMobilityInfo()->getActualMove()->getStartPos().x;
+    posY = a->getMobilityInfo()->getActualMove()->getStartPos().y;
+    posZ = a->getMobilityInfo()->getActualMove()->getStartPos().z;
+    msgTimeStamp = simTime();
+    nodeId = a->getId();*/
+//}
 
+
+void ICRNode::copyICRNode(const ICRNode& node){
+    maxSpeed = node.maxSpeed;
+    angle = node.angle;
+    aceleration = node.aceleration;
+    posTimeStamp = node.posTimeStamp;
+    speed = node.speed;
+    posX = node.posX;
+    posY = node.posY;
+    posZ = node.posZ;
+    msgTimeStamp = node.msgTimeStamp;
+    nodeId = node.nodeId;
 }
 
-
+void ICRNode::initializeICRNode(){
+    nodeId = -1;
+    maxSpeed = 0.00;
+    angle =  0.00;
+    aceleration =  0.00;
+    posTimeStamp =  0.00;
+    speed =  0.00;
+    posX =  0.00;
+    posY =  0.00;
+    posZ =  0.00;
+    msgTimeStamp =  0.00;
+}
 
 /*
 void ICRNode::preparetwo(float a) {

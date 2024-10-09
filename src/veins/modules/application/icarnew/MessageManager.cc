@@ -41,126 +41,68 @@ double MessageManager::getMsgRecvPower_dBm(ICRMessage* m){
 
 double MessageManager::getMsgRecvSnr(ICRMessage* m){
 
+    std::cout << endl << "begin  Returns the signal to noise ratio of the transmission from message "<< endl;
+
     DeciderResult80211 *macRes = dynamic_cast<DeciderResult80211 *>(PhyToMacControlInfo::getDeciderResult(m));
     ASSERT(macRes);
+
+    std::cout << endl << "end  Returns the signal to noise ratio of the transmission from message " << macRes->getSnr() << endl;
 
     return macRes->getSnr();
 }
 
-ICRMessage* MessageManager::sendIcarMessageService(ForwardingNode* pfowardNode,
-        int64_t destination, double timetoLiveApp, unsigned int pMsgType) {
+ICRMessage * MessageManager::sendIcarMessageService(int64_t sourceId, int64_t nextId, int64_t destinationId, double timetoLiveApp, unsigned int pMsgType)
+{
 
-    ICRMessage * wsm = NULL;
+     ICRMessage * wsm = NULL;
+     wsm = new ICRMessage();
 
-    ForwardingNode * fowardNode=NULL;
+     //prepareing icmessage
+     wsm->setMsgType(pMsgType);
+     wsm->setNumMsg(++this->oIcarQoc->seqMsg);
+     wsm->setName("data");
 
-    if (destination != -1)
-    fowardNode = oIcarQoc->oIcarContext->getRouting()->getFowardNode(destination, oIcarQoc->oIcarContext->getMyData()->getId(), -1, timetoLiveApp, Coord(0,0,0), Coord(0,0,0));
+     //User priority with which this packet was sent (note the AC mapping rules in Mac1609_4::mapUserPriority)
+     wsm->setUserPriority(7);
 
-    if (simTime()< this->oIcarQoc->oIcarContext->oKnownGlobal->finishSimulation)
-    {
-        int sizeNodeICRM=1;
+     //Unique number to identify the service
+     wsm->setPsid(-1);
 
-        //preparing transmition wsm message
-            wsm = new ICRMessage();
+     //populateWSM(wsm);
+     wsm->setKind(pMsgType);
 
-            //prepareing icmessage
-            wsm->setMsgType(pMsgType);
-            wsm->setNumMsg(++this->oIcarQoc->seqMsg);
-            wsm->setName("data");
+     //Channel Number on which this packet was sent
+     wsm->setChannelNumber(static_cast<int>(Channel::cch));
 
-            //User priority with which this packet was sent (note the AC mapping rules in Mac1609_4::mapUserPriority)
-            wsm->setUserPriority(7);
-            //Unique number to identify the service
-            wsm->setPsid(-1);
+     wsm->setMsgLifeTime(simTime() + timetoLiveApp);
+     wsm->setTimestamp(simTime());
+     wsm->setHopNumber(1);
 
-            //populateWSM(wsm);
-            wsm->setKind(pMsgType);
+     wsm->setTransmissorNode(prepareICRNode(oIcarQoc->oIcarContext->myData));
 
-            //Channel Number on which this packet was sent
-            wsm->setChannelNumber(static_cast<int>(Channel::cch));
-
-            wsm->setMsgLifeTime(simTime() + timetoLiveApp);
-            wsm->setTimestamp(simTime());
-            wsm->setHopNumber(1);
-
-            // agent next data
-            RemoteAgent * fowardAgent = NULL;
-
-           if (fowardNode!= NULL)
-           {
-               if (fowardNode->getFowardId() != -1)
-               {
-                   fowardAgent = oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(fowardNode->getFowardId());
-                   if (fowardAgent != NULL)
-                   {
-                       sizeNodeICRM++;
-                   }
-               }
-           }
+     if (oIcarQoc->oIcarContext->myData->getId()==sourceId || sourceId==-1){
+         wsm->setSourceNode(prepareICRNode(oIcarQoc->oIcarContext->myData));
+     }else {
+         wsm->setSourceNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(sourceId)));
+     }
 
 
-           RemoteAgent * destinyNode=NULL;
-           if (destination!=-1){
-               destinyNode = oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(destination);
-               if (destinyNode!=NULL)
-                   if (destinyNode->getId()!=-1)
-                   {
-                      sizeNodeICRM++;
-                   }
-           }
-
-
-            wsm->setRouteNodeArraySize(sizeNodeICRM);
-
-            //ICRMessage icrMessage;
-            //ICRNode nodeCopy = icrMessage.getRouteNode(0); // Faz uma cópia do objeto retornado
-            //nodeCopy.prepareICRNode(oIcarQoc->oIcarContext->myData); // Chama a função na cópia modificada
-
-            ICRNode nodeCopy = wsm->getRouteNode(0); // Faz uma cópia do objeto retornado
-            nodeCopy.prepareICRNode(oIcarQoc->oIcarContext->myData); // Chama a função na cópia modificada
-
-            //wsm->getRouteNode(0).prepareICRNode(oIcarQoc->oIcarContext->myData);
-
-            // forwarding data
-            std::string ruleRouting = "-1";
-            if (fowardNode!= NULL)
-            {
-                if (fowardNode->getFowardId() != -1)
-                {
-                    ruleRouting = fowardNode->getRule();
-                    //Adicionado
-                    ICRNode nodeCopy2 = wsm->getRouteNode(1); // Faz uma cópia do objeto retornado para o índice 1
-                    nodeCopy2.prepareICRNode(fowardAgent); // Chama a função na cópia modificada
-                    //Até aqui
-                    //wsm->getRouteNode(1).prepareICRNode(fowardAgent);
-                    ruleRouting = fowardNode->getRule();
-                }
-            }
-
-
-            if (destinyNode!=NULL){
-                if (destinyNode->getId()!=-1)
-                {
-                    //Adicionado
-                    ICRNode nodeCopy3 = wsm->getRouteNode(sizeNodeICRM-1); // Faz uma cópia do objeto retornado para o índice sizeNodeICRM-1
-                    nodeCopy3.prepareICRNode(destinyNode); // Chama a função na cópia modificada
-                    //wsm->getRouteNode(sizeNodeICRM-1).prepareICRNode(destinyNode);
-                    //até aqui
-                }
-            }
-
-            sendICRMessage(wsm, "transmitting", ruleRouting ,false);
-
-    }
-
-        return (wsm);
-
+     if (destinationId!=-1){
+         wsm->setDestinyNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(destinationId)));
+         if (nextId==-1){
+             std::cout << "to find node fowarding" << endl;
+         }else{
+             std::cout << "found node fowarding knowowged node = " << nextId << endl;
+             wsm->setDestinyNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(nextId)));
+         }
+     }
+     sendICRMessage(wsm, "transmitting", "msgIcar");
+     return(wsm);
 }
 
 
 
-void MessageManager::sendICRMessage(ICRMessage * wsm, std::string evento, std::string ruleRoute, bool header)
+void MessageManager::sendICRMessage(ICRMessage * wsm, std::string evento, std::string ruleRoute)
 {
 
     int calcRang = rand() % 2;
@@ -174,8 +116,8 @@ void MessageManager::sendICRMessage(ICRMessage * wsm, std::string evento, std::s
 
     }else {
         // sending message
-        this->oIcarQoc->dataNetwork  << this->getMsgHeaderInfoTrace( wsm,evento, header, wsm->getTimestamp(), 32, this->oIcarQoc->getMyData()->getId()) << std::endl;
         this->oIcarQoc->sendDown( ((cMessage*)(wsm)));
+        this->oIcarQoc->dataNetwork  << this->getMsgHeaderInfoTrace( wsm,evento, false, wsm->getTimestamp(), 32, this->oIcarQoc->getMyData()->getId()) << std::endl;
         this->oIcarQoc->oIcarContext->getMyData()->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgTransmittedMsg();
     }
 
@@ -201,7 +143,7 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
                  << ";ValidityDataTimeStamp"
                  << ";Data";
 
-                for (int i=0; i < maxNumberHop; i++)
+                for (int i=0; i < 4; i++)
                 {
                     ost  << ";nodeId_" << i  // source id node - 32bits
                     << ";posX"  //source x - 32 bits
@@ -227,29 +169,59 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
                 << ";" << pEventTime - wsm->getTimestamp()
                 << ";" << wsm->getMsgLifeTime()
                 << ";" << wsm->getHopNumber()
-                << ";"<< wsm->getValidityDataTimeStamp();
+                << ";"<< wsm->getValidityDataTimeStamp()
                 //<< ";"<< wsm->getWsmData();
                 //<< ";"
                 //    << this->oKnownGlobal->calcTraciDistanceMobility(wsm->getRouteNodes(0).nodeId,
                 //            wsm->getRouteNodes(wsm->getRouteNodesArraySize()-1).nodeId);
+                << ";"<< getMsgHeaderInfoTraceNode(wsm->getSourceNode())
+                << ";"<< getMsgHeaderInfoTraceNode(wsm->getTransmissorNode())
+                << ";"<< getMsgHeaderInfoTraceNode(wsm->getNextNode())
+                << ";"<< getMsgHeaderInfoTraceNode(wsm->getDestinyNode());
 
-                for (int i=0; i < wsm->getRouteNodeArraySize(); i++)
-                {
-                    ost  << ";" << wsm->getRouteNode(i).nodeId  // source id node - 32bits
-                    << ";" << wsm->getRouteNode(i).posX  //source x - 32 bits
-                    << ";" << wsm->getRouteNode(i).posY // source y - 32 bits
-                    << ";" << wsm->getRouteNode(i).posZ // source z - 32 bits
-                    << ";" << wsm->getRouteNode(i).maxSpeed // max speed node - 32 bits
-                    << ";" << wsm->getRouteNode(i).angle // angulo do agente de origem -  32 bits
-                    << ";" << wsm->getRouteNode(i).aceleration  // aceleracao do agente de origem -  32 bits
-                    << ";" << wsm->getRouteNode(i).speed// speed value -  32 bits
-                    << ";" << wsm->getRouteNode(i).neighber // vizinho do proximo no
-                    << ";" << wsm->getRouteNode(i).validityTimeToNext // alcance do sinal de comunicacao do agente de origem  - 32 bits
-                    << ";" << wsm->getRouteNode(i).posTimeStamp // timestamp da da coleta da posicao do agente antecessor
-                    << ";" << wsm->getRouteNode(i).msgTimeStamp;
-                }
     }
 
              return ost.str();
 }
+
+std::string  MessageManager::getMsgHeaderInfoTraceNode(ICRNode  pNode)
+{
+    std::ostringstream ost;
+
+    ost  << ";" << pNode.nodeId  // source id node - 64bits
+    << ";" << pNode.posX  //source x  32bits
+    << ";" << pNode.posY // source y 32bits
+    << ";" << pNode.posZ // source z - 64bits
+    << ";" << pNode.maxSpeed // max speed node - 32 bits
+    << ";" << pNode.angle // angulo do agente de origem -  32 bits
+    << ";" << pNode.aceleration  // aceleracao do agente de origem -  32 bits
+    << ";" << pNode.speed// speed value -  32 bits
+    << ";" << pNode.neighber // vizinho do proximo no
+    << ";" << pNode.validityTimeToNext // alcance do sinal de comunicacao do agente de origem  - 32 bits
+    << ";" << pNode.posTimeStamp // timestamp da da coleta da posicao do agente antecessor
+    << ";" << pNode.msgTimeStamp;
+
+    return ost.str();
+}
+
+const ICRNode MessageManager::prepareICRNode(Agent * a) {
+
+    ICRNode node;
+    if (a!=NULL){
+        node.maxSpeed = a->getMobilityInfo()->getMaxSpeed();
+        node.angle = a->getMobilityInfo()->getAngle();
+        node.aceleration = a->getMobilityInfo()->getAcceleration();
+        node.posTimeStamp = a->getMobilityInfo()->getActualMove()->getStartTime().dbl();
+        node.speed = a->getMobilityInfo()->getActualMove()->getSpeed();
+        node.posX = a->getMobilityInfo()->getActualMove()->getStartPos().x;
+        node.posY = a->getMobilityInfo()->getActualMove()->getStartPos().y;
+        node.posZ = a->getMobilityInfo()->getActualMove()->getStartPos().z;
+        node.msgTimeStamp = simTime().dbl();
+        node.nodeId = a->getId();
+    }else{
+        node.initializeICRNode();
+    }
+    return node;
+}
+
 }

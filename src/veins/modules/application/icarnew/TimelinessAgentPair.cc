@@ -71,6 +71,7 @@ double TimelinessAgentPair::calcValidityTeste(simtime_t dataValidity){
     timeliness = 0;
     timeStampAgentPair = c->getUpdatingTime();
     SrlMin = 0;
+    std::cout << endl << "begin  calcValidityTeste "<< endl;
 
 
     if (c->isNeighbors()
@@ -79,8 +80,6 @@ double TimelinessAgentPair::calcValidityTeste(simtime_t dataValidity){
             && (c->getCalcRadius() - this->c->getAgentPairMobility()->getDistancelr())>=0)
 
       {
-
-
 
             angler = c->getAgentS()->getMobilityInfo()->getAngle();
             anglel = c->getAgentD()->getMobilityInfo()->getAngle();
@@ -142,6 +141,8 @@ double TimelinessAgentPair::calcValidityTeste(simtime_t dataValidity){
                     }
             }
         }
+        std::cout << endl << "end  calcValidityTeste "<< endl;
+        return -1;
     }
 
 
@@ -190,10 +191,12 @@ double TimelinessAgentPair::calcValidity(simtime_t dataValidity){
 
 
 void TimelinessAgentPair::update(simtime_t dataValidity){
+    std::cout << endl << "begin  TimelinessAgentPair::update setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
 
     this->calcAge();
+
     if (c->isNeighbors()) this->calcValidity(dataValidity);
-    else {
+    /*else {
         ICarRoute * icR;
         for (int index=0; index < c->pairRoutes.size();index++){
             icR = c->pairRoutes.at(index);
@@ -205,7 +208,9 @@ void TimelinessAgentPair::update(simtime_t dataValidity){
             }
 
         }
-    }
+    }*/
+    std::cout << endl << "end  TimelinessAgentPair::update setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+
 }
 
 void TimelinessAgentPair::calcTimeoutValidity()

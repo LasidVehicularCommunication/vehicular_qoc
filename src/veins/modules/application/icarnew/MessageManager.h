@@ -52,18 +52,19 @@ public:
     virtual ~MessageManager();
     std::string getMsgHeaderInfoTrace(ICRMessage * wsm, std::string evento,
             bool header, simtime_t pEventTime, int maxNumberHop, int myDataID);
-    // mesage from network
+    // message from network
     ICRMessage * wsm;
     Icarqoc * oIcarQoc;
     vector<Agent *> agentRoute;
-    void sendICRMessage(ICRMessage * wsm, std::string evento, std::string ruleRoute, bool header);
+    void sendICRMessage(ICRMessage * wsm, std::string evento, std::string ruleRoute);
 
     double getMsgRecvSnr(ICRMessage* m);
     double getMsgRecvPower_dBm(ICRMessage* m);
 
-    ICRMessage * sendIcarMessageService(ForwardingNode* fowardNode, int64_t destination, double timetoLiveApp, unsigned int pMsgType);
-
-
+    //ICRMessage * sendIcarMessageService(ForwardingNode* fowardNode, int64_t destination, double timetoLiveApp, unsigned int pMsgType);
+    std::string  getMsgHeaderInfoTraceNode(ICRNode pNode);
+    ICRMessage * sendIcarMessageService(int64_t sourceId, int64_t nextId, int64_t destination, double timetoLiveApp, unsigned int pMsgType);
+    const ICRNode prepareICRNode(Agent * a);
 
 };
 }

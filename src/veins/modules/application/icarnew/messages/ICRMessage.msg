@@ -22,6 +22,12 @@ class ICRMessage extends BaseFrame1609_4 {
    unsigned int hopNumber;
    simtime_t msgTimeStamp = 0; // timestamp da mensagem
 
-   ICRNode routeNode[];
+	ICRNode sourceNode;
 
+	ICRNode transmissorNode;
+
+	ICRNode nextNode;
+	
+	ICRNode destinyNode;
+	
 }

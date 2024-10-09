@@ -41,23 +41,91 @@ void IcarContext::callFinish() {
 }
 
 
-void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceivingTime) {
-     int sizeRouteNodes = wsm->getRouteNodeArraySize();
+void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceivingTime)
+{
+     //int sizeRouteNodes = wsm->getRouteNodeArraySize();
      ICRNode icrSource, icrDestiny;
      simtime_t  VTofNext;
-     Agent * s;
-     Agent * d;
-     vector<Agent *> iCarAgentsRoute;
+     Agent * s = NULL;
+     Agent * t = NULL;
+     Agent * n = NULL;
+     Agent * d = NULL;
+     AgentPair * pair = NULL;
 
-     vector <AgentPair *> pairsRoute;
+     std::cout << endl << "begin updateAgentPairsFromMsg "<< wsm->getSourceNode().nodeId << endl;
 
-     if (wsm->getRouteNode(0).nodeId != myData->getId())
-         s = updateAgentGroup(wsm->getRouteNode(0), pMsgReceivingTime);
-     else s = myData;
+     if (wsm->getSourceNode().nodeId != myData->getId())
+     {
+         s = updateAgentGroup(wsm->getSourceNode(), pMsgReceivingTime);
+         pair = agentPairList->updatePairListFromMsg(wsm->getNumMsg(),s,
+                 myData, pMsgReceivingTime, wsm->getSourceNode().msgTimeStamp,
+                 this->oKnownGlobal->oRadiusEstimatorAgentPair, true,
+                   0, 0.00, this->oKnownGlobal->loadPeriodApp,
+                   this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
 
-     iCarAgentsRoute.push_back(s);
+         std::cout << endl << "finish pair update "<< endl;
+
+         this->dataAgentPair
+                  << textDataAgentPair(this->oKnownGlobal->updatingPairFromReceivedMsg, pair, false) << ";"  << std::endl;
+
+     }
+
+     std::cout << endl << "end updateAgentPairsFromMsg "<< wsm->getSourceNode().nodeId << endl;
+
+}
+     /*
+     //transmitter node and
+     if (wsm->getTransmissorNode().nodeId != myData->getId() && wsm->getTransmissorNode().nodeId != wsm->getSourceNode().nodeId
+             && wsm->getTransmissorNode().nodeId != -1 )
+     {
+         t = updateAgentGroup(wsm->getTransmissorNode(), pMsgReceivingTime);
+         pair = agentPairList->updatePairListFromMsg(wsm->getNumMsg(),t,
+                 myData, pMsgReceivingTime, wsm->getTransmissorNode().msgTimeStamp,
+                 this->oKnownGlobal->oRadiusEstimatorAgentPair, true,
+                   0, 0.00, this->oKnownGlobal->loadPeriodApp,
+                   this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
+
+
+         pair = agentPairList->updatePairListFromMsg(wsm->getNumMsg(),s,
+                 t, pMsgReceivingTime, wsm->getSourceNode().msgTimeStamp,
+                 this->oKnownGlobal->oRadiusEstimatorAgentPair, wsm->getSourceNode().neighber,
+                   0, 0.00, this->oKnownGlobal->loadPeriodApp,
+                   this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
+     }
+
+
+
+     if (wsm->getNextNode().nodeId != myData->getId() && wsm->getNextNode().nodeId != -1)
+     {
+         n = updateAgentGroup(wsm->getNextNode(), pMsgReceivingTime);
+
+         if (wsm->getTransmissorNode().nodeId != wsm->getSourceNode().nodeId )
+         {
+             pair = agentPairList->updatePairListFromMsg(wsm->getNumMsg(),t,
+                              n, pMsgReceivingTime, wsm->getTransmissorNode().msgTimeStamp,
+                              this->oKnownGlobal->oRadiusEstimatorAgentPair, true,
+                                0, 0.00, this->oKnownGlobal->loadPeriodApp,
+                                this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
+         }else {
+             pair = agentPairList->updatePairListFromMsg(wsm->getNumMsg(),s,
+                               n, pMsgReceivingTime, wsm->getSourceNode().msgTimeStamp,
+                               this->oKnownGlobal->oRadiusEstimatorAgentPair, wsm->getSourceNode().neighber,
+                                 0, 0.00, this->oKnownGlobal->loadPeriodApp,
+                                 this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
+         }
+     }
+
+     if (wsm->getDestinyNode().nodeId != myData->getId() && wsm->getDestinyNode().nodeId != -1){
+         d = updateAgentGroup(wsm->getDestinyNode(), pMsgReceivingTime);
+      }
+    }
+
+
+    /* iCarAgentsRoute.push_back(s);
 
      // Verify if the message is only a broadcast -- the first node is the source node
+     std::cout << endl << "begin : Verify if the message is only a broadcast -- the first node is the source node" << std::endl;
+     std::cout << endl << wsm->getDisplayString() << std::endl;
      if (sizeRouteNodes==1)
      {
          AgentPair * pair = agentPairList->updatePairListFromMsg(wsm->getNumMsg(),s,
@@ -66,9 +134,15 @@ void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceiv
                    0, 0.00, this->oKnownGlobal->loadPeriodApp,
                    this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
 
+         std::cout << endl << "NOT end : Verify if the message is only a broadcast -- the first node is the source node" << std::endl;
+
          this->dataAgentPair
                   << textDataAgentPair(this->oKnownGlobal->updatingPairFromReceivedMsg, pair, false) << ";"  << std::endl;
+
+         std::cout << endl << "end : Verify if the message is only a broadcast -- the first node is the source node" << std::endl;
+
      }
+
 
      //int cont =
      for (int i = 0; i <= (sizeRouteNodes-2); i++)
@@ -158,7 +232,7 @@ void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceiv
                  VTofNext = icrDestiny.validityTimeToNext;
          }
      }
-}
+}*/
 
 void IcarContext::changeLocalMobility(){
     if (!this->getMyData()->getLocalMobility()->getTraci()->isTerminated())
@@ -202,9 +276,12 @@ void IcarContext::updateAgentPairs(Agent * agent, simtime_t timeStampData,int ev
 
 std::string IcarContext::textDataAgentPair(int event, AgentPair * c, bool header=false){
     std::ostringstream ost, eventRel;
+
+    //std::cout << endl << "begin : text Data AgentPair" << std::endl;
+
         ost << "";
         eventRel << event;
-            if (header)
+            if (header){
                 ost << "simulation"
                         ";event"
                         ";timeStamp"
@@ -219,7 +296,9 @@ std::string IcarContext::textDataAgentPair(int event, AgentPair * c, bool header
                         ";measurespeedD"
                         ";measureDistance" <<
                         ";calculatedDistance;distanceDifference;idLocal"<< c->infoTrace(true);
-            else{
+                //std::cout << endl << "begin : head text Data AgentPair" << std::endl;
+            }else{
+               // std::cout << endl << "begin : text Data AgentPair" << std::endl;
              Move *mobAgentS = this->oKnownGlobal->getTraciMobility(c->getAgentS()->getId());
              Move *mobAgentD = this->oKnownGlobal->getTraciMobility(c->getAgentD()->getId());
              double measuredDistance = this->oKnownGlobal->calcTraciDistanceMobility(c->getAgentS()->getId(),c->getAgentD()->getId());
@@ -276,17 +355,20 @@ RemoteAgent* IcarContext::updateAgentGroup(ICRNode oIcrNode, simtime_t pMsgRecei
 
     RemoteAgent* a = NULL;
 
-    if (myData->getId()!= oIcrNode.nodeId ){
-        a = this->agentGroup->getRemoteAgent(oIcrNode.nodeId);
+    if (oIcrNode.nodeId!=-1)
+    {
+        if (myData->getId()!= oIcrNode.nodeId ){
+            a = this->agentGroup->getRemoteAgent(oIcrNode.nodeId);
 
-        if (a == NULL){
-            a = new RemoteAgent(pMsgReceivingTime, oIcrNode, 0);
+            if (a == NULL){
+                a = new RemoteAgent(pMsgReceivingTime, oIcrNode, 0);
 
-            this->agentGroup->knownRemoteAgents.push_back(a);
+                this->agentGroup->knownRemoteAgents.push_back(a);
 
-        }else
-        {
-            a->updateRemoteAgent(pMsgReceivingTime, oIcrNode, 0);
+            }else
+            {
+                a->updateRemoteAgent(pMsgReceivingTime, oIcrNode, 0);
+            }
         }
     }
 

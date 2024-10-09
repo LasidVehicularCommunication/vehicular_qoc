@@ -25,22 +25,24 @@ class Icarqoc;
 
 class ICRNode {
 public:
-    long  nodeId;  // source id node - 32bits
-    float posX;  //source x - 32 bits
-    float posY; // source y - 32 bits
-    float posZ; // source z - 32 bits
-    float maxSpeed;  // max speed node - 32 bits
-    float angle;  // angulo do agente de origem -  32 bits
-    float aceleration;  // aceleracao do agente de origem -  32 bits
-    float speed;  // speed value -  32 bits
+    int64_t  nodeId;  // source id node - 64bits
+    double posX;  //source x - 64 bits
+    double posY; // source y - 64 bits
+    double posZ; // source z - 64 bits
+    double maxSpeed;  // max speed node - 64 bits
+    double angle;  // angulo do agente de origem -  64 bits
+    double aceleration;  // aceleracao do agente de origem -  64 bits
+    double speed;  // speed value -  64 bits
     bool neighber; // vizinho do proximo no
-    float confidence;
-    simtime_t validityTimeToNext; // alcance do sinal de comunicacao do agente de origem  - 32 bits
-    simtime_t  posTimeStamp; // timestamp da da coleta da posicao do agente antecessor
-    simtime_t  msgTimeStamp;
+    double confidence;
+    double validityTimeToNext; // alcance do sinal de comunicacao do agente de origem  - 64 bits
+    double  posTimeStamp; // timestamp da da coleta da posicao do agente antecessor
+    double  msgTimeStamp;
     ICRNode();
     virtual ~ICRNode();
-    void prepareICRNode(Agent * agent);
+    void copyICRNode(const ICRNode& node);
+    void initializeICRNode();
+
     //void preparetwo(float a) ;
 
 };

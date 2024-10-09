@@ -19,7 +19,120 @@ namespace veins{
 
 Define_Module(Icarqoc);
 
-//const simsignalwrap_t Icarqoc::mobilityStateChangedSignal = simsignalwrap_t(MIXIM_SIGNAL_MOBILITY_CHANGE_NAME);
+void Icarqoc::initialize(int stage) {
+BaseApplLayer::initialize(stage);
+
+   if (stage == 0) {
+
+       //Initializing members and pointers of your application goes here
+        EV << "Initializing " << par("appName").stringValue() << std::endl;
+       this->seqMsg=0;
+       this->lostMsgAmount=0;
+       this->tempNode=-1;
+
+
+
+       if (FindModule<KnownGlobal*>::findGlobalModule())
+       {
+           oKnownGlobal = FindModule<KnownGlobal*>::findGlobalModule();
+
+           //agent name = vehicle creation order
+           std::stringstream aName;
+           aName << oKnownGlobal->knownVehicles.size();
+           int64_t idVeicularAgent = oKnownGlobal->knownVehicles.size();
+
+           double maxSpeed;
+           if   (oKnownGlobal->knownVehicles.size() % 2 == 0)
+                maxSpeed = par("maxSpeedRoute1").doubleValue();
+           else maxSpeed = par("maxSpeedRoute0").doubleValue();
+
+           integratedScenario = par("integratedScenario").boolValue();
+
+           //LocalMobility * locality = new LocalMobility(TraCIMobilityAccess().get(getParentModule()), maxSpeed);
+           LocalMobility * locality = NULL;
+           TraCIMobility * mobility = NULL;
+           if (FindModule<TraCIMobility*>::findSubModule(getParentModule())) {
+               mobility = TraCIMobilityAccess().get(getParentModule());
+               locality = new LocalMobility(mobility, maxSpeed);
+                traciComm = mobility->getCommandInterface();
+                traciVehicle = mobility->getVehicleCommandInterface();
+           }
+
+           this->myData = new LocalAgent(idVeicularAgent, locality, aName.str());
+
+           this->oIcarContext = new IcarContext(this->myData, this->oKnownGlobal, this);
+
+           oMsgManager = new MessageManager(this);
+
+           // temporario
+           oVision = oIcarContext;
+           oKnownGlobal->knownVehicles.push_back(this->oVision->getMyData());
+
+           //get configuration from physic layer module
+           BasePhyLayer * x = FindModule<BasePhyLayer*>::findGlobalModule();
+           oKnownGlobal->oRadiusEstimatorAgentPair->sensitivityPower_dbm = x->getAncestorPar("minPowerLevel").doubleValue();
+       } else exit(-1);
+   }else
+        if (stage == 1){
+            //declared radius in meters
+              this->oVision->getMyData()->setSetRadius(oKnownGlobal->setRadius);
+
+              //schedule first to measure collect mobility
+              if (oKnownGlobal->mobilityPeriod != 0){
+                  cMessage *msgCollectMobility = new cMessage("collectMobility", COLLECT_MOBILITY);
+                  scheduleLoad(oKnownGlobal->startSimulation, COLLECT_MOBILITY, "firstLoad", msgCollectMobility);
+              }else{
+                  findHost()->subscribe(BaseMobility::mobilityStateChangedSignal, this);
+              }
+
+              // period of communication performance measurement
+              perforMesurementPeriod = oKnownGlobal->perforMesurementPeriod;
+
+               //schedule first to measure communication performance
+              cMessage *msgPer = new cMessage("commperform", MEASURE_COMM_PERFORMANCE);
+              scheduleLoad(oKnownGlobal->startSimulation, MEASURE_COMM_PERFORMANCE, "firstLoad", msgPer);
+
+              //schedule first load monitor message
+              this->monitorMsg = new cMessage("firstLoad", SEND_MONITOR_EVT);
+
+              this->loadPeriodMonitor = oKnownGlobal->monitorPeriod;
+
+              scheduleLoad(oKnownGlobal->startSimulation, SEND_MONITOR_EVT, "firstLoad", this->monitorMsg);
+
+              // vehicle amount
+              vehicleAmout = oKnownGlobal->vehicleAmout;
+
+              // general type of application
+              this->vfs = oKnownGlobal->oGeneralCommunicationService;
+
+              // period to send application messages
+              loadPeriodApp = oKnownGlobal->oGeneralCommunicationService.appPeriodLoadMsg;
+
+
+              //schedule first load application messages
+              if (loadPeriodApp>0){
+                  cMessage *msg = new cMessage("firstLoad", SEND_ICM_EVT);
+                  scheduleLoad(oKnownGlobal->startSimulation, SEND_ICM_EVT, "firstLoad", msg );
+              }
+
+              //initialize trace
+
+              //dataMsgTeste << ";amoutVehicle;loadPeriodApp;"
+              //                  << msgInfoTraceTransmitting(NULL, "", "", true, 0) << std::endl;
+
+              //if (oKnownGlobal->simulationDataheaderLine)
+              //     dataNetwork << ";vehicleAmout;loadPeriodApp;" <<  msgInfoTraceTransmitting(NULL, "", "", true, 0)<< std::endl;
+              //else dataNetwork << "";
+
+          }
+
+
+        }
+
+
+
+
+/*const simsignalwrap_t Icarqoc::mobilityStateChangedSignal = simsignalwrap_t(MIXIM_SIGNAL_MOBILITY_CHANGE_NAME);
 //const simsignal_t BaseMobility::mobilityStateChangedSignal = registerSignal("org_car2x_veins_base_modules_mobilityStateChanged");;
 
 
@@ -127,9 +240,8 @@ void Icarqoc::initialize(int stage) {
     else if (stage == 1) {
         //Initializing members that require initialized other modules goes here
     }
-
-
 }
+*/
 
 void Icarqoc::finish() {
 
@@ -181,6 +293,8 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
 
     case COLLECT_MOBILITY:
     {
+        std::cout << endl << "begin schedule new  mobility collect "<< endl;
+
         //schedule new  mobility collect
         if (oKnownGlobal->mobilityPeriod == -1){
             double  tempx = (double(rand()%100+1)/10)/2.5;
@@ -192,18 +306,31 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
             this->scheduleLoad(this->oKnownGlobal->mobilityPeriod, COLLECT_MOBILITY, "collectMobility", msg);
 
         this->changeLocalMobility();
+
+        std::cout << endl << "end schedule new  mobility collect "<< endl;
+
     }break;
 
     case SEND_MONITOR_EVT:
     {
+        std::cout << endl << "begin send monitor message "<< endl;
+
         //send monitor message
         loadMonitor(msg);
+
+        std::cout << endl << "end send monitor message "<< endl;
+
     }break;
 
     case SEND_ICM_EVT:
     {
+        std::cout << endl << "begin send load Application message "<< endl;
+
         loadApp(msg);
         this->scheduleLoad(this->loadPeriodApp, SEND_ICM_EVT, "appMessage", msg);
+
+        std::cout << endl << "end send load Application message "<< endl;
+
     }break;
 
 
@@ -219,6 +346,9 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
 void Icarqoc::handleLowerMsg(cMessage* msg)
 {
 
+    std::cout << endl << "begin receive network message "<< endl;
+
+
     BaseFrame1609_4* icm = dynamic_cast<BaseFrame1609_4 *>(msg);
         ASSERT(icm);
 
@@ -227,11 +357,18 @@ void Icarqoc::handleLowerMsg(cMessage* msg)
 
     if (wsm != NULL)
     {
+        std::cout << endl << "begin update Context from message "<< wsm->detailedInfo() << endl;
+
         this->oIcarContext->updateContextfromMsg(wsm, simTime());
         //Nao e o local adequado
         //if (verifyRuleRadiusSet(wsm)) this->oIcarContext->updateContextfromMsg(wsm, simTime());
 
     } else std::cout << " msg e null" << std::endl;
+
+    std::cout << endl << "begin update Context from message "<< endl;
+
+    std::cout << endl << "end receive network message "<< endl;
+
 }
 
 
@@ -249,12 +386,7 @@ void Icarqoc::loadApp(cMessage *msg)
 
     ForwardingNode * foward = new ForwardingNode();
 
-    destinyNode = vfs.getDestination(this->oKnownGlobal->knownVehicles, this->myData->getId());
-
-    //foward = oVision->getRouting()->getFowardNode(this->oVision->getAgentGroup(), this->oVision->getAgentPairList(), destinyNode,
-      //      oVision->getMyData()->getId(), -1, vfs.timeToLive, Coord(0,0,0), Coord(0,0,0));
-
-    oMsgManager->sendIcarMessageService(foward, destinyNode, vfs.timeToLive, msg->getKind());
+    oMsgManager->sendIcarMessageService(-1, -1, -1, vfs.timeToLive, msg->getKind());
 
     this->scheduleLoad(this->loadPeriodMonitor, SEND_MONITOR_EVT, "monitorMessage", this->monitorMsg);
 }
@@ -267,7 +399,7 @@ void Icarqoc::loadMonitor(cMessage *msg)
     {
         ForwardingNode * foward = new ForwardingNode();
 
-        oMsgManager->sendIcarMessageService(foward, destinyNode, vfs.timeToLive, msg->getKind());
+        oMsgManager->sendIcarMessageService(-1, -1, -1, vfs.timeToLive, msg->getKind());
 
         if (this->oKnownGlobal->monitorPeriod == 0)
         {
@@ -278,12 +410,12 @@ void Icarqoc::loadMonitor(cMessage *msg)
     }
 }
 
-void Icarqoc::scheduleLoad(double appPeriod, int AppTypeId, char * name, cMessage *m1)
+void Icarqoc::scheduleLoad(double appPeriod, int AppTypeId, string name, cMessage *m1)
 {
     if (m1->isScheduled())
         cancelEvent(m1);
 
-    m1->setName(name);
+    m1->setName(name.c_str());
     m1->setKind(AppTypeId);
 
     simtime_t s = ((simtime_t) (simTime().dbl() + appPeriod));
@@ -310,20 +442,16 @@ void Icarqoc::scheduleLoadMobility()
 double Icarqoc::calcDelaySendLoadApp()
 {
     return ((double(rand()%10)+1)/100);
-
-
 }
 /*
  * when the radius of a node has a value on configuration (for example radiusSet=250m)
  */
 bool Icarqoc::verifyRuleRadiusSet( ICRMessage  *wsm){
     // when the radius of a node has a value on configuration (for example radiusSet=250m)
-    double measureDistance =0;
-    int transmitterId = wsm->getRouteNodeArraySize()>1 ? wsm->getRouteNodeArraySize()-2 : 0;
+    double measuredDistance =0;
+    measuredDistance = this->oIcarContext->oKnownGlobal->calcTraciDistanceMobility(wsm->getTransmissorNode().nodeId, this->oIcarContext->myData->getId());
 
-    measureDistance = this->oIcarContext->oKnownGlobal->calcTraciDistanceMobility(wsm->getRouteNode(transmitterId).nodeId, this->oIcarContext->myData->getId());
-
-    if (measureDistance <= this->oIcarContext->myData->getSetRadius() && this->oIcarContext->myData->getSetRadius()>0)
+    if (measuredDistance <= this->oIcarContext->myData->getSetRadius() && this->oIcarContext->myData->getSetRadius()>0)
         return true;
     else
     {
@@ -361,127 +489,8 @@ void Icarqoc::receiveSignal(cComponent* source, simsignal_t signalID, cObject* o
 void Icarqoc::sendForwardMessage(ICMessage* pWsm)
 {
 
-       ForwardingNode * fowardNode;// =  oVision->getRouting()->getFowardNode(oVision->getAgentGroup(), oVision->getAgentPairList(),
-              //pWsm->getDestinationId(), oVision->getMyData()->getId(), pWsm->getAntecessorId(), pWsm->getMsgLifeTime().dbl(), Coord(0,0,0), Coord(0,0,0));
 
-        ICMessage * wsm = new ICMessage();
-
-        //this->populateWSM(wsm);
-        wsm->setPsid(0);
-        wsm->setChannelNumber(static_cast<int>(Channel::cch));
-        wsm->addBitLength(100);
-        wsm->setUserPriority(7);
-        wsm->setRecipientAddress(-1);
-
-        wsm->setKind(pWsm->getKind());
-        wsm->setName(pWsm->getName());
-        wsm->setNumMsg(pWsm->getNumMsg());
-        wsm->setAntecessoPosTimeStamp(this->oVision->getMyData()->getMobilityInfo()->getActualMove()->getStartTime());
-        wsm->setAntecessorMaxSpeed(this->oVision->getMyData()->getMobilityInfo()->getMaxSpeed());
-        wsm->setAntecessorMsgTimeStamp(simTime());
-
-        //wsm->setAntecessorRadius(this->oVision->getMyData()->getSetRadius());
-        wsm->setAntecessorSpeed(this->oVision->getMyData()->getMobilityInfo()->getActualMove()->getSpeed());
-        wsm->setAntecessorAceleration(this->oVision->getMyData()->getMobilityInfo()->getAcceleration());
-        wsm->setAntecessorAngle(this->oVision->getMyData()->getMobilityInfo()->getAngle());
-        wsm->setAntecessorX(this->oVision->getMyData()->getMobilityInfo()->getActualMove()->getStartPos().x);
-        wsm->setAntecessorY(this->oVision->getMyData()->getMobilityInfo()->getActualMove()->getStartPos().y);
-        wsm->setAntecessorZ(this->oVision->getMyData()->getMobilityInfo()->getActualMove()->getStartPos().z);
-        wsm->setAntecessorId(this->oVision->getMyData()->getId());
-        wsm->setHopNumber(pWsm->getHopNumber()+1);
-
-
-        // forwarding data
-        std::string ruleRouting="";
-         if (fowardNode!= NULL)
-         {
-             if (fowardNode->getFowardId() != -1)
-             {
-
-                 wsm->setNextId(fowardNode->getFowardId());
-                 if (fowardNode->getTimeoutValidity() < pWsm->getValidityDataTimeStamp() || pWsm->getValidityDataTimeStamp()==-1 )
-                     wsm->setValidityDataTimeStamp(fowardNode->getTimeoutValidity());
-
-                 wsm->setAnteNextValidityTimeStamp(fowardNode->getTimeoutValidity());
-                 wsm->setNextId(fowardNode->getFowardId());
-
-                 ruleRouting = fowardNode->getRule();
-                 //wsm->setNextRadius(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getSetRadius());
-                 wsm->setNextMaxSpeed(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getMaxSpeed());
-                 wsm->setNextSpeed(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getActualMove()->getSpeed());
-                 wsm->setNextAngle(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getAngle());
-                 wsm->setNextAceleration(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getAcceleration());
-                 wsm->setNextPosTimeStamp(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getActualMove()->getStartTime());
-                 wsm->setNextX(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getActualMove()->getStartPos().x);
-                 wsm->setNextY(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getActualMove()->getStartPos().y);
-                 wsm->setNextZ(this->oVision->getAgentGroup()->getRemoteAgent(fowardNode->getFowardId())->getMobilityInfo()->getActualMove()->getStartPos().z);
-             }else{
-                 wsm->setNextId(-1); //melhorar esta condicional -- est repetitiva
-                 wsm->setAnteNextValidityTimeStamp(-1);
-             }
-         }else {
-             wsm->setNextId(-1); // melhorar esta condicional -- est repetitiva
-             wsm->setAnteNextValidityTimeStamp(-1);
-             ruleRouting = "-1";
-         }
-
-
-
-         // destination data
-           RemoteAgent * rd = this->oVision->getAgentGroup()->getRemoteAgent(pWsm->getDestinationId());
-           wsm->setDestinationId(pWsm->getDestinationId());
-
-           if (rd!=NULL)
-               if (rd->getId()!=-1 && wsm->getDestinationPosTimeStamp() < rd->getMobilityInfo()->getActualMove()->getStartTime()) {
-                   wsm->setDestinationMaxSpeed(rd->getMobilityInfo()->getMaxSpeed());
-                   wsm->setDestinationPosTimeStamp(rd->getMobilityInfo()->getActualMove()->getStartTime());
-                   wsm->setDestinationSpeed(rd->getMobilityInfo()->getActualMove()->getSpeed());
-                   wsm->setDestinationAceleration(rd->getMobilityInfo()->getAcceleration());
-                   wsm->setDestinationAngle(rd->getMobilityInfo()->getAngle());
-                   wsm->setDestinationX(rd->getMobilityInfo()->getActualMove()->getStartPos().x);
-                   wsm->setDestinationY(rd->getMobilityInfo()->getActualMove()->getStartPos().y);
-                   wsm->setDestinationZ(rd->getMobilityInfo()->getActualMove()->getStartPos().z);
-               }else{
-                   wsm->setDestinationMaxSpeed(pWsm->getDestinationMaxSpeed());
-                   wsm->setDestinationPosTimeStamp(pWsm->getDestinationPosTimeStamp());
-                   wsm->setDestinationSpeed(pWsm->getDestinationSpeed());
-                   wsm->setDestinationAceleration(pWsm->getDestinationAceleration());
-                   wsm->setDestinationAngle(pWsm->getDestinationAngle());
-                   wsm->setDestinationX(pWsm->getDestinationX());
-                   wsm->setDestinationY(pWsm->getDestinationY());
-                   wsm->setDestinationZ(pWsm->getDestinationZ());
-                }
-
-
-
-           // source data
-             RemoteAgent * rs = this->oVision->getAgentGroup()->getRemoteAgent(pWsm->getSourceId());
-             wsm->setSourceId(pWsm->getSourceId());
-             if (rs!=NULL)
-                 if (rs->getId()!=-1 && pWsm->getSourcePosTimeStamp() < rs->getMobilityInfo()->getActualMove()->getStartTime()) {
-                     wsm->setSourceMaxSpeed(rs->getMobilityInfo()->getMaxSpeed());
-                     wsm->setSourcePosTimeStamp(rs->getMobilityInfo()->getActualMove()->getStartTime());
-                     wsm->setSourceSpeed(rs->getMobilityInfo()->getActualMove()->getSpeed());
-                     wsm->setSourceAngle(rs->getMobilityInfo()->getAngle());
-                     wsm->setSourceAceleration(rs->getMobilityInfo()->getAcceleration());
-                     wsm->setSourceX(rs->getMobilityInfo()->getActualMove()->getStartPos().x);
-                     wsm->setSourceY(rs->getMobilityInfo()->getActualMove()->getStartPos().y);
-                     wsm->setSourceZ(rs->getMobilityInfo()->getActualMove()->getStartPos().z);
-                 }else{
-                     wsm->setSourceMaxSpeed(pWsm->getSourceMaxSpeed());
-                     wsm->setSourcePosTimeStamp(pWsm->getSourcePosTimeStamp());
-                     wsm->setSourceSpeed(pWsm->getSourceSpeed());
-                     wsm->setSourceAngle(pWsm->getSourceAngle());
-                     wsm->setSourceAceleration(pWsm->getSourceAceleration());
-                     wsm->setSourceX(pWsm->getSourceX());
-                     wsm->setSourceY(pWsm->getSourceY());
-                     wsm->setSourceZ(pWsm->getSourceZ());
-                 }
-
-             this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgForwardedMsg();
-
-             //sendICMessage(wsm, "forwarding", ruleRouting ,false);
-    }
+}
 
 
 void Icarqoc::createVehicleTraces(){
