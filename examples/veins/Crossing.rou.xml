@@ -32,6 +32,6 @@
 
 FIM COMENTARIO --> 
 
-<flow id="flow0" type="vtSameDirRV0" route="route1menor" begin="0" period="1" number="2" departLane="0" lane="0"/>
-
+<flow id="flow0" type="vtOppositeDir" route="route1menor" begin="0" period="1" number="1" departLane="0" lane="0"/> 
+<flow id="flow2" type="vtOppositeDir" route="route4menor" begin="0" period="1" number="1" departLane="0" lane="0"/> 
 </routes>

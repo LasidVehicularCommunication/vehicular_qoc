@@ -52,7 +52,7 @@ void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceiv
      Agent * d = NULL;
      AgentPair * pair = NULL;
 
-     std::cout << endl << "begin updateAgentPairsFromMsg "<< wsm->getSourceNode().nodeId << endl;
+     //std::cout << endl << "begin updateAgentPairsFromMsg "<< wsm->getSourceNode().nodeId << endl;
 
      if (wsm->getSourceNode().nodeId != myData->getId())
      {
@@ -63,10 +63,10 @@ void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceiv
                    0, 0.00, this->oKnownGlobal->loadPeriodApp,
                    this->oIcarModule->oMsgManager->getMsgRecvPower_dBm(wsm), this->oIcarModule->oMsgManager->getMsgRecvSnr(wsm));
 
-         std::cout << endl << "finish pair update "<< endl;
 
          this->dataAgentPair
                   << textDataAgentPair(this->oKnownGlobal->updatingPairFromReceivedMsg, pair, false) << ";"  << std::endl;
+         //std::cout << endl << "finish pair update "<< endl;
 
      }
 

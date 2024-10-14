@@ -86,16 +86,11 @@ ICRMessage * MessageManager::sendIcarMessageService(int64_t sourceId, int64_t ne
          wsm->setSourceNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(sourceId)));
      }
 
+     wsm->setDestinyNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(destinationId)));
 
-     if (destinationId!=-1){
-         wsm->setDestinyNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(destinationId)));
-         if (nextId==-1){
-             std::cout << "to find node fowarding" << endl;
-         }else{
-             std::cout << "found node fowarding knowowged node = " << nextId << endl;
-             wsm->setDestinyNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(nextId)));
-         }
-     }
+     wsm->setNextNode(prepareICRNode(oIcarQoc->oIcarContext->agentGroup->getRemoteAgent(nextId)));
+
+     //sendown message
      sendICRMessage(wsm, "transmitting", "msgIcar");
      return(wsm);
 }
@@ -207,6 +202,7 @@ std::string  MessageManager::getMsgHeaderInfoTraceNode(ICRNode  pNode)
 const ICRNode MessageManager::prepareICRNode(Agent * a) {
 
     ICRNode node;
+    node.initializeICRNode();
     if (a!=NULL){
         node.maxSpeed = a->getMobilityInfo()->getMaxSpeed();
         node.angle = a->getMobilityInfo()->getAngle();
@@ -218,9 +214,8 @@ const ICRNode MessageManager::prepareICRNode(Agent * a) {
         node.posZ = a->getMobilityInfo()->getActualMove()->getStartPos().z;
         node.msgTimeStamp = simTime().dbl();
         node.nodeId = a->getId();
-    }else{
-        node.initializeICRNode();
     }
+
     return node;
 }
 

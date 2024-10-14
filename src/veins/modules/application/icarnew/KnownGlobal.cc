@@ -47,7 +47,7 @@ void KnownGlobal::initialize(int stage) {
 
        if (monitorPeriod!=0)
            this->maxMsgAmountVehicle = (finishSimulation - startSimulation)/ monitorPeriod;
-       else this->maxMsgAmountVehicle = (finishSimulation - startSimulation)/0.5; //TEMPORARIO => ATENCAO DEVE VARIAR DE ACORDO AO INTERVALO RANDÔMICO PARA DISTRIBUIÇÃO DE PERÍODO
+       else this->maxMsgAmountVehicle = (finishSimulation - startSimulation)/0.5; //TEMPORARIO => ATENCAO DEVE VARIAR DE ACORDO AO INTERVALO RANDÃ”MICO PARA DISTRIBUIÃ‡ÃƒO DE PERÃ�ODO
 
        //std::cout << endl<< "maxMsgAmountVehicle= " << maxMsgAmountVehicle;
        // vehicle amount
@@ -61,7 +61,7 @@ void KnownGlobal::initialize(int stage) {
 
        this->setRadius = par("radiusSet").doubleValue();
 
-       // gravar a atualização do contexto quando a mobilidade eh alterada em cada veiculo
+       // gravar a atualizacao do contexto quando a mobilidade eh alterada em cada veiculo
        this->printUpdateChangedMobility = par("traceChangedMobility").boolValue();
 
         // period to send application messages
@@ -93,7 +93,7 @@ void KnownGlobal::initialize(int stage) {
                << 1 + ltm->tm_mon << "." << ltm->tm_mday << "." << ltm->tm_hour << "."
                << ltm->tm_min<< "_";
        // creating trace files
-       this->createGlobalTraces(-1);
+       //this->createGlobalTraces(-1);
 
     }
 }
@@ -137,7 +137,10 @@ void KnownGlobal::createGlobalTraces(int idVehicle){
     nameFileMessage.str("");
     nameFileMessage << aux << "LocalAgents.csv";
     this->fileLocalAgents.open (nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-    //std::cout << nameFileMessage.str() << endl;
+    //this->fileLocalAgents.open (nameFileMessage.str());
+    //this->fileLocalAgents << this->dataLocalAgent.str();
+    //std::cout <<  this->dataLocalAgent.str()  << endl;
+    //this->fileLocalAgents.close();
 
     nameFileMessage.str("");
     nameFileMessage  << aux << "RemoteAgents.csv";
@@ -249,17 +252,25 @@ std::string KnownGlobal::getStringNamefromIdAgent(int agentId)
 void KnownGlobal::finish()
 {
     // TODO - Generated method body
+    this->createGlobalTraces(-1);
+
+    //closeFiles();
+}
+
+void KnownGlobal::handleMessage(cMessage *msg)
+{
+    // TODO - Generated method body
+}
+
+void KnownGlobal::closeFiles(){
+
+
     this->fileChannels.close();
     this->fileMessages.close();
     this->fileLocalAgents.close();
     this->fileRemoteAgents.close();
     this->fileChannelsMinslr.close();
     this->fileCommPerformance.close();
-}
-
-void KnownGlobal::handleMessage(cMessage *msg)
-{
-    // TODO - Generated method body
 }
 }
 

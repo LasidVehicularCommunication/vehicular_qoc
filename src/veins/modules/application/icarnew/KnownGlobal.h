@@ -62,7 +62,7 @@ class KnownGlobal : public cSimpleModule
    double measureDistance=0;
    fstream fileMessages;
    fstream fileChannels;
-   fstream fileLocalAgents;
+   ofstream  fileLocalAgents;
    fstream fileRemoteAgents;
    fstream fileReceivedMessages;
    fstream fileChannelsMinslr;
@@ -91,6 +91,28 @@ class KnownGlobal : public cSimpleModule
    std::string observationNameFile;
    void createGlobalTraces(int idVehicle);
    stringstream getFilePreFix(int idVehicle);
+
+   ////// STATISTIC ///////////
+  // buffer file trace Channel;
+   std::stringstream QoCQoSdataAgentPair;
+
+  // buffer file trace Channel;
+   std::stringstream dataAgentPair;
+
+   // buffer file trace Minslr;
+   std::stringstream dataMinslr;
+
+   // buffer file trace Remote Agent;
+   std::stringstream dataRemoteAgent;
+
+   // buffer file trace Remote Agent;
+   std::stringstream dataLocalAgent;
+
+   // buffer file trace Communication performance;
+   std::stringstream dataCommPerformance;
+   ////// STATISTIC ///////////
+
+   void closeFiles();
   protected:
     virtual void initialize(int stage);
     virtual void initialize();

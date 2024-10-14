@@ -19,6 +19,7 @@ namespace veins{
 
 Define_Module(Icarqoc);
 
+//Initializing members and pointers of your application goes here
 void Icarqoc::initialize(int stage) {
 BaseApplLayer::initialize(stage);
 
@@ -89,15 +90,14 @@ BaseApplLayer::initialize(stage);
               perforMesurementPeriod = oKnownGlobal->perforMesurementPeriod;
 
                //schedule first to measure communication performance
-              cMessage *msgPer = new cMessage("commperform", MEASURE_COMM_PERFORMANCE);
-              scheduleLoad(oKnownGlobal->startSimulation, MEASURE_COMM_PERFORMANCE, "firstLoad", msgPer);
+              //cMessage *msgPer = new cMessage("commperform", MEASURE_COMM_PERFORMANCE);
+              //scheduleLoad(oKnownGlobal->startSimulation, MEASURE_COMM_PERFORMANCE, "firstLoad", msgPer);
 
               //schedule first load monitor message
               this->monitorMsg = new cMessage("firstLoad", SEND_MONITOR_EVT);
-
               this->loadPeriodMonitor = oKnownGlobal->monitorPeriod;
-
-              scheduleLoad(oKnownGlobal->startSimulation, SEND_MONITOR_EVT, "firstLoad", this->monitorMsg);
+              scheduleAt((simTime().dbl()+oKnownGlobal->startSimulation+loadPeriodMonitor), monitorMsg);
+              //scheduleLoad(, SEND_MONITOR_EVT, "firstLoad", this->monitorMsg);
 
               // vehicle amount
               vehicleAmout = oKnownGlobal->vehicleAmout;
@@ -107,158 +107,25 @@ BaseApplLayer::initialize(stage);
 
               // period to send application messages
               loadPeriodApp = oKnownGlobal->oGeneralCommunicationService.appPeriodLoadMsg;
-
-
               //schedule first load application messages
               if (loadPeriodApp>0){
                   cMessage *msg = new cMessage("firstLoad", SEND_ICM_EVT);
-                  scheduleLoad(oKnownGlobal->startSimulation, SEND_ICM_EVT, "firstLoad", msg );
+                  scheduleAt((simTime().dbl()+oKnownGlobal->startSimulation+loadPeriodApp), msg);
               }
 
               //initialize trace
 
-              //dataMsgTeste << ";amoutVehicle;loadPeriodApp;"
-              //                  << msgInfoTraceTransmitting(NULL, "", "", true, 0) << std::endl;
+             // dataMsgTeste << ";amoutVehicle;loadPeriodApp;"
+             //                   << msgInfoTraceTransmitting(NULL, "", "", true, 0) << std::endl;
 
-              //if (oKnownGlobal->simulationDataheaderLine)
-              //     dataNetwork << ";vehicleAmout;loadPeriodApp;" <<  msgInfoTraceTransmitting(NULL, "", "", true, 0)<< std::endl;
+             // if (oKnownGlobal->simulationDataheaderLine)
+             //      dataNetwork << ";vehicleAmout;loadPeriodApp;" <<  msgInfoTraceTransmitting(NULL, "", "", true, 0)<< std::endl;
               //else dataNetwork << "";
 
           }
-
-
         }
 
 
-
-
-/*const simsignalwrap_t Icarqoc::mobilityStateChangedSignal = simsignalwrap_t(MIXIM_SIGNAL_MOBILITY_CHANGE_NAME);
-//const simsignal_t BaseMobility::mobilityStateChangedSignal = registerSignal("org_car2x_veins_base_modules_mobilityStateChanged");;
-
-
-void Icarqoc::initialize(int stage) {
-    BaseApplLayer::initialize(stage);
-
-    if (stage == 0) {
-
-        //Initializing members and pointers of your application goes here
-        EV << "Initializing " << par("appName").stringValue() << std::endl;
-        this->seqMsg=0;
-        this->lostMsgAmount=0;
-        this->tempNode=-1;
-
-        if (FindModule<KnownGlobal*>::findGlobalModule())
-        {
-            oKnownGlobal = FindModule<KnownGlobal*>::findGlobalModule();
-
-            //agent name = vehicle creation order
-            std::stringstream aName;
-            aName << oKnownGlobal->knownVehicles.size();
-            int64_t idVeicularAgent = oKnownGlobal->knownVehicles.size();
-
-            double maxSpeed;
-            if   (oKnownGlobal->knownVehicles.size() % 2 == 0)
-                 maxSpeed = par("maxSpeedRoute1").doubleValue();
-            else maxSpeed = par("maxSpeedRoute0").doubleValue();
-
-            integratedScenario = par("integratedScenario").boolValue();
-
-            LocalMobility * locality = new LocalMobility(TraCIMobilityAccess().get(getParentModule()), maxSpeed);
-
-            if (FindModule<TraCIMobility*>::findSubModule(getParentModule())) {
-                TraCIMobility * mobility = TraCIMobilityAccess().get(getParentModule());
-                 traciComm = mobility->getCommandInterface();
-                 traciVehicle = mobility->getVehicleCommandInterface();
-            }
-
-            this->myData = new LocalAgent(idVeicularAgent, locality, aName.str());
-
-            this->oIcarContext = new IcarContext(this->myData, this->oKnownGlobal, this);
-
-            oMsgManager = new MessageManager(this);
-
-            // temporario
-            oVision = oIcarContext;
-            oKnownGlobal->knownVehicles.push_back(this->oVision->getMyData());
-
-            //get configuration from physic layer module
-            BasePhyLayer * x = FindModule<BasePhyLayer*>::findGlobalModule();
-            oKnownGlobal->oRadiusEstimatorAgentPair->sensitivityPower_dbm = x->getAncestorPar("minPowerLevel").doubleValue();
-        }
-
-
-        //declared radius in meters
-        this->oVision->getMyData()->setSetRadius(oKnownGlobal->setRadius);
-
-        //schedule first to measure collect mobility
-        if (oKnownGlobal->mobilityPeriod != 0){
-            cMessage *msgCollectMobility = new cMessage("collectMobility", COLLECT_MOBILITY);
-            scheduleLoad(oKnownGlobal->startSimulation, COLLECT_MOBILITY, "firstLoad", msgCollectMobility);
-        }else{
-            findHost()->subscribe(BaseMobility::mobilityStateChangedSignal, this);
-        }
-
-        // period of communication performance measurement
-        perforMesurementPeriod = oKnownGlobal->perforMesurementPeriod;
-
-         //schedule first to measure communication performance
-        cMessage *msgPer = new cMessage("commperform", MEASURE_COMM_PERFORMANCE);
-        scheduleLoad(oKnownGlobal->startSimulation, MEASURE_COMM_PERFORMANCE, "firstLoad", msgPer);
-
-        //schedule first load monitor message
-        this->monitorMsg = new cMessage("firstLoad", SEND_MONITOR_EVT);
-
-        this->loadPeriodMonitor = oKnownGlobal->monitorPeriod;
-
-        scheduleLoad(oKnownGlobal->startSimulation, SEND_MONITOR_EVT, "firstLoad", this->monitorMsg);
-
-        // vehicle amount
-        vehicleAmout = oKnownGlobal->vehicleAmout;
-
-        // general type of application
-        this->vfs = oKnownGlobal->oGeneralCommunicationService;
-
-        // period to send application messages
-        loadPeriodApp = oKnownGlobal->oGeneralCommunicationService.appPeriodLoadMsg;
-        //schedule first load application messages
-        if (loadPeriodApp>0){
-            cMessage *msg = new cMessage("firstLoad", SEND_ICM_EVT);
-            scheduleLoad(oKnownGlobal->startSimulation, SEND_ICM_EVT, "firstLoad", msg );
-        }
-
-
-        //initialize trace
-
-        //dataMsgTeste << ";amoutVehicle;loadPeriodApp;"
-        //                  << msgInfoTraceTransmitting(NULL, "", "", true, 0) << std::endl;
-
-        //if (oKnownGlobal->simulationDataheaderLine)
-        //     dataNetwork << ";vehicleAmout;loadPeriodApp;" <<  msgInfoTraceTransmitting(NULL, "", "", true, 0)<< std::endl;
-        //else dataNetwork << "";
-
-    }
-    else if (stage == 1) {
-        //Initializing members that require initialized other modules goes here
-    }
-}
-*/
-
-void Icarqoc::finish() {
-
-    createVehicleTraces();
-    oVision->dataCommPerformance.clear();
-    oVision->dataCommPerformance << "simulation;timeStamp; localId; " << this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->infoTrace(true, "") << std::endl;
-    oVision->dataCommPerformance << oKnownGlobal->observationNameFile << ";" << simTime()<<";" << this->myData->getId()<< ";"<< this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->infoTrace(false, "") << std::endl;
-    oVision->dataMinslr << oVision->getAgentPairList()->infoTraceAgentPairList();
-    this->oKnownGlobal->knownVehicles.at(myData->getId())=NULL;
-    this->oKnownGlobal->fileMessages << dataNetwork.str();
-    this->oKnownGlobal->fileRemoteAgents << oVision->dataRemoteAgent.str();
-    this->oKnownGlobal->fileLocalAgents << oVision->dataLocalAgent.str();
-    this->oKnownGlobal->fileChannels << oVision->dataAgentPair.str();
-    this->oKnownGlobal->fileChannelsMinslr << oVision->dataMinslr.str();
-    this->oKnownGlobal->fileCommPerformance << oVision->dataCommPerformance.str();
-    this->oKnownGlobal->fileReceivedMessages << dataMsgTeste.str();
-}
 
 
 void Icarqoc::handleSelfMsg(cMessage* msg) {
@@ -346,7 +213,7 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
 void Icarqoc::handleLowerMsg(cMessage* msg)
 {
 
-    std::cout << endl << "begin receive network message "<< endl;
+    //std::cout << endl << "begin receive network message "<< endl;
 
 
     BaseFrame1609_4* icm = dynamic_cast<BaseFrame1609_4 *>(msg);
@@ -357,17 +224,16 @@ void Icarqoc::handleLowerMsg(cMessage* msg)
 
     if (wsm != NULL)
     {
-        std::cout << endl << "begin update Context from message "<< wsm->detailedInfo() << endl;
+        //std::cout << endl << "begin update Context from message "<< wsm->detailedInfo() << endl;
 
         this->oIcarContext->updateContextfromMsg(wsm, simTime());
         //Nao e o local adequado
-        //if (verifyRuleRadiusSet(wsm)) this->oIcarContext->updateContextfromMsg(wsm, simTime());
+        if (verifyRuleRadiusSet(wsm)) this->oIcarContext->updateContextfromMsg(wsm, simTime());
 
+        cancelAndDelete(wsm);
     } else std::cout << " msg e null" << std::endl;
 
-    std::cout << endl << "begin update Context from message "<< endl;
-
-    std::cout << endl << "end receive network message "<< endl;
+    //std::cout << endl << "end receive network message "<< endl;
 
 }
 
@@ -382,9 +248,9 @@ void Icarqoc::changeLocalMobility(){
 
 void Icarqoc::loadApp(cMessage *msg)
 {
-    int64_t destinyNode;
+    //int64_t destinyNode;
 
-    ForwardingNode * foward = new ForwardingNode();
+    //ForwardingNode * foward = new ForwardingNode();
 
     oMsgManager->sendIcarMessageService(-1, -1, -1, vfs.timeToLive, msg->getKind());
 
@@ -394,10 +260,10 @@ void Icarqoc::loadApp(cMessage *msg)
 
 void Icarqoc::loadMonitor(cMessage *msg)
 {
-    int64_t destinyNode=-1;
+    //int64_t destinyNode=-1;
     if (msg->getKind()==SEND_MONITOR_EVT)
     {
-        ForwardingNode * foward = new ForwardingNode();
+        //ForwardingNode * foward = new ForwardingNode();
 
         oMsgManager->sendIcarMessageService(-1, -1, -1, vfs.timeToLive, msg->getKind());
 
@@ -492,10 +358,16 @@ void Icarqoc::sendForwardMessage(ICMessage* pWsm)
 
 }
 
-
+//create vehicle trace files to analyze the simulation
 void Icarqoc::createVehicleTraces(){
+    //this->oKnownGlobal->dataLocalAgent << this->myData->infoTrace(false, std::to_string(this->myData->getId()));
+    //cout << endl << this->oKnownGlobal->dataLocalAgent.str() << endl;
+    //this->oKnownGlobal->fileLocalAgents <<  this->oKnownGlobal->dataLocalAgent.str() ;
+    //this->oKnownGlobal->fileChannels << oVision->dataAgentPair.str();
     // trace message file
     stringstream nameFileMessage;
+
+
 
     string aux=this->oKnownGlobal->getFilePreFix(this->myData->getId()).str();
     nameFileMessage.str("");
@@ -507,6 +379,23 @@ void Icarqoc::createVehicleTraces(){
 
 }
 
+void Icarqoc::finish() {
+    cancelAndDelete(monitorMsg);
+
+    createVehicleTraces();
+    oVision->dataCommPerformance.clear();
+    oVision->dataCommPerformance << "simulation;timeStamp; localId; " << this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->infoTrace(true, "") << std::endl;
+    oVision->dataCommPerformance << oKnownGlobal->observationNameFile << ";" << simTime()<<";" << this->myData->getId()<< ";"<< this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->infoTrace(false, "") << std::endl;
+    oVision->dataMinslr << oVision->getAgentPairList()->infoTraceAgentPairList();
+    this->oKnownGlobal->knownVehicles.at(myData->getId())=NULL;
+    this->oKnownGlobal->fileMessages << dataNetwork.str();
+    this->oKnownGlobal->fileChannels << oVision->dataAgentPair.str();
+    this->oKnownGlobal->fileRemoteAgents << oVision->dataRemoteAgent.str();
+    this->oKnownGlobal->fileLocalAgents << this->myData->infoTrace(false, std::to_string(this->myData->getId()));
+    this->oKnownGlobal->fileChannelsMinslr << oVision->dataMinslr.str();
+    this->oKnownGlobal->fileCommPerformance << oVision->dataCommPerformance.str();
+    this->oKnownGlobal->fileReceivedMessages << dataMsgTeste.str();
+}
 
 
 LocalAgent* Icarqoc::getMyData(){
