@@ -1,9 +1,12 @@
-![Imagem do I-CAR](https://www.ufba.br/sites/portal.ufba.br/files/brasao_ufba.jpg)
+<div align="center">
+  <img src="https://www.ufba.br/sites/portal.ufba.br/files/brasao_ufba.jpg" alt="Imagem da UFBA" width="300" height="400"/>
+</div>
 
-# I-CARQOC
+
+## I-CARQOC
 
 
-O **I-CAR** (Intelligent Communication Mechanism for Multi-Agent Vehicular Applications) é uma proposta de serviços inteligentes de comunicação para aplicações veiculares, desenvolvida para otimizar a troca de informações entre veículos e infraestrutura em redes veiculares dinâmicas. Baseado em regras, o I-CAR utiliza a qualidade de contexto para adaptar a comunicação, levando em conta o ambiente e as condições das redes, como a capacidade de conexão dos nós e a movimentação dos veículos.
+O I-CAR** (Intelligent Communication Mechanism for Multi-Agent Vehicular Applications) é uma proposta de serviços inteligentes de comunicação para aplicações veiculares, desenvolvida para otimizar a troca de informações entre veículos e infraestrutura em redes veiculares dinâmicas. Baseado em regras, o I-CAR utiliza a qualidade de contexto para adaptar a comunicação, levando em conta o ambiente e as condições das redes, como a capacidade de conexão dos nós e a movimentação dos veículos.
 
 Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisões autônomas sobre a comunicação durante a execução de aplicações, o que contribui para uma troca de dados mais eficiente e segura. A abordagem permite avaliar o estado atual do ambiente, ajustando o comportamento dos agentes de acordo com mudanças contextuais, como congestionamentos ou perda de sinal, para garantir a continuidade da comunicação.
 
@@ -14,6 +17,10 @@ Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisõ
 - **[OMNeT++](https://omnetpp.org/)**: Uma plataforma para simulação de redes.
 - **[Veins](https://veins.car2x.org/)**: Um framework para simulações de redes veiculares que funciona com OMNeT++.
 - **[SUMO](https://www.eclipse.org/sumo/)**: Um simulador de tráfego que é usado para gerar e simular a movimentação de veículos.
+
+### Montagem de ambiente e configurações
+
+Para configurar o ambiente, siga os passos descritos na documentação do Veins: **[Tutorial](https://veins.car2x.org/tutorial/)**
 
 ## Contato
 
