@@ -37,5 +37,7 @@
     <copy file="tancredoneves.rou.xml" />
     <copy file="tancredoneves.poly.xml" />
     <copy file="tancredoneves.sumo.cfg" type="config" />
+    <basedir path="/home/clovis/TCC/ProjetoAtual/vehicular_qoc-master/examples/veins/Cenario1/"/>
+    <seed value="0"/>
 </launch>
 

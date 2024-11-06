@@ -1,21 +1,33 @@
+<div align="center">
+  <img src="https://www.ufba.br/sites/portal.ufba.br/files/brasao_ufba.jpg" alt="Imagem da UFBA" width="300" height="400"/>
+</div>
 
-Veins - The open source vehicular network simulation framework.
 
-See the Veins website <http://veins.car2x.org/> for a tutorial, documentation,
-and publications.
+## I-CARQOC
 
-Veins is composed of many parts. See the version control log for a full list of
-contributors and modifications. Each part is protected by its own, individual
-copyright(s), but can be redistributed and/or modified under an open source
-license. License terms are available at the top of each file. Parts that do not
-explicitly include license text shall be assumed to be governed by the "GNU
-General Public License" as published by the Free Software Foundation -- either
-version 2 of the License, or (at your option) any later version
-(SPDX-License-Identifier: GPL-2.0-or-later). Parts that are not source code and
-do not include license text shall be assumed to allow the Creative Commons
-"Attribution-ShareAlike 4.0 International License" as an additional option
-(SPDX-License-Identifier: GPL-2.0-or-later OR CC-BY-SA-4.0). Full license texts
-are available with the source distribution.
+
+O I-CAR** (Intelligent Communication Mechanism for Multi-Agent Vehicular Applications) é uma proposta de serviços inteligentes de comunicação para aplicações veiculares, desenvolvida para otimizar a troca de informações entre veículos e infraestrutura em redes veiculares dinâmicas. Baseado em regras, o I-CAR utiliza a qualidade de contexto para adaptar a comunicação, levando em conta o ambiente e as condições das redes, como a capacidade de conexão dos nós e a movimentação dos veículos.
+
+Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisões autônomas sobre a comunicação durante a execução de aplicações, o que contribui para uma troca de dados mais eficiente e segura. A abordagem permite avaliar o estado atual do ambiente, ajustando o comportamento dos agentes de acordo com mudanças contextuais, como congestionamentos ou perda de sinal, para garantir a continuidade da comunicação.
+
+
+## Built With
+
+- **[C++](https://learn.microsoft.com/pt-br/cpp/cpp/?view=msvc-170)**: A linguagem de programação utilizada para o desenvolvimento do projeto.
+- **[OMNeT++](https://omnetpp.org/)**: Uma plataforma para simulação de redes.
+- **[Veins](https://veins.car2x.org/)**: Um framework para simulações de redes veiculares que funciona com OMNeT++.
+- **[SUMO](https://www.eclipse.org/sumo/)**: Um simulador de tráfego que é usado para gerar e simular a movimentação de veículos.
+
+### Montagem de ambiente e configurações
+
+Para configurar o ambiente, siga os passos descritos na documentação do Veins: **[Tutorial](https://veins.car2x.org/tutorial/)**
+
+## Contato
+
+Para perguntas ou feedback, entre em contato através dos seguintes e-mails:
+
+- **Email 1:** clovis.grj@gmal.com
+- **Email 2:** margaretessa@gmail.com
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
