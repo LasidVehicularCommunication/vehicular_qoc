@@ -276,11 +276,11 @@ void IcarContext::updateAgentPairs(Agent * agent, simtime_t timeStampData,int ev
 
 std::string IcarContext::textDataAgentPair(int event, AgentPair * c, bool header=false){
     std::ostringstream ost, eventRel;
+    int auxevent;
 
     //std::cout << endl << "begin : text Data AgentPair" << std::endl;
 
         ost << "";
-        eventRel << event;
             if (header){
                 ost << "simulation"
                         ";event"
@@ -297,51 +297,58 @@ std::string IcarContext::textDataAgentPair(int event, AgentPair * c, bool header
                         ";measureDistance" <<
                         ";calculatedDistance;distanceDifference;idLocal"<< c->infoTrace(true);
                 //std::cout << endl << "begin : head text Data AgentPair" << std::endl;
-            }else{
-               // std::cout << endl << "begin : text Data AgentPair" << std::endl;
-             Move *mobAgentS = this->oKnownGlobal->getTraciMobility(c->getAgentS()->getId());
-             Move *mobAgentD = this->oKnownGlobal->getTraciMobility(c->getAgentD()->getId());
-             double measuredDistance = this->oKnownGlobal->calcTraciDistanceMobility(c->getAgentS()->getId(),c->getAgentD()->getId());
+            }else
+            {
+                auxevent = event;
+                // std::cout << endl << "begin : text Data AgentPair" << std::endl;
+                 Move *mobAgentS = this->oKnownGlobal->getTraciMobility(c->getAgentS()->getId());
+                 Move *mobAgentD = this->oKnownGlobal->getTraciMobility(c->getAgentD()->getId());
+                 double measuredDistance = this->oKnownGlobal->calcTraciDistanceMobility(c->getAgentS()->getId(),c->getAgentD()->getId());
 
-             if (c->getCalcRadius() < measuredDistance && event==this->oKnownGlobal->updatingPairFromReceivedMsg)
-             {
-                 eventRel.clear();
-                 eventRel << this->oKnownGlobal->OutOfRadiusUpdatingReceivedMsg;
-
-             }
-             else {
-                 if (c->getCalcRadius() < measuredDistance
-                         &&  c->lastEvent!=this->oKnownGlobal->OutOfRadiusTracingChangedMobility)
+                 if (c->getCalcRadius() < measuredDistance && event==this->oKnownGlobal->updatingPairFromReceivedMsg)
                  {
-
-                     eventRel.clear();
-                     c->lastEvent = this->oKnownGlobal->OutOfRadiusTracingChangedMobility;
-                     eventRel << this->oKnownGlobal->OutOfRadiusTracingChangedMobility;
-
-                 }/*else{
-                     if (this->oKnownGlobal->printUpdateChangedMobility)
+                     //eventRel.clear();
+                     //eventRel << this->oKnownGlobal->OutOfRadiusUpdatingReceivedMsg;
+                     auxevent =  this->oKnownGlobal->OutOfRadiusUpdatingReceivedMsg;
+                 }
+                 else {
+                     if (c->getCalcRadius() < measuredDistance
+                             &&  c->lastEvent!=this->oKnownGlobal->OutOfRadiusTracingChangedMobility)
                      {
-                         eventRel << this->oKnownGlobal->updateTraceChangedMobility;
-                     }else     eventRel << event;
-                 }*/
-             }
-             ost     << this->oKnownGlobal->observationNameFile
-                     << ";" << eventRel.str()
-                     << ";" << simTime()
-                     << ";" << this->oKnownGlobal->vehicleAmout
-                     << ";" << this->oKnownGlobal->loadPeriodApp
-                     << ";" << this->oIcarModule->loadPeriodMonitor
-                     << ";" << mobAgentS->getStartPos().x
-                     << ";" << mobAgentS->getStartPos().y
-                     << ";" << mobAgentS->getSpeed()
-                     << ";" << mobAgentD->getStartPos().x
-                     << ";" << mobAgentD->getStartPos().y
-                     << ";" << mobAgentD->getSpeed()
-                     << ";" << measuredDistance
-                     << ";" << c->getAgentPairMobility()->getDistancelr()
-                     << ";" << measuredDistance - c->getAgentPairMobility()->getDistancelr()
-                     << ";" << this->myData->getId()
-                     << c->infoTrace(header);
+
+                         //eventRel.clear();
+                         c->lastEvent = this->oKnownGlobal->OutOfRadiusTracingChangedMobility;
+                         //eventRel << this->oKnownGlobal->OutOfRadiusTracingChangedMobility;
+                         auxevent =   this->oKnownGlobal->OutOfRadiusTracingChangedMobility;
+
+
+                     }/*else{
+                         if (this->oKnownGlobal->printUpdateChangedMobility)
+                         {
+                             eventRel << this->oKnownGlobal->updateTraceChangedMobility;
+                         }else     eventRel << event;
+                     }*/
+                 }
+                 ost     << this->oKnownGlobal->observationNameFile
+                         //<< ";" << eventRel.str()
+                         << ";" << auxevent
+                         << ";" << simTime()
+                         << ";" << this->oKnownGlobal->vehicleAmout
+                         << ";" << this->oKnownGlobal->loadPeriodApp
+                         << ";" << this->oIcarModule->loadPeriodMonitor
+                         << ";" << mobAgentS->getStartPos().x
+                         << ";" << mobAgentS->getStartPos().y
+                         //<< ";" << mobAgentS->getSpeed()
+                         << ";" << this->oKnownGlobal->getTraci(c->getAgentS()->getId())->getTraci()->getSpeed()
+                         << ";" << mobAgentD->getStartPos().x
+                         << ";" << mobAgentD->getStartPos().y
+                         //<< ";" << mobAgentD->getSpeed()
+                         << ";" << this->oKnownGlobal->getTraci(c->getAgentD()->getId())->getTraci()->getSpeed()
+                         << ";" << measuredDistance
+                         << ";" << c->getAgentPairMobility()->getDistancelr()
+                         << ";" << measuredDistance - c->getAgentPairMobility()->getDistancelr()
+                         << ";" << this->myData->getId()
+                         << c->infoTrace(header);
             }
 
      return ost.str();
@@ -432,6 +439,7 @@ void IcarContext::setService(GeneralCommunicationService service) {
 }
 
 void IcarContext::updateContextfromMsg(ICRMessage * wsm, simtime_t pMsgReceivingTime){
+    this->myData->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgRecievedMsg();
     updateAgentPairsFromMsg(wsm, pMsgReceivingTime);
 }
 

@@ -37,7 +37,11 @@
 #include <veins/modules/application/icarnew/AgentPairList.h>
 #include <veins/modules/application/icarnew/GeneralCommunicationService.h>
 #include "messages/ICRMessage_m.h"
+#include "veins/base/utils/SimpleAddress.h"
 
+class BaseConnectionManager;
+class MacPkt;
+class MacToPhyInterface;
 
 class IcarContext;
 class AgentPair;
@@ -71,7 +75,8 @@ public:
     protected:
     //static const simsignalwrap_t mobilityStateChangedSignal;
     static const simsignal_t mobilityStateChangedSignal;
-
+    LocalMobility * locality;
+    TraCIMobility * mobility;
     public:
 
         CommState constanceValues; // constant values

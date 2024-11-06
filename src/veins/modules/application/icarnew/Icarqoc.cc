@@ -32,15 +32,9 @@ BaseApplLayer::initialize(stage);
        this->tempNode=-1;
 
 
-
        if (FindModule<KnownGlobal*>::findGlobalModule())
        {
            oKnownGlobal = FindModule<KnownGlobal*>::findGlobalModule();
-
-           //agent name = vehicle creation order
-           std::stringstream aName;
-           aName << oKnownGlobal->knownVehicles.size();
-           int64_t idVeicularAgent = oKnownGlobal->knownVehicles.size();
 
            double maxSpeed;
            if   (oKnownGlobal->knownVehicles.size() % 2 == 0)
@@ -50,15 +44,20 @@ BaseApplLayer::initialize(stage);
            integratedScenario = par("integratedScenario").boolValue();
 
            //LocalMobility * locality = new LocalMobility(TraCIMobilityAccess().get(getParentModule()), maxSpeed);
-           LocalMobility * locality = NULL;
-           TraCIMobility * mobility = NULL;
+           locality = NULL;
+           mobility = NULL;
            if (FindModule<TraCIMobility*>::findSubModule(getParentModule())) {
                mobility = TraCIMobilityAccess().get(getParentModule());
                locality = new LocalMobility(mobility, maxSpeed);
-                traciComm = mobility->getCommandInterface();
-                traciVehicle = mobility->getVehicleCommandInterface();
+               traciComm = mobility->getCommandInterface();
+               traciVehicle = mobility->getVehicleCommandInterface();
            }
+           //get configuration from physic layer module
+           BasePhyLayer * x = FindModule<BasePhyLayer*>::findGlobalModule();
+           oKnownGlobal->oRadiusEstimatorAgentPair->sensitivityPower_dbm = x->getAncestorPar("minPowerLevel").doubleValue();
 
+
+           /*
            this->myData = new LocalAgent(idVeicularAgent, locality, aName.str());
 
            this->oIcarContext = new IcarContext(this->myData, this->oKnownGlobal, this);
@@ -68,15 +67,34 @@ BaseApplLayer::initialize(stage);
            // temporario
            oVision = oIcarContext;
            oKnownGlobal->knownVehicles.push_back(this->oVision->getMyData());
-
-           //get configuration from physic layer module
-           BasePhyLayer * x = FindModule<BasePhyLayer*>::findGlobalModule();
-           oKnownGlobal->oRadiusEstimatorAgentPair->sensitivityPower_dbm = x->getAncestorPar("minPowerLevel").doubleValue();
+          */
        } else exit(-1);
    }else
         if (stage == 1){
+            int64_t idVeicularAgent = oKnownGlobal->knownVehicles.size();
+            //agent name = vehicle creation order
+            std::stringstream aName;
+            aName << idVeicularAgent;
+            this->myData = new LocalAgent(idVeicularAgent, locality, aName.str());
+
+            //cout<<endl << "ID SUMO " << locality->getTraci()->getFullName() << "INDEX SUMO " << locality->getTraci()->getExternal_id();
             //declared radius in meters
-              this->oVision->getMyData()->setSetRadius(oKnownGlobal->setRadius);
+            this->myData->setSetRadius(oKnownGlobal->setRadius);
+
+            this->oIcarContext = new IcarContext(this->myData, this->oKnownGlobal, this);
+
+            oMsgManager = new MessageManager(this);
+
+            // temporary
+            oVision = oIcarContext;
+            oKnownGlobal->knownVehicles.push_back(this->oVision->getMyData());
+
+            if (oKnownGlobal->knownVehicles.size()==1)
+                {
+                this->oKnownGlobal->fileLocalAgents << this->myData->infoTrace(true, std::to_string(this->myData->getId())) << endl;
+                this->dataMsgTeste  << this->oMsgManager->getMsgHeaderInfoTrace( NULL, "receiving", true, 0, 4, this->myData->getId()) << std::endl;
+                }
+
 
               //schedule first to measure collect mobility
               if (oKnownGlobal->mobilityPeriod != 0){
@@ -107,11 +125,13 @@ BaseApplLayer::initialize(stage);
 
               // period to send application messages
               loadPeriodApp = oKnownGlobal->oGeneralCommunicationService.appPeriodLoadMsg;
+
               //schedule first load application messages
               if (loadPeriodApp>0){
                   cMessage *msg = new cMessage("firstLoad", SEND_ICM_EVT);
                   scheduleAt((simTime().dbl()+oKnownGlobal->startSimulation+loadPeriodApp), msg);
               }
+
 
               //initialize trace
 
@@ -121,6 +141,18 @@ BaseApplLayer::initialize(stage);
              // if (oKnownGlobal->simulationDataheaderLine)
              //      dataNetwork << ";vehicleAmout;loadPeriodApp;" <<  msgInfoTraceTransmitting(NULL, "", "", true, 0)<< std::endl;
               //else dataNetwork << "";
+
+              // get handle to phy layer
+             // BaseMacLayer * macx= dynamic_cast<BaseMacLayer*>  (FindModule<Mac1609_4*>::findSubModule(getParentModule()));
+             // ASSERT(macx);
+              //DeciderResult80211 *macRes = dynamic_cast<DeciderResult80211 *>(PhyToMacControlInfo::getDeciderResult(m));
+             // ASSERT(macRes);
+             // if ((mac = FindModule<BaseMacLayer*>::findSubModule(getParentModule())) == nullptr) {
+             //     throw cRuntimeError("Could not find a PHY module.");
+             // }
+
+
+              //cout << endl << "myMac " << macx->getMACAddress() << endl;
 
           }
         }
@@ -160,7 +192,7 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
 
     case COLLECT_MOBILITY:
     {
-        std::cout << endl << "begin schedule new  mobility collect "<< endl;
+        //std::cout << endl << "begin schedule new  mobility collect "<< endl;
 
         //schedule new  mobility collect
         if (oKnownGlobal->mobilityPeriod == -1){
@@ -174,29 +206,29 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
 
         this->changeLocalMobility();
 
-        std::cout << endl << "end schedule new  mobility collect "<< endl;
+        //std::cout << endl << "end schedule new  mobility collect "<< endl;
 
     }break;
 
     case SEND_MONITOR_EVT:
     {
-        std::cout << endl << "begin send monitor message "<< endl;
+        //std::cout << endl << "begin send monitor message "<< endl;
 
         //send monitor message
         loadMonitor(msg);
 
-        std::cout << endl << "end send monitor message "<< endl;
+        //std::cout << endl << "end send monitor message "<< endl;
 
     }break;
 
     case SEND_ICM_EVT:
     {
-        std::cout << endl << "begin send load Application message "<< endl;
+        //std::cout << endl << "begin send load Application message "<< endl;
 
         loadApp(msg);
         this->scheduleLoad(this->loadPeriodApp, SEND_ICM_EVT, "appMessage", msg);
 
-        std::cout << endl << "end send load Application message "<< endl;
+        //std::cout << endl << "end send load Application message "<< endl;
 
     }break;
 
@@ -226,9 +258,12 @@ void Icarqoc::handleLowerMsg(cMessage* msg)
     {
         //std::cout << endl << "begin update Context from message "<< wsm->detailedInfo() << endl;
 
+
         this->oIcarContext->updateContextfromMsg(wsm, simTime());
         //Nao e o local adequado
-        if (verifyRuleRadiusSet(wsm)) this->oIcarContext->updateContextfromMsg(wsm, simTime());
+        //if (verifyRuleRadiusSet(wsm)) this->oIcarContext->updateContextfromMsg(wsm, simTime());
+
+        this->dataMsgTeste  << this->oMsgManager->getMsgHeaderInfoTrace( wsm, "receiving", false, wsm->getTimestamp(), 4, this->myData->getId()) << std::endl;
 
         cancelAndDelete(wsm);
     } else std::cout << " msg e null" << std::endl;
@@ -303,12 +338,13 @@ void Icarqoc::scheduleLoadMobility()
 }
 
 /*
- * Calcing delay to send application load message
+ * Calculating delay to send application load message
  */
 double Icarqoc::calcDelaySendLoadApp()
 {
     return ((double(rand()%10)+1)/100);
 }
+
 /*
  * when the radius of a node has a value on configuration (for example radiusSet=250m)
  */
@@ -391,7 +427,7 @@ void Icarqoc::finish() {
     this->oKnownGlobal->fileMessages << dataNetwork.str();
     this->oKnownGlobal->fileChannels << oVision->dataAgentPair.str();
     this->oKnownGlobal->fileRemoteAgents << oVision->dataRemoteAgent.str();
-    this->oKnownGlobal->fileLocalAgents << this->myData->infoTrace(false, std::to_string(this->myData->getId()));
+    this->oKnownGlobal->fileLocalAgents << this->myData->infoTrace(false, std::to_string(this->myData->getId())) << endl;
     this->oKnownGlobal->fileChannelsMinslr << oVision->dataMinslr.str();
     this->oKnownGlobal->fileCommPerformance << oVision->dataCommPerformance.str();
     this->oKnownGlobal->fileReceivedMessages << dataMsgTeste.str();

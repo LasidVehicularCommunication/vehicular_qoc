@@ -93,7 +93,7 @@ void KnownGlobal::initialize(int stage) {
                << 1 + ltm->tm_mon << "." << ltm->tm_mday << "." << ltm->tm_hour << "."
                << ltm->tm_min<< "_";
        // creating trace files
-       //this->createGlobalTraces(-1);
+       this->createGlobalTraces(-1);
 
     }
 }
@@ -213,6 +213,21 @@ Move * KnownGlobal::getTraciMobility(int64_t vehicle1id)
 }
 
 
+LocalMobility * KnownGlobal::getTraci(int64_t vehicle1id)
+{
+
+    LocalMobility * agentTraciPosition=NULL;
+
+    LocalAgent * agent1= this->knownVehicles.at(vehicle1id);
+
+    if (agent1!=NULL)
+        if (agent1->getLocalMobility()->getTraci()->getMove()!=NULL)
+        {
+            agentTraciPosition = agent1->getLocalMobility();
+        }
+
+    return agentTraciPosition;
+}
 
 int KnownGlobal::getIntNamefromIdAgent(int agentId)
 {
@@ -252,9 +267,7 @@ std::string KnownGlobal::getStringNamefromIdAgent(int agentId)
 void KnownGlobal::finish()
 {
     // TODO - Generated method body
-    this->createGlobalTraces(-1);
-
-    //closeFiles();
+    //this->createGlobalTraces(-1);
 }
 
 void KnownGlobal::handleMessage(cMessage *msg)
@@ -263,14 +276,6 @@ void KnownGlobal::handleMessage(cMessage *msg)
 }
 
 void KnownGlobal::closeFiles(){
-
-
-    this->fileChannels.close();
-    this->fileMessages.close();
-    this->fileLocalAgents.close();
-    this->fileRemoteAgents.close();
-    this->fileChannelsMinslr.close();
-    this->fileCommPerformance.close();
 }
 }
 

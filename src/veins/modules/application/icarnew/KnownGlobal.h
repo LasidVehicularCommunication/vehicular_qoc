@@ -79,6 +79,8 @@ class KnownGlobal : public cSimpleModule
    double antennaSensitivity; // noise sensitivity of the antenna in dbm
    //void calcTraceChangedMobility(std::string changedVehicle);
    Move * getTraciMobility(int64_t vehicle1id);
+   LocalMobility * getTraci(int64_t vehicle1id);
+
    double calcTraciDistanceMobility(int64_t agent1id, int64_t vehicle2id);
    double perforMesurementPeriod; // period de medicao do desempeno da comunicacao do agente CommPerformance
    double monitorPeriod; // periodo de monitoracao beacon msg

@@ -54,9 +54,9 @@ AgentPair::AgentPair(Agent* agentS, Agent* agentD, simtime_t msgReceivingTime, s
  //this->agentPairMobility = new AgentPairMobility();
  this->addReceivedMsg();
 
- if (agentS->getSetRadius()<=0)
+ if (agentS->getSetRadius()<=0) // consider fixe radius
  {
-     std::cout << endl << "begin  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+     //std::cout << endl << "begin  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
 
      if (powerReceived_dbm<0 && powerReceived_dbm>-200){
          this->setCalcRadius();
@@ -69,7 +69,7 @@ AgentPair::AgentPair(Agent* agentS, Agent* agentD, simtime_t msgReceivingTime, s
 
  this->qoCAgentPair = new QoCAgentPair(this,dataValidity);
 
- std::cout << endl << "end  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+// std::cout << endl << "end  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
 
 
 
@@ -375,8 +375,8 @@ std::string AgentPair::infoTrace(bool header) {
            <<  this->agentPairMobility->infoTrace(false)
            <<  ((TimelinessAgentPair *) this->qoCAgentPair->getTimeliness())->infoTrace(false)
            << this->agent_s->infoTrace(false,"")
-           << this->agent_d->infoTrace(false, "")
-           << this->infoTraceRoutes(false);
+           << this->agent_d->infoTrace(false, "");
+           ///<< this->infoTraceRoutes(false); rotemamento depois
 
    }
     return ost.str();

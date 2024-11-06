@@ -191,7 +191,7 @@ double TimelinessAgentPair::calcValidity(simtime_t dataValidity){
 
 
 void TimelinessAgentPair::update(simtime_t dataValidity){
-    std::cout << endl << "begin  TimelinessAgentPair::update setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+    //std::cout << endl << "begin  TimelinessAgentPair::update setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
 
     this->calcAge();
 
@@ -209,7 +209,7 @@ void TimelinessAgentPair::update(simtime_t dataValidity){
 
         }
     }*/
-    std::cout << endl << "end  TimelinessAgentPair::update setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
+    //std::cout << endl << "end  TimelinessAgentPair::update setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
 
 }
 

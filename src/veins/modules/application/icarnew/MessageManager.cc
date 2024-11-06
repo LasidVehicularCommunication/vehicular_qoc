@@ -35,18 +35,19 @@ double MessageManager::getMsgRecvPower_dBm(ICRMessage* m){
 
     DeciderResult80211 *macRes = dynamic_cast<DeciderResult80211 *>(PhyToMacControlInfo::getDeciderResult(m));
     ASSERT(macRes);
-
+    PhyToMacControlInfo * x = new PhyToMacControlInfo(macRes);
+    cout << endl << "SourceAddress " << x->getSourceAddress() << endl;
     return macRes->getRecvPower_dBm();
 }
 
 double MessageManager::getMsgRecvSnr(ICRMessage* m){
 
-    std::cout << endl << "begin  Returns the signal to noise ratio of the transmission from message "<< endl;
+    //std::cout << endl << "begin  Returns the signal to noise ratio of the transmission from message "<< endl;
 
     DeciderResult80211 *macRes = dynamic_cast<DeciderResult80211 *>(PhyToMacControlInfo::getDeciderResult(m));
     ASSERT(macRes);
 
-    std::cout << endl << "end  Returns the signal to noise ratio of the transmission from message " << macRes->getSnr() << endl;
+    //std::cout << endl << "end  Returns the signal to noise ratio of the transmission from message " << macRes->getSnr() << endl;
 
     return macRes->getSnr();
 }
@@ -132,11 +133,11 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
                  << ";messageNumber"
                  << ";MsgType"
                  << ";MSG Time"
-                 << ";delayMSG"
+                 //<< ";delayMSG"
                  << ";MsgLifeTime"
                  << ";hopNumber"
-                 << ";ValidityDataTimeStamp"
-                 << ";Data";
+                 << ";ValidityDataTimeStamp";
+                 //<< ";Data";
 
                 for (int i=0; i < 4; i++)
                 {
@@ -161,7 +162,7 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
                 << ";" << wsm->getNumMsg()
                  << ";" << wsm->getMsgType()
                 << ";" << wsm->getTimestamp()
-                << ";" << pEventTime - wsm->getTimestamp()
+                //<< ";" << pEventTime - wsm->getTimestamp()
                 << ";" << wsm->getMsgLifeTime()
                 << ";" << wsm->getHopNumber()
                 << ";"<< wsm->getValidityDataTimeStamp()

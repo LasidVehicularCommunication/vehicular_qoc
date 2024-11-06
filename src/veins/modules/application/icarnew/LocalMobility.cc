@@ -68,15 +68,26 @@ void LocalMobility::updateLocalMobilityPos()
              //this->angle = std::atan2(ay, ax);
              //this->angle = traci->getAngleRad();
 
+             /*std::cout << endl << " velocidade= " << this->traci->getSpeed() << endl;
+             std::cout << endl << " posicao= " << this->traci->getMove()->getStartPosition() << endl;
+             std::cout << endl << " posicao STARTPOS= " << this->traci->getMove()->getStartPos()<< endl;
+             std::cout << endl << " posicao SPEED MOVE= " << this->traci->getMove()->getSpeed()<< endl;
+             std::cout << endl << " posicao TIME MOVE= " << this->traci->getMove()->getStartTime() << endl;
+            */
+
+
+
              this->lastMove = this->actualMove;
              this->actualMove = new Move();
              this->actualMove->setStart(this->traci->getMove()->getStartPos(), this->traci->getMove()->getStartTime());
-             this->actualMove->setSpeed(this->traci->getMove()->getSpeed());
+             //this->actualMove->setSpeed(this->traci->getMove()->getSpeed());
+             this->actualMove->setSpeed(this->traci->getSpeed());
 
              //dados do sensor
              Move * om1 = new Move();
              om1->setStart( this->actualMove->getStartPos(), this->actualMove->getStartTime());
-             om1->setSpeed(this->actualMove->getSpeed());
+             //om1->setSpeed(this->actualMove->getSpeed());
+             om1->setSpeed(this->traci->getSpeed());
              this->setCollectedMove(om1);
 
              double ay = actualMove->getStartPos().y - this->lastMove->getStartPos().y;
@@ -85,7 +96,6 @@ void LocalMobility::updateLocalMobilityPos()
 
              if (ay!=0 || ax!=0) {
                  this->angle = std::atan2(ay, ax);
-
              }
 
              //this->angle = traci->getAngleRad();

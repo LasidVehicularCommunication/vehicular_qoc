@@ -1,8 +1,0 @@
-simulation;timeStamp; localId; ;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
-oppositeDirection;150;0;;0;0;0;0;299
-simulation;timeStamp; localId; ;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
-oppositeDirection;150;1;;0;0;0;0;299
-simulation;timeStamp; localId; ;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
-oppositeDirection;150;2;;0;0;0;0;297
-simulation;timeStamp; localId; ;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
-oppositeDirection;150;3;;0;0;0;0;297
