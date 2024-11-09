@@ -72,7 +72,11 @@ Este tutorial irá guiá-lo pelos passos necessários para rodar a simulação n
 
 Agora você está pronto para rodar e analisar a simulação no OMNeT++! 
 
+## Diagrama de Classes
 
+Abaixo está o diagrama que ilustra a modelagem de classes utilizada na simulação:
+
+![Diagrama de Classes](assets/class_diagram.png)
 
 
 ## Contato
