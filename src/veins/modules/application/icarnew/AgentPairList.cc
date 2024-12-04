@@ -28,7 +28,7 @@ AgentPair* AgentPairList::getAgentPair(int64_t sourceId, int64_t destinationId){
 
     bool find=false;
     unsigned int index = 0;
-    std::cout << "OLDbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId  <<std::endl;
+    //std::cout << "OLDbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId  <<std::endl;
 
     if (!this->agentPairs.empty())
     {
@@ -52,7 +52,7 @@ AgentPair* AgentPairList::getAgentPair(int64_t sourceId, int64_t destinationId){
             ++index;
         }
    }
-    std::cout << "OLDXXXXbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
+    //std::cout << "OLDXXXXbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
 
     return c;
 }
@@ -116,7 +116,7 @@ std::vector<AgentPair*>  AgentPairList::listNeighbors(int64_t agentId)
 
     //   if (c->getAgentD()==NULL) std::cout << index << "encontrar vizinho de " << agentId<< std::endl;
     /*
-     * Verifica se o destino desejado foi a origem do canal e se � comunic�vel e vizinho
+     * Verifica se o destino desejado foi a origem do canal e se e comunic�vel e vizinho
      */
 
      if ((c->getAgentD()->getId() == agentId || c->getAgentS()->getId() == agentId) && c->isNeighbors())
@@ -313,8 +313,6 @@ std::string AgentPairList::infoTraceAgentPairList(){
     {
         c = dynamic_cast<AgentPair*>(agentPairs[index]);
 
-        if (index==0) ost << c->infoTrace(true) << endl;
-
         ost << c->infoTrace(false) << endl;
 
         ++index;
@@ -327,24 +325,24 @@ AgentPair * AgentPairList::updatePairListFromMsg(long numMsg, Agent* agentS, Age
 {
 
     AgentPair * pair = NULL;
-    std::cout << endl << "begin updateAgentPairsFromMsg "<< endl;
+    //std::cout << endl << "begin updateAgentPairsFromMsg "<< endl;
 
     if ((agentS != NULL) && (agentD!=NULL))
     {
         pair = getAgentPair(agentS->getId(), agentD->getId());
 
         if (pair==NULL){
-            std::cout << endl << "begin AgentPair updateAgentPairsFromMsg "<< endl;
+            //std::cout << endl << "begin AgentPair updateAgentPairsFromMsg "<< endl;
 
            pair = new AgentPair(agentS, agentD, pMsgReceivingTime, msgSendingTime,  pRadiusEstimator, neighbor,
                                       0, dataValidity, pPeriodApp, powerReceived_dbm, snr);
-           std::cout << endl << "end AgentPair updateAgentPairsFromMsg "<< endl;
+          // std::cout << endl << "end AgentPair updateAgentPairsFromMsg "<< endl;
 
            pair->addReceivedMsg();
            pair->setCurrentMsgNumber(numMsg);
 
            this->agentPairs.push_back(pair);
-           std::cout << endl << "end AgentPair updateAgentPairsFromMsg "<< endl;
+           //std::cout << endl << "end AgentPair updateAgentPairsFromMsg "<< endl;
 
         }else{
             pair->setCurrentMsgNumber(numMsg);

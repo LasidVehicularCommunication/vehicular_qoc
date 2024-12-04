@@ -8,13 +8,13 @@
 	
 	<route id="route1" edges="gneE4 gneE5.0 gneE5.2180 gneE6"/> <!-- from west to east -->
 	<route id="route2" edges="gneE4 gneE5.0 -gneE11 gneE13"/> <!-- from west to south -->
-	<route id="route4" edges="-gneE6 -gneE5.0 -gneE5.2309 -gneE4"/> <!-- from east to west -->
+	<route id="route4" edges="-gneE5.2309 -gneE4"/> <!-- from east to west -->
 	<route id="route7" edges="-gneE13 gneE11 -gneE10 gneE14"/> <!-- from south to north -->
 	<route id="route9" edges="-gneE13 gneE11 -gneE5.2309 -gneE4"/> <!-- from south to west -->
 	
-	<route id="route4menor" edges="-gneE5.2309"/> <!-- from east to west -->
-	<route id="route1menor" edges="gneE5.0"/> <!-- from west to east -->
+	<route id="route4menor" edges="-gneE5.0 -gneE5.2309"/> <!-- from east to west -->
+	<route id="route1menor" edges="gneE5.0 gneE5.2180"/> <!-- from west to east -->
 	  
-	<flow id="flow0" type="vtOppositeDir" route="route1menor" begin="0" period="1" number="50" departLane="0" lane="0"/> 
-    <flow id="flow2" type="vtOppositeDir" route="route4menor" begin="0" period="1" number="50" departLane="0" lane="0"/>  
+	<flow id="flow0" type="vtOppositeDir" route="route1" begin="0" period="1" number="50" departLane="0" lane="0"/> 
+    <flow id="flow2" type="vtOppositeDir" route="route4" begin="0" period="1" number="50" departLane="0" lane="0"/>  
 </routes>

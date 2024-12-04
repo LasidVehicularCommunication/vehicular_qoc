@@ -71,7 +71,7 @@ double TimelinessAgentPair::calcValidityTeste(simtime_t dataValidity){
     timeliness = 0;
     timeStampAgentPair = c->getUpdatingTime();
     SrlMin = 0;
-    std::cout << endl << "begin  calcValidityTeste "<< endl;
+    //std::cout << endl << "begin  calcValidityTeste "<< endl;
 
 
     if (c->isNeighbors()
@@ -141,7 +141,7 @@ double TimelinessAgentPair::calcValidityTeste(simtime_t dataValidity){
                     }
             }
         }
-        std::cout << endl << "end  calcValidityTeste "<< endl;
+        //std::cout << endl << "end  calcValidityTeste "<< endl;
         return -1;
     }
 

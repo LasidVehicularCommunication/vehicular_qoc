@@ -25,8 +25,8 @@ IcarContext::IcarContext(LocalAgent * oMyData, KnownGlobal * pKnownGlobal, Icarq
         this->agentPairList = new AgentPairList();
         // data analysec
         AgentPair * inic = new AgentPair();
-        this->dataAgentPair
-                 << textDataAgentPair(-1, inic, true) << ";"  << std::endl;
+       // this->dataAgentPair
+       //          << textDataAgentPair(-1, inic, true) << ";"  << std::endl;
         this->routing = new IcarRouting(agentGroup, agentPairList);
 }
 
@@ -70,7 +70,7 @@ void IcarContext::updateAgentPairsFromMsg(ICRMessage * wsm, simtime_t pMsgReceiv
 
      }
 
-     std::cout << endl << "end updateAgentPairsFromMsg "<< wsm->getSourceNode().nodeId << endl;
+     //std::cout << endl << "end updateAgentPairsFromMsg "<< wsm->getSourceNode().nodeId << endl;
 
 }
      /*
@@ -304,6 +304,29 @@ std::string IcarContext::textDataAgentPair(int event, AgentPair * c, bool header
                  Move *mobAgentS = this->oKnownGlobal->getTraciMobility(c->getAgentS()->getId());
                  Move *mobAgentD = this->oKnownGlobal->getTraciMobility(c->getAgentD()->getId());
                  double measuredDistance = this->oKnownGlobal->calcTraciDistanceMobility(c->getAgentS()->getId(),c->getAgentD()->getId());
+                 double Sx;
+                 double Dx;
+                 double Sy;
+                 double Dy;
+                 double Dspeed;
+                 double Sspeed;
+
+                 if (mobAgentS==NULL || mobAgentD==NULL )
+                 {
+                      Sx = 0;
+                      Dx = 0;
+                      Sy = 0;
+                      Dy = 0;
+                      Sspeed=0;
+                      Dspeed=0;
+                 }else{
+                     Sx = mobAgentS->getStartPos().x;
+                     Dx = mobAgentD->getStartPos().x;
+                     Sy = mobAgentS->getStartPos().y;
+                     Dy = mobAgentD->getStartPos().y;
+                     Sspeed= this->oKnownGlobal->getTraci(c->getAgentS()->getId())->getTraci()->getSpeed();
+                     Dspeed= this->oKnownGlobal->getTraci(c->getAgentD()->getId())->getTraci()->getSpeed();
+                 }
 
                  if (c->getCalcRadius() < measuredDistance && event==this->oKnownGlobal->updatingPairFromReceivedMsg)
                  {
@@ -336,14 +359,14 @@ std::string IcarContext::textDataAgentPair(int event, AgentPair * c, bool header
                          << ";" << this->oKnownGlobal->vehicleAmout
                          << ";" << this->oKnownGlobal->loadPeriodApp
                          << ";" << this->oIcarModule->loadPeriodMonitor
-                         << ";" << mobAgentS->getStartPos().x
-                         << ";" << mobAgentS->getStartPos().y
+                         << ";" << Sx
+                         << ";" << Sy
                          //<< ";" << mobAgentS->getSpeed()
-                         << ";" << this->oKnownGlobal->getTraci(c->getAgentS()->getId())->getTraci()->getSpeed()
-                         << ";" << mobAgentD->getStartPos().x
-                         << ";" << mobAgentD->getStartPos().y
+                         << ";" << Sspeed //this->oKnownGlobal->getTraci(c->getAgentS()->getId())->getTraci()->getSpeed()
+                         << ";" << Dx
+                         << ";" << Dy
                          //<< ";" << mobAgentD->getSpeed()
-                         << ";" << this->oKnownGlobal->getTraci(c->getAgentD()->getId())->getTraci()->getSpeed()
+                         << ";" << Dspeed //this->oKnownGlobal->getTraci(c->getAgentD()->getId())->getTraci()->getSpeed()
                          << ";" << measuredDistance
                          << ";" << c->getAgentPairMobility()->getDistancelr()
                          << ";" << measuredDistance - c->getAgentPairMobility()->getDistancelr()

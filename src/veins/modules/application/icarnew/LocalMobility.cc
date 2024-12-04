@@ -134,6 +134,8 @@ void LocalMobility::setTraci(LocalMobilityTraci * traci) {
 }
 
 
+
+
 std::string LocalMobility::info() {
 
     std::ostringstream ost;

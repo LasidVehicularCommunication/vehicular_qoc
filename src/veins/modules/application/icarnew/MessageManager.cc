@@ -23,7 +23,7 @@ MessageManager::MessageManager() {
 }
 MessageManager::MessageManager(Icarqoc * pIcarQoc){
     this->oIcarQoc = pIcarQoc;
-    this->oIcarQoc->dataNetwork << getMsgHeaderInfoTrace( wsm,"", true, 0, 32, -1)<< std::endl;
+   // this->oIcarQoc->dataNetwork << getMsgHeaderInfoTrace( wsm,"", true, 0, 32, -1)<< std::endl;
 }
 
 MessageManager::~MessageManager() {
@@ -129,7 +129,7 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
     if (header){
         ost      << ";event"
                  << ";eventTime"
-                 << ";transmitterNodeID"
+                 << ";localNodeID"
                  << ";messageNumber"
                  << ";MsgType"
                  << ";MSG Time"
@@ -170,10 +170,10 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
                 //<< ";"
                 //    << this->oKnownGlobal->calcTraciDistanceMobility(wsm->getRouteNodes(0).nodeId,
                 //            wsm->getRouteNodes(wsm->getRouteNodesArraySize()-1).nodeId);
-                << ";"<< getMsgHeaderInfoTraceNode(wsm->getSourceNode())
-                << ";"<< getMsgHeaderInfoTraceNode(wsm->getTransmissorNode())
-                << ";"<< getMsgHeaderInfoTraceNode(wsm->getNextNode())
-                << ";"<< getMsgHeaderInfoTraceNode(wsm->getDestinyNode());
+                <<  getMsgHeaderInfoTraceNode(wsm->getSourceNode())
+                <<  getMsgHeaderInfoTraceNode(wsm->getTransmissorNode())
+                <<  getMsgHeaderInfoTraceNode(wsm->getNextNode())
+                <<  getMsgHeaderInfoTraceNode(wsm->getDestinyNode());
 
     }
 
@@ -215,6 +215,7 @@ const ICRNode MessageManager::prepareICRNode(Agent * a) {
         node.posZ = a->getMobilityInfo()->getActualMove()->getStartPos().z;
         node.msgTimeStamp = simTime().dbl();
         node.nodeId = a->getId();
+        node.validityTimeToNext = 0;
     }
 
     return node;

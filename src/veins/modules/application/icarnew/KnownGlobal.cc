@@ -176,21 +176,21 @@ double KnownGlobal::calcTraciDistanceMobility(int64_t vehicle1id, int64_t vehicl
     LocalAgent * agent1= this->knownVehicles.at(vehicle1id);
     LocalAgent * agent2= this->knownVehicles.at(vehicle2id);
 
-    if (agent1!=NULL &&  agent2!=NULL)
-       /* if (agent1->getLocalMobility()->getMove()!=NULL && agent2->getLocalMobility()->getMove()!=NULL)
+    /* if (agent1!=NULL &&  agent2!=NULL)
+        if (agent1->getLocalMobility()->getMove()!=NULL && agent2->getLocalMobility()->getMove()!=NULL)
         {
             calDistance = agent1->getMobilityInfo()->calcEuclideanDistancelr(
                     agent1->getLocalMobility()->getMove()->getStartPos(),
                     agent2->getLocalMobility()->getMove()->getStartPos());
         }
 */
-
-   if (agent1->getLocalMobility()->getTraci()->getMove()!=NULL && agent2->getLocalMobility()->getTraci()->getMove()!=NULL)
-          {
-              calDistance = agent1->getMobilityInfo()->calcEuclideanDistancelr(
-                      agent1->getLocalMobility()->getTraci()->getMove()->getStartPos(),
-                      agent2->getLocalMobility()->getTraci()->getMove()->getStartPos());
-          }
+   if (agent1!=NULL &&  agent2!=NULL)
+       if (agent1->getLocalMobility()->getTraci()->getMove()!=NULL && agent2->getLocalMobility()->getTraci()->getMove()!=NULL)
+              {
+                  calDistance = agent1->getMobilityInfo()->calcEuclideanDistancelr(
+                          agent1->getLocalMobility()->getTraci()->getMove()->getStartPos(),
+                          agent2->getLocalMobility()->getTraci()->getMove()->getStartPos());
+              }
 
 
     return calDistance;
@@ -238,8 +238,10 @@ int KnownGlobal::getIntNamefromIdAgent(int agentId)
     {
        la= knownVehicles.at(i);
 
-       if (la->getId()==agentId) find = true;
-       else i++;
+       if (la!=NULL){
+           if (la->getId()==agentId)
+               find = true;
+       }else i++;
     }
 
     if (find) return i;
@@ -255,8 +257,9 @@ std::string KnownGlobal::getStringNamefromIdAgent(int agentId)
     {
        la= knownVehicles.at(i);
 
-       if (la->getId()==agentId) find = true;
-       else i++;
+       if (la!=NULL){
+           if (la->getId()==agentId) find = true;
+       } else i++;
     }
 
     if (find) return la->getAgentName();

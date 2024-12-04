@@ -70,9 +70,6 @@ AgentPair::AgentPair(Agent* agentS, Agent* agentD, simtime_t msgReceivingTime, s
  this->qoCAgentPair = new QoCAgentPair(this,dataValidity);
 
 // std::cout << endl << "end  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
-
-
-
  //this->qoCAgentPair = new QoCAgentPair();
  //std::cout << endl << "testando "<< endl;
 }
@@ -165,7 +162,6 @@ void AgentPair::updateCommnunicationState(){
         this->setCommnunicationState(CommState::noCommunicating);
     else
         this->setCommnunicationState(CommState::communicating);
-
 
     /*int cstate = CommState::updateCommnunicationState(event, this->getCommnunicationState());
     if (cstate >= 0) this->setCommnunicationState(cstate);
@@ -346,11 +342,8 @@ std::string AgentPair::infoTrace(bool header) {
                Agent * temp = new Agent();
                AgentPairMobility* temp1 = new AgentPairMobility();
                TimelinessAgentPair * temp2 = new TimelinessAgentPair();
-               ost << temp1->infoTrace(true)
-               << temp2->infoTrace(true)
-               <<  temp->infoTrace(true, "S")
-               << temp->infoTrace(true, "D")
-               << this->infoTraceRoutes(true);
+               ost << temp1->infoTrace(true) << temp2->infoTrace(true) <<  temp->infoTrace(true, "S") << temp->infoTrace(true, "D");
+               //<< this->infoTraceRoutes(true);
    } else {
        ost
            << ";" << this->agent_s->getId()
