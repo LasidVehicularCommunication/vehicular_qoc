@@ -177,73 +177,78 @@ void Icarqoc::handleSelfMsg(cMessage* msg) {
     //MEASURE_COMM_PERFORMANCE // event to measure the environment communication performance
     //AGENTPAIR_MONITOR_MESSAGE = For each knowed CHANNEL when need to update communication state (communicatin, non-communicating, fault etc.)
 
-    switch (msg->getKind()) {
-    case MEASURE_COMM_PERFORMANCE:
+    // verify the simulation time.
+    if (simTime().dbl() <= this->oKnownGlobal->finishSimulation)
     {
-        // calc performance measurement
-        //if (msg->getName()=="firstLoad") this->oVision->calcCommPerformVision(true);
-        //else this->oVision->calcCommPerformVision(false);
+        switch (msg->getKind())
+        {
+            case MEASURE_COMM_PERFORMANCE:
+            {
+                // calc performance measurement
+                //if (msg->getName()=="firstLoad") this->oVision->calcCommPerformVision(true);
+                //else this->oVision->calcCommPerformVision(false);
 
-        //schedule new performance measurement
-        //this->scheduleLoad(this->perforMesurementPeriod, MEASURE_COMM_PERFORMANCE, "commperform", msg);
-    }break;
+                //schedule new performance measurement
+                //this->scheduleLoad(this->perforMesurementPeriod, MEASURE_COMM_PERFORMANCE, "commperform", msg);
+            }break;
 
-    case AGENTPAIR_MONITOR_MESSAGE:
-    {
-        AgentPair * c = (AgentPair *)(msg->getContextPointer());
-        int64_t s = c->getAgentS()->getId();
-        int64_t d = c->getAgentD()->getId();
-        //oVision->updateCommunicationState(s,d);
-    }break;
+            case AGENTPAIR_MONITOR_MESSAGE:
+            {
+                AgentPair * c = (AgentPair *)(msg->getContextPointer());
+                int64_t s = c->getAgentS()->getId();
+                int64_t d = c->getAgentD()->getId();
+                //oVision->updateCommunicationState(s,d);
+            }break;
 
-    case COLLECT_MOBILITY:
-    {
-        //std::cout << endl << "begin schedule new  mobility collect "<< endl;
+            case COLLECT_MOBILITY:
+            {
+                //std::cout << endl << "begin schedule new  mobility collect "<< endl;
 
-        //schedule new  mobility collect
-        if (oKnownGlobal->mobilityPeriod == -1){
-            double  tempx = (double(rand()%100+1)/10)/2.5;
-            this->scheduleLoad(tempx, COLLECT_MOBILITY, "collectMobility", msg);
-            //std::cout << endl << "range Mobility= "<< tempx << endl;
-        }
+                //schedule new  mobility collect
+                if (oKnownGlobal->mobilityPeriod == -1){
+                    double  tempx = (double(rand()%100+1)/10)/2.5;
+                    this->scheduleLoad(tempx, COLLECT_MOBILITY, "collectMobility", msg);
+                    //std::cout << endl << "range Mobility= "<< tempx << endl;
+                }
 
-        if (oKnownGlobal->mobilityPeriod >0)
-            this->scheduleLoad(this->oKnownGlobal->mobilityPeriod, COLLECT_MOBILITY, "collectMobility", msg);
+                if (oKnownGlobal->mobilityPeriod >0)
+                    this->scheduleLoad(this->oKnownGlobal->mobilityPeriod, COLLECT_MOBILITY, "collectMobility", msg);
 
-        this->changeLocalMobility();
+                this->changeLocalMobility();
 
-        //std::cout << endl << "end schedule new  mobility collect "<< endl;
+                //std::cout << endl << "end schedule new  mobility collect "<< endl;
 
-    }break;
+            }break;
 
-    case SEND_MONITOR_EVT:
-    {
-        //std::cout << endl << "begin send monitor message "<< endl;
+            case SEND_MONITOR_EVT:
+            {
+                //std::cout << endl << "begin send monitor message "<< endl;
 
-        //send monitor message
-        loadMonitor(msg);
+                //send monitor message
+                loadMonitor(msg);
 
-        //std::cout << endl << "end send monitor message "<< endl;
+                //std::cout << endl << "end send monitor message "<< endl;
 
-    }break;
+            }break;
 
-    case SEND_ICM_EVT:
-    {
-        //std::cout << endl << "begin send load Application message "<< endl;
-        loadApp(msg);
-        this->scheduleLoad(this->loadPeriodApp, SEND_ICM_EVT, "appMessage", msg);
-        //std::cout << endl << "end send load Application message "<< endl;
+            case SEND_ICM_EVT:
+            {
+                //std::cout << endl << "begin send load Application message "<< endl;
+                loadApp(msg);
+                this->scheduleLoad(this->loadPeriodApp, SEND_ICM_EVT, "appMessage", msg);
+                //std::cout << endl << "end send load Application message "<< endl;
 
-    }break;
+            }break;
 
 
-   default:
-    {
-        if (msg)
-            EV << "APP: Error: Got Self Message of unknown kind! Name: " << msg->getName() << endl;
-    }break;
+           default:
+            {
+                if (msg)
+                    EV << "APP: Error: Got Self Message of unknown kind! Name: " << msg->getName() << endl;
+            }break;
 
-    }
+        }//end switchcase
+    }//endif
 }
 
 void Icarqoc::handleLowerMsg(cMessage* msg)
@@ -266,7 +271,9 @@ void Icarqoc::handleLowerMsg(cMessage* msg)
         this->dataMsgTeste  << this->oMsgManager->getMsgHeaderInfoTrace( wsm, "receiving", false, wsm->getTimestamp(), 4, this->myData->getId()) << std::endl;
 
         cancelAndDelete(wsm);
-    } else std::cout << " msg e null" << std::endl;
+    } else {
+        std::cout << " msg e null" << std::endl;
+    }
 
     //std::cout << endl << "end receive network message "<< endl;
 

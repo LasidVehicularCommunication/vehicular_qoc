@@ -35,8 +35,9 @@ double MessageManager::getMsgRecvPower_dBm(ICRMessage* m){
 
     DeciderResult80211 *macRes = dynamic_cast<DeciderResult80211 *>(PhyToMacControlInfo::getDeciderResult(m));
     ASSERT(macRes);
-    PhyToMacControlInfo * x = new PhyToMacControlInfo(macRes);
-    cout << endl << "SourceAddress " << x->getSourceAddress() << endl;
+    // TESTE PARA get the mac address  ainda nao resolvido...
+    //PhyToMacControlInfo * x = new PhyToMacControlInfo(macRes);
+    //cout << endl << "SourceAddress " << x->getSourceAddress() << endl;
     return macRes->getRecvPower_dBm();
 }
 
@@ -101,22 +102,27 @@ ICRMessage * MessageManager::sendIcarMessageService(int64_t sourceId, int64_t ne
 void MessageManager::sendICRMessage(ICRMessage * wsm, std::string evento, std::string ruleRoute)
 {
 
-    int calcRang = rand() % 2;
-    if ((this->oIcarQoc->oIcarContext->oKnownGlobal->lostMessageRate!=0
-            && calcRang ==0
-            && (this->oIcarQoc->getLostMsgAmount()
-            <= (this->oIcarQoc->oKnownGlobal->lostMessageRate/100)*this->oIcarQoc->oKnownGlobal->maxMsgAmountVehicle)))
+    int calcRang;
+    if ((this->oIcarQoc->oKnownGlobal->maxMsgAmountVehicle >= this->oIcarQoc->seqMsg) )
     {
-        //emulating lost messages using parameter lostMessageRate
-        this->oIcarQoc->addLostMsgAmount();
-
-    }else {
-        // sending message
-        this->oIcarQoc->sendDown( ((cMessage*)(wsm)));
-        this->oIcarQoc->dataNetwork  << this->getMsgHeaderInfoTrace( wsm,evento, false, wsm->getTimestamp(), 32, this->oIcarQoc->getMyData()->getId()) << std::endl;
-        this->oIcarQoc->oIcarContext->getMyData()->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgTransmittedMsg();
+        calcRang = rand() % 2;
+        if ((this->oIcarQoc->oIcarContext->oKnownGlobal->lostMessageRate!=0
+                && calcRang ==0
+                && (this->oIcarQoc->getLostMsgAmount()
+                <= (this->oIcarQoc->oKnownGlobal->lostMessageRate/100)*this->oIcarQoc->oKnownGlobal->maxMsgAmountVehicle)))
+        {
+            //emulating lost messages using parameter lostMessageRate
+            this->oIcarQoc->addLostMsgAmount();
+        }else {
+            // sending message
+            this->oIcarQoc->sendDown( ((cMessage*)(wsm)));
+            this->oIcarQoc->dataNetwork  << this->getMsgHeaderInfoTrace( wsm,evento, false, wsm->getTimestamp(), 32, this->oIcarQoc->getMyData()->getId()) << std::endl;
+            this->oIcarQoc->oIcarContext->getMyData()->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgTransmittedMsg();
+        }
+        std::cout  << "this->oIcarQoc->lostMsgAmount = " <<  this->oIcarQoc->lostMsgAmount <<
+                "oKnownGlobal->maxMsgAmountVehicle= " << this->oIcarQoc->oKnownGlobal->maxMsgAmountVehicle <<
+                "this->oIcarQoc->seqMsg = " << this->oIcarQoc->seqMsg << endl;
     }
-
 }
 
 

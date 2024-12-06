@@ -47,7 +47,9 @@ void KnownGlobal::initialize(int stage) {
 
        if (monitorPeriod!=0)
            this->maxMsgAmountVehicle = (finishSimulation - startSimulation)/ monitorPeriod;
-       else this->maxMsgAmountVehicle = (finishSimulation - startSimulation)/0.5; //TEMPORARIO => ATENCAO DEVE VARIAR DE ACORDO AO INTERVALO RANDÃ”MICO PARA DISTRIBUIÃ‡ÃƒO DE PERÃ�ODO
+       else this->maxMsgAmountVehicle = (finishSimulation - startSimulation)/0.5;
+            //TEMPORARIO => ATENCAO DEVE VARIAR DE ACORDO AO INTERVALO RANDOMICO PARA DISTRIBUICAO DE PERIODO
+            //              MEDIDO AO MENOR PERÍODO DO INTERVALO ALEATORIOS NO ENVIO DA MENSAGEM...
 
        //std::cout << endl<< "maxMsgAmountVehicle= " << maxMsgAmountVehicle;
        // vehicle amount

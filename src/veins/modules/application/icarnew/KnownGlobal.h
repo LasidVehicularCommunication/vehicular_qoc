@@ -72,7 +72,7 @@ class KnownGlobal : public cSimpleModule
    GeneralCommunicationService oGeneralCommunicationService;
    //double **distMatrix;
    int startSimulation; //time stamp to begin the message transmitting
-   int finishSimulation; //time stamp to begin the message transmitting
+   int finishSimulation; //time stamp to finish the message transmitting
    int maxMsgAmountVehicle;
    double loadPeriodApp; //application period load
    long vehicleAmout; //vehicle amount in the simulation

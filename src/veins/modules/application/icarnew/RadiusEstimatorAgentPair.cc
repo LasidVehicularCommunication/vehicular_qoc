@@ -28,23 +28,19 @@ double RadiusEstimatorAgentPair::getSignalRange(double transPower_dbm, double d_
 
     double transPower_domw = std::pow(10, (transPower_dbm/10));
       double transPower_dmw = std::pow(10, (this->sensitivityPower_dbm/10));
-      std::cout << endl << " teste aqui" << endl;
       double x = transPower_dmw / transPower_domw;
       double raizx = std::sqrt(x);
-      std::cout << endl << "transPower_dbm=  " << transPower_dbm <<  "   sensitivityPower_dbm=" << sensitivityPower_dbm;
+      //std::cout << endl << "transPower_dbm=  " << transPower_dbm <<  "   sensitivityPower_dbm=" << sensitivityPower_dbm;
 
       double d = (d_lr / raizx);
-      std::cout << endl << "x= " << transPower_dmw << "/" << transPower_domw << "  square root=" << raizx << "   dist=" << d << " dist=" << d_lr << "/" << raizx;
+      //std::cout << endl << "x= " << transPower_dmw << "/" << transPower_domw << "  square root=" << raizx << "   dist=" << d << " dist=" << d_lr << "/" << raizx;
 
-      std::cout << endl << "radius= " << d;
+      //std::cout << endl << "radius= " << d;
 
       if (radiusSecurity>0){
             if (d<=radiusSecurity) return d;
             else return radiusSecurity;
         }
 
-      return d;
-
-      return d;
 
 }
