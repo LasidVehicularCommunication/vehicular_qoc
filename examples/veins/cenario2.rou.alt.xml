@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-01-23 14:54:06 by Eclipse SUMO duarouter Version 1.11.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="cenario2.net.xml"/>
+        <route-files value="cenario2.xml"/>
+    </input>
+
+    <output>
+        <output-file value="cenario2.rou.xml"/>
+        <alternatives-output value="cenario2.rou.alt.xml"/>
+    </output>
+
+    <processing>
+        <randomize-flows value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="vtype0" maxSpeed="10.00" color="yellow"/>
+    <vehicle id="flow1.0" type="vtype0" depart="35.35" departLane="random" color="red">
+        <routeDistribution last="0">
+            <route cost="302.09" probability="1.00000000" edges="59287948#0 59287948#1 59287948#2 59287948#3 59287948#4 59287948#5 59287948#6 59287948#7 59287948#8 392287070#0 392287070#1 392287070#2 392287070#3 392287070#4 392287070#5 392274542#0 392274542#1 175176073#0 175176073#1 392274540 178988006 981834893 178988007 981828557 981828558 29201441#0 29201441#1 29201441#2 29201441#3 29201440 29201443#0 29201443#1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="flow1.1" type="vtype0" depart="75.18" departLane="random" color="red">
+        <routeDistribution last="0">
+            <route cost="302.09" probability="1.00000000" edges="59287948#0 59287948#1 59287948#2 59287948#3 59287948#4 59287948#5 59287948#6 59287948#7 59287948#8 392287070#0 392287070#1 392287070#2 392287070#3 392287070#4 392287070#5 392274542#0 392274542#1 175176073#0 175176073#1 392274540 178988006 981834893 178988007 981828557 981828558 29201441#0 29201441#1 29201441#2 29201441#3 29201440 29201443#0 29201443#1"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="flow1.2" type="vtype0" depart="88.65" departLane="random" color="red">
+        <routeDistribution last="0">
+            <route cost="302.09" probability="1.00000000" edges="59287948#0 59287948#1 59287948#2 59287948#3 59287948#4 59287948#5 59287948#6 59287948#7 59287948#8 392287070#0 392287070#1 392287070#2 392287070#3 392287070#4 392287070#5 392274542#0 392274542#1 175176073#0 175176073#1 392274540 178988006 981834893 178988007 981828557 981828558 29201441#0 29201441#1 29201441#2 29201441#3 29201440 29201443#0 29201443#1"/>
+        </routeDistribution>
+    </vehicle>
+</routes>

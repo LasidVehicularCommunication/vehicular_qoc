@@ -1,0 +1,18 @@
+;AgentId0;agentName0;ageCurrentPos0;maxSpeed0;currUpdatePosTime0;acceleration0;angleRad0;currentPosx0;currentPosy0;currentPosz0;speed0;lastUpdatePosTime0;lastPosx0;lastPosy0;lastPosz0;lastSpeed0;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
+;1;1;0;41.67;401;0;-0.412863;2763.72;1183.05;1.895;8.92673;400.9;2763.72;1183.05;1.895;8.92673;0;0;0;0;0
+;0;0;0;41.67;411;0;-0.412863;2759.79;1184.76;1.895;9.03101;410.9;2759.79;1184.76;1.895;9.03101;0;0;0;0;0
+;2;2;0;41.67;413;0;-0.412863;2759.22;1185.02;1.895;9.38943;412.9;2759.22;1185.02;1.895;9.38943;0;0;0;0;0
+;AgentId0;agentName0;ageCurrentPos0;maxSpeed0;currUpdatePosTime0;acceleration0;angleRad0;currentPosx0;currentPosy0;currentPosz0;speed0;lastUpdatePosTime0;lastPosx0;lastPosy0;lastPosz0;lastSpeed0;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
+;2;2;0;41.67;199;0;-0.412863;2759.3;1184.98;1.895;15.8192;198.9;2759.3;1184.98;1.895;15.8192;0;0;0;0;0
+;4;4;0;41.67;203;0;-0.412863;2758.95;1185.13;1.895;15.9369;202.9;2758.95;1185.13;1.895;15.9369;0;0;0;0;0
+;1;1;0;41.67;216;0;-1.74441;162.548;951.148;1.895;15.9686;215.9;162.548;951.148;1.895;15.9686;0;0;0;0;0
+;3;3;0;41.67;219;0;-1.74441;161.998;948.014;1.895;15.9474;218.9;161.998;948.014;1.895;15.9474;0;0;0;0;0
+;5;5;0;41.67;223;0;-1.74441;162.686;951.938;1.895;15.9563;222.9;162.686;951.938;1.895;15.9563;0;0;0;0;0
+;0;0;0;41.67;248;0;-0.412863;2765.36;1182.33;1.895;15.899;247.9;2765.36;1182.33;1.895;15.899;0;0;0;0;0
+;AgentId0;agentName0;ageCurrentPos0;maxSpeed0;currUpdatePosTime0;acceleration0;angleRad0;currentPosx0;currentPosy0;currentPosz0;speed0;lastUpdatePosTime0;lastPosx0;lastPosy0;lastPosz0;lastSpeed0;Local recievedMsgTemporario;Local rateRecievedMSGPperiod;Local totalReceivedMsg;totalForwardedMsg;totalTransmittedMsg
+;0;0;0;41.67;585;0;-3.09692;2134.67;1140.02;1.895;1.55424;584.9;2134.67;1140.02;1.895;1.55424;0;0;0;0;0
+;1;1;0;41.67;585;0;-3.09712;2067.73;1140.25;1.895;1.55249;584.9;2067.73;1140.25;1.895;1.55249;0;0;0;0;0
+;2;2;0;41.67;585;0;0.325367;810.136;1525.1;1.895;1.49813;584.9;810.136;1525.1;1.895;1.49813;0;0;0;0;0
+;3;3;0;41.67;585;0;0.312502;759.075;1508.53;1.895;1.73254;584.9;759.075;1508.53;1.895;1.73254;0;0;0;0;0
+;4;4;0;41.67;585;0;-3.09331;2179.84;1138.84;1.895;1.85926;584.9;2179.84;1138.84;1.895;1.85926;0;0;0;0;0
+;5;5;0;41.67;585;0;0.312663;736.708;1501.3;1.895;1.4244;584.9;736.708;1501.3;1.895;1.4244;0;0;0;0;0

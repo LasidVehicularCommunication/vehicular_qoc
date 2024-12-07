@@ -1,8 +1,0 @@
-<routes>
-<vType id="vtype0" color="1,1,0" maxSpeed="2"/>
-
-	<flow id="flow1" type="vtype0" departLane="random" color="red" begin="0" end="120" number="3" from="59287948#0" to="29201443#1"/>
-	
-	<flow id="flow2" type="vtype0" departLane="random" color="blue" begin="0" end="120" number="3" from="394040558#0" to="76691913#1"/>
-	
-</routes>
