@@ -1,0 +1,150 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Packet <i>BaseFrame1609_4</i></h2>
+<b>File: <a href="src-veins-modules-messages-BaseFrame1609_4.msg.html">src/veins/modules/messages/BaseFrame1609_4.msg</a></b><br/><p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-messages-BaseFrame1609_4-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="src-veins-modules-messages-BaseFrame1609_4.html" title="Packet BaseFrame1609_4" alt="" coords="5,5,148,31">
+<area shape="rect" id="node2" href="src-veins-base-utils-LAddress::L2Type.html" title="Class LAddress::L2Type" alt="" coords="9,79,144,104">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-messages-BaseFrame1609_4-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="src-veins-modules-messages-BaseFrame1609_4.html" title="Packet BaseFrame1609_4" alt="" coords="388,5,531,31">
+<area shape="rect" id="node2" href="src-veins-modules-messages-DemoSafetyMessage.html" title="Packet DemoSafetyMessage" alt="" coords="5,79,167,104">
+<area shape="rect" id="node3" href="src-veins-modules-messages-DemoServiceAdvertisment.html" title="Packet DemoServiceAdvertisment" alt="" coords="191,79,389,104">
+<area shape="rect" id="node4" href="src-veins-modules-application-icarnew-messages-ICMessage.html" title="Packet ICMessage" alt="" coords="413,79,506,104">
+<area shape="rect" id="node5" href="src-veins-modules-application-icarnew-messages-ICRMessage.html" title="Class ICRMessage" alt="" coords="531,79,633,104">
+<area shape="rect" id="node6" href="src-veins-modules-application-traci-TraCIDemo11pMessage.html" title="Packet TraCIDemo11pMessage" alt="" coords="657,79,832,104">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="src-veins-modules-messages-DemoSafetyMessage.html">DemoSafetyMessage</a>
+   </td>
+   <td>
+<i>packet</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="src-veins-modules-messages-DemoServiceAdvertisment.html">DemoServiceAdvertisment</a>
+   </td>
+   <td>
+<i>packet</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="src-veins-modules-application-icarnew-messages-ICMessage.html">ICMessage</a>
+   </td>
+   <td>
+<i>packet</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="src-veins-modules-application-icarnew-messages-ICRMessage.html">ICRMessage</a>
+   </td>
+   <td>
+<i>class</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="src-veins-modules-application-traci-TraCIDemo11pMessage.html">TraCIDemo11pMessage</a>
+   </td>
+   <td>
+<i>packet</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="fieldstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>channelNumber</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>Channel Number on which this packet was sent</p>
+</td>
+</tr>
+<tr class="local">
+   <td>userPriority</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>User priority with which this packet was sent (note the AC mapping rules in <a href="org.car2x.veins.modules.mac.ieee80211p.Mac1609_4.html">Mac1609_4</a>::mapUserPriority)</p>
+</td>
+</tr>
+<tr class="local">
+   <td>psid</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>Unique number to identify the service</p>
+</td>
+</tr>
+<tr class="local">
+   <td>recipientAddress</td>
+   <td>
+      <i>
+<a href="src-veins-base-utils-LAddress::L2Type.html">LAddress::L2Type</a></i>
+   </td>
+   <td>
+<p>Recipient of frame (-1 for any)</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseFrame1609_4</span><span style="color: #000000; ">
+{
+    </span><span style="color: #808080; font-style: italic; ">//Channel Number on which this packet was sent
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">channelNumber</span><span style="color: #000000; ">;
+    </span><span style="color: #808080; font-style: italic; ">//User priority with which this packet was sent (note the AC mapping rules in Mac1609_4::mapUserPriority)
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">userPriority</span><span style="color: #000000; "> = </span><span style="color: #008000; ">7</span><span style="color: #000000; ">;
+    </span><span style="color: #808080; font-style: italic; ">//Unique number to identify the service
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">psid</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+    </span><span style="color: #808080; font-style: italic; ">//Recipient of frame (-1 for any)
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">LAddress</span><span style="color: #000000; ">::</span><span style="color: #000000; ">L2Type</span><span style="color: #000000; "> </span><span style="color: #000000; ">recipientAddress</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>
