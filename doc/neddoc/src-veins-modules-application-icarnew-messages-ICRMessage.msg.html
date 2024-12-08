@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Msg File <i>src/veins/modules/application/icarnew/messages/ICRMessage.msg</i></h2>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="src-veins-modules-application-icarnew-messages-ICRMessage.html">ICRMessage</a>
+   </td>
+   <td>
+<i>class</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// TODO generated message class
+//
+</span><span style="color: #000000; ">
+</span><span style="color: #000000; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">veins</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">messages</span><span style="color: #000000; ">.</span><span style="color: #000000; ">BaseFrame1609_4</span><span style="color: #000000; ">;
+</span><span style="color: #000000; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">veins</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">application</span><span style="color: #000000; ">.</span><span style="color: #000000; ">icarnew</span><span style="color: #000000; ">.</span><span style="color: #000000; ">messages</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ICRNode</span><span style="color: #000000; ">;
+
+
+</span><span style="color: #808080; font-style: italic; ">//cplusplus{{
+</span><span style="color: #0000ff; font-style: italic; ">//#include &quot;ICRNode.h&quot;
+//#include &quot;veins/modules/application/icarnew/messages/ICRNode.h&quot;
+</span><span style="color: #808080; font-style: italic; ">//}}
+</span><span style="color: #000000; ">
+</span><span style="color: #800000; font-weight: bold; ">namespace</span><span style="color: #000000; "> </span><span style="color: #000000; ">veins</span><span style="color: #000000; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">class</span><span style="color: #000000; "> </span><span style="color: #000000; ">ICRMessage</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseFrame1609_4</span><span style="color: #000000; "> {
+   </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">numMsg</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// number of message
+</span><span style="color: #000000; ">   </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">msgType</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// message type 
+</span><span style="color: #000000; ">   </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">msgLifeTime</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// message life time - 16 bits
+</span><span style="color: #000000; ">   </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">validityDataTimeStamp</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// validity timeout of the menor neighborhood condition of the route nodes
+</span><span style="color: #000000; ">   </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">confidence</span><span style="color: #000000; ">;
+   </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">hopNumber</span><span style="color: #000000; ">;
+   </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">msgTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da mensagem
+</span><span style="color: #000000; ">
+	</span><span style="color: #000000; ">ICRNode</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceNode</span><span style="color: #000000; ">;
+
+	</span><span style="color: #000000; ">ICRNode</span><span style="color: #000000; "> </span><span style="color: #000000; ">transmissorNode</span><span style="color: #000000; ">;
+
+	</span><span style="color: #000000; ">ICRNode</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextNode</span><span style="color: #000000; ">;
+	
+	</span><span style="color: #000000; ">ICRNode</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinyNode</span><span style="color: #000000; ">;
+	
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

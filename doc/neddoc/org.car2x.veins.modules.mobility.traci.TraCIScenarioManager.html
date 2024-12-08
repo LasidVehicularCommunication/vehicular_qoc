@@ -1,0 +1,373 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Simple Module <i>TraCIScenarioManager</i></h2>
+<b>Package:</b> org.car2x.veins.modules.mobility.traci<br/><b>File: <a href="src-veins-modules-mobility-traci-TraCIScenarioManager.ned.html">src/veins/modules/mobility/traci/TraCIScenarioManager.ned</a></b><br/><p><a href="../doxy/classveins_1_1_tra_c_i_scenario_manager.html" target="mainframe"><b>C++ definition</b></a></p>
+<p>(no description)</p><img src="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager.html" title="TraCIScenarioManager" alt="TraCIScenarioManager" coords="0,31,189,71">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager.html" title="Simple Module TraCIScenarioManager" alt="" coords="5,5,172,31">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager.html" title="Simple Module TraCIScenarioManager" alt="" coords="144,5,311,31">
+<area shape="rect" id="node2" href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerForker.html" title="Simple Module TraCIScenarioManagerForker" alt="" coords="5,79,212,104">
+<area shape="rect" id="node3" href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html" title="Simple Module TraCIScenarioManagerLaunchd" alt="" coords="237,79,458,104">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerForker.html">TraCIScenarioManagerForker</a>
+   </td>
+   <td>
+<i>simple&nbsp;module</i>
+   </td>
+   <td>
+
+<p>Extends the <a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManager.html">TraCIScenarioManager</a> to automatically fork an instance of SUMO when needed.</p>
+
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">TraCIScenarioManagerLaunchd</a>
+   </td>
+   <td>
+<i>simple&nbsp;module</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>connectAt</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0s</td>
+   <td>
+<p>when to connect to TraCI server (must be the initial timestep of the server)</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>firstStepAt</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>-1s</td>
+   <td>
+<p>when to start synchronizing with the TraCI server (-1: immediately after connecting)</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>updateInterval</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1s</td>
+   <td>
+<p>time interval of hosts' position updates</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>moduleType</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"org.car2x.veins.nodes.Car"</td>
+   <td>
+<p>module type to be used in the simulation for each managed vehicle</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>moduleName</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"node"</td>
+   <td>
+<p>module name to be used in the simulation for each managed vehicle</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>moduleDisplayString</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"*='i=veins/node/car;is=vs'"</td>
+   <td>
+<p>module displayString to be used in the simulation for each managed vehicle
+display strings key-value pairs needs to be protected with single quotes, as they use an = sign as the type mappings. For example
+<pre>
+*.manager.moduleDisplayString = "'i=block/process'"
+*.manager.moduleDisplayString = "a='i=block/process' b='i=misc/sun'"
+</pre></p>
+<p>moduleDisplayString can also be left empty:
+<pre>
+*.manager.moduleDisplayString = ""
+</pre></p>
+   </td>
+</tr>
+<tr class="local">
+   <td>trafficLightModuleType</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>module type to be used in the simulation for each managed traffic light</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>trafficLightModuleName</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"tls"</td>
+   <td>
+<p>module name to be used in the simulation for each managed traffic light</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>trafficLightFilter</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>filter string to select which tls shall be subscribed, list sumo IDs separated by spaces</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>trafficLightModuleDisplayString</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"i=misc/node2;is=vs;r=0,,#707070,1"</td>
+   <td>
+<p>module displayString to be used in the simulation for each managed traffic light</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>host</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"localhost"</td>
+   <td>
+<p>server hostname</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>port</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>9999</td>
+   <td>
+<p>server port (-1: automatic)</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>seed</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>-1</td>
+   <td>
+<p>seed value to set in launch configuration, if missing (-1: current run number)</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>autoShutdown</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>true</td>
+   <td>
+<p>Shutdown module as soon as no more vehicles are in the simulation</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>margin</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>25</td>
+   <td>
+<p>margin to add to all received vehicle positions</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>roiRoads</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>which roads (e.g. "hwy1 hwy2") are considered to consitute the region of interest, if not empty</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>roiRects</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>which rectangles (e.g. "0,0-10,10 20,20-30,30) are considered to consitute the region of interest, if not empty. Note that these rectangles have to use TraCI (SUMO) coordinates and not OMNeT++. They can be easily read from sumo-gui.</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>penetrationRate</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1</td>
+   <td>
+<p>the probability of a vehicle being equipped with Car2X technology</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>ignoreGuiCommands</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>whether to ignore all TraCI commands that only make sense when the server has a graphical user interface</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>display</td>
+   <td><i>i=block/network2</i></td>
+   <td></td>
+</tr>
+<tr>
+   <td>class</td>
+   <td><i>veins::TraCIScenarioManager</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Signals:</h3>
+<table class="signalstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="unit">Unit</th>
+   </tr>
+<tr class="local">
+   <td>org_car2x_veins_modules_mobility_traciTimestepBegin</td>
+   <td><i>
+simtime_t   </i></td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>org_car2x_veins_modules_mobility_traciTimestepEnd</td>
+   <td><i>
+simtime_t   </i></td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>org_car2x_veins_modules_mobility_traciInitialized</td>
+   <td><i>
+bool   </i></td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>org_car2x_veins_modules_mobility_traciModulePreInit</td>
+   <td><i>
+cModule   </i></td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>org_car2x_veins_modules_mobility_traciModuleAdded</td>
+   <td><i>
+cModule   </i></td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>org_car2x_veins_modules_mobility_traciModuleRemoved</td>
+   <td><i>
+cModule   </i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">TraCIScenarioManager</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/network2&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">org_car2x_veins_modules_mobility_traciInitialized</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">org_car2x_veins_modules_mobility_traciModulePreInit</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #000000; ">cModule</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">org_car2x_veins_modules_mobility_traciModuleAdded</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #000000; ">cModule</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">org_car2x_veins_modules_mobility_traciModuleRemoved</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #000000; ">cModule</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">org_car2x_veins_modules_mobility_traciTimestepBegin</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@signal</span><span style="color: #000000; ">[</span><span style="color: #000000; ">org_car2x_veins_modules_mobility_traciTimestepEnd</span><span style="color: #000000; ">](</span><span style="color: #000000; ">type</span><span style="color: #000000; ">=</span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">veins</span><span style="color: #000000; ">::</span><span style="color: #000000; ">TraCIScenarioManager</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">connectAt</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">0</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// when to connect to TraCI server (must be the initial timestep of the server)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">firstStepAt</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(-</span><span style="color: #008000; ">1</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// when to start synchronizing with the TraCI server (-1: immediately after connecting)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">updateInterval</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;s&quot;</span><span style="color: #000000; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// time interval of hosts' position updates
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">moduleType</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;org.car2x.veins.nodes.Car&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// module type to be used in the simulation for each managed vehicle
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">moduleName</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;node&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// module name to be used in the simulation for each managed vehicle
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// module displayString to be used in the simulation for each managed vehicle
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// display strings key-value pairs needs to be protected with single quotes, as they use an = sign as the type mappings. For example
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// </span><span style="color: #800000; ">&lt;pre&gt;</span><span style="color: #808080; font-style: italic; ">
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// *.manager.moduleDisplayString = &quot;'i=block/process'&quot;
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// *.manager.moduleDisplayString = &quot;a='i=block/process' b='i=misc/sun'&quot;
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// </span><span style="color: #800000; ">&lt;/pre&gt;</span><span style="color: #808080; font-style: italic; ">
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// moduleDisplayString can also be left empty:
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// </span><span style="color: #800000; ">&lt;pre&gt;</span><span style="color: #808080; font-style: italic; ">
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// *.manager.moduleDisplayString = &quot;&quot;
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// </span><span style="color: #800000; ">&lt;/pre&gt;</span><span style="color: #808080; font-style: italic; ">
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">moduleDisplayString</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;*='i=veins/node/car;is=vs'&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">trafficLightModuleType</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// module type to be used in the simulation for each managed traffic light
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">trafficLightModuleName</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;tls&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// module name to be used in the simulation for each managed traffic light
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">trafficLightFilter</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// filter string to select which tls shall be subscribed, list sumo IDs separated by spaces
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">trafficLightModuleDisplayString</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=misc/node2;is=vs;r=0,,#707070,1&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// module displayString to be used in the simulation for each managed traffic light
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">host</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;localhost&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// server hostname
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">port</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">9999</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// server port (-1: automatic)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">seed</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(-</span><span style="color: #008000; ">1</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// seed value to set in launch configuration, if missing (-1: current run number)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">autoShutdown</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">true</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// Shutdown module as soon as no more vehicles are in the simulation
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">margin</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">25</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// margin to add to all received vehicle positions
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">roiRoads</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// which roads (e.g. &quot;hwy1 hwy2&quot;) are considered to consitute the region of interest, if not empty
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">roiRects</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;&quot;</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// which rectangles (e.g. &quot;0,0-10,10 20,20-30,30) are considered to consitute the region of interest, if not empty. Note that these rectangles have to use TraCI (SUMO) coordinates and not OMNeT++. They can be easily read from sumo-gui.
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">penetrationRate</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">//the probability of a vehicle being equipped with Car2X technology
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">ignoreGuiCommands</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">false</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// whether to ignore all TraCI commands that only make sense when the server has a graphical user interface
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Packet <i>TraCIDemo11pMessage</i></h2>
+<b>File: <a href="src-veins-modules-application-traci-TraCIDemo11pMessage.msg.html">src/veins/modules/application/traci/TraCIDemo11pMessage.msg</a></b><br/><p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-application-traci-TraCIDemo11pMessage-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="src-veins-modules-application-traci-TraCIDemo11pMessage.html" title="Packet TraCIDemo11pMessage" alt="" coords="5,5,180,31">
+<area shape="rect" id="node2" href="src-veins-base-utils-LAddress::L2Type.html" title="Class LAddress::L2Type" alt="" coords="25,79,160,104">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-application-traci-TraCIDemo11pMessage-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="src-veins-modules-application-traci-TraCIDemo11pMessage.html" title="Packet TraCIDemo11pMessage" alt="" coords="5,79,180,104">
+<area shape="rect" id="node2" href="src-veins-modules-messages-BaseFrame1609_4.html" title="Packet BaseFrame1609_4" alt="" coords="21,5,164,31">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="src-veins-modules-messages-BaseFrame1609_4.html">BaseFrame1609_4</a>
+   </td>
+   <td>
+<i>packet</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="fieldstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>demoData</td>
+   <td>
+      <i>
+string</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>senderAddress</td>
+   <td>
+      <i>
+<a href="src-veins-base-utils-LAddress::L2Type.html">LAddress::L2Type</a></i>
+   </td>
+   <td></td>
+</tr>
+<tr class="local">
+   <td>serial</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td></td>
+</tr>
+<tr class="inherited">
+   <td>channelNumber</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>Channel Number on which this packet was sent</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>userPriority</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>User priority with which this packet was sent (note the AC mapping rules in <a href="org.car2x.veins.modules.mac.ieee80211p.Mac1609_4.html">Mac1609_4</a>::mapUserPriority)</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>psid</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>Unique number to identify the service</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>recipientAddress</td>
+   <td>
+      <i>
+<a href="src-veins-base-utils-LAddress::L2Type.html">LAddress::L2Type</a></i>
+   </td>
+   <td>
+<p>Recipient of frame (-1 for any)</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">TraCIDemo11pMessage</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseFrame1609_4</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">demoData</span><span style="color: #000000; ">;
+    </span><span style="color: #000000; ">LAddress</span><span style="color: #000000; ">::</span><span style="color: #000000; ">L2Type</span><span style="color: #000000; "> </span><span style="color: #000000; ">senderAddress</span><span style="color: #000000; "> = -</span><span style="color: #008000; ">1</span><span style="color: #000000; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">serial</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>
