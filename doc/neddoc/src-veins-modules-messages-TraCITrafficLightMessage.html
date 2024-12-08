@@ -1,0 +1,96 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Message <i>TraCITrafficLightMessage</i></h2>
+<b>File: <a href="src-veins-modules-messages-TraCITrafficLightMessage.msg.html">src/veins/modules/messages/TraCITrafficLightMessage.msg</a></b><br/>
+<p>NOTE: Currently only supports changes of the IDs (due to variation in field types)</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-messages-TraCITrafficLightMessage-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="src-veins-modules-messages-TraCITrafficLightMessage.html" title="Message TraCITrafficLightMessage" alt="" coords="5,5,188,31">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-messages-TraCITrafficLightMessage-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="src-veins-modules-messages-TraCITrafficLightMessage.html" title="Message TraCITrafficLightMessage" alt="" coords="5,5,188,31">
+</map>
+<h3 class="subtitle">Fields:</h3>
+<table class="fieldstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>tlId</td>
+   <td>
+      <i>
+string</i>
+   </td>
+   <td>
+<p>traffic light id</p>
+</td>
+</tr>
+<tr class="local">
+   <td>changedAttribute</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>what field/attrbute of the traffic light changed?</p>
+</td>
+</tr>
+<tr class="local">
+   <td>oldValue</td>
+   <td>
+      <i>
+string</i>
+   </td>
+   <td>
+<p>value before the change</p>
+</td>
+</tr>
+<tr class="local">
+   <td>newValue</td>
+   <td>
+      <i>
+string</i>
+   </td>
+   <td>
+<p>value that is to be set / was newly set</p>
+</td>
+</tr>
+<tr class="local">
+   <td>changeSource</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>where did the change originate</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// NOTE: Currently only supports changes of the IDs (due to variation in field types)
+</span><span style="color: #800000; font-weight: bold; ">message</span><span style="color: #000000; "> </span><span style="color: #000000; ">TraCITrafficLightMessage</span><span style="color: #000000; ">
+{
+    </span><span style="color: #808080; font-style: italic; ">// traffic light id
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">tlId</span><span style="color: #000000; ">;
+    </span><span style="color: #808080; font-style: italic; ">// what field/attrbute of the traffic light changed?
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">changedAttribute</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@enum</span><span style="color: #000000; ">(</span><span style="color: #000000; ">TrafficLightAtrributeType</span><span style="color: #000000; ">);
+    </span><span style="color: #808080; font-style: italic; ">// value before the change
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">oldValue</span><span style="color: #000000; ">;
+    </span><span style="color: #808080; font-style: italic; ">// value that is to be set / was newly set
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">newValue</span><span style="color: #000000; ">;
+    </span><span style="color: #808080; font-style: italic; ">// where did the change originate
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">changeSource</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@enum</span><span style="color: #000000; ">(</span><span style="color: #000000; ">TrafficLightChangeSource</span><span style="color: #000000; ">);
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>
