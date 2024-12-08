@@ -79,6 +79,14 @@ Abaixo está o link para o PDF que ilustra a modelagem de classes utilizada na s
 <a href="https://emerald-kizzie-19.tiiny.site/" target="_blank">📄 Diagrama de Classe - Modelagem</a>
 
 
+## Documentação do Projeto
+
+A documentação detalhada do projeto foi gerada utilizando o Neddoc do OMNeT++. Ela inclui informações sobre a estrutura das classes, funções, e outros aspectos importantes do sistema.
+
+Você pode acessar a documentação completa diretamente no repositório através do link abaixo:
+
+[📖 Documentação do Projeto](./doc/index.html)
+
 
 ## Contato
 
