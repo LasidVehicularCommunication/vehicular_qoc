@@ -1,0 +1,108 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Module Interface <i>IChannelAccess</i></h2>
+<b>Package:</b> org.car2x.veins.base.connectionManager<br/><b>File: <a href="src-veins-base-connectionManager-IChannelAccess.ned.html">src/veins/base/connectionManager/IChannelAccess.ned</a></b><br/>
+<p>Common parameters for modules based on ChannelAccess class</p>
+<img src="org.car2x.veins.base.connectionManager.IChannelAccess-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.car2x.veins.base.connectionManager.IChannelAccess.html" title="IChannelAccess" alt="IChannelAccess" coords="0,31,218,71">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.car2x.veins.base.connectionManager.IChannelAccess-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="org.car2x.veins.base.connectionManager.IChannelAccess.html" title="Module Interface IChannelAccess" alt="" coords="5,5,129,31">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.car2x.veins.base.connectionManager.IChannelAccess-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="org.car2x.veins.base.connectionManager.IChannelAccess.html" title="Module Interface IChannelAccess" alt="" coords="5,5,129,31">
+<area shape="rect" id="node2" href="org.car2x.veins.base.phyLayer.IWirelessPhy.html" title="Module Interface IWirelessPhy" alt="" coords="14,79,121,104">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="org.car2x.veins.base.phyLayer.IWirelessPhy.html">IWirelessPhy</a>
+   </td>
+   <td>
+<i>module&nbsp;interface</i>
+   </td>
+   <td>
+
+<p>Wireless physical layer module interface.</p>
+
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>antennaOffsetX</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>Offset of antenna position (x direction) with respect to what a <a href="org.car2x.veins.base.modules.BaseMobility.html">BaseMobility</a> module will tell us</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>antennaOffsetY</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>Offset of antenna position (y direction) with respect to what a <a href="org.car2x.veins.base.modules.BaseMobility.html">BaseMobility</a> module will tell us</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>antennaOffsetZ</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>Offset of antenna position (z direction) with respect to what a <a href="org.car2x.veins.base.modules.BaseMobility.html">BaseMobility</a> module will tell us</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>antennaOffsetYaw</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>Offset of antenna orientation (yaw) with respect to what a <a href="org.car2x.veins.base.modules.BaseMobility.html">BaseMobility</a> module will tell us</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// Common parameters for modules based on ChannelAccess class
+</span><span style="color: #800000; font-weight: bold; ">moduleinterface</span><span style="color: #000000; "> </span><span style="color: #000000; ">IChannelAccess</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">antennaOffsetX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;m&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Offset of antenna position (x direction) with respect to what a BaseMobility module will tell us
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">antennaOffsetY</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;m&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Offset of antenna position (y direction) with respect to what a BaseMobility module will tell us
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">antennaOffsetZ</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;m&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Offset of antenna position (z direction) with respect to what a BaseMobility module will tell us
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">antennaOffsetYaw</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;rad&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Offset of antenna orientation (yaw) with respect to what a BaseMobility module will tell us
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

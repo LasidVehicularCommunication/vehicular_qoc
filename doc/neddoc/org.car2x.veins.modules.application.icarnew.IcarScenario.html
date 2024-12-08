@@ -1,0 +1,675 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Network <i>IcarScenario</i></h2>
+<b>Package:</b> org.car2x.veins.modules.application.icarnew<br/><b>File: <a href="src-veins-modules-application-icarnew-IcarScenario.ned.html">src/veins/modules/application/icarnew/IcarScenario.ned</a></b><br/><p>(no description)</p><img src="org.car2x.veins.modules.application.icarnew.IcarScenario-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.car2x.veins.modules.obstacle.ObstacleControl.html" title="ObstacleControl" alt="ObstacleControl" coords="-10,27,52,82">
+<area shape="rect" href="org.car2x.veins.modules.world.annotations.AnnotationManager.html" title="AnnotationManager" alt="AnnotationManager" coords="-15,25,62,84">
+<area shape="rect" href="org.car2x.veins.base.connectionManager.ConnectionManager.html" title="ConnectionManager" alt="ConnectionManager" coords="-50,20,78,81">
+<area shape="rect" href="org.car2x.veins.base.modules.BaseWorldUtility.html" title="BaseWorldUtility" alt="BaseWorldUtility" coords="-15,21,27,80">
+<area shape="rect" href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html" title="TraCIScenarioManagerLaunchd" alt="TraCIScenarioManagerLaunchd" coords="15,30,73,91">
+<area shape="rect" href="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html" title="RoadsCanvasVisualizer" alt="RoadsCanvasVisualizer" coords="-48,20,100,81">
+<area shape="rect" href="org.car2x.veins.nodes.Car.html" title="Car" alt="Car" coords="206,289,256,346">
+<area shape="rect" href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html" title="KnownGlobal" alt="KnownGlobal" coords="-30,32,68,93">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.car2x.veins.modules.application.icarnew.IcarScenario-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="org.car2x.veins.modules.application.icarnew.IcarScenario.html" title="Network IcarScenario" alt="" coords="8,5,111,31">
+<area shape="rect" id="node2" href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html" title="Simple Module KnownGlobal" alt="" coords="5,79,113,104">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.car2x.veins.modules.application.icarnew.IcarScenario-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="org.car2x.veins.modules.application.icarnew.IcarScenario.html" title="Network IcarScenario" alt="" coords="5,79,108,104">
+<area shape="rect" id="node2" href="org.car2x.veins.nodes.Scenario.html" title="Network Scenario" alt="" coords="17,5,96,31">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="org.car2x.veins.nodes.Scenario.html">Scenario</a>
+   </td>
+   <td>
+<i>network</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="inherited">
+   <td>playgroundSizeX</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>x size of the area the nodes are in (in meters)</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td>playgroundSizeY</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>y size of the area the nodes are in (in meters)</p>
+   </td>
+</tr>
+<tr class="inherited">
+   <td>playgroundSizeZ</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>z size of the area the nodes are in (in meters)</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>isNetwork</td>
+   <td><i></i></td>
+   <td></td>
+</tr>
+<tr>
+   <td>display</td>
+   <td><i>bgb=6000,6000</i></td>
+   <td>
+<p>@display("bgb=1004,522");</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.obstacle.ObstacleControl.html">obstacles</a>.obstacles</td>
+   <td>
+      <i>xml</i>
+   </td>
+   <td>xml("<obstacles/>")</td>
+   <td>
+<p>list of obstacle types and obstacles to load</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.obstacle.ObstacleControl.html">obstacles</a>.gridCellSize</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>250</td>
+   <td>
+<p>size of square grid tiles for obstacle store</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.world.annotations.AnnotationManager.html">annotations</a>.draw</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>draw annotations?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.world.annotations.AnnotationManager.html">annotations</a>.annotations</td>
+   <td>
+      <i>xml</i>
+   </td>
+   <td>xml("<annotations/>")</td>
+   <td>
+<p>annotations to add at startup</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.base.connectionManager.ConnectionManager.html">connectionManager</a>.sendDirect</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td></td>
+   <td>
+<p>send directly to the node or create separate gates for every connection</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.base.connectionManager.ConnectionManager.html">connectionManager</a>.maxInterfDist</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>maximum interference distance [m]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.base.connectionManager.ConnectionManager.html">connectionManager</a>.drawMaxIntfDist</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>should the maximum interference distance be displayed for each node?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.base.modules.BaseWorldUtility.html">world</a>.useTorus</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>use the playground as torus?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.base.modules.BaseWorldUtility.html">world</a>.use2D</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>use a 2-dimensional world?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.connectAt</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0s</td>
+   <td>
+<p>when to connect to TraCI server (must be the initial timestep of the server)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.firstStepAt</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>-1s</td>
+   <td>
+<p>when to start synchronizing with the TraCI server (-1: immediately after connecting)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.updateInterval</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1s</td>
+   <td>
+<p>time interval of hosts' position updates</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.moduleType</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"org.car2x.veins.nodes.Car"</td>
+   <td>
+<p>module type to be used in the simulation for each managed vehicle</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.moduleName</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"node"</td>
+   <td>
+<p>module name to be used in the simulation for each managed vehicle</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.moduleDisplayString</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"*='i=veins/node/car;is=vs'"</td>
+   <td>
+<p>module displayString to be used in the simulation for each managed vehicle
+display strings key-value pairs needs to be protected with single quotes, as they use an = sign as the type mappings. For example
+<pre>
+*.manager.moduleDisplayString = "'i=block/process'"
+*.manager.moduleDisplayString = "a='i=block/process' b='i=misc/sun'"
+</pre></p>
+<p>moduleDisplayString can also be left empty:
+<pre>
+*.manager.moduleDisplayString = ""
+</pre></p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightModuleType</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>module type to be used in the simulation for each managed traffic light</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightModuleName</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"tls"</td>
+   <td>
+<p>module name to be used in the simulation for each managed traffic light</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightFilter</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>filter string to select which tls shall be subscribed, list sumo IDs separated by spaces</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.trafficLightModuleDisplayString</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"i=misc/node2;is=vs;r=0,,#707070,1"</td>
+   <td>
+<p>module displayString to be used in the simulation for each managed traffic light</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.host</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"localhost"</td>
+   <td>
+<p>server hostname</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.port</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>9999</td>
+   <td>
+<p>server port (-1: automatic)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.seed</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>-1</td>
+   <td>
+<p>seed value to set in launch configuration, if missing (-1: current run number)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.autoShutdown</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>true</td>
+   <td>
+<p>Shutdown module as soon as no more vehicles are in the simulation</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.margin</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>25</td>
+   <td>
+<p>margin to add to all received vehicle positions</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.roiRoads</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>which roads (e.g. "hwy1 hwy2") are considered to consitute the region of interest, if not empty</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.roiRects</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>which rectangles (e.g. "0,0-10,10 20,20-30,30) are considered to consitute the region of interest, if not empty. Note that these rectangles have to use TraCI (SUMO) coordinates and not OMNeT++. They can be easily read from sumo-gui.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.penetrationRate</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1</td>
+   <td>
+<p>the probability of a vehicle being equipped with Car2X technology</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.ignoreGuiCommands</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>whether to ignore all TraCI commands that only make sense when the server has a graphical user interface</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd.html">manager</a>.launchConfig</td>
+   <td>
+      <i>xml</i>
+   </td>
+   <td></td>
+   <td>
+<p>launch configuration to send to sumo-launchd.py</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.enabled</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>true</td>
+   <td>
+<p>whether to enable any of the functionality of this module</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineZIndex</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>-1</td>
+   <td>
+<p>z-index of all lines</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineColor</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>"firebrick4"</td>
+   <td>
+<p>line color of roads</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineWidth</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1</td>
+   <td>
+<p>line width of roads</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.visualizer.roads.RoadsCanvasVisualizer.html">roadsCanvasVisualizer</a>.lineWidthZoom</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>false</td>
+   <td>
+<p>whether zooming should affect line width</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.nodes.Car.html">node</a>.<a href="org.car2x.veins.base.modules.IBaseApplLayer.html">appl</a>.headerLength</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td></td>
+   <td>
+<p>length of the application message header (in bits)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.nodes.Car.html">node</a>.<a href="org.car2x.veins.base.modules.IMobility.html">veinsmobility</a>.x</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.nodes.Car.html">node</a>.<a href="org.car2x.veins.base.modules.IMobility.html">veinsmobility</a>.y</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.nodes.Car.html">node</a>.<a href="org.car2x.veins.base.modules.IMobility.html">veinsmobility</a>.z</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td></td>
+   <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.vehicleAmount</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>0</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.startSimulation</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.endSimulation</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.observation</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>double simulationDuration= default(610s) @unit(s);</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.filesDirectory</td>
+   <td>
+      <i>string</i>
+   </td>
+   <td>""</td>
+   <td>
+<p>simulation files directory;</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.simulationDataheaderLine</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>true</td>
+   <td>
+<p>if use the simulation data with header line</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.traceChangedMobility</td>
+   <td>
+      <i>bool</i>
+   </td>
+   <td>true</td>
+   <td>
+<p>gravar a atualiza&ccedil;&atilde;o do contexto quando a mobilidade eh alterada em cada veiculo</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.lostMessageRate</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0</td>
+   <td>
+<p>percentual de perda de mensagens por ve&iacute;culo</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.mobilityPeriod</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.appTypeId</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td>0</td>
+   <td>
+<p>General Communication Service of icarqoc</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.loadPeriodApp</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0</td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.deliveryDelay</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0</td>
+   <td>
+<p>atraso maximo tolerado pela aplicacao</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.timeToLive</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0s</td>
+   <td>
+<p>tempo de vida da mensagem na rede</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.perforMesurementPeriod</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1</td>
+   <td>
+<p>Per&iacute;odo de medi&ccedil;&atilde;o do desempeno da comunica&ccedil;&atilde;o do agente CommPerformance</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.monitorPeriod</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>1</td>
+   <td>
+<p>Per&iacute;odo de monitora&ccedil;&atilde;o beacon msg</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.car2x.veins.modules.application.icarnew.KnownGlobal.html">icarParameters</a>.radiusSet</td>
+   <td>
+      <i>double</i>
+   </td>
+   <td>0</td>
+   <td>
+<p>set radius  - declared radius in meters</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">IcarScenario</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">Scenario</span><span style="color: #000000; ">
+{
+    </span><span style="color: #808080; font-style: italic; ">//@display(&quot;bgb=1004,522&quot;);
+</span><span style="color: #000000; ">    </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=6000,6000&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+
+        </span><span style="color: #000000; ">icarParameters</span><span style="color: #000000; ">: </span><span style="color: #000000; ">KnownGlobal</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=209,148&quot;</span><span style="color: #000000; ">);
+            </span><span style="color: #808080; font-style: italic; ">//@display(&quot;p=150,140;i=veins/sign/yellowdiamond;is=vs&quot;);
+</span><span style="color: #000000; ">        }
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

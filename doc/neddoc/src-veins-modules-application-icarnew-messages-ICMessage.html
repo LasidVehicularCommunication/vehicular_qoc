@@ -1,0 +1,591 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Packet <i>ICMessage</i></h2>
+<b>File: <a href="src-veins-modules-application-icarnew-messages-ICMessage.msg.html">src/veins/modules/application/icarnew/messages/ICMessage.msg</a></b><br/><p>(no description)</p><h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram. Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-application-icarnew-messages-ICMessage-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" id="node1" href="src-veins-modules-application-icarnew-messages-ICMessage.html" title="Packet ICMessage" alt="" coords="5,5,99,31">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram. Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="src-veins-modules-application-icarnew-messages-ICMessage-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" id="node1" href="src-veins-modules-application-icarnew-messages-ICMessage.html" title="Packet ICMessage" alt="" coords="30,79,123,104">
+<area shape="rect" id="node2" href="src-veins-modules-messages-BaseFrame1609_4.html" title="Packet BaseFrame1609_4" alt="" coords="5,5,148,31">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="src-veins-modules-messages-BaseFrame1609_4.html">BaseFrame1609_4</a>
+   </td>
+   <td>
+<i>packet</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Fields:</h3>
+<table class="fieldstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>numMsg</td>
+   <td>
+      <i>
+unsigned long</i>
+   </td>
+   <td>
+<p>number of message</p>
+</td>
+</tr>
+<tr class="local">
+   <td>msgType</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>message type</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceId</td>
+   <td>
+      <i>
+long</i>
+   </td>
+   <td>
+<p>source id node - 32bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationId</td>
+   <td>
+      <i>
+long</i>
+   </td>
+   <td>
+<p>destination id node - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorId</td>
+   <td>
+      <i>
+long</i>
+   </td>
+   <td>
+<p>anetecessor id node - - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextId</td>
+   <td>
+      <i>
+long</i>
+   </td>
+   <td>
+<p>next id node - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceX</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>source x - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceY</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>source y - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceZ</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>source z - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorX</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>Antecessor x - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorY</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>Antecessor y - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorZ</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>Antecessor z  - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextX</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>next x - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextY</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>next y - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextZ</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>next z  - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationX</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>destination x - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationY</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>destination y - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationZ</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>destination z  - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceMaxSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do agente de origem - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorMaxSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do agente de antecessor - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextMaxSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do prximo agente de encaminhamento que ira consumir a mensagem - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationMaxSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade mxima do agente destino que ira consumir a mensagem - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceAngle</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>angulo do agente de origem -  32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorAngle</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>angulo do agente de antecessor - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextAngle</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>angulo do proximo agente de encaminhamento - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationAngle</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>angulo do agente destino que ira consumir a mensagem - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceAceleration</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>aceleracao do agente de origem -  32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorAceleration</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>aceleracao do agente de antecessor - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextAceleration</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>aceleracao do proximo agente de encaminhamento - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationAceleration</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>aceleracao do agente destino que ira consumir a mensagem - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do agente de origem -  32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do agente de antecessor - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do proximo agente de encaminhamento - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationSpeed</td>
+   <td>
+      <i>
+float</i>
+   </td>
+   <td>
+<p>velocidade do agente destino que ira consumir a mensagem - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>anteNextValidityTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>alcance do sinal de comunicacao do agente de origem  - 32 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>sourceMsgTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>timestamp da mensagem</p>
+</td>
+</tr>
+<tr class="local">
+   <td>antecessorMsgTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>timestamp da mensagem</p>
+</td>
+</tr>
+<tr class="local">
+   <td>msgLifeTime</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>message life time - 16 bits</p>
+</td>
+</tr>
+<tr class="local">
+   <td>AntecessoPosTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>timestamp da da coleta da posicao do agente antecessor</p>
+</td>
+</tr>
+<tr class="local">
+   <td>SourcePosTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>timestamp da da coleta da posicao do agente de origem</p>
+</td>
+</tr>
+<tr class="local">
+   <td>nextPosTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>timestamp da da coleta da posicao do proximo agente de encaminhamento</p>
+</td>
+</tr>
+<tr class="local">
+   <td>destinationPosTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>timestamp da da coleta da posicao do proximo agente de encaminhamento</p>
+</td>
+</tr>
+<tr class="local">
+   <td>validityDataTimeStamp</td>
+   <td>
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>validity timeout of the menor neighborhood condition of the route nodes</p>
+</td>
+</tr>
+<tr class="local">
+   <td>hopNumber</td>
+   <td>
+      <i>
+unsigned int</i>
+   </td>
+   <td>
+<p>hops counting of route in that moment</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>channelNumber</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>Channel Number on which this packet was sent</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>userPriority</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>User priority with which this packet was sent (note the AC mapping rules in <a href="org.car2x.veins.modules.mac.ieee80211p.Mac1609_4.html">Mac1609_4</a>::mapUserPriority)</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>psid</td>
+   <td>
+      <i>
+int</i>
+   </td>
+   <td>
+<p>Unique number to identify the service</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td>recipientAddress</td>
+   <td>
+      <i>
+<a href="src-veins-base-utils-LAddress::L2Type.html">LAddress::L2Type</a></i>
+   </td>
+   <td>
+<p>Recipient of frame (-1 for any)</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">ICMessage</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseFrame1609_4</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">numMsg</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// number of message
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">msgType</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// message type 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceId</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// source id node - 32bits 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationId</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// destination id node - 32 bits 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorId</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// anetecessor id node - - 32 bits 
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">long</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextId</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// next id node - 32 bits 
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceX</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">//source x - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceY</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// source y - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// source z - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorX</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// Antecessor x - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorY</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// Antecessor y - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// Antecessor z  - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextX</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// next x - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextY</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// next y - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// next z  - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationX</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// destination x - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationY</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// destination y - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationZ</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// destination z  - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceMaxSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do agente de origem - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorMaxSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do agente de antecessor - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextMaxSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do prximo agente de encaminhamento que ira consumir a mensagem - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationMaxSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade mxima do agente destino que ira consumir a mensagem - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceAngle</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// angulo do agente de origem -  32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorAngle</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// angulo do agente de antecessor - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextAngle</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// angulo do proximo agente de encaminhamento - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationAngle</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// angulo do agente destino que ira consumir a mensagem - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceAceleration</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// aceleracao do agente de origem -  32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorAceleration</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// aceleracao do agente de antecessor - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextAceleration</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// aceleracao do proximo agente de encaminhamento - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationAceleration</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// aceleracao do agente destino que ira consumir a mensagem - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do agente de origem -  32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do agente de antecessor - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do proximo agente de encaminhamento - 32 bits
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">float</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationSpeed</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">;  </span><span style="color: #808080; font-style: italic; ">// velocidade do agente destino que ira consumir a mensagem - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">anteNextValidityTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// alcance do sinal de comunicacao do agente de origem  - 32 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">sourceMsgTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da mensagem
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">antecessorMsgTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da mensagem
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">msgLifeTime</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// message life time - 16 bits
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">AntecessoPosTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da da coleta da posicao do agente antecessor 
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">SourcePosTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da da coleta da posicao do agente de origem 
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">nextPosTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da da coleta da posicao do proximo agente de encaminhamento
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">destinationPosTimeStamp</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// timestamp da da coleta da posicao do proximo agente de encaminhamento
+</span><span style="color: #000000; ">
+    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">validityDataTimeStamp</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// validity timeout of the menor neighborhood condition of the route nodes
+</span><span style="color: #000000; ">    </span><span style="color: #000080; font-weight: bold; ">unsigned</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">hopNumber</span><span style="color: #000000; "> = </span><span style="color: #008000; ">0</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// hops counting of route in that moment 
+</span><span style="color: #000000; ">
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>
