@@ -1,0 +1,271 @@
+version 2
+run Cenario3-0-20241207-17:11:37-18818
+attr configname Cenario3
+attr datetime 20241207-17:11:37
+attr experiment Cenario3
+attr inifile icarqoc.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network org.car2x.veins.modules.application.icarnew.IcarScenario
+attr processid 18818
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.manager.launchConfig "xmldoc(\"./cenario3.launchd.xml\")"
+param *.playgroundSizeX 10500m
+param *.playgroundSizeY 10500m
+param *.playgroundSizeZ 50m
+param *.node[*].applType "\"Icarqoc\""
+param *.node[*].appl.maxSpeedRoute0 41.67
+param *.node[*].appl.maxSpeedRoute1 41.67
+param *.node[*].appl.integratedScenario false
+param *.icarParameters.vehicleAmount 100
+param *.icarParameters.simulationDataheaderLine true
+param *.icarParameters.appTypeId 100
+param *.icarParameters.deliveryDelay 5
+param *.icarParameters.traceChangedMobility true
+param *.icarParameters.timeToLive 2s
+param *.icarParameters.loadPeriodApp 0
+param *.icarParameters.perforMesurementPeriod 1
+param *.icarParameters.mobilityPeriod 0
+param *.icarParameters.observation "\"default\""
+param *.icarParameters.lostMessageRate 0
+param *.icarParameters.monitorPeriod 0.5
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 6000m
+param *.playgroundSizeY 6000m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.debug false
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 0.1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"simOppositeDirection.launchd.xml\")"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 5mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -89dBm
+param *.**.nic.phy80211p.useNoiseFloor false
+param *.**.nic.phy80211p.noiseFloor -86dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"simCrossing.config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"simCrossing.config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.**.nic.phy80211p.antenna "xml(\"<root><Antenna type=\\\"IsotropicAntenna\\\" id=\\\"default_isotropic\\\"></Antenna></root>\")"
+param *.node[*].applType "\"TraCIDemo11p\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobilityType.debug true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 75s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+scalar IcarScenario.node[2].nic.phy80211p busyTime 0
+scalar IcarScenario.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IcarScenario.node[2].nic.mac1609_4 ReceivedBroadcasts 0
+scalar IcarScenario.node[2].nic.mac1609_4 SentPackets 0
+scalar IcarScenario.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar IcarScenario.node[2].nic.mac1609_4 RetriesExceeded 0
+scalar IcarScenario.node[2].nic.mac1609_4 SNIRLostPackets 0
+scalar IcarScenario.node[2].nic.mac1609_4 RXTXLostPackets 0
+scalar IcarScenario.node[2].nic.mac1609_4 TotalLostPackets 0
+scalar IcarScenario.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IcarScenario.node[2].nic.mac1609_4 TooLittleTime 0
+scalar IcarScenario.node[2].nic.mac1609_4 TimesIntoBackoff 0
+scalar IcarScenario.node[2].nic.mac1609_4 SlotsBackoff 0
+scalar IcarScenario.node[2].nic.mac1609_4 NumInternalContention 0
+scalar IcarScenario.node[2].nic.mac1609_4 totalBusyTime 0
+scalar IcarScenario.node[2].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar IcarScenario.node[2].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar IcarScenario.node[2].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar IcarScenario.node[2].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar IcarScenario.node[2].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar IcarScenario.node[2].veinsmobility startTime 3.1
+scalar IcarScenario.node[2].veinsmobility totalTime 195.9
+scalar IcarScenario.node[2].veinsmobility stopTime 199.1
+scalar IcarScenario.node[2].veinsmobility minSpeed 0
+scalar IcarScenario.node[2].veinsmobility maxSpeed 15.998866648553
+scalar IcarScenario.node[2].veinsmobility totalDistance 2991.1376357119
+scalar IcarScenario.node[2].veinsmobility totalCO2Emission 527.88804471715
+scalar IcarScenario.node[4].nic.phy80211p busyTime 0
+scalar IcarScenario.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IcarScenario.node[4].nic.mac1609_4 ReceivedBroadcasts 0
+scalar IcarScenario.node[4].nic.mac1609_4 SentPackets 0
+scalar IcarScenario.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar IcarScenario.node[4].nic.mac1609_4 RetriesExceeded 0
+scalar IcarScenario.node[4].nic.mac1609_4 SNIRLostPackets 0
+scalar IcarScenario.node[4].nic.mac1609_4 RXTXLostPackets 0
+scalar IcarScenario.node[4].nic.mac1609_4 TotalLostPackets 0
+scalar IcarScenario.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IcarScenario.node[4].nic.mac1609_4 TooLittleTime 0
+scalar IcarScenario.node[4].nic.mac1609_4 TimesIntoBackoff 0
+scalar IcarScenario.node[4].nic.mac1609_4 SlotsBackoff 0
+scalar IcarScenario.node[4].nic.mac1609_4 NumInternalContention 0
+scalar IcarScenario.node[4].nic.mac1609_4 totalBusyTime 0
+scalar IcarScenario.node[4].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar IcarScenario.node[4].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar IcarScenario.node[4].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar IcarScenario.node[4].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar IcarScenario.node[4].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar IcarScenario.node[4].veinsmobility startTime 7.1
+scalar IcarScenario.node[4].veinsmobility totalTime 195.9
+scalar IcarScenario.node[4].veinsmobility stopTime 203.1
+scalar IcarScenario.node[4].veinsmobility minSpeed 0
+scalar IcarScenario.node[4].veinsmobility maxSpeed 15.998390610237
+scalar IcarScenario.node[4].veinsmobility totalDistance 2990.6754678011
+scalar IcarScenario.node[4].veinsmobility totalCO2Emission 528.73972140849
+scalar IcarScenario.node[1].nic.phy80211p busyTime 0
+scalar IcarScenario.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IcarScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 0
+scalar IcarScenario.node[1].nic.mac1609_4 SentPackets 0
+scalar IcarScenario.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar IcarScenario.node[1].nic.mac1609_4 RetriesExceeded 0
+scalar IcarScenario.node[1].nic.mac1609_4 SNIRLostPackets 0
+scalar IcarScenario.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar IcarScenario.node[1].nic.mac1609_4 TotalLostPackets 0
+scalar IcarScenario.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IcarScenario.node[1].nic.mac1609_4 TooLittleTime 0
+scalar IcarScenario.node[1].nic.mac1609_4 TimesIntoBackoff 0
+scalar IcarScenario.node[1].nic.mac1609_4 SlotsBackoff 0
+scalar IcarScenario.node[1].nic.mac1609_4 NumInternalContention 0
+scalar IcarScenario.node[1].nic.mac1609_4 totalBusyTime 0
+scalar IcarScenario.node[1].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar IcarScenario.node[1].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar IcarScenario.node[1].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar IcarScenario.node[1].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar IcarScenario.node[1].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar IcarScenario.node[1].veinsmobility startTime 0.1
+scalar IcarScenario.node[1].veinsmobility totalTime 215.9
+scalar IcarScenario.node[1].veinsmobility stopTime 216.1
+scalar IcarScenario.node[1].veinsmobility minSpeed 0
+scalar IcarScenario.node[1].veinsmobility maxSpeed 15.999018903868
+scalar IcarScenario.node[1].veinsmobility totalDistance 3231.3872487871
+scalar IcarScenario.node[1].veinsmobility totalCO2Emission 619.48211418539
+scalar IcarScenario.node[3].nic.phy80211p busyTime 0
+scalar IcarScenario.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IcarScenario.node[3].nic.mac1609_4 ReceivedBroadcasts 0
+scalar IcarScenario.node[3].nic.mac1609_4 SentPackets 0
+scalar IcarScenario.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar IcarScenario.node[3].nic.mac1609_4 RetriesExceeded 0
+scalar IcarScenario.node[3].nic.mac1609_4 SNIRLostPackets 0
+scalar IcarScenario.node[3].nic.mac1609_4 RXTXLostPackets 0
+scalar IcarScenario.node[3].nic.mac1609_4 TotalLostPackets 0
+scalar IcarScenario.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IcarScenario.node[3].nic.mac1609_4 TooLittleTime 0
+scalar IcarScenario.node[3].nic.mac1609_4 TimesIntoBackoff 0
+scalar IcarScenario.node[3].nic.mac1609_4 SlotsBackoff 0
+scalar IcarScenario.node[3].nic.mac1609_4 NumInternalContention 0
+scalar IcarScenario.node[3].nic.mac1609_4 totalBusyTime 0
+scalar IcarScenario.node[3].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar IcarScenario.node[3].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar IcarScenario.node[3].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar IcarScenario.node[3].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar IcarScenario.node[3].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar IcarScenario.node[3].veinsmobility startTime 3.1
+scalar IcarScenario.node[3].veinsmobility totalTime 215.9
+scalar IcarScenario.node[3].veinsmobility stopTime 219.1
+scalar IcarScenario.node[3].veinsmobility minSpeed 0
+scalar IcarScenario.node[3].veinsmobility maxSpeed 15.999891312048
+scalar IcarScenario.node[3].veinsmobility totalDistance 3238.2835707084
+scalar IcarScenario.node[3].veinsmobility totalCO2Emission 619.30373620767
+scalar IcarScenario.node[5].nic.phy80211p busyTime 0
+scalar IcarScenario.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IcarScenario.node[5].nic.mac1609_4 ReceivedBroadcasts 0
+scalar IcarScenario.node[5].nic.mac1609_4 SentPackets 0
+scalar IcarScenario.node[5].nic.mac1609_4 SentAcknowledgements 0
+scalar IcarScenario.node[5].nic.mac1609_4 RetriesExceeded 0
+scalar IcarScenario.node[5].nic.mac1609_4 SNIRLostPackets 0
+scalar IcarScenario.node[5].nic.mac1609_4 RXTXLostPackets 0
+scalar IcarScenario.node[5].nic.mac1609_4 TotalLostPackets 0
+scalar IcarScenario.node[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IcarScenario.node[5].nic.mac1609_4 TooLittleTime 0
+scalar IcarScenario.node[5].nic.mac1609_4 TimesIntoBackoff 0
+scalar IcarScenario.node[5].nic.mac1609_4 SlotsBackoff 0
+scalar IcarScenario.node[5].nic.mac1609_4 NumInternalContention 0
+scalar IcarScenario.node[5].nic.mac1609_4 totalBusyTime 0
+scalar IcarScenario.node[5].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar IcarScenario.node[5].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar IcarScenario.node[5].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar IcarScenario.node[5].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar IcarScenario.node[5].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar IcarScenario.node[5].veinsmobility startTime 7.1
+scalar IcarScenario.node[5].veinsmobility totalTime 215.9
+scalar IcarScenario.node[5].veinsmobility stopTime 223.1
+scalar IcarScenario.node[5].veinsmobility minSpeed 0
+scalar IcarScenario.node[5].veinsmobility maxSpeed 15.995042388327
+scalar IcarScenario.node[5].veinsmobility totalDistance 3230.6616893992
+scalar IcarScenario.node[5].veinsmobility totalCO2Emission 617.46662600372
+scalar IcarScenario.node[0].nic.phy80211p busyTime 0
+scalar IcarScenario.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IcarScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar IcarScenario.node[0].nic.mac1609_4 SentPackets 0
+scalar IcarScenario.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar IcarScenario.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar IcarScenario.node[0].nic.mac1609_4 SNIRLostPackets 0
+scalar IcarScenario.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar IcarScenario.node[0].nic.mac1609_4 TotalLostPackets 0
+scalar IcarScenario.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IcarScenario.node[0].nic.mac1609_4 TooLittleTime 0
+scalar IcarScenario.node[0].nic.mac1609_4 TimesIntoBackoff 0
+scalar IcarScenario.node[0].nic.mac1609_4 SlotsBackoff 0
+scalar IcarScenario.node[0].nic.mac1609_4 NumInternalContention 0
+scalar IcarScenario.node[0].nic.mac1609_4 totalBusyTime 0
+scalar IcarScenario.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar IcarScenario.node[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar IcarScenario.node[0].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar IcarScenario.node[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar IcarScenario.node[0].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar IcarScenario.node[0].veinsmobility startTime 0.1
+scalar IcarScenario.node[0].veinsmobility totalTime 247.9
+scalar IcarScenario.node[0].veinsmobility stopTime 248.1
+scalar IcarScenario.node[0].veinsmobility minSpeed 0
+scalar IcarScenario.node[0].veinsmobility maxSpeed 15.999507024372
+scalar IcarScenario.node[0].veinsmobility totalDistance 3004.1248197243
+scalar IcarScenario.node[0].veinsmobility totalCO2Emission 605.52786625034
+scalar IcarScenario.manager roiArea 0
+

@@ -1,0 +1,109 @@
+file 1368267 1733602282                                         
+version 2
+run Cenario2-0-20241207-17:10:57-18737
+attr configname Cenario2
+attr datetime 20241207-17:10:57
+attr experiment Cenario2
+attr inifile icarqoc.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network org.car2x.veins.modules.application.icarnew.IcarScenario
+attr processid 18737
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.manager.launchConfig "xmldoc(\"./cenario2.launchd.xml\")"
+param *.playgroundSizeX 10500m
+param *.playgroundSizeY 10500m
+param *.playgroundSizeZ 50m
+param *.node[*].applType "\"Icarqoc\""
+param *.node[*].appl.maxSpeedRoute0 41.67
+param *.node[*].appl.maxSpeedRoute1 41.67
+param *.node[*].appl.integratedScenario false
+param *.icarParameters.vehicleAmount 100
+param *.icarParameters.simulationDataheaderLine true
+param *.icarParameters.appTypeId 100
+param *.icarParameters.deliveryDelay 5
+param *.icarParameters.traceChangedMobility true
+param *.icarParameters.timeToLive 2s
+param *.icarParameters.loadPeriodApp 0
+param *.icarParameters.perforMesurementPeriod 1
+param *.icarParameters.mobilityPeriod 0
+param *.icarParameters.observation "\"default\""
+param *.icarParameters.lostMessageRate 0
+param *.icarParameters.monitorPeriod 0.5
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 6000m
+param *.playgroundSizeY 6000m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.debug false
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 0.1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"simOppositeDirection.launchd.xml\")"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.**.nic.mac1609_4.txPower 5mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -89dBm
+param *.**.nic.phy80211p.useNoiseFloor false
+param *.**.nic.phy80211p.noiseFloor -86dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"simCrossing.config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"simCrossing.config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.**.nic.phy80211p.antenna "xml(\"<root><Antenna type=\\\"IsotropicAntenna\\\" id=\\\"default_isotropic\\\"></Antenna></root>\")"
+param *.node[*].applType "\"TraCIDemo11p\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobilityType.debug true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 75s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 IcarScenario.node[0].veinsmobility posx ETV
+vector 1 IcarScenario.node[0].veinsmobility posy ETV
+vector 2 IcarScenario.node[0].veinsmobility speed ETV
+vector 3 IcarScenario.node[0].veinsmobility acceleration ETV
+vector 4 IcarScenario.node[0].veinsmobility co2emission ETV
+vector 5 IcarScenario.node[1].veinsmobility posx ETV
+vector 6 IcarScenario.node[1].veinsmobility posy ETV
+vector 7 IcarScenario.node[1].veinsmobility speed ETV
+vector 8 IcarScenario.node[1].veinsmobility acceleration ETV
+vector 9 IcarScenario.node[1].veinsmobility co2emission ETV
+vector 10 IcarScenario.node[2].veinsmobility posx ETV
+vector 11 IcarScenario.node[2].veinsmobility posy ETV
+vector 12 IcarScenario.node[2].veinsmobility speed ETV
+vector 13 IcarScenario.node[2].veinsmobility acceleration ETV
+vector 14 IcarScenario.node[2].veinsmobility co2emission ETV
+9	3947 93200 1571 24047 76.3 401 3248 0.973 56.019745274255 7020.0956432405 46905.374947557
+8	97147 54539 1571 24047 76.3 401 3248 -35.556615721337 25.276067882543 89.267304120585 13200.696206817
+7	151686 94844 1566 24047 76.2 401 3249 0 9.9814574397169 29971.86736315 278630.12047451
+6	246530 94898 1562 24047 76.1 401 3250 1183.0457066627 1702.1049089469 4630638.557007 6685196928.0433
+5	341428 94948 1562 24047 76.1 401 3250 29.82581912432 2763.7167693695 4555863.1261695 8366801969.5184
+4	436376 102369 367 24549 36.3 411 3748 0.973 61.203022303363 7490.1088999269 48029.107404328
+3	538745 61456 367 24549 36.3 411 3748 -45 25.29327815515 90.310123151401 17352.837861356
+2	600201 101982 364 24549 36.2 411 3749 0 9.9970629891846 29929.106301334 278215.6804177
+1	702183 108375 362 24549 36.1 411 3750 1184.7637036952 1702.2824365959 5370806.0210529 7780508286.4693
+0	810558 108925 362 24549 36.1 411 3750 30.835991636586 2759.7947564337 4884268.9098346 8573826029.6859
+14	919483 96543 2225 24611 89.3 413 3238 0.973 47.437038393118 6933.1773737067 44919.929290071
+13	1016026 57865 2225 24611 89.3 413 3238 -30.521929794457 24.577193551231 93.894320467487 12249.240738744
+12	1073891 98075 2218 24611 89.2 413 3239 0 9.9865135943983 29922.832402942 278856.83471108
+11	1171966 98060 2212 24611 89.1 413 3240 1185.0157680351 1701.31 4618024.1316021 6668705828.3925
+10	1270026 98240 2212 24611 89.1 413 3240 30.835991636586 2759.2193191175 4533142.5663833 8308824977.6145
+
