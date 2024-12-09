@@ -10,6 +10,15 @@ O I-CAR** (Intelligent Communication Mechanism for Multi-Agent Vehicular Applica
 
 Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisões autônomas sobre a comunicação durante a execução de aplicações, o que contribui para uma troca de dados mais eficiente e segura. A abordagem permite avaliar o estado atual do ambiente, ajustando o comportamento dos agentes de acordo com mudanças contextuais, como congestionamentos ou perda de sinal, para garantir a continuidade da comunicação.
 
+## Índice
+
+- [Built With](#built-with)
+- [Montagem de ambiente e configurações](#montagem-de-ambiente-e-configurações)
+- [Cenários da Simulação](#cenários-da-simulação)
+- [Tutorial de Execução da Simulação](#tutorial-de-execução-da-simulação)
+- [Diagrama de Classes](#diagrama-de-classes)
+- [Documentação do projeto](#documentação-do-projeto)
+
 
 ## Built With
 
