@@ -27,7 +27,7 @@ Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisõ
 - **[Veins](https://veins.car2x.org/)**: Um framework para simulações de redes veiculares que funciona com OMNeT++.
 - **[SUMO](https://www.eclipse.org/sumo/)**: Um simulador de tráfego que é usado para gerar e simular a movimentação de veículos.
 
-### Montagem de ambiente e configurações
+## Montagem de ambiente e configurações
 
 Para configurar o ambiente, siga os passos descritos na documentação do Veins: **[Tutorial](https://veins.car2x.org/tutorial/)**
 
