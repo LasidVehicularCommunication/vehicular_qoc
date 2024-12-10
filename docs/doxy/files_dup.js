@@ -50,7 +50,7 @@ var files_dup =
       [ "DrawAmount", "classveins_1_1_draw_amount.html", "classveins_1_1_draw_amount" ],
       [ "BaseBattery", "classveins_1_1_base_battery.html", "classveins_1_1_base_battery" ]
     ] ],
-    [ "BaseConnectionManager.cc", "_base_connection_manager_8cc.html", "_base_connection_manager_8cc" ],
+    [ "BaseConnectionManager.cc", "_base_connection_manager_8cc.html", null ],
     [ "BaseConnectionManager.h", "_base_connection_manager_8h.html", [
       [ "BaseConnectionManager", "classveins_1_1_base_connection_manager.html", "classveins_1_1_base_connection_manager" ],
       [ "GridCoord", "classveins_1_1_base_connection_manager_1_1_grid_coord.html", "classveins_1_1_base_connection_manager_1_1_grid_coord" ],
@@ -88,7 +88,7 @@ var files_dup =
     [ "BatteryAccess.h", "_battery_access_8h.html", [
       [ "BatteryAccess", "classveins_1_1_battery_access.html", "classveins_1_1_battery_access" ]
     ] ],
-    [ "BBoxLookup.cc", "_b_box_lookup_8cc.html", "_b_box_lookup_8cc" ],
+    [ "BBoxLookup.cc", "_b_box_lookup_8cc.html", null ],
     [ "BBoxLookup.h", "_b_box_lookup_8h.html", [
       [ "BBoxLookup", "classveins_1_1_b_box_lookup.html", "classveins_1_1_b_box_lookup" ],
       [ "Point", "structveins_1_1_b_box_lookup_1_1_point.html", "structveins_1_1_b_box_lookup_1_1_point" ],
@@ -124,7 +124,7 @@ var files_dup =
     ] ],
     [ "Consts80211p.h", "_consts80211p_8h.html", "_consts80211p_8h" ],
     [ "ConstsPhy.h", "_consts_phy_8h.html", "_consts_phy_8h" ],
-    [ "Coord.cc", "_coord_8cc.html", "_coord_8cc" ],
+    [ "Coord.cc", "_coord_8cc.html", null ],
     [ "Coord.h", "_coord_8h.html", "_coord_8h" ],
     [ "Decider.cc", "_decider_8cc.html", null ],
     [ "Decider.h", "_decider_8h.html", [
@@ -249,7 +249,7 @@ var files_dup =
     [ "MessageManager.h", "_message_manager_8h.html", [
       [ "MessageManager", "classveins_1_1_message_manager.html", "classveins_1_1_message_manager" ]
     ] ],
-    [ "MobileHostObstacle.cc", "_mobile_host_obstacle_8cc.html", "_mobile_host_obstacle_8cc" ],
+    [ "MobileHostObstacle.cc", "_mobile_host_obstacle_8cc.html", null ],
     [ "MobileHostObstacle.h", "_mobile_host_obstacle_8h.html", [
       [ "MobileHostObstacle", "classveins_1_1_mobile_host_obstacle.html", "classveins_1_1_mobile_host_obstacle" ]
     ] ],
@@ -269,7 +269,7 @@ var files_dup =
       [ "NakagamiFading", "classveins_1_1_nakagami_fading.html", "classveins_1_1_nakagami_fading" ]
     ] ],
     [ "NedFunctions.cc", "_ned_functions_8cc.html", "_ned_functions_8cc" ],
-    [ "NetwToMacControlInfo.cc", "_netw_to_mac_control_info_8cc.html", "_netw_to_mac_control_info_8cc" ],
+    [ "NetwToMacControlInfo.cc", "_netw_to_mac_control_info_8cc.html", null ],
     [ "NetwToMacControlInfo.h", "_netw_to_mac_control_info_8h.html", [
       [ "NetwToMacControlInfo", "classveins_1_1_netw_to_mac_control_info.html", "classveins_1_1_netw_to_mac_control_info" ]
     ] ],
@@ -289,7 +289,7 @@ var files_dup =
     [ "NistErrorRate.h", "_nist_error_rate_8h.html", [
       [ "NistErrorRate", "classveins_1_1_nist_error_rate.html", "classveins_1_1_nist_error_rate" ]
     ] ],
-    [ "Obstacle.cc", "_obstacle_8cc.html", "_obstacle_8cc" ],
+    [ "Obstacle.cc", "_obstacle_8cc.html", null ],
     [ "Obstacle.h", "_obstacle_8h.html", [
       [ "Obstacle", "classveins_1_1_obstacle.html", "classveins_1_1_obstacle" ]
     ] ],

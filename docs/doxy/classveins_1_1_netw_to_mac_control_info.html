@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins::NetwToMacControlInfo Class Reference</title>
+<title>My Project: veins::NetwToMacControlInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -88,7 +87,7 @@ $(document).ready(function(){initNavTree('classveins_1_1_netw_to_mac_control_inf
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classveins_1_1_netw_to_mac_control_info-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">veins::NetwToMacControlInfo Class Reference</div>  </div>
+<div class="title">veins::NetwToMacControlInfo</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -286,12 +285,11 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_netw_to_mac_control_info_8cc_source.html#l00045">45</a> of file <a class="el" href="_netw_to_mac_control_info_8cc_source.html">NetwToMacControlInfo.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html#a6a3ed43948eaeb9fd5b5b1e9ed5bed9c">tNetwToMacControlInfoBase</a>* <span class="keyword">const</span> cCtrlInfo = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html#a6a3ed43948eaeb9fd5b5b1e9ed5bed9c">tNetwToMacControlInfoBase</a>*<span class="keyword">&gt;</span>(pCtrlInfo);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> tNetwToMacControlInfoBase* <span class="keyword">const</span> cCtrlInfo = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>tNetwToMacControlInfoBase*<span class="keyword">&gt;</span>(pCtrlInfo);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ASSERT(cCtrlInfo);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> cCtrlInfo-&gt;getDest();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03_html_a6a3ed43948eaeb9fd5b5b1e9ed5bed9c"><div class="ttname"><a href="namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html#a6a3ed43948eaeb9fd5b5b1e9ed5bed9c">anonymous_namespace{NetwToMacControlInfo.cc}::tNetwToMacControlInfoBase</a></div><div class="ttdeci">NetwToMacControlInfo tNetwToMacControlInfoBase</div><div class="ttdef"><b>Definition:</b> <a href="_netw_to_mac_control_info_8cc_source.html#l00031">NetwToMacControlInfo.cc:31</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_base_mac_layer_8cc_source.html#l00183">veins::BaseMacLayer::getUpperDestinationFromControlInfo()</a>.</p>
 <div class="dynheader">
@@ -387,7 +385,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_netw_to_mac_control_info_8cc_source.html#l00035">35</a> of file <a class="el" href="_netw_to_mac_control_info_8cc_source.html">NetwToMacControlInfo.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html#a6a3ed43948eaeb9fd5b5b1e9ed5bed9c">tNetwToMacControlInfoBase</a>* <span class="keyword">const</span> cCtrlInfo = <span class="keyword">new</span> <a class="code" href="namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html#a6a3ed43948eaeb9fd5b5b1e9ed5bed9c">tNetwToMacControlInfoBase</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    tNetwToMacControlInfoBase* <span class="keyword">const</span> cCtrlInfo = <span class="keyword">new</span> tNetwToMacControlInfoBase();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    cCtrlInfo-&gt;setDest(pDestAddr);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    pMsg-&gt;setControlInfo(cCtrlInfo);</div>
@@ -498,7 +496,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_netw_to_mac_control_info.html">NetwToMacControlInfo</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:19 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:24 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

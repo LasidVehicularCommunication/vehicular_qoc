@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: AnnotationManager.cc Source File</title>
+<title>My Project: AnnotationManager.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -123,8 +122,8 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> <a class="code" href="classveins_1_1_tra_c_i_scenario_manager.html">veins::TraCIScenarioManager</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using</span> <a class="code" href="classveins_1_1_tra_c_i_scenario_manager_access.html">veins::TraCIScenarioManagerAccess</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html">   38</a></span>&#160;<span class="keyword">namespace </span>{</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">   39</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">short</span> <a class="code" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">EVT_SCHEDULED_ERASE</a> = 3;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">const</span> <span class="keywordtype">short</span> EVT_SCHEDULED_ERASE = 3;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classveins_1_1_annotation_manager.html#af1b9b5eacc0afa3a90fbf48a7f00a539">   42</a></span>&#160;<span class="keywordtype">void</span> AnnotationManager::initialize()</div>
@@ -180,7 +179,7 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classveins_1_1_annotation_manager.html#a15b1bc8dc418c545c8ff4e2b1f14833b">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classveins_1_1_annotation_manager.html#a15b1bc8dc418c545c8ff4e2b1f14833b">AnnotationManager::handleSelfMsg</a>(cMessage* msg)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (msg-&gt;getKind() == <a class="code" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">EVT_SCHEDULED_ERASE</a>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (msg-&gt;getKind() == EVT_SCHEDULED_ERASE) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classveins_1_1_annotation_manager_1_1_annotation.html">Annotation</a>* a = <span class="keyword">static_cast&lt;</span><a class="code" href="classveins_1_1_annotation_manager_1_1_annotation.html">Annotation</a>*<span class="keyword">&gt;</span>(msg-&gt;getContextPointer());</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        ASSERT(a);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
@@ -290,7 +289,7 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classveins_1_1_annotation_manager.html#a336eefa4f1f95638dcf5d5e5db0a93e9">  203</a></span>&#160;<a class="code" href="classveins_1_1_annotation_manager_1_1_point.html">AnnotationManager::Point</a>* <a class="code" href="classveins_1_1_annotation_manager.html#a336eefa4f1f95638dcf5d5e5db0a93e9">AnnotationManager::drawPoint</a>(<a class="code" href="classveins_1_1_coord.html">Coord</a> p, std::string color, std::string text, <a class="code" href="classveins_1_1_annotation_manager_1_1_group.html">Group</a>* group)</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classveins_1_1_annotation_manager_1_1_point.html">Point</a>* o = <span class="keyword">new</span> <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">Point</a>(p, color, text);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classveins_1_1_annotation_manager_1_1_point.html">Point</a>* o = <span class="keyword">new</span> <a class="code" href="classveins_1_1_annotation_manager_1_1_point.html">Point</a>(p, color, text);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    o-&gt;<a class="code" href="classveins_1_1_annotation_manager_1_1_annotation.html#a4be91546ed5c91ed0eef09f00d56e2dd">group</a> = group;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classveins_1_1_annotation_manager.html#a8f88e23120b9acb99ed26bc8ad7ddd06">annotations</a>.push_back(o);</div>
@@ -379,7 +378,7 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    Enter_Method_Silent();</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cMessage* evt = <span class="keyword">new</span> cMessage(<span class="stringliteral">&quot;erase&quot;</span>, <a class="code" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">EVT_SCHEDULED_ERASE</a>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cMessage* evt = <span class="keyword">new</span> cMessage(<span class="stringliteral">&quot;erase&quot;</span>, EVT_SCHEDULED_ERASE);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    evt-&gt;setContextPointer(annotation);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    scheduleAt(simTime() + deltaT, evt);</div>
@@ -409,8 +408,8 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">if</span> (hasGUI()) {</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            cLineFigure* figure = <span class="keyword">new</span> cLineFigure();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            figure-&gt;setStart(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(l-&gt;p1.x, l-&gt;p1.y));</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            figure-&gt;setEnd(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(l-&gt;p2.x, l-&gt;p2.y));</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            figure-&gt;setStart(cFigure::Point(l-&gt;p1.x, l-&gt;p1.y));</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            figure-&gt;setEnd(cFigure::Point(l-&gt;p2.x, l-&gt;p2.y));</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            figure-&gt;setLineColor(cFigure::Color(l-&gt;color.c_str()));</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            annotation-&gt;<a class="code" href="classveins_1_1_annotation_manager_1_1_annotation.html#abf03b0ce25889a7292044dc1d381c135">figure</a> = figure;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <a class="code" href="classveins_1_1_annotation_manager.html#a0a977fb522bdb74265d8a4c45956dd7e">annotationLayer</a>-&gt;addFigure(annotation-&gt;<a class="code" href="classveins_1_1_annotation_manager_1_1_annotation.html#abf03b0ce25889a7292044dc1d381c135">figure</a>);</div>
@@ -435,7 +434,7 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            cPolygonFigure* figure = <span class="keyword">new</span> cPolygonFigure();</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            std::vector&lt;cFigure::Point&gt; points;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordflow">for</span> (std::list&lt;Coord&gt;::const_iterator i = p-&gt;coords.begin(); i != p-&gt;coords.end(); ++i) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                points.push_back(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(i-&gt;x, i-&gt;y));</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                points.push_back(cFigure::Point(i-&gt;x, i-&gt;y));</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            figure-&gt;setPoints(points);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            figure-&gt;setLineColor(cFigure::Color(p-&gt;color.c_str()));</div>
@@ -549,15 +548,13 @@ $(document).ready(function(){initNavTree('_annotation_manager_8cc_source.html','
 <div class="ttc" id="aclassveins_1_1_tra_c_i_scenario_manager_html"><div class="ttname"><a href="classveins_1_1_tra_c_i_scenario_manager.html">veins::TraCIScenarioManager</a></div><div class="ttdoc">Creates and moves nodes controlled by a TraCI server.</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8h_source.html#l00067">TraCIScenarioManager.h:67</a></div></div>
 <div class="ttc" id="aclassveins_1_1_tra_c_i_scenario_manager_html_a9a82c8a0f6af08586d17d122431e98e4"><div class="ttname"><a href="classveins_1_1_tra_c_i_scenario_manager.html#a9a82c8a0f6af08586d17d122431e98e4">veins::TraCIScenarioManager::getCommandInterface</a></div><div class="ttdeci">TraCICommandInterface * getCommandInterface() const</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8h_source.html#l00093">TraCIScenarioManager.h:93</a></div></div>
 <div class="ttc" id="aclassveins_1_1_tra_c_i_scenario_manager_html_aaef11461dfdc93229532a56fdca3e5df"><div class="ttname"><a href="classveins_1_1_tra_c_i_scenario_manager.html#aaef11461dfdc93229532a56fdca3e5df">veins::TraCIScenarioManager::isConnected</a></div><div class="ttdeci">bool isConnected() const</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8h_source.html#l00088">TraCIScenarioManager.h:88</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_annotation_manager_8cc_03_html_aad339c1ed9a3ef9a85238e16e2b920ea"><div class="ttname"><a href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">anonymous_namespace{AnnotationManager.cc}::EVT_SCHEDULED_ERASE</a></div><div class="ttdeci">const short EVT_SCHEDULED_ERASE</div><div class="ttdef"><b>Definition:</b> <a href="_annotation_manager_8cc_source.html#l00039">AnnotationManager.cc:39</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_b_box_lookup_8cc_03_html_ab44832c5578a22ebf7b2a19694405cd9"><div class="ttname"><a href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">anonymous_namespace{BBoxLookup.cc}::Point</a></div><div class="ttdeci">veins::BBoxLookup::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00029">BBoxLookup.cc:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_16e57d392d75a3ef297176d2ec903517.html">world</a></li><li class="navelem"><a class="el" href="dir_9ec2ce8bbfdd5a044247b82b9093751c.html">annotations</a></li><li class="navelem"><a class="el" href="_annotation_manager_8cc.html">AnnotationManager.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:22 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

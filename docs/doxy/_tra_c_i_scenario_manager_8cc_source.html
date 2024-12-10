@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: TraCIScenarioManager.cc Source File</title>
+<title>My Project: TraCIScenarioManager.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -164,9 +163,9 @@ $(document).ready(function(){initNavTree('_tra_c_i_scenario_manager_8cc_source.h
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html">   79</a></span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">namespace </span>{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html#aee10972a597261c51d4978b2e596294a">   81</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html#aee10972a597261c51d4978b2e596294a">getMapping</a>(std::string el)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;std::vector&lt;std::string&gt; getMapping(std::string el)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// search for string protection characters &#39;</span></div>
@@ -256,7 +255,7 @@ $(document).ready(function(){initNavTree('_tra_c_i_scenario_manager_8cc_source.h
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">// tokenizer to find the mapping from vehicle type to module type</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        std::string typeMapping = typeMappings[i];</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        std::vector&lt;std::string&gt; mapping = <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html#aee10972a597261c51d4978b2e596294a">getMapping</a>(typeMapping);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        std::vector&lt;std::string&gt; mapping = getMapping(typeMapping);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span> (mapping.size() == 1) {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="comment">// we are where there is no actual assignment</span></div>
@@ -1394,7 +1393,6 @@ $(document).ready(function(){initNavTree('_tra_c_i_scenario_manager_8cc_source.h
 <div class="ttc" id="aclassveins_1_1_tra_c_i_traffic_light_interface_html_ada896b2e872d54253ea1f3f24bb8dd63"><div class="ttname"><a href="classveins_1_1_tra_c_i_traffic_light_interface.html#ada896b2e872d54253ea1f3f24bb8dd63">veins::TraCITrafficLightInterface::setNextSwitch</a></div><div class="ttdeci">virtual void setNextSwitch(const simtime_t &amp;newNextSwitch, bool setSumo=true)</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_traffic_light_interface_8cc_source.html#l00179">TraCITrafficLightInterface.cc:179</a></div></div>
 <div class="ttc" id="aclassveins_1_1_vehicle_obstacle_control_html_a10824f43b0e015c6e68a9292113ea3ff"><div class="ttname"><a href="classveins_1_1_vehicle_obstacle_control.html#a10824f43b0e015c6e68a9292113ea3ff">veins::VehicleObstacleControl::erase</a></div><div class="ttdeci">void erase(const MobileHostObstacle *obstacle)</div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_obstacle_control_8cc_source.html#l00079">VehicleObstacleControl.cc:79</a></div></div>
 <div class="ttc" id="aclassveins_1_1_vehicle_obstacle_control_html_a351c4c46ca9a2e994f6be6405273b2be"><div class="ttname"><a href="classveins_1_1_vehicle_obstacle_control.html#a351c4c46ca9a2e994f6be6405273b2be">veins::VehicleObstacleControl::add</a></div><div class="ttdeci">const MobileHostObstacle * add(MobileHostObstacle obstacle)</div><div class="ttdef"><b>Definition:</b> <a href="_vehicle_obstacle_control_8cc_source.html#l00071">VehicleObstacleControl.cc:71</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03_html_aee10972a597261c51d4978b2e596294a"><div class="ttname"><a href="namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html#aee10972a597261c51d4978b2e596294a">anonymous_namespace{TraCIScenarioManager.cc}::getMapping</a></div><div class="ttdeci">std::vector&lt; std::string &gt; getMapping(std::string el)</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8cc_source.html#l00081">TraCIScenarioManager.cc:81</a></div></div>
 <div class="ttc" id="anamespaceveins_1_1_tra_c_i_constants_html"><div class="ttname"><a href="namespaceveins_1_1_tra_c_i_constants.html">veins::TraCIConstants</a></div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_constants_8h_source.html#l00045">TraCIConstants.h:45</a></div></div>
 <div class="ttc" id="anamespaceveins_1_1_tra_c_i_constants_html_a038efb141c2da3e2f754992e25ab722a"><div class="ttname"><a href="namespaceveins_1_1_tra_c_i_constants.html#a038efb141c2da3e2f754992e25ab722a">veins::TraCIConstants::RTYPE_OK</a></div><div class="ttdeci">const uint8_t RTYPE_OK</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_constants_8h_source.html#l00253">TraCIConstants.h:253</a></div></div>
 <div class="ttc" id="anamespaceveins_1_1_tra_c_i_constants_html_a0b2aa56b7bce08b70c65cf04e327f728"><div class="ttname"><a href="namespaceveins_1_1_tra_c_i_constants.html#a0b2aa56b7bce08b70c65cf04e327f728">veins::TraCIConstants::VAR_SPEED</a></div><div class="ttdeci">const uint8_t VAR_SPEED</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_constants_8h_source.html#l00374">TraCIConstants.h:374</a></div></div>
@@ -1442,7 +1440,7 @@ $(document).ready(function(){initNavTree('_tra_c_i_scenario_manager_8cc_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_9ea357ff8490171ff14d207de001a4ad.html">mobility</a></li><li class="navelem"><a class="el" href="dir_472b8c1f4f8019eef8304aaa3b11b414.html">traci</a></li><li class="navelem"><a class="el" href="_tra_c_i_scenario_manager_8cc.html">TraCIScenarioManager.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:18 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

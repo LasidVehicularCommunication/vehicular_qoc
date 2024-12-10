@@ -1,7 +1,7 @@
 <map id="veins::Icarqoc::createVehicleTraces" name="veins::Icarqoc::createVehicleTraces">
 <area shape="rect" id="node1" title=" " alt="" coords="5,64,213,105"/>
 <area shape="rect" id="node2" href="$classveins_1_1_known_global.html#aa4a510dbabcae01c3b8151a73f576f4a" title=" " alt="" coords="261,5,412,47"/>
-<area shape="rect" id="node3" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title=" " alt="" coords="749,53,893,79"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="749,53,893,79"/>
 <area shape="rect" id="node4" href="$classveins_1_1_icar_context.html#a67aad51c1aa9acd65cd4849f699003ad" title=" " alt="" coords="262,848,411,889"/>
 <area shape="rect" id="node5" href="$classveins_1_1_known_global.html#ab99f21f23833d171d246a2d9d3d89a44" title=" " alt="" coords="464,688,660,729"/>
 <area shape="rect" id="node10" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="1241,523,1425,550"/>

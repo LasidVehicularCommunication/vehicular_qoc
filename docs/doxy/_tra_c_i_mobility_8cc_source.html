@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: TraCIMobility.cc Source File</title>
+<title>My Project: TraCIMobility.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -123,18 +122,18 @@ $(document).ready(function(){initNavTree('_tra_c_i_mobility_8cc_source.html','')
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">const</span> simsignal_t <a class="code" href="classveins_1_1_tra_c_i_mobility.html#ad57029905a38b24912a81e85a1e5abcf">TraCIMobility::collisionSignal</a> = registerSignal(<span class="stringliteral">&quot;org_car2x_veins_modules_mobility_collision&quot;</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">const</span> simsignal_t <a class="code" href="classveins_1_1_tra_c_i_mobility.html#afb8947869442c29e538fb9111df5eb3c">TraCIMobility::parkingStateChangedSignal</a> = registerSignal(<span class="stringliteral">&quot;org_car2x_veins_modules_mobility_parkingStateChanged&quot;</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html">   38</a></span>&#160;<span class="keyword">namespace </span>{</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">   39</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a> = (std::numeric_limits&lt;double&gt;::has_infinity ? std::numeric_limits&lt;double&gt;::infinity() : std::numeric_limits&lt;double&gt;::max());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> MY_INFINITY = (std::numeric_limits&lt;double&gt;::has_infinity ? std::numeric_limits&lt;double&gt;::infinity() : std::numeric_limits&lt;double&gt;::max());</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a85d464690436867cd9b877aaad2d3aeb">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a85d464690436867cd9b877aaad2d3aeb">TraCIMobility::Statistics::initialize</a>()</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a3e7e7426330ab86224410ba9f39520b8">firstRoadNumber</a> = <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a3e7e7426330ab86224410ba9f39520b8">firstRoadNumber</a> = MY_INFINITY;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a79fa7bd32bd5cfc079c96d704dde3a68">startTime</a> = simTime();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#ad47a9436f177c2ad499a46f1c50cac1a">totalTime</a> = 0;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a76f21545a382224982f1febf82a634cc">stopTime</a> = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#ab0e825c9675294d6012de300a9cb5119">minSpeed</a> = <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#ad1655766a89abc12c3a3b4c01ce0d421">maxSpeed</a> = -<a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#ab0e825c9675294d6012de300a9cb5119">minSpeed</a> = MY_INFINITY;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#ad1655766a89abc12c3a3b4c01ce0d421">maxSpeed</a> = -MY_INFINITY;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a0ebfb08ef93f0952cfbd790dacc52455">totalDistance</a> = 0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a4028590461ccca8b465e3bd9c3000d0e">totalCO2Emission</a> = 0;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
@@ -145,12 +144,12 @@ $(document).ready(function(){initNavTree('_tra_c_i_mobility_8cc_source.html','')
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a063d5799a5ff7686056398d91a85f872">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html#a063d5799a5ff7686056398d91a85f872">TraCIMobility::Statistics::recordScalars</a>(cSimpleModule&amp; module)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (firstRoadNumber != <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a>) module.recordScalar(<span class="stringliteral">&quot;firstRoadNumber&quot;</span>, firstRoadNumber);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (firstRoadNumber != MY_INFINITY) module.recordScalar(<span class="stringliteral">&quot;firstRoadNumber&quot;</span>, firstRoadNumber);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    module.recordScalar(<span class="stringliteral">&quot;startTime&quot;</span>, startTime);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    module.recordScalar(<span class="stringliteral">&quot;totalTime&quot;</span>, totalTime);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    module.recordScalar(<span class="stringliteral">&quot;stopTime&quot;</span>, stopTime);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (minSpeed != <a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a>) module.recordScalar(<span class="stringliteral">&quot;minSpeed&quot;</span>, minSpeed);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (maxSpeed != -<a class="code" href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">MY_INFINITY</a>) module.recordScalar(<span class="stringliteral">&quot;maxSpeed&quot;</span>, maxSpeed);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (minSpeed != MY_INFINITY) module.recordScalar(<span class="stringliteral">&quot;minSpeed&quot;</span>, minSpeed);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (maxSpeed != -MY_INFINITY) module.recordScalar(<span class="stringliteral">&quot;maxSpeed&quot;</span>, maxSpeed);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    module.recordScalar(<span class="stringliteral">&quot;totalDistance&quot;</span>, totalDistance);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    module.recordScalar(<span class="stringliteral">&quot;totalCO2Emission&quot;</span>, totalCO2Emission);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
@@ -484,8 +483,7 @@ $(document).ready(function(){initNavTree('_tra_c_i_mobility_8cc_source.html','')
 <div class="ttc" id="aclassveins_1_1_tra_c_i_mobility_html_af8242c4456b31d013392f31f7735cf79"><div class="ttname"><a href="classveins_1_1_tra_c_i_mobility.html#af8242c4456b31d013392f31f7735cf79">veins::TraCIMobility::roadPosition</a></div><div class="ttdeci">Coord roadPosition</div><div class="ttdoc">position of front bumper, updated by nextPosition()</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_mobility_8h_source.html#l00183">TraCIMobility.h:183</a></div></div>
 <div class="ttc" id="aclassveins_1_1_tra_c_i_mobility_html_afb8947869442c29e538fb9111df5eb3c"><div class="ttname"><a href="classveins_1_1_tra_c_i_mobility.html#afb8947869442c29e538fb9111df5eb3c">veins::TraCIMobility::parkingStateChangedSignal</a></div><div class="ttdeci">static const simsignal_t parkingStateChangedSignal</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_mobility_8h_source.html#l00078">TraCIMobility.h:78</a></div></div>
 <div class="ttc" id="aclassveins_1_1_tra_c_i_mobility_html_afe77dbc3db8dc70499bf6b3d3742c82b"><div class="ttname"><a href="classveins_1_1_tra_c_i_mobility.html#afe77dbc3db8dc70499bf6b3d3742c82b">veins::TraCIMobility::startAccidentMsg</a></div><div class="ttdeci">cMessage * startAccidentMsg</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_mobility_8h_source.html#l00189">TraCIMobility.h:189</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03_html_a2460ad95761f590f8bfdc2fb72d73e57"><div class="ttname"><a href="namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html#a2460ad95761f590f8bfdc2fb72d73e57">anonymous_namespace{TraCIMobility.cc}::MY_INFINITY</a></div><div class="ttdeci">const double MY_INFINITY</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_mobility_8cc_source.html#l00039">TraCIMobility.cc:39</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 <div class="ttc" id="anamespaceveins_html_aea29a8c643463fb887cd296eac86d8d9"><div class="ttname"><a href="namespaceveins.html#aea29a8c643463fb887cd296eac86d8d9">veins::Define_Module</a></div><div class="ttdeci">Define_Module(Icarqoc)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -493,7 +491,7 @@ $(document).ready(function(){initNavTree('_tra_c_i_mobility_8cc_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_9ea357ff8490171ff14d207de001a4ad.html">mobility</a></li><li class="navelem"><a class="el" href="dir_472b8c1f4f8019eef8304aaa3b11b414.html">traci</a></li><li class="navelem"><a class="el" href="_tra_c_i_mobility_8cc.html">TraCIMobility.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:18 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -127,20 +127,12 @@
     <includes id="_annotation_manager_8h" name="AnnotationManager.h" local="yes" imported="no">veins/modules/world/annotations/AnnotationManager.h</includes>
     <includes id="_tra_c_i_scenario_manager_8h" name="TraCIScenarioManager.h" local="yes" imported="no">veins/modules/mobility/traci/TraCIScenarioManager.h</includes>
     <includes id="_tra_c_i_command_interface_8h" name="TraCICommandInterface.h" local="yes" imported="no">veins/modules/mobility/traci/TraCICommandInterface.h</includes>
-    <namespace>anonymous_namespace{AnnotationManager.cc}</namespace>
     <member kind="function">
       <type></type>
       <name>Define_Module</name>
       <anchorfile>_annotation_manager_8cc.html</anchorfile>
       <anchor>a0558ef8f0a3b7c068740864ba53ce7f3</anchor>
       <arglist>(veins::AnnotationManager)</arglist>
-    </member>
-    <member kind="variable">
-      <type>const short</type>
-      <name>EVT_SCHEDULED_ERASE</name>
-      <anchorfile>namespaceanonymous__namespace_02_annotation_manager_8cc_03.html</anchorfile>
-      <anchor>aad339c1ed9a3ef9a85238e16e2b920ea</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -225,21 +217,6 @@
     <includes id="_nic_entry_direct_8h" name="NicEntryDirect.h" local="yes" imported="no">veins/base/connectionManager/NicEntryDirect.h</includes>
     <includes id="_base_world_utility_8h" name="BaseWorldUtility.h" local="yes" imported="no">veins/base/modules/BaseWorldUtility.h</includes>
     <includes id="_find_module_8h" name="FindModule.h" local="yes" imported="no">veins/base/utils/FindModule.h</includes>
-    <namespace>anonymous_namespace{BaseConnectionManager.cc}</namespace>
-    <member kind="function" static="yes">
-      <type>static double</type>
-      <name>dist</name>
-      <anchorfile>namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html</anchorfile>
-      <anchor>a03d2870486bee7d8198d066f67d00e04</anchor>
-      <arglist>(double coord1, double coord2, double size)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>sqrTorusDist</name>
-      <anchorfile>namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html</anchorfile>
-      <anchor>a4c7285eb31fa2914adffc7da4255b6d2</anchor>
-      <arglist>(Coord c, Coord b, Coord size)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>BaseConnectionManager.h</name>
@@ -322,20 +299,12 @@
     <includes id="_coord_8h" name="Coord.h" local="yes" imported="no">veins/base/utils/Coord.h</includes>
     <includes id="_find_module_8h" name="FindModule.h" local="yes" imported="no">veins/base/utils/FindModule.h</includes>
     <includes id="_base_world_utility_8h" name="BaseWorldUtility.h" local="yes" imported="no">veins/base/modules/BaseWorldUtility.h</includes>
-    <namespace>anonymous_namespace{BaseMobility.cc}</namespace>
     <member kind="function">
       <type></type>
       <name>Define_Module</name>
       <anchorfile>_base_mobility_8cc.html</anchorfile>
       <anchor>a2a73ef0b224357dc768485114e5691ef</anchor>
       <arglist>(veins::BaseMobility)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isInBoundary</name>
-      <anchorfile>namespaceanonymous__namespace_02_base_mobility_8cc_03.html</anchorfile>
-      <anchor>a63cc37de263c8dbba9a763b23359862d</anchor>
-      <arglist>(Coord c, Coord lowerBound, Coord upperBound)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -446,37 +415,7 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/modules/utility/</path>
     <filename>_b_box_lookup_8cc.html</filename>
     <includes id="_b_box_lookup_8h" name="BBoxLookup.h" local="yes" imported="no">veins/modules/utility/BBoxLookup.h</includes>
-    <class kind="struct">anonymous_namespace{BBoxLookup.cc}::Ray</class>
-    <namespace>anonymous_namespace{BBoxLookup.cc}</namespace>
     <namespace>veins</namespace>
-    <member kind="typedef">
-      <type>veins::BBoxLookup::Point</type>
-      <name>Point</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>ab44832c5578a22ebf7b2a19694405cd9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>veins::BBoxLookup::Box</type>
-      <name>Box</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>a7fdc32ad591b5c3137e1208ee806f466</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>Ray</type>
-      <name>makeRay</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>a511746fffff7fb590b4d01d923189b03</anchor>
-      <arglist>(const Point &amp;sender, const Point &amp;receiver)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>intersects</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>ad29edbecc2bba7cf9afb525f0aff0f25</anchor>
-      <arglist>(const Ray &amp;ray, const Box &amp;box)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>BBoxLookup.h</name>
@@ -842,14 +781,6 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/base/utils/</path>
     <filename>_coord_8cc.html</filename>
     <includes id="_coord_8h" name="Coord.h" local="yes" imported="no">veins/base/utils/Coord.h</includes>
-    <namespace>anonymous_namespace{Coord.cc}</namespace>
-    <member kind="function" static="yes">
-      <type>static double</type>
-      <name>dist</name>
-      <anchorfile>namespaceanonymous__namespace_02_coord_8cc_03.html</anchorfile>
-      <anchor>a8c0f9656a5c33ea4cd7240eb430fc1d6</anchor>
-      <arglist>(double coord1, double coord2, double size)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>Coord.h</name>
@@ -1573,21 +1504,6 @@
     <includes id="_mobile_host_obstacle_8h" name="MobileHostObstacle.h" local="yes" imported="no">veins/modules/obstacle/MobileHostObstacle.h</includes>
     <includes id="_base_mobility_8h" name="BaseMobility.h" local="yes" imported="no">veins/base/modules/BaseMobility.h</includes>
     <includes id="_heading_8h" name="Heading.h" local="yes" imported="no">veins/base/utils/Heading.h</includes>
-    <namespace>anonymous_namespace{MobileHostObstacle.cc}</namespace>
-    <member kind="function">
-      <type>bool</type>
-      <name>isPointInObstacle</name>
-      <anchorfile>namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html</anchorfile>
-      <anchor>a4905f71256d96d9b1781ab9b31ec2a9e</anchor>
-      <arglist>(Coord point, const MobileHostObstacle::Coords &amp;shape)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>segmentsIntersectAt</name>
-      <anchorfile>namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html</anchorfile>
-      <anchor>a5d7ee91cc8c7d960c2adaf8c6c773604</anchor>
-      <arglist>(Coord p1From, Coord p1To, Coord p2From, Coord p2To)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>MobileHostObstacle.h</name>
@@ -1666,15 +1582,7 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/base/utils/</path>
     <filename>_ned_functions_8cc.html</filename>
     <includes id="veins_8h" name="veins.h" local="yes" imported="no">veins/veins.h</includes>
-    <namespace>anonymous_namespace{NedFunctions.cc}</namespace>
     <namespace>veins</namespace>
-    <member kind="function" static="yes">
-      <type>static cNEDValue</type>
-      <name>opp_eval</name>
-      <anchorfile>namespaceanonymous__namespace_02_ned_functions_8cc_03.html</anchorfile>
-      <anchor>a71c5d31605be60b7b1ae4d1a40c61da8</anchor>
-      <arglist>(const char *txt, cComponent *context)</arglist>
-    </member>
     <member kind="function">
       <type>cNEDValue</type>
       <name>nedf_veins_eval_by_version</name>
@@ -1709,14 +1617,6 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/base/utils/</path>
     <filename>_netw_to_mac_control_info_8cc.html</filename>
     <includes id="_netw_to_mac_control_info_8h" name="NetwToMacControlInfo.h" local="yes" imported="no">veins/base/utils/NetwToMacControlInfo.h</includes>
-    <namespace>anonymous_namespace{NetwToMacControlInfo.cc}</namespace>
-    <member kind="typedef">
-      <type>NetwToMacControlInfo</type>
-      <name>tNetwToMacControlInfoBase</name>
-      <anchorfile>namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html</anchorfile>
-      <anchor>a6a3ed43948eaeb9fd5b5b1e9ed5bed9c</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>NetwToMacControlInfo.h</name>
@@ -1790,14 +1690,6 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/modules/obstacle/</path>
     <filename>_obstacle_8cc.html</filename>
     <includes id="_obstacle_8h" name="Obstacle.h" local="yes" imported="no">veins/modules/obstacle/Obstacle.h</includes>
-    <namespace>anonymous_namespace{Obstacle.cc}</namespace>
-    <member kind="function">
-      <type>double</type>
-      <name>segmentsIntersectAt</name>
-      <anchorfile>namespaceanonymous__namespace_02_obstacle_8cc_03.html</anchorfile>
-      <anchor>a46da0e8b4beb911bde581d7997d7312c</anchor>
-      <arglist>(const Coord &amp;p1From, const Coord &amp;p1To, const Coord &amp;p2From, const Coord &amp;p2To)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>Obstacle.h</name>
@@ -1815,20 +1707,12 @@
     <filename>_obstacle_control_8cc.html</filename>
     <includes id="_obstacle_control_8h" name="ObstacleControl.h" local="yes" imported="no">veins/modules/obstacle/ObstacleControl.h</includes>
     <includes id="_base_world_utility_8h" name="BaseWorldUtility.h" local="yes" imported="no">veins/base/modules/BaseWorldUtility.h</includes>
-    <namespace>anonymous_namespace{ObstacleControl.cc}</namespace>
     <member kind="function">
       <type></type>
       <name>Define_Module</name>
       <anchorfile>_obstacle_control_8cc.html</anchorfile>
       <anchor>a3abbe90ca8494b0664a39fe98a99fb7e</anchor>
       <arglist>(veins::ObstacleControl)</arglist>
-    </member>
-    <member kind="function">
-      <type>veins::BBoxLookup</type>
-      <name>rebuildBBoxLookup</name>
-      <anchorfile>namespaceanonymous__namespace_02_obstacle_control_8cc_03.html</anchorfile>
-      <anchor>a622c9a0b0c5d14fbd42f7d5bcba982cb</anchor>
-      <arglist>(const std::vector&lt; std::unique_ptr&lt; veins::Obstacle &gt;&gt; &amp;obstacleOwner, int gridCellSize=250)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -2581,24 +2465,8 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/base/toolbox/</path>
     <filename>_signal_utils_8cc.html</filename>
     <includes id="_signal_utils_8h" name="SignalUtils.h" local="yes" imported="no">veins/base/toolbox/SignalUtils.h</includes>
-    <class kind="struct">veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::greaterByReceptionEnd</class>
     <namespace>veins</namespace>
     <namespace>veins::SignalUtils</namespace>
-    <namespace>veins::SignalUtils::anonymous_namespace{SignalUtils.cc}</namespace>
-    <member kind="function">
-      <type>Signal</type>
-      <name>getMaxInterference</name>
-      <anchorfile>namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html</anchorfile>
-      <anchor>adec53cec45469bce01bd893290800df5</anchor>
-      <arglist>(simtime_t start, simtime_t end, AirFrame *const referenceFrame, AirFrameVector &amp;interfererFrames)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>powerLevelSumAtFrequencyIndex</name>
-      <anchorfile>namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html</anchorfile>
-      <anchor>a3bdc19ba2443b2e74ab424beea23f8c8</anchor>
-      <arglist>(const std::vector&lt; Signal * &gt; &amp;signals, size_t freqIndex)</arglist>
-    </member>
     <member kind="function">
       <type>bool VEINS_API</type>
       <name>isChannelPowerBelowThreshold</name>
@@ -5534,20 +5402,12 @@
     <path>/home/clovis/Documentos/GitHub/vehicular_qoc/src/veins/modules/mobility/traci/</path>
     <filename>_tra_c_i_mobility_8cc.html</filename>
     <includes id="_tra_c_i_mobility_8h" name="TraCIMobility.h" local="yes" imported="no">veins/modules/mobility/traci/TraCIMobility.h</includes>
-    <namespace>anonymous_namespace{TraCIMobility.cc}</namespace>
     <member kind="function">
       <type></type>
       <name>Define_Module</name>
       <anchorfile>_tra_c_i_mobility_8cc.html</anchorfile>
       <anchor>a9ea957adce57828ebebc46a2e3fa9c3f</anchor>
       <arglist>(veins::TraCIMobility)</arglist>
-    </member>
-    <member kind="variable">
-      <type>const double</type>
-      <name>MY_INFINITY</name>
-      <anchorfile>namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html</anchorfile>
-      <anchor>a2460ad95761f590f8bfdc2fb72d73e57</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -5592,20 +5452,12 @@
     <includes id="_tra_c_i_mobility_8h" name="TraCIMobility.h" local="yes" imported="no">veins/modules/mobility/traci/TraCIMobility.h</includes>
     <includes id="_obstacle_control_8h" name="ObstacleControl.h" local="yes" imported="no">veins/modules/obstacle/ObstacleControl.h</includes>
     <includes id="_tra_c_i_traffic_light_interface_8h" name="TraCITrafficLightInterface.h" local="yes" imported="no">veins/modules/world/traci/trafficLight/TraCITrafficLightInterface.h</includes>
-    <namespace>anonymous_namespace{TraCIScenarioManager.cc}</namespace>
     <member kind="function">
       <type></type>
       <name>Define_Module</name>
       <anchorfile>_tra_c_i_scenario_manager_8cc.html</anchorfile>
       <anchor>a2bf2e5e178ff427c82906fd6eecba07c</anchor>
       <arglist>(veins::TraCIScenarioManager)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; std::string &gt;</type>
-      <name>getMapping</name>
-      <anchorfile>namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html</anchorfile>
-      <anchor>aee10972a597261c51d4978b2e596294a</anchor>
-      <arglist>(std::string el)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -5637,7 +5489,6 @@
     <includes id="_tra_c_i_command_interface_8h" name="TraCICommandInterface.h" local="yes" imported="no">veins/modules/mobility/traci/TraCICommandInterface.h</includes>
     <includes id="_tra_c_i_constants_8h" name="TraCIConstants.h" local="yes" imported="no">veins/modules/mobility/traci/TraCIConstants.h</includes>
     <includes id="_tra_c_i_launcher_8h" name="TraCILauncher.h" local="yes" imported="no">veins/modules/mobility/traci/TraCILauncher.h</includes>
-    <namespace>anonymous_namespace{TraCIScenarioManagerForker.cc}</namespace>
     <member kind="define">
       <type>#define</type>
       <name>WANT_WINSOCK2</name>
@@ -5651,13 +5502,6 @@
       <anchorfile>_tra_c_i_scenario_manager_forker_8cc.html</anchorfile>
       <anchor>aa0cd860ead190778e273cda53e3da6b4</anchor>
       <arglist>(veins::TraCIScenarioManagerForker)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::string</type>
-      <name>replace</name>
-      <anchorfile>namespaceanonymous__namespace_02_tra_c_i_scenario_manager_forker_8cc_03.html</anchorfile>
-      <anchor>ab1f88e93928abbf9d1734e6c330da1e9</anchor>
-      <arglist>(std::string haystack, std::string needle, T newValue)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -13494,18 +13338,6 @@
       <arglist></arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::greaterByReceptionEnd</name>
-    <filename>structveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_1_1greater_by_reception_end.html</filename>
-    <templarg></templarg>
-    <member kind="function">
-      <type>bool</type>
-      <name>operator()</name>
-      <anchorfile>structveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_1_1greater_by_reception_end.html</anchorfile>
-      <anchor>a113fa04752dae6021818adc06f79e9bd</anchor>
-      <arglist>(const T &amp;lhs, const T &amp;rhs) const</arglist>
-    </member>
-  </compound>
   <compound kind="class">
     <name>veins::BaseConnectionManager::GridCoord</name>
     <filename>classveins_1_1_base_connection_manager_1_1_grid_coord.html</filename>
@@ -19852,66 +19684,6 @@
       <name>radiusSecurity</name>
       <anchorfile>class_radius_estimator_agent_pair.html</anchorfile>
       <anchor>a65d03ed83c922dbc6fea06950bebaaf5</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>anonymous_namespace{BBoxLookup.cc}::Ray</name>
-    <filename>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</filename>
-    <member kind="variable">
-      <type>Point</type>
-      <name>origin</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a80e82bb3f37bd0b36149dffc3c264fea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>Point</type>
-      <name>destination</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a94ac52b83e49310f7a59609ac1b39bcd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>Point</type>
-      <name>direction</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a5f4d8bc974948c6d4e0195bad9a8f707</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>Point</type>
-      <name>invDirection</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a989e5c4bcd1ebc912d2556e2d4aba346</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>x</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>af8af0b365a2419f4d31ce549d3131767</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>size_t</type>
-      <name>y</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a520578a09c7bf3068f0d6e3f0c3df19a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>struct anonymous_namespace{BBoxLookup.cc}::Ray::@0</type>
-      <name>sign</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a07115780b0ec1c3a14803954332313eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>length</name>
-      <anchorfile>structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html</anchorfile>
-      <anchor>a2ea643a489cdd49f0573408240556b43</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -27087,185 +26859,6 @@
     </member>
   </compound>
   <compound kind="namespace">
-    <name>anonymous_namespace{AnnotationManager.cc}</name>
-    <filename>namespaceanonymous__namespace_02_annotation_manager_8cc_03.html</filename>
-    <member kind="variable">
-      <type>const short</type>
-      <name>EVT_SCHEDULED_ERASE</name>
-      <anchorfile>namespaceanonymous__namespace_02_annotation_manager_8cc_03.html</anchorfile>
-      <anchor>aad339c1ed9a3ef9a85238e16e2b920ea</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{BaseConnectionManager.cc}</name>
-    <filename>namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html</filename>
-    <member kind="function" static="yes">
-      <type>static double</type>
-      <name>dist</name>
-      <anchorfile>namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html</anchorfile>
-      <anchor>a03d2870486bee7d8198d066f67d00e04</anchor>
-      <arglist>(double coord1, double coord2, double size)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>sqrTorusDist</name>
-      <anchorfile>namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html</anchorfile>
-      <anchor>a4c7285eb31fa2914adffc7da4255b6d2</anchor>
-      <arglist>(Coord c, Coord b, Coord size)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{BaseMobility.cc}</name>
-    <filename>namespaceanonymous__namespace_02_base_mobility_8cc_03.html</filename>
-    <member kind="function">
-      <type>bool</type>
-      <name>isInBoundary</name>
-      <anchorfile>namespaceanonymous__namespace_02_base_mobility_8cc_03.html</anchorfile>
-      <anchor>a63cc37de263c8dbba9a763b23359862d</anchor>
-      <arglist>(Coord c, Coord lowerBound, Coord upperBound)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{BBoxLookup.cc}</name>
-    <filename>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</filename>
-    <class kind="struct">anonymous_namespace{BBoxLookup.cc}::Ray</class>
-    <member kind="typedef">
-      <type>veins::BBoxLookup::Point</type>
-      <name>Point</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>ab44832c5578a22ebf7b2a19694405cd9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>veins::BBoxLookup::Box</type>
-      <name>Box</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>a7fdc32ad591b5c3137e1208ee806f466</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>Ray</type>
-      <name>makeRay</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>a511746fffff7fb590b4d01d923189b03</anchor>
-      <arglist>(const Point &amp;sender, const Point &amp;receiver)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>intersects</name>
-      <anchorfile>namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html</anchorfile>
-      <anchor>ad29edbecc2bba7cf9afb525f0aff0f25</anchor>
-      <arglist>(const Ray &amp;ray, const Box &amp;box)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{Coord.cc}</name>
-    <filename>namespaceanonymous__namespace_02_coord_8cc_03.html</filename>
-    <member kind="function" static="yes">
-      <type>static double</type>
-      <name>dist</name>
-      <anchorfile>namespaceanonymous__namespace_02_coord_8cc_03.html</anchorfile>
-      <anchor>a8c0f9656a5c33ea4cd7240eb430fc1d6</anchor>
-      <arglist>(double coord1, double coord2, double size)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{MobileHostObstacle.cc}</name>
-    <filename>namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html</filename>
-    <member kind="function">
-      <type>bool</type>
-      <name>isPointInObstacle</name>
-      <anchorfile>namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html</anchorfile>
-      <anchor>a4905f71256d96d9b1781ab9b31ec2a9e</anchor>
-      <arglist>(Coord point, const MobileHostObstacle::Coords &amp;shape)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>segmentsIntersectAt</name>
-      <anchorfile>namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html</anchorfile>
-      <anchor>a5d7ee91cc8c7d960c2adaf8c6c773604</anchor>
-      <arglist>(Coord p1From, Coord p1To, Coord p2From, Coord p2To)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{NedFunctions.cc}</name>
-    <filename>namespaceanonymous__namespace_02_ned_functions_8cc_03.html</filename>
-    <member kind="function" static="yes">
-      <type>static cNEDValue</type>
-      <name>opp_eval</name>
-      <anchorfile>namespaceanonymous__namespace_02_ned_functions_8cc_03.html</anchorfile>
-      <anchor>a71c5d31605be60b7b1ae4d1a40c61da8</anchor>
-      <arglist>(const char *txt, cComponent *context)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{NetwToMacControlInfo.cc}</name>
-    <filename>namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html</filename>
-    <member kind="typedef">
-      <type>NetwToMacControlInfo</type>
-      <name>tNetwToMacControlInfoBase</name>
-      <anchorfile>namespaceanonymous__namespace_02_netw_to_mac_control_info_8cc_03.html</anchorfile>
-      <anchor>a6a3ed43948eaeb9fd5b5b1e9ed5bed9c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{Obstacle.cc}</name>
-    <filename>namespaceanonymous__namespace_02_obstacle_8cc_03.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>segmentsIntersectAt</name>
-      <anchorfile>namespaceanonymous__namespace_02_obstacle_8cc_03.html</anchorfile>
-      <anchor>a46da0e8b4beb911bde581d7997d7312c</anchor>
-      <arglist>(const Coord &amp;p1From, const Coord &amp;p1To, const Coord &amp;p2From, const Coord &amp;p2To)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{ObstacleControl.cc}</name>
-    <filename>namespaceanonymous__namespace_02_obstacle_control_8cc_03.html</filename>
-    <member kind="function">
-      <type>veins::BBoxLookup</type>
-      <name>rebuildBBoxLookup</name>
-      <anchorfile>namespaceanonymous__namespace_02_obstacle_control_8cc_03.html</anchorfile>
-      <anchor>a622c9a0b0c5d14fbd42f7d5bcba982cb</anchor>
-      <arglist>(const std::vector&lt; std::unique_ptr&lt; veins::Obstacle &gt;&gt; &amp;obstacleOwner, int gridCellSize=250)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{TraCIMobility.cc}</name>
-    <filename>namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html</filename>
-    <member kind="variable">
-      <type>const double</type>
-      <name>MY_INFINITY</name>
-      <anchorfile>namespaceanonymous__namespace_02_tra_c_i_mobility_8cc_03.html</anchorfile>
-      <anchor>a2460ad95761f590f8bfdc2fb72d73e57</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{TraCIScenarioManager.cc}</name>
-    <filename>namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html</filename>
-    <member kind="function">
-      <type>std::vector&lt; std::string &gt;</type>
-      <name>getMapping</name>
-      <anchorfile>namespaceanonymous__namespace_02_tra_c_i_scenario_manager_8cc_03.html</anchorfile>
-      <anchor>aee10972a597261c51d4978b2e596294a</anchor>
-      <arglist>(std::string el)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>anonymous_namespace{TraCIScenarioManagerForker.cc}</name>
-    <filename>namespaceanonymous__namespace_02_tra_c_i_scenario_manager_forker_8cc_03.html</filename>
-    <member kind="function">
-      <type>std::string</type>
-      <name>replace</name>
-      <anchorfile>namespaceanonymous__namespace_02_tra_c_i_scenario_manager_forker_8cc_03.html</anchorfile>
-      <anchor>ab1f88e93928abbf9d1734e6c330da1e9</anchor>
-      <arglist>(std::string haystack, std::string needle, T newValue)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
     <name>omnetpp</name>
     <filename>namespaceomnetpp.html</filename>
   </compound>
@@ -28063,7 +27656,6 @@
   <compound kind="namespace">
     <name>veins::SignalUtils</name>
     <filename>namespaceveins_1_1_signal_utils.html</filename>
-    <namespace>veins::SignalUtils::anonymous_namespace{SignalUtils.cc}</namespace>
     <member kind="typedef">
       <type>DeciderToPhyInterface::AirFrameVector</type>
       <name>AirFrameVector</name>
@@ -28084,25 +27676,6 @@
       <anchorfile>namespaceveins_1_1_signal_utils.html</anchorfile>
       <anchor>a65bf87cf643cccf540dc5f0802a71427</anchor>
       <arglist>(simtime_t start, simtime_t end, AirFrame *signalFrame, AirFrameVector &amp;interfererFrames, double noise)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>veins::SignalUtils::anonymous_namespace{SignalUtils.cc}</name>
-    <filename>namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html</filename>
-    <class kind="struct">veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::greaterByReceptionEnd</class>
-    <member kind="function">
-      <type>Signal</type>
-      <name>getMaxInterference</name>
-      <anchorfile>namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html</anchorfile>
-      <anchor>adec53cec45469bce01bd893290800df5</anchor>
-      <arglist>(simtime_t start, simtime_t end, AirFrame *const referenceFrame, AirFrameVector &amp;interfererFrames)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>powerLevelSumAtFrequencyIndex</name>
-      <anchorfile>namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html</anchorfile>
-      <anchor>a3bdc19ba2443b2e74ab424beea23f8c8</anchor>
-      <arglist>(const std::vector&lt; Signal * &gt; &amp;signals, size_t freqIndex)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -30617,7 +30190,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>%Veins - The open source vehicular network simulation framework.</title>
+    <title>%Veins.</title>
     <filename>index.html</filename>
   </compound>
 </tagfile>

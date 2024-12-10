@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: ObstacleControl.cc Source File</title>
+<title>My Project: ObstacleControl.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -119,9 +118,9 @@ $(document).ready(function(){initNavTree('_obstacle_control_8cc_source.html','')
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_obstacle_control_8cc.html#a3abbe90ca8494b0664a39fe98a99fb7e">   32</a></span>&#160;<a class="code" href="_obstacle_control_8cc.html#a3abbe90ca8494b0664a39fe98a99fb7e">Define_Module</a>(<a class="code" href="classveins_1_1_obstacle_control.html">veins::ObstacleControl</a>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html">   34</a></span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb">   36</a></span>&#160;<a class="code" href="classveins_1_1_b_box_lookup.html">veins::BBoxLookup</a> <a class="code" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb">rebuildBBoxLookup</a>(<span class="keyword">const</span> std::vector&lt;std::unique_ptr&lt;veins::Obstacle&gt;&gt;&amp; obstacleOwner, <span class="keywordtype">int</span> gridCellSize = 250)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="classveins_1_1_b_box_lookup.html">veins::BBoxLookup</a> rebuildBBoxLookup(<span class="keyword">const</span> std::vector&lt;std::unique_ptr&lt;veins::Obstacle&gt;&gt;&amp; obstacleOwner, <span class="keywordtype">int</span> gridCellSize = 250)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::vector&lt;veins::Obstacle*&gt; obstaclePointers;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    obstaclePointers.reserve(obstacleOwner.size());</div>
@@ -277,7 +276,7 @@ $(document).ready(function(){initNavTree('_obstacle_control_8cc_source.html','')
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// rebuild bounding box lookup structure if dirty (new obstacles added recently)</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classveins_1_1_obstacle_control.html#a05cdb41ead46d7a92db5d7fd3157a67f">isBboxLookupDirty</a>) {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="classveins_1_1_obstacle_control.html#a281f2ae0ed4486eb54af93b53ea2a98e">bboxLookup</a> = <a class="code" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb">rebuildBBoxLookup</a>(<a class="code" href="classveins_1_1_obstacle_control.html#a36f06a8f4c0ec26e0c1ffaa3911c5dcf">obstacleOwner</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="classveins_1_1_obstacle_control.html#a281f2ae0ed4486eb54af93b53ea2a98e">bboxLookup</a> = rebuildBBoxLookup(<a class="code" href="classveins_1_1_obstacle_control.html#a36f06a8f4c0ec26e0c1ffaa3911c5dcf">obstacleOwner</a>);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="classveins_1_1_obstacle_control.html#a05cdb41ead46d7a92db5d7fd3157a67f">isBboxLookupDirty</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
@@ -429,7 +428,6 @@ $(document).ready(function(){initNavTree('_obstacle_control_8cc_source.html','')
 <div class="ttc" id="aclassveins_1_1_obstacle_html_a6e4559fb9e1dcf379cf347b8378fc6b5"><div class="ttname"><a href="classveins_1_1_obstacle.html#a6e4559fb9e1dcf379cf347b8378fc6b5">veins::Obstacle::getShape</a></div><div class="ttdeci">const Coords &amp; getShape() const</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8cc_source.html#l00053">Obstacle.cc:53</a></div></div>
 <div class="ttc" id="aclassveins_1_1_obstacle_html_a805aed4d3b239e0163f06aa70bfb0b73"><div class="ttname"><a href="classveins_1_1_obstacle.html#a805aed4d3b239e0163f06aa70bfb0b73">veins::Obstacle::setShape</a></div><div class="ttdeci">void setShape(Coords shape)</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8cc_source.html#l00040">Obstacle.cc:40</a></div></div>
 <div class="ttc" id="aclassveins_1_1_obstacle_html_acbca76ee386622403786473f87fb92d4"><div class="ttname"><a href="classveins_1_1_obstacle.html#acbca76ee386622403786473f87fb92d4">veins::Obstacle::visualRepresentation</a></div><div class="ttdeci">AnnotationManager::Annotation * visualRepresentation</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8h_source.html#l00059">Obstacle.h:59</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_obstacle_control_8cc_03_html_a622c9a0b0c5d14fbd42f7d5bcba982cb"><div class="ttname"><a href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb">anonymous_namespace{ObstacleControl.cc}::rebuildBBoxLookup</a></div><div class="ttdeci">veins::BBoxLookup rebuildBBoxLookup(const std::vector&lt; std::unique_ptr&lt; veins::Obstacle &gt;&gt; &amp;obstacleOwner, int gridCellSize=250)</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_control_8cc_source.html#l00036">ObstacleControl.cc:36</a></div></div>
 <div class="ttc" id="astructveins_1_1_b_box_lookup_1_1_box_html"><div class="ttname"><a href="structveins_1_1_b_box_lookup_1_1_box.html">veins::BBoxLookup::Box</a></div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8h_source.html#l00055">BBoxLookup.h:55</a></div></div>
 <div class="ttc" id="astructveins_1_1_obstacle_control_1_1_cache_key_html"><div class="ttname"><a href="structveins_1_1_obstacle_control_1_1_cache_key.html">veins::ObstacleControl::CacheKey</a></div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_control_8h_source.html#l00074">ObstacleControl.h:74</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -438,7 +436,7 @@ $(document).ready(function(){initNavTree('_obstacle_control_8cc_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_394ebadbe5172c765b46a7a4351c9fd4.html">obstacle</a></li><li class="navelem"><a class="el" href="_obstacle_control_8cc.html">ObstacleControl.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

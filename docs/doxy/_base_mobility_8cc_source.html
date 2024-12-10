@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: BaseMobility.cc Source File</title>
+<title>My Project: BaseMobility.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -127,8 +126,8 @@ $(document).ready(function(){initNavTree('_base_mobility_8cc_source.html',''); i
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">const</span> simsignal_t <a class="code" href="classveins_1_1_base_mobility.html#a830d988623baf18a40b7af3d0ad19b64">BaseMobility::mobilityStateChangedSignal</a> = registerSignal(<span class="stringliteral">&quot;org_car2x_veins_base_modules_mobilityStateChanged&quot;</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_base_mobility_8cc_03.html">   42</a></span>&#160;<span class="keyword">namespace </span>{</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_base_mobility_8cc_03.html#a63cc37de263c8dbba9a763b23359862d">   43</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespaceanonymous__namespace_02_base_mobility_8cc_03.html#a63cc37de263c8dbba9a763b23359862d">isInBoundary</a>(<a class="code" href="classveins_1_1_coord.html">Coord</a> c, <a class="code" href="classveins_1_1_coord.html">Coord</a> lowerBound, <a class="code" href="classveins_1_1_coord.html">Coord</a> upperBound)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span> isInBoundary(<a class="code" href="classveins_1_1_coord.html">Coord</a> c, <a class="code" href="classveins_1_1_coord.html">Coord</a> lowerBound, <a class="code" href="classveins_1_1_coord.html">Coord</a> upperBound)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> lowerBound.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> &lt;= c.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> &amp;&amp; c.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> &lt;= upperBound.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> &amp;&amp; lowerBound.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> &lt;= c.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> &amp;&amp; c.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> &lt;= upperBound.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> &amp;&amp; lowerBound.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a> &lt;= c.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a> &amp;&amp; c.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a> &lt;= upperBound.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
@@ -217,7 +216,7 @@ $(document).ready(function(){initNavTree('_base_mobility_8cc_source.html',''); i
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        EV_TRACE &lt;&lt; <span class="stringliteral">&quot;start pos: &quot;</span> &lt;&lt; <a class="code" href="classveins_1_1_base_mobility.html#a29f2fdadeaa29128531f1920af7909ca">move</a>.<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>().<a class="code" href="classveins_1_1_coord.html#a6e2a6d6d22318dcac1173b4de5962d30">info</a>() &lt;&lt; endl;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// check whether position is within the playground</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespaceanonymous__namespace_02_base_mobility_8cc_03.html#a63cc37de263c8dbba9a763b23359862d">isInBoundary</a>(<a class="code" href="classveins_1_1_base_mobility.html#a29f2fdadeaa29128531f1920af7909ca">move</a>.<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>(), <a class="code" href="classveins_1_1_coord.html#a2d291cbb8e58af4ce8c68e9c8671b5d6">Coord::ZERO</a>, *<a class="code" href="classveins_1_1_base_mobility.html#aba221195b5a84282e00111308a8b41da">world</a>-&gt;<a class="code" href="classveins_1_1_base_world_utility.html#a08a8c00b81e5b70ab4cdfe611d4169b7">getPgs</a>())) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (!isInBoundary(<a class="code" href="classveins_1_1_base_mobility.html#a29f2fdadeaa29128531f1920af7909ca">move</a>.<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>(), <a class="code" href="classveins_1_1_coord.html#a2d291cbb8e58af4ce8c68e9c8671b5d6">Coord::ZERO</a>, *<a class="code" href="classveins_1_1_base_mobility.html#aba221195b5a84282e00111308a8b41da">world</a>-&gt;<a class="code" href="classveins_1_1_base_world_utility.html#a08a8c00b81e5b70ab4cdfe611d4169b7">getPgs</a>())) {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">throw</span> cRuntimeError(<span class="stringliteral">&quot;node position specified in omnetpp.ini exceeds playgroundsize&quot;</span>);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
@@ -882,8 +881,7 @@ $(document).ready(function(){initNavTree('_base_mobility_8cc_source.html',''); i
 <div class="ttc" id="aclassveins_1_1_move_html_ae583b55d97cf1f59cbb000a584efb67d"><div class="ttname"><a href="classveins_1_1_move.html#ae583b55d97cf1f59cbb000a584efb67d">veins::Move::setDirectionByVector</a></div><div class="ttdeci">void setDirectionByVector(const Coord &amp;direction)</div><div class="ttdoc">Sets the direction to the passed vector, which must be already normalized or the 0-vector.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00164">Move.h:164</a></div></div>
 <div class="ttc" id="aclassveins_1_1_move_html_ae7135773d10fdf52bec4e5c9a398a092"><div class="ttname"><a href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092">veins::Move::setStart</a></div><div class="ttdeci">void setStart(const Coord &amp;startPos, simtime_t_cref startTime)</div><div class="ttdoc">Sets start position (components in meters) and start time.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00114">Move.h:114</a></div></div>
 <div class="ttc" id="aclassveins_1_1_move_html_aef8fd825481c69e09785d096daa6f3fe"><div class="ttname"><a href="classveins_1_1_move.html#aef8fd825481c69e09785d096daa6f3fe">veins::Move::setOrientationByVector</a></div><div class="ttdeci">void setOrientationByVector(const Coord &amp;orientation)</div><div class="ttdoc">Sets the orientation to the passed vector.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00154">Move.h:154</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_base_mobility_8cc_03_html_a63cc37de263c8dbba9a763b23359862d"><div class="ttname"><a href="namespaceanonymous__namespace_02_base_mobility_8cc_03.html#a63cc37de263c8dbba9a763b23359862d">anonymous_namespace{BaseMobility.cc}::isInBoundary</a></div><div class="ttdeci">bool isInBoundary(Coord c, Coord lowerBound, Coord upperBound)</div><div class="ttdef"><b>Definition:</b> <a href="_base_mobility_8cc_source.html#l00043">BaseMobility.cc:43</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 <div class="ttc" id="anamespaceveins_html_aea29a8c643463fb887cd296eac86d8d9"><div class="ttname"><a href="namespaceveins.html#aea29a8c643463fb887cd296eac86d8d9">veins::Define_Module</a></div><div class="ttdeci">Define_Module(Icarqoc)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -891,7 +889,7 @@ $(document).ready(function(){initNavTree('_base_mobility_8cc_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_7ed75e2b1ee1c6cbf8e17dfb79841f91.html">base</a></li><li class="navelem"><a class="el" href="dir_af3aaa2d8a58291f9cf4885b437731a3.html">modules</a></li><li class="navelem"><a class="el" href="_base_mobility_8cc.html">BaseMobility.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

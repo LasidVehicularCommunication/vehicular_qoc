@@ -1,6 +1,6 @@
-<area shape="rect" id="node1" href="org.car2x.veins.nodes.RSU.html" title="Compound Module RSU" alt="" coords="232,79,304,104">
-<area shape="rect" id="node2" href="org.car2x.veins.base.modules.IBaseApplLayer.html" title="Module Interface IBaseApplLayer" alt="" coords="5,152,128,177">
-<area shape="rect" id="node3" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="152,152,259,177">
-<area shape="rect" id="node4" href="org.car2x.veins.modules.nic.INic80211p.html" title="Module Interface INic80211p" alt="" coords="283,152,378,177">
-<area shape="rect" id="node5" href="org.car2x.veins.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="403,152,509,177">
-<area shape="rect" id="node6" href="RSUExampleScenario.html" title="Network RSUExampleScenario" alt="" coords="187,5,349,31">
+<area shape="rect" id="node1" href="org.car2x.veins.nodes.RSU.html" title="Compound Module RSU" alt="" coords="223,79,295,104">
+<area shape="rect" id="node2" href="org.car2x.veins.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="5,152,112,177">
+<area shape="rect" id="node3" href="ned.IdealChannel.html" title="Channel IdealChannel" alt="" coords="136,152,243,177">
+<area shape="rect" id="node4" href="org.car2x.veins.base.modules.IBaseApplLayer.html" title="Module Interface IBaseApplLayer" alt="" coords="267,152,389,177">
+<area shape="rect" id="node5" href="org.car2x.veins.modules.nic.INic80211p.html" title="Module Interface INic80211p" alt="" coords="414,152,509,177">
+<area shape="rect" id="node6" href="RSUExampleScenario.html" title="Network RSUExampleScenario" alt="" coords="177,5,340,31">

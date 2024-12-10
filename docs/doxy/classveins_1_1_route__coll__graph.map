@@ -1,6 +1,6 @@
 <map id="veins::Route" name="veins::Route">
 <area shape="rect" id="node1" title=" " alt="" coords="256,541,359,568"/>
-<area shape="rect" id="node2" href="$classveins_1_1_agent.html" title=" " alt="" coords="256,423,359,449"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent.html" title="Uma breve descrição da classe." alt="" coords="256,423,359,449"/>
 <area shape="rect" id="node3" href="$classveins_1_1_mobility_info.html" title=" " alt="" coords="79,333,221,360"/>
 <area shape="rect" id="node4" href="$classveins_1_1_move.html" title="Class to store object position and movement." alt="" coords="65,215,166,241"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,5,76,32"/>

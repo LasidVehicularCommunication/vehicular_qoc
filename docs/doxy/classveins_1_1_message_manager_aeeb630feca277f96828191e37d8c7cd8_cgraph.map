@@ -1,6 +1,6 @@
 <map id="veins::MessageManager::sendIcarMessageService" name="veins::MessageManager::sendIcarMessageService">
 <area shape="rect" id="node1" title=" " alt="" coords="5,221,196,262"/>
-<area shape="rect" id="node2" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title=" " alt="" coords="538,5,682,32"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="538,5,682,32"/>
 <area shape="rect" id="node3" href="$classveins_1_1_remote_agent_group.html#a418f85bfd8b9a2aeaaec9a8080743139" title=" " alt="" coords="244,122,437,163"/>
 <area shape="rect" id="node4" href="$classveins_1_1_message_manager.html#a8a4db062502651269a9a0791b4df8ca4" title=" " alt="" coords="251,253,431,294"/>
 <area shape="rect" id="node14" href="$classveins_1_1_message_manager.html#aff7b8c2ae5150d34d092038a39518d19" title=" " alt="" coords="251,750,431,791"/>

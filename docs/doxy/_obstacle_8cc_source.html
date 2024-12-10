@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: Obstacle.cc Source File</title>
+<title>My Project: Obstacle.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -164,16 +163,16 @@ $(document).ready(function(){initNavTree('_obstacle_8cc_source.html',''); initRe
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">bool</span> inYRangeDown = (point.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> &gt;= j-&gt;y) &amp;&amp; (point.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> &lt; i-&gt;y);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> inYRange = inYRangeUp || inYRangeDown;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (!inYRange) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a> = point.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> &lt; (i-&gt;x + ((point.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> - i-&gt;y) * (j-&gt;x - i-&gt;x) / (j-&gt;y - i-&gt;y)));</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">bool</span> intersects = point.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> &lt; (i-&gt;x + ((point.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> - i-&gt;y) * (j-&gt;x - i-&gt;x) / (j-&gt;y - i-&gt;y)));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (!intersects) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        isInside = !isInside;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> isInside;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_obstacle_8cc_03.html">   86</a></span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">namespace </span>{</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c">   88</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c">segmentsIntersectAt</a>(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p1From, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p1To, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p2From, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p2To)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">double</span> segmentsIntersectAt(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p1From, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p1To, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p2From, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; p2To)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">double</span> p1x = p1To.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> - p1From.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">double</span> p1y = p1To.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> - p1From.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>;</div>
@@ -203,7 +202,7 @@ $(document).ready(function(){initNavTree('_obstacle_8cc_source.html',''); initRe
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; c1 = *i;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; c2 = *j;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">double</span> i = <a class="code" href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c">segmentsIntersectAt</a>(senderPos, receiverPos, c1, c2);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">double</span> i = segmentsIntersectAt(senderPos, receiverPos, c1, c2);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (i != -1) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            intersectAt.push_back(i);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
@@ -255,16 +254,14 @@ $(document).ready(function(){initNavTree('_obstacle_8cc_source.html',''); initRe
 <div class="ttc" id="aclassveins_1_1_obstacle_html_aea98995df713a70e46a917b765a692e2"><div class="ttname"><a href="classveins_1_1_obstacle.html#aea98995df713a70e46a917b765a692e2">veins::Obstacle::getBboxP2</a></div><div class="ttdeci">const Coord getBboxP2() const</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8cc_source.html#l00063">Obstacle.cc:63</a></div></div>
 <div class="ttc" id="aclassveins_1_1_obstacle_html_aef7623fe7b0a2890dd53f782dbed1a86"><div class="ttname"><a href="classveins_1_1_obstacle.html#aef7623fe7b0a2890dd53f782dbed1a86">veins::Obstacle::Coords</a></div><div class="ttdeci">std::vector&lt; Coord &gt; Coords</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8h_source.html#l00039">Obstacle.h:39</a></div></div>
 <div class="ttc" id="aclassveins_1_1_obstacle_html_af6b412486fd7d07febba12269d56b024"><div class="ttname"><a href="classveins_1_1_obstacle.html#af6b412486fd7d07febba12269d56b024">veins::Obstacle::attenuationPerCut</a></div><div class="ttdeci">double attenuationPerCut</div><div class="ttdoc">in dB.</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8h_source.html#l00064">Obstacle.h:64</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_b_box_lookup_8cc_03_html_ad29edbecc2bba7cf9afb525f0aff0f25"><div class="ttname"><a href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">anonymous_namespace{BBoxLookup.cc}::intersects</a></div><div class="ttdeci">bool intersects(const Ray &amp;ray, const Box &amp;box)</div><div class="ttdoc">Return whether ray intersects with box.</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00074">BBoxLookup.cc:74</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_obstacle_8cc_03_html_a46da0e8b4beb911bde581d7997d7312c"><div class="ttname"><a href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c">anonymous_namespace{Obstacle.cc}::segmentsIntersectAt</a></div><div class="ttdeci">double segmentsIntersectAt(const Coord &amp;p1From, const Coord &amp;p1To, const Coord &amp;p2From, const Coord &amp;p2To)</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8cc_source.html#l00088">Obstacle.cc:88</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_394ebadbe5172c765b46a7a4351c9fd4.html">obstacle</a></li><li class="navelem"><a class="el" href="_obstacle_8cc.html">Obstacle.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

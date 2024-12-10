@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins::AnnotationManager Class Reference</title>
+<title>My Project: veins::AnnotationManager</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -90,7 +89,7 @@ $(document).ready(function(){initNavTree('classveins_1_1_annotation_manager.html
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classveins_1_1_annotation_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">veins::AnnotationManager Class Reference</div>  </div>
+<div class="title">veins::AnnotationManager</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -672,7 +671,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="_annotation_manager_8cc_source.html#l00203">203</a> of file <a class="el" href="_annotation_manager_8cc_source.html">AnnotationManager.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">Point</a>* o = <span class="keyword">new</span> <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">Point</a>(p, color, text);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    Point* o = <span class="keyword">new</span> Point(p, color, text);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    o-&gt;group = group;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classveins_1_1_annotation_manager.html#a8f88e23120b9acb99ed26bc8ad7ddd06">annotations</a>.push_back(o);</div>
@@ -681,7 +680,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">return</span> o;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_b_box_lookup_8cc_03_html_ab44832c5578a22ebf7b2a19694405cd9"><div class="ttname"><a href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">anonymous_namespace{BBoxLookup.cc}::Point</a></div><div class="ttdeci">veins::BBoxLookup::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00029">BBoxLookup.cc:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_annotation_manager_8h_source.html#l00171">annotations</a>, <a class="el" href="_annotation_manager_8h_source.html#l00057">veins::AnnotationManager::Annotation::group</a>, and <a class="el" href="_annotation_manager_8cc_source.html#l00302">show()</a>.</p>
 
@@ -1239,7 +1237,7 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="_annotation_manager_8cc_source.html#l00092">92</a> of file <a class="el" href="_annotation_manager_8cc_source.html">AnnotationManager.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (msg-&gt;getKind() == <a class="code" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">EVT_SCHEDULED_ERASE</a>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (msg-&gt;getKind() == EVT_SCHEDULED_ERASE) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        Annotation* a = <span class="keyword">static_cast&lt;</span>Annotation*<span class="keyword">&gt;</span>(msg-&gt;getContextPointer());</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        ASSERT(a);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
@@ -1252,9 +1250,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">throw</span> cRuntimeError(<span class="stringliteral">&quot;unknown self message type&quot;</span>);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_annotation_manager_8cc_03_html_aad339c1ed9a3ef9a85238e16e2b920ea"><div class="ttname"><a href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">anonymous_namespace{AnnotationManager.cc}::EVT_SCHEDULED_ERASE</a></div><div class="ttdeci">const short EVT_SCHEDULED_ERASE</div><div class="ttdef"><b>Definition:</b> <a href="_annotation_manager_8cc_source.html#l00039">AnnotationManager.cc:39</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_annotation_manager_8cc_source.html#l00271">erase()</a>, <a class="el" href="_annotation_manager_8cc_source.html#l00039">anonymous_namespace{AnnotationManager.cc}::EVT_SCHEDULED_ERASE</a>, and <a class="el" href="_annotation_manager_8h_source.html#l00169">scheduledEraseEvts</a>.</p>
+<p class="reference">References <a class="el" href="_annotation_manager_8cc_source.html#l00271">erase()</a>, and <a class="el" href="_annotation_manager_8h_source.html#l00169">scheduledEraseEvts</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_annotation_manager_8cc_source.html#l00083">handleMessage()</a>.</p>
 <div class="dynheader">
@@ -1559,7 +1556,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    Enter_Method_Silent();</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cMessage* evt = <span class="keyword">new</span> cMessage(<span class="stringliteral">&quot;erase&quot;</span>, <a class="code" href="namespaceanonymous__namespace_02_annotation_manager_8cc_03.html#aad339c1ed9a3ef9a85238e16e2b920ea">EVT_SCHEDULED_ERASE</a>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cMessage* evt = <span class="keyword">new</span> cMessage(<span class="stringliteral">&quot;erase&quot;</span>, EVT_SCHEDULED_ERASE);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    evt-&gt;setContextPointer(annotation);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    scheduleAt(simTime() + deltaT, evt);</div>
@@ -1567,7 +1564,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="classveins_1_1_annotation_manager.html#a76bce138adbdd050944ce0a5ae3cf0bf">scheduledEraseEvts</a>.push_back(evt);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_annotation_manager_8cc_source.html#l00039">anonymous_namespace{AnnotationManager.cc}::EVT_SCHEDULED_ERASE</a>, and <a class="el" href="_annotation_manager_8h_source.html#l00169">scheduledEraseEvts</a>.</p>
+<p class="reference">References <a class="el" href="_annotation_manager_8h_source.html#l00169">scheduledEraseEvts</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1588,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">if</span> (annotation-&gt;figure) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">Point</a>* o = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">Point</a>*<span class="keyword">&gt;</span>(annotation)) {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">const</span> Point* o = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>Point*<span class="keyword">&gt;</span>(annotation)) {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">if</span> (hasGUI()) {</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="comment">// no corresponding TkEnv representation</span></div>
@@ -1609,8 +1606,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">if</span> (hasGUI()) {</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            cLineFigure* figure = <span class="keyword">new</span> cLineFigure();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            figure-&gt;setStart(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(l-&gt;p1.x, l-&gt;p1.y));</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            figure-&gt;setEnd(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(l-&gt;p2.x, l-&gt;p2.y));</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            figure-&gt;setStart(cFigure::Point(l-&gt;p1.x, l-&gt;p1.y));</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            figure-&gt;setEnd(cFigure::Point(l-&gt;p2.x, l-&gt;p2.y));</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            figure-&gt;setLineColor(cFigure::Color(l-&gt;color.c_str()));</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            annotation-&gt;figure = figure;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <a class="code" href="classveins_1_1_annotation_manager.html#a0a977fb522bdb74265d8a4c45956dd7e">annotationLayer</a>-&gt;addFigure(annotation-&gt;figure);</div>
@@ -1635,7 +1632,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            cPolygonFigure* figure = <span class="keyword">new</span> cPolygonFigure();</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            std::vector&lt;cFigure::Point&gt; points;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordflow">for</span> (std::list&lt;Coord&gt;::const_iterator i = p-&gt;coords.begin(); i != p-&gt;coords.end(); ++i) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                points.push_back(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(i-&gt;x, i-&gt;y));</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                points.push_back(cFigure::Point(i-&gt;x, i-&gt;y));</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            figure-&gt;setPoints(points);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            figure-&gt;setLineColor(cFigure::Color(p-&gt;color.c_str()));</div>
@@ -1943,7 +1940,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_annotation_manager.html">AnnotationManager</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:21 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:25 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

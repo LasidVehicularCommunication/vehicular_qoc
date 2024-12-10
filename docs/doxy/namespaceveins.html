@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins Namespace Reference</title>
+<title>My Project: veins Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -93,9 +92,6 @@ $(document).ready(function(){initNavTree('namespaceveins.html',''); initResizabl
 <div class="title">veins Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Veins - The open source vehicular network simulation framework.  
-<a href="namespaceveins.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -256,6 +252,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic implementation of a <a class="el" href="classveins_1_1_vehicle_obstacle_shadowing.html" title="Basic implementation of a VehicleObstacleShadowing that uses SimplePathlossConstMapping (that is subc...">VehicleObstacleShadowing</a> that uses SimplePathlossConstMapping (that is subclassed from SimpleConstMapping) as attenuation-Mapping.  <a href="classveins_1_1_vehicle_obstacle_shadowing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html">Agent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uma breve descrição da classe.  <a href="classveins_1_1_agent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -731,9 +728,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:a331eb6e8b805e13285fd08b8ed1164d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps channel identifier to the corresponding center frequency.  <a href="namespaceveins.html#a331eb6e8b805e13285fd08b8ed1164d0">More...</a><br /></td></tr>
 <tr class="separator:a331eb6e8b805e13285fd08b8ed1164d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Veins - The open source vehicular network simulation framework. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a964364ce7398400296a90e748346ac78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a964364ce7398400296a90e748346ac78">&#9670;&nbsp;</a></span>AnalogueModelList</h2>
 
@@ -794,7 +789,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00102">102</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00100">100</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +885,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00103">103</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00101">101</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
 
 </div>
 </div>
@@ -1388,19 +1383,19 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00087">87</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#if OMNETPP_BUILDNUM &lt; 1506</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> cSimulation::getActiveSimulation()-&gt;getModuleByPath(modulePath);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">catch</span> (cRuntimeError) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> cSimulation::getActiveSimulation()-&gt;findModuleByPath(modulePath);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00085">85</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if OMNETPP_BUILDNUM &lt; 1506</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> cSimulation::getActiveSimulation()-&gt;getModuleByPath(modulePath);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">catch</span> (cRuntimeError) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> cSimulation::getActiveSimulation()-&gt;findModuleByPath(modulePath);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_channel_access_8cc_source.html#l00038">veins::ChannelAccess::getConnectionManager()</a>, <a class="el" href="_obstacle_control_8h_source.html#l00119">veins::ObstacleControlAccess::getIfExists()</a>, and <a class="el" href="_vehicle_obstacle_control_8h_source.html#l00106">veins::VehicleObstacleControlAccess::getIfExists()</a>.</p>
 <div class="dynheader">
@@ -1907,10 +1902,10 @@ template&lt;typename T , typename ... Args&gt; </div>
 <p>User-defined implementation of std::make_unique. </p>
 <p>Until Veins builds on C++14, this provides equivalent functionality. </p>
 
-<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00080">80</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> std::unique_ptr&lt;T&gt;(<span class="keyword">new</span> T(std::forward&lt;Args&gt;(args)...));</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="veins_8h_source.html#l00078">78</a> of file <a class="el" href="veins_8h_source.html">veins.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> std::unique_ptr&lt;T&gt;(<span class="keyword">new</span> T(std::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2138,27 +2133,15 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#if OMNETPP_VERSION &gt;= 0x600</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(argv[idx + 1].stringValue(), context);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> opp_eval(argv[idx + 1].stringValue(), context);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#elif OMNETPP_BUILDNUM &gt;= 1020</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cExpression::Context context(component);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(argv[idx + 1].stringValue(), &amp;context);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> opp_eval(argv[idx + 1].stringValue(), &amp;context);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(argv[idx + 1].stringValue(), component);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> opp_eval(argv[idx + 1].stringValue(), component);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_ned_functions_8cc_03_html_a71c5d31605be60b7b1ae4d1a40c61da8"><div class="ttname"><a href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">anonymous_namespace{NedFunctions.cc}::opp_eval</a></div><div class="ttdeci">static cNEDValue opp_eval(const char *txt, cComponent *context)</div><div class="ttdef"><b>Definition:</b> <a href="_ned_functions_8cc_source.html#l00029">NedFunctions.cc:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_ned_functions_8cc_source.html#l00029">anonymous_namespace{NedFunctions.cc}::opp_eval()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceveins_ac5eacb0554c29e91a78c487e80a385bf_cgraph.png" border="0" usemap="#anamespaceveins_ac5eacb0554c29e91a78c487e80a385bf_cgraph" alt=""/></div>
-<map name="anamespaceveins_ac5eacb0554c29e91a78c487e80a385bf_cgraph" id="anamespaceveins_ac5eacb0554c29e91a78c487e80a385bf_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,176,54"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8" title=" " alt="" coords="224,5,404,61"/>
-</map>
-</div>
-
 </div>
 </div>
 <a id="a4d7230d0d338ce98f5496e18304a7904"></a>
@@ -2201,7 +2184,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">int</span>) OMNETPP_BUILDNUM;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="ttc" id="anamespaceveins_html_aee21872360e72a7791bc53e0390569c0"><div class="ttname"><a href="namespaceveins.html#aee21872360e72a7791bc53e0390569c0">veins::intval_t</a></div><div class="ttdeci">long intval_t</div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00102">veins.h:102</a></div></div>
+<div class="ttc" id="anamespaceveins_html_aee21872360e72a7791bc53e0390569c0"><div class="ttname"><a href="namespaceveins.html#aee21872360e72a7791bc53e0390569c0">veins::intval_t</a></div><div class="ttdeci">long intval_t</div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00100">veins.h:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3579,7 +3562,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:18 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

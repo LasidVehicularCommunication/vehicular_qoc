@@ -1,7 +1,7 @@
 <area shape="rect" id="node1" href="src-veins-modules-messages-AckTimeOutMessage.html" title="Message AckTimeOutMessage" alt="" coords="5,5,165,31">
 <area shape="rect" id="node2" href="src-veins-base-messages-AirFrame.html" title="Packet AirFrame" alt="" coords="190,5,271,31">
-<area shape="rect" id="node3" href="src-veins-base-utils-POA.html" title="Class POA" alt="" coords="147,79,219,104">
-<area shape="rect" id="node4" href="src-veins-base-toolbox-Signal.html" title="Class Signal" alt="" coords="243,79,315,104">
+<area shape="rect" id="node3" href="src-veins-base-toolbox-Signal.html" title="Class Signal" alt="" coords="147,79,219,104">
+<area shape="rect" id="node4" href="src-veins-base-utils-POA.html" title="Class POA" alt="" coords="243,79,315,104">
 <area shape="rect" id="node5" href="src-veins-modules-messages-AirFrame11p.html" title="Message AirFrame11p" alt="" coords="295,5,401,31">
 <area shape="rect" id="node6" href="src-veins-modules-messages-BaseFrame1609_4.html" title="Packet BaseFrame1609_4" alt="" coords="425,5,567,31">
 <area shape="rect" id="node7" href="src-veins-base-utils-LAddress::L2Type.html" title="Class LAddress::L2Type" alt="" coords="561,79,695,104">

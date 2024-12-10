@@ -1,5 +1,5 @@
 <map id="veins::Agent" name="veins::Agent">
-<area shape="rect" id="node1" title=" " alt="" coords="108,5,211,32"/>
+<area shape="rect" id="node1" title="Uma breve descrição da classe." alt="" coords="108,5,211,32"/>
 <area shape="rect" id="node2" href="$classveins_1_1_local_agent.html" title=" " alt="" coords="5,80,143,107"/>
 <area shape="rect" id="node3" href="$classveins_1_1_remote_agent.html" title=" " alt="" coords="167,80,322,107"/>
 </map>

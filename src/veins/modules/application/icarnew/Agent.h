@@ -25,12 +25,16 @@
 #include <omnetpp.h>
 
 namespace veins {
-
-
+/**
+ * @class Agent
+ * @brief Uma breve descrição da classe.
+ *
+ * Uma descrição mais detalhada da classe, explicando sua funcionalidade e propósito.
+ */
 class Agent {
 private:
-    int64_t id = -1;
-    std::string agentName;
+    int64_t id = -1; /**< @brief Armazena o valor da classe. */
+    std::string agentName; /**< @brief Armazena o valor da classe. */
 
     double setRadius;
 
@@ -41,10 +45,25 @@ public:
     QoCInfo* qocInfo;
     Agent(int64_t id, std::string name);
 
+    /**
+     * @brief Construtor padrão.
+     *
+     * Inicializa os membros da classe.
+     */
     Agent();
     std::string info();
     std::string infoTrace(bool header, std::string idagent);
+    /**
+         * @brief Método para obter o valor atual.
+         *
+         * @return O valor armazenado.
+         */
     int64_t getId();
+    /**
+         * @brief Método para definir um valor.
+         *
+         * @param value O valor a ser definido.
+     */
     void setId(int64_t id);
     virtual ~Agent();
 

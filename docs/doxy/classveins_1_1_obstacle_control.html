@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins::ObstacleControl Class Reference</title>
+<title>My Project: veins::ObstacleControl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +88,7 @@ $(document).ready(function(){initNavTree('classveins_1_1_obstacle_control.html',
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classveins_1_1_obstacle_control-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">veins::ObstacleControl Class Reference</div>  </div>
+<div class="title">veins::ObstacleControl</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -653,16 +652,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_obstacle_control_a2605967770f04849d9319757e66305bf_cgraph.png" border="0" usemap="#aclassveins_1_1_obstacle_control_a2605967770f04849d9319757e66305bf_cgraph" alt=""/></div>
 <map name="aclassveins_1_1_obstacle_control_a2605967770f04849d9319757e66305bf_cgraph" id="aclassveins_1_1_obstacle_control_a2605967770f04849d9319757e66305bf_cgraph">
-<area shape="rect" title="calculate additional attenuation by obstacles, return multiplicative factor" alt="" coords="5,62,175,103"/>
-<area shape="rect" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477" title="Returns the distance to Coord &#39;a&#39;." alt="" coords="224,33,391,60"/>
-<area shape="rect" href="classveins_1_1_obstacle_control.html#a7bb694941ec27d078605e730c78644af" title="get hit obstacles (along with a list of points (in [0, 1]) along the line between sender and receiver..." alt="" coords="223,91,392,133"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04" title="On a torus the end and the begin of the axes are connected so you get a circle." alt="" coords="440,5,632,61"/>
-<area shape="rect" href="classveins_1_1_f_w_math.html#aa66a76d454bf3d91d8ec390c4737a7a1" title="Returns the remainder r on division of dividend a by divisor n, using floored division." alt="" coords="698,15,874,41"/>
-<area shape="rect" href="classveins_1_1_b_box_lookup.html#aafb4c0c12fd2d7623a9fa41010cddb01" title="Return all obstacles which have their bounding box touched by the transmission from sender to receive..." alt="" coords="459,91,613,133"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb" title=" " alt="" coords="446,168,626,224"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25" title="Return whether ray intersects with box." alt="" coords="680,66,892,107"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#a511746fffff7fb590b4d01d923189b03" title="Return a Ray struct for fast intersection tests from sender to receiver." alt="" coords="681,131,891,173"/>
-<area shape="rect" href="classveins_1_1_find_module.html#a5235f90b10b3a297c25baeaa8a4194cf" title="Returns a pointer to the module with the type of this template." alt="" coords="712,197,860,238"/>
+<area shape="rect" title="calculate additional attenuation by obstacles, return multiplicative factor" alt="" coords="5,27,175,69"/>
+<area shape="rect" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477" title="Returns the distance to Coord &#39;a&#39;." alt="" coords="224,5,391,32"/>
+<area shape="rect" href="classveins_1_1_obstacle_control.html#a7bb694941ec27d078605e730c78644af" title="get hit obstacles (along with a list of points (in [0, 1]) along the line between sender and receiver..." alt="" coords="223,57,392,98"/>
+<area shape="rect" href="classveins_1_1_coord.html#aa003fb9d6788186697029ce7653eb9e7" title="Returns the length of this Coords position vector." alt="" coords="441,5,593,32"/>
+<area shape="rect" href="classveins_1_1_b_box_lookup.html#aafb4c0c12fd2d7623a9fa41010cddb01" title="Return all obstacles which have their bounding box touched by the transmission from sender to receive..." alt="" coords="440,57,593,98"/>
 </map>
 </div>
 <div class="dynheader">
@@ -897,7 +891,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// rebuild bounding box lookup structure if dirty (new obstacles added recently)</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classveins_1_1_obstacle_control.html#a05cdb41ead46d7a92db5d7fd3157a67f">isBboxLookupDirty</a>) {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="classveins_1_1_obstacle_control.html#a281f2ae0ed4486eb54af93b53ea2a98e">bboxLookup</a> = <a class="code" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb">rebuildBBoxLookup</a>(<a class="code" href="classveins_1_1_obstacle_control.html#a36f06a8f4c0ec26e0c1ffaa3911c5dcf">obstacleOwner</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="classveins_1_1_obstacle_control.html#a281f2ae0ed4486eb54af93b53ea2a98e">bboxLookup</a> = rebuildBBoxLookup(<a class="code" href="classveins_1_1_obstacle_control.html#a36f06a8f4c0ec26e0c1ffaa3911c5dcf">obstacleOwner</a>);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="classveins_1_1_obstacle_control.html#a05cdb41ead46d7a92db5d7fd3157a67f">isBboxLookupDirty</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
@@ -919,9 +913,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 <div class="ttc" id="aclassveins_1_1_b_box_lookup_html_aafb4c0c12fd2d7623a9fa41010cddb01"><div class="ttname"><a href="classveins_1_1_b_box_lookup.html#aafb4c0c12fd2d7623a9fa41010cddb01">veins::BBoxLookup::findOverlapping</a></div><div class="ttdeci">std::vector&lt; Obstacle * &gt; findOverlapping(Point sender, Point receiver) const</div><div class="ttdoc">Return all obstacles which have their bounding box touched by the transmission from sender to receive...</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00161">BBoxLookup.cc:161</a></div></div>
 <div class="ttc" id="aclassveins_1_1_obstacle_control_html_a281f2ae0ed4486eb54af93b53ea2a98e"><div class="ttname"><a href="classveins_1_1_obstacle_control.html#a281f2ae0ed4486eb54af93b53ea2a98e">veins::ObstacleControl::bboxLookup</a></div><div class="ttdeci">BBoxLookup bboxLookup</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_control_8h_source.html#l00109">ObstacleControl.h:109</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_obstacle_control_8cc_03_html_a622c9a0b0c5d14fbd42f7d5bcba982cb"><div class="ttname"><a href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb">anonymous_namespace{ObstacleControl.cc}::rebuildBBoxLookup</a></div><div class="ttdeci">veins::BBoxLookup rebuildBBoxLookup(const std::vector&lt; std::unique_ptr&lt; veins::Obstacle &gt;&gt; &amp;obstacleOwner, int gridCellSize=250)</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_control_8cc_source.html#l00036">ObstacleControl.cc:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_obstacle_control_8h_source.html#l00109">bboxLookup</a>, <a class="el" href="_b_box_lookup_8cc_source.html#l00161">veins::BBoxLookup::findOverlapping()</a>, <a class="el" href="_obstacle_control_8h_source.html#l00110">isBboxLookupDirty</a>, <a class="el" href="_obstacle_control_8h_source.html#l00103">obstacleOwner</a>, <a class="el" href="_obstacle_control_8cc_source.html#l00036">anonymous_namespace{ObstacleControl.cc}::rebuildBBoxLookup()</a>, <a class="el" href="_coord_8h_source.html#l00054">veins::Coord::x</a>, and <a class="el" href="_coord_8h_source.html#l00055">veins::Coord::y</a>.</p>
+<p class="reference">References <a class="el" href="_obstacle_control_8h_source.html#l00109">bboxLookup</a>, <a class="el" href="_b_box_lookup_8cc_source.html#l00161">veins::BBoxLookup::findOverlapping()</a>, <a class="el" href="_obstacle_control_8h_source.html#l00110">isBboxLookupDirty</a>, <a class="el" href="_obstacle_control_8h_source.html#l00103">obstacleOwner</a>, <a class="el" href="_coord_8h_source.html#l00054">veins::Coord::x</a>, and <a class="el" href="_coord_8h_source.html#l00055">veins::Coord::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_obstacle_control_8cc_source.html#l00213">calculateAttenuation()</a>.</p>
 <div class="dynheader">
@@ -929,12 +922,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_obstacle_control_a7bb694941ec27d078605e730c78644af_cgraph.png" border="0" usemap="#aclassveins_1_1_obstacle_control_a7bb694941ec27d078605e730c78644af_cgraph" alt=""/></div>
 <map name="aclassveins_1_1_obstacle_control_a7bb694941ec27d078605e730c78644af_cgraph" id="aclassveins_1_1_obstacle_control_a7bb694941ec27d078605e730c78644af_cgraph">
-<area shape="rect" title="get hit obstacles (along with a list of points (in [0, 1]) along the line between sender and receiver..." alt="" coords="5,104,175,145"/>
-<area shape="rect" href="classveins_1_1_b_box_lookup.html#aafb4c0c12fd2d7623a9fa41010cddb01" title="Return all obstacles which have their bounding box touched by the transmission from sender to receive..." alt="" coords="236,67,389,108"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_obstacle_control_8cc_03.html#a622c9a0b0c5d14fbd42f7d5bcba982cb" title=" " alt="" coords="223,133,403,189"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25" title="Return whether ray intersects with box." alt="" coords="451,5,663,47"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#a511746fffff7fb590b4d01d923189b03" title="Return a Ray struct for fast intersection tests from sender to receiver." alt="" coords="452,71,661,112"/>
-<area shape="rect" href="classveins_1_1_find_module.html#a5235f90b10b3a297c25baeaa8a4194cf" title="Returns a pointer to the module with the type of this template." alt="" coords="483,140,631,181"/>
+<area shape="rect" title="get hit obstacles (along with a list of points (in [0, 1]) along the line between sender and receiver..." alt="" coords="5,5,175,47"/>
+<area shape="rect" href="classveins_1_1_b_box_lookup.html#aafb4c0c12fd2d7623a9fa41010cddb01" title="Return all obstacles which have their bounding box touched by the transmission from sender to receive..." alt="" coords="223,5,376,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1464,7 +1453,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_obstacle_control.html">ObstacleControl</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:20 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:25 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

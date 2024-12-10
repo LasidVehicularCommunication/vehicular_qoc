@@ -1,14 +1,6 @@
 var annotated_dup =
 [
-    [ "anonymous_namespace{BBoxLookup.cc}", "namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html", [
-      [ "Ray", "structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html", "structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray" ]
-    ] ],
     [ "veins", "namespaceveins.html", [
-      [ "SignalUtils", "namespaceveins_1_1_signal_utils.html", [
-        [ "anonymous_namespace{SignalUtils.cc}", "namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html", [
-          [ "greaterByReceptionEnd", "structveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_1_1greater_by_reception_end.html", "structveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_1_1greater_by_reception_end" ]
-        ] ]
-      ] ],
       [ "BaseConnectionManager", "classveins_1_1_base_connection_manager.html", "classveins_1_1_base_connection_manager" ],
       [ "ChannelAccess", "classveins_1_1_channel_access.html", "classveins_1_1_channel_access" ],
       [ "ConnectionManager", "classveins_1_1_connection_manager.html", "classveins_1_1_connection_manager" ],

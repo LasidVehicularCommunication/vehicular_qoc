@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins::SignalUtils Namespace Reference</title>
+<title>My Project: veins::SignalUtils Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +82,6 @@ $(document).ready(function(){initNavTree('namespaceveins_1_1_signal_utils.html',
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -91,11 +89,6 @@ $(document).ready(function(){initNavTree('namespaceveins_1_1_signal_utils.html',
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html">anonymous_namespace{SignalUtils.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac9c671582a40719ae28164dc42699535"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceveins_1_1_signal_utils.html#ac9c671582a40719ae28164dc42699535">AirFrameVector</a> = <a class="el" href="classveins_1_1_decider_to_phy_interface.html#ab8300ae6f15749c94f4830adc660e307">DeciderToPhyInterface::AirFrameVector</a></td></tr>
@@ -190,7 +183,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    Signal&amp; signal = signalFrame-&gt;getSignal();</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Spectrum spectrum = signal.getSpectrum();</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    Signal interference = <a class="code" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#adec53cec45469bce01bd893290800df5">getMaxInterference</a>(start, end, signalFrame, interfererFrames);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    Signal interference = getMaxInterference(start, end, signalFrame, interfererFrames);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    Signal sinr = signal / (interference + noise);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">double</span> min_sinr = INFINITY;</div>
@@ -199,9 +192,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> min_sinr;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
-<div class="ttc" id="anamespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_html_adec53cec45469bce01bd893290800df5"><div class="ttname"><a href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#adec53cec45469bce01bd893290800df5">veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::getMaxInterference</a></div><div class="ttdeci">Signal getMaxInterference(simtime_t start, simtime_t end, AirFrame *const referenceFrame, AirFrameVector &amp;interfererFrames)</div><div class="ttdef"><b>Definition:</b> <a href="_signal_utils_8cc_source.html#l00042">SignalUtils.cc:42</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_signal_8cc_source.html#l00068">veins::Signal::at()</a>, <a class="el" href="_signal_8cc_source.html#l00120">veins::Signal::getDataEnd()</a>, <a class="el" href="_signal_8cc_source.html#l00115">veins::Signal::getDataStart()</a>, <a class="el" href="_signal_utils_8cc_source.html#l00042">veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::getMaxInterference()</a>, and <a class="el" href="_signal_8cc_source.html#l00063">veins::Signal::getSpectrum()</a>.</p>
+<p class="reference">References <a class="el" href="_signal_8cc_source.html#l00068">veins::Signal::at()</a>, <a class="el" href="_signal_8cc_source.html#l00120">veins::Signal::getDataEnd()</a>, <a class="el" href="_signal_8cc_source.html#l00115">veins::Signal::getDataStart()</a>, and <a class="el" href="_signal_8cc_source.html#l00063">veins::Signal::getSpectrum()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_decider80211p_8cc_source.html#l00107">veins::Decider80211p::checkIfSignalOk()</a>.</p>
 <div class="dynheader">
@@ -209,14 +201,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceveins_1_1_signal_utils_a65bf87cf643cccf540dc5f0802a71427_cgraph.png" border="0" usemap="#anamespaceveins_1_1_signal_utils_a65bf87cf643cccf540dc5f0802a71427_cgraph" alt=""/></div>
 <map name="anamespaceveins_1_1_signal_utils_a65bf87cf643cccf540dc5f0802a71427_cgraph" id="anamespaceveins_1_1_signal_utils_a65bf87cf643cccf540dc5f0802a71427_cgraph">
-<area shape="rect" title="return the minimal Signal to (Interference + Noise) Ratio at any data channel of signalFrame&#39;s signal" alt="" coords="5,130,140,171"/>
-<area shape="rect" href="classveins_1_1_signal.html#ae0890d174875e1a543f334165b0748c7" title="Get the power in milliwatt for the given frequency index." alt="" coords="551,5,677,32"/>
-<area shape="rect" href="classveins_1_1_signal.html#a5ee277c44c11df19b2df5dc38dd29770" title="Get the absolute frequency index of first past&#45;the&#45;end data frequency." alt="" coords="519,56,709,83"/>
-<area shape="rect" href="classveins_1_1_signal.html#adc0e2696a4b55b43cad28ed824f98d33" title="Get the absolute frequency index of the first data frequency." alt="" coords="516,224,712,251"/>
-<area shape="rect" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#adec53cec45469bce01bd893290800df5" title=" " alt="" coords="188,123,455,179"/>
-<area shape="rect" href="classveins_1_1_signal.html#ac9b8c5004d4d0eaa4f5f6656dec9c7ba" title="Get the Spectrum this Signal is defined on." alt="" coords="516,275,712,301"/>
-<area shape="rect" href="classveins_1_1_signal.html#ade8a1576fbeea65ad1a7eff31618c3b9" title="Get the point in time at which the signal reception ends." alt="" coords="503,107,725,133"/>
-<area shape="rect" href="classveins_1_1_signal.html#a303d43bda1cdcde066aa9c15acf52c4d" title="Get the point in time at which the signal reception starts." alt="" coords="515,158,713,199"/>
+<area shape="rect" title="return the minimal Signal to (Interference + Noise) Ratio at any data channel of signalFrame&#39;s signal" alt="" coords="5,74,140,115"/>
+<area shape="rect" href="classveins_1_1_signal.html#ae0890d174875e1a543f334165b0748c7" title="Get the power in milliwatt for the given frequency index." alt="" coords="223,5,349,32"/>
+<area shape="rect" href="classveins_1_1_signal.html#a5ee277c44c11df19b2df5dc38dd29770" title="Get the absolute frequency index of first past&#45;the&#45;end data frequency." alt="" coords="191,56,381,83"/>
+<area shape="rect" href="classveins_1_1_signal.html#adc0e2696a4b55b43cad28ed824f98d33" title="Get the absolute frequency index of the first data frequency." alt="" coords="188,107,384,133"/>
+<area shape="rect" href="classveins_1_1_signal.html#ac9b8c5004d4d0eaa4f5f6656dec9c7ba" title="Get the Spectrum this Signal is defined on." alt="" coords="188,157,384,184"/>
 </map>
 </div>
 <div class="dynheader">
@@ -299,7 +288,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// check once before applying analogModels</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#a3bdc19ba2443b2e74ab424beea23f8c8">powerLevelSumAtFrequencyIndex</a>(interferers, freqIndex) &lt; threshold) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (powerLevelSumAtFrequencyIndex(interferers, freqIndex) &lt; threshold) {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
@@ -312,18 +301,17 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> signalPtr : interferers) {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            signalPtr-&gt;applyAnalogueModel(analogueModelIndex);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#a3bdc19ba2443b2e74ab424beea23f8c8">powerLevelSumAtFrequencyIndex</a>(interferers, freqIndex) &lt; threshold) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (powerLevelSumAtFrequencyIndex(interferers, freqIndex) &lt; threshold) {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// After all attenuation is performed, there interference is still higher than the threshold</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    ASSERT(<a class="code" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#a3bdc19ba2443b2e74ab424beea23f8c8">powerLevelSumAtFrequencyIndex</a>(interferers, freqIndex) &gt;= threshold);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    ASSERT(powerLevelSumAtFrequencyIndex(interferers, freqIndex) &gt;= threshold);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
-<div class="ttc" id="anamespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_html_a3bdc19ba2443b2e74ab424beea23f8c8"><div class="ttname"><a href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#a3bdc19ba2443b2e74ab424beea23f8c8">veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::powerLevelSumAtFrequencyIndex</a></div><div class="ttdeci">double powerLevelSumAtFrequencyIndex(const std::vector&lt; Signal * &gt; &amp;signals, size_t freqIndex)</div><div class="ttdef"><b>Definition:</b> <a href="_signal_utils_8cc_source.html#l00085">SignalUtils.cc:85</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_signal_8cc_source.html#l00217">veins::Signal::getAnalogueModelList()</a>, <a class="el" href="_signal_8cc_source.html#l00282">veins::Signal::getReceptionEnd()</a>, <a class="el" href="_signal_8cc_source.html#l00277">veins::Signal::getReceptionStart()</a>, and <a class="el" href="_signal_utils_8cc_source.html#l00085">veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::powerLevelSumAtFrequencyIndex()</a>.</p>
+<p class="reference">References <a class="el" href="_signal_8cc_source.html#l00217">veins::Signal::getAnalogueModelList()</a>, <a class="el" href="_signal_8cc_source.html#l00282">veins::Signal::getReceptionEnd()</a>, and <a class="el" href="_signal_8cc_source.html#l00277">veins::Signal::getReceptionStart()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_decider80211p_8cc_source.html#l00252">veins::Decider80211p::cca()</a>.</p>
 <div class="dynheader">
@@ -331,11 +319,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceveins_1_1_signal_utils_a744df65831b369a6412cb305cf04f06f_cgraph.png" border="0" usemap="#anamespaceveins_1_1_signal_utils_a744df65831b369a6412cb305cf04f06f_cgraph" alt=""/></div>
 <map name="anamespaceveins_1_1_signal_utils_a744df65831b369a6412cb305cf04f06f_cgraph" id="anamespaceveins_1_1_signal_utils_a744df65831b369a6412cb305cf04f06f_cgraph">
-<area shape="rect" title="check if the summed power of interfererFrames&#39;s signals at freqIndex is below a given threshold." alt="" coords="5,93,244,135"/>
+<area shape="rect" title="check if the summed power of interfererFrames&#39;s signals at freqIndex is below a given threshold." alt="" coords="5,64,244,105"/>
 <area shape="rect" href="classveins_1_1_signal.html#a1955a75de66cc15338fa79d06b011675" title="Get the AnalogueModels associated with this Signal." alt="" coords="306,5,501,47"/>
 <area shape="rect" href="classveins_1_1_signal.html#ade8a1576fbeea65ad1a7eff31618c3b9" title="Get the point in time at which the signal reception ends." alt="" coords="292,71,515,98"/>
 <area shape="rect" href="classveins_1_1_signal.html#a303d43bda1cdcde066aa9c15acf52c4d" title="Get the point in time at which the signal reception starts." alt="" coords="304,123,503,164"/>
-<area shape="rect" href="namespaceveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03.html#a3bdc19ba2443b2e74ab424beea23f8c8" title=" " alt="" coords="297,188,510,259"/>
 </map>
 </div>
 <div class="dynheader">
@@ -360,7 +347,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="namespaceveins_1_1_signal_utils.html">SignalUtils</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:21 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:25 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

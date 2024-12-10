@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: RoadsCanvasVisualizer.cc Source File</title>
+<title>My Project: RoadsCanvasVisualizer.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -170,7 +169,7 @@ $(document).ready(function(){initNavTree('_roads_canvas_visualizer_8cc_source.ht
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::vector&lt;cFigure::Point&gt; points;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> coord : coords) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        points.push_back(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">cFigure::Point</a>(coord.x, coord.y));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        points.push_back(cFigure::Point(coord.x, coord.y));</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span>* line = <span class="keyword">new</span> cPolylineFigure();</div>
@@ -201,7 +200,6 @@ $(document).ready(function(){initNavTree('_roads_canvas_visualizer_8cc_source.ht
 <div class="ttc" id="aclassveins_1_1_tra_c_i_scenario_manager_html"><div class="ttname"><a href="classveins_1_1_tra_c_i_scenario_manager.html">veins::TraCIScenarioManager</a></div><div class="ttdoc">Creates and moves nodes controlled by a TraCI server.</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8h_source.html#l00067">TraCIScenarioManager.h:67</a></div></div>
 <div class="ttc" id="aclassveins_1_1_tra_c_i_scenario_manager_html_a780e4e5af6398822ba91437cd7b29e72"><div class="ttname"><a href="classveins_1_1_tra_c_i_scenario_manager.html#a780e4e5af6398822ba91437cd7b29e72">veins::TraCIScenarioManager::traciInitializedSignal</a></div><div class="ttdeci">static const simsignal_t traciInitializedSignal</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8h_source.html#l00069">TraCIScenarioManager.h:69</a></div></div>
 <div class="ttc" id="aclassveins_1_1_tra_c_i_scenario_manager_html_a9a82c8a0f6af08586d17d122431e98e4"><div class="ttname"><a href="classveins_1_1_tra_c_i_scenario_manager.html#a9a82c8a0f6af08586d17d122431e98e4">veins::TraCIScenarioManager::getCommandInterface</a></div><div class="ttdeci">TraCICommandInterface * getCommandInterface() const</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_scenario_manager_8h_source.html#l00093">TraCIScenarioManager.h:93</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_b_box_lookup_8cc_03_html_ab44832c5578a22ebf7b2a19694405cd9"><div class="ttname"><a href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ab44832c5578a22ebf7b2a19694405cd9">anonymous_namespace{BBoxLookup.cc}::Point</a></div><div class="ttdeci">veins::BBoxLookup::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00029">BBoxLookup.cc:29</a></div></div>
 <div class="ttc" id="astructveins_1_1_signal_payload_html"><div class="ttname"><a href="structveins_1_1_signal_payload.html">veins::SignalPayload</a></div><div class="ttdef"><b>Definition:</b> <a href="_signal_manager_8h_source.html#l00032">SignalManager.h:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -209,7 +207,7 @@ $(document).ready(function(){initNavTree('_roads_canvas_visualizer_8cc_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_df31b34584c613fe9b24780b21a3a7e0.html">visualizer</a></li><li class="navelem"><a class="el" href="dir_ea02e89ef5c0cba3fed3aee1d3d5346c.html">roads</a></li><li class="navelem"><a class="el" href="_roads_canvas_visualizer_8cc.html">RoadsCanvasVisualizer.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

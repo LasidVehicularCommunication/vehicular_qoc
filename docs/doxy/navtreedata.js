@@ -24,9 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "Veins", "index.html", [
-    [ "Veins - The open source vehicular network simulation framework.", "index.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
+  [ "My Project", "index.html", [
+    [ "Veins.", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -65,24 +64,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_addressing_interface_8h.html",
-"_i_c_r_node_8h_source.html",
-"_signal_utils_8h.html#a65bf87cf643cccf540dc5f0802a71427",
-"_tra_c_i_constants_8h.html#a86699a113ca204a55c9ee762861ff0e2",
-"_two_ray_interference_model_8h.html",
-"classveins_1_1_agent_pair.html#af5e7836e9d54d5b84b79c708b9d12d85",
-"classveins_1_1_base_decider.html#a289da9983d009dbf7b9e797bc75375ada4286a6780ddef1c25012655d33f80b97",
-"classveins_1_1_breakpoint_pathloss_model.html#a657f1df396c4e69aa7ee3486f5ac993a",
-"classveins_1_1_demo_base_appl_layer_to_mac1609__4_interface.html#a73bf2fa8eced9dc5a97ec5566f29f6f6",
-"classveins_1_1_icarqoc.html#abe83ba7fae3ce0744f7c30f18da678ed",
-"classveins_1_1_mac80211p_to_phy11p_interface.html#ae66d2531fa5b25582fd4c59e621ff4cda02fb014c103401a3122070dfff327d37",
-"classveins_1_1_obstacle_control_access.html",
-"classveins_1_1_signal.html#a2fa6fa05bfc53b39fe747e7c302c639c",
-"classveins_1_1_tra_c_i_command_interface.html#a1f9c5cc4aed73591258d696f5a3a8087",
-"classveins_1_1_tra_c_i_demo_r_s_u11p.html#a55d725edd6bedb4730afa73d734d6e74",
-"classveins_1_1_tra_c_i_traffic_light_interface.html#af9d907ad684d48eaaf009ac5a7fab63d",
-"namespaceveins.html#a0f6515c4d41d47795a037fd662d6b317a91739f1f7ee1f870d3288d72255833e1",
-"namespaceveins_1_1_tra_c_i_constants.html#a63b0681f966578bdbe85aa53c751a601",
-"structveins_1_1_signal_payload.html#ab1914e7dfdf99b79511dacea38ce0bad"
+"_icar_context_8cc.html",
+"_spectrum_8cc.html#a791e077e5b62c35a7165b9bcd7936614",
+"_tra_c_i_constants_8h.html#a90ff01be6e141406f9c37bcc0e08b0d3",
+"_vehicle_signal_8h.html#a3646bbff248e309c6bf314c1c105166fa7e9791a80f6356966b5f4baaec74b425",
+"classveins_1_1_agent_pair_mobility.html#a02c8f4d99ea7d75163425409be26f7b3",
+"classveins_1_1_base_layer.html#a1873d6e3fc6d92cf8482b39f1c5ac6c8",
+"classveins_1_1_channel_access.html#a8a8ebc0524fe351f468a1a63db4ed7a0",
+"classveins_1_1_enum_bitset.html#a68fd1c792f6be6d2852f615b6e62f889",
+"classveins_1_1_known_global.html#a300ae87625c0dba7b4a9fa6170cbe8c4",
+"classveins_1_1_mac_to_phy_interface.html#a4d5879fb9c208fe6bad1ee57f2e6d445",
+"classveins_1_1_par_buffer.html#a929b5b02f9e0536bfa57f909b4916b98",
+"classveins_1_1_signal.html#a7b95db4ddf8fefe721fa16b81ff2efce",
+"classveins_1_1_tra_c_i_command_interface.html#a6b6430675ec33004d843098236aaaef1a832c0638e4812cfb754de0e4c2d89555",
+"classveins_1_1_tra_c_i_mobility.html#a4fa20054882e4a7fb5b03a13576311c3",
+"classveins_1_1_tra_c_i_vehicle_inserter.html#a39bd77b7d1af91eee27f577678f66cb3",
+"namespaceveins.html#a791e077e5b62c35a7165b9bcd7936614",
+"namespaceveins_1_1_tra_c_i_constants.html#a8acb0d47aab08702faeb2f06e22d4cf7",
+"structveins_1_1traci2omnet__functor.html#ad1896ac1e4b6eb35eeccfaa7ff9919b6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

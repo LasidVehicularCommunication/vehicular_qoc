@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins::MobileHostObstacle Class Reference</title>
+<title>My Project: veins::MobileHostObstacle</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -88,7 +87,7 @@ $(document).ready(function(){initNavTree('classveins_1_1_mobile_host_obstacle.ht
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classveins_1_1_mobile_host_obstacle-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">veins::MobileHostObstacle Class Reference</div>  </div>
+<div class="title">veins::MobileHostObstacle</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -416,7 +415,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classveins_1_1_mobile_host_obstacle.html#aaf2f68ff629004cf3f12bf056963051a">MobileHostObstacle::Coords</a> shape = <a class="code" href="classveins_1_1_mobile_host_obstacle.html#a68f0e2e0e3d53d5f9a0f4dda6d169f3b">getShape</a>(t);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// shortcut if sender is inside</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> senderInside = <a class="code" href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a4905f71256d96d9b1781ab9b31ec2a9e">isPointInObstacle</a>(senderPos, shape);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> senderInside = isPointInObstacle(senderPos, shape);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (senderInside) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// get a list of points (in [0, 1]) along the line between sender and receiver where the beam intersects with this obstacle</span></div>
@@ -428,7 +427,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="classveins_1_1_coord.html">Coord</a> c1 = *i;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="classveins_1_1_coord.html">Coord</a> c2 = *j;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">double</span> inter = <a class="code" href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a5d7ee91cc8c7d960c2adaf8c6c773604">segmentsIntersectAt</a>(senderPos, receiverPos, c1, c2);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">double</span> inter = segmentsIntersectAt(senderPos, receiverPos, c1, c2);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (inter != -1) {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            doesIntersect = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            EV &lt;&lt; <span class="stringliteral">&quot;intersect: &quot;</span> &lt;&lt; inter &lt;&lt; endl;</div>
@@ -438,7 +437,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// shortcut if no intersections</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (!doesIntersect) {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">bool</span> receiverInside = <a class="code" href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a4905f71256d96d9b1781ab9b31ec2a9e">isPointInObstacle</a>(receiverPos, shape);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">bool</span> receiverInside = isPointInObstacle(receiverPos, shape);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">if</span> (receiverInside) <span class="keywordflow">return</span> senderPos.<a class="code" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477">distance</a>(receiverPos);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> not_a_number;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
@@ -449,34 +448,28 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassveins_1_1_coord_html_a8420e28c26b3855cbce79a4cf085d477"><div class="ttname"><a href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477">veins::Coord::distance</a></div><div class="ttdeci">double distance(const Coord &amp;a) const</div><div class="ttdoc">Returns the distance to Coord 'a'.</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00240">Coord.h:240</a></div></div>
 <div class="ttc" id="aclassveins_1_1_mobile_host_obstacle_html_a68f0e2e0e3d53d5f9a0f4dda6d169f3b"><div class="ttname"><a href="classveins_1_1_mobile_host_obstacle.html#a68f0e2e0e3d53d5f9a0f4dda6d169f3b">veins::MobileHostObstacle::getShape</a></div><div class="ttdeci">Coords getShape(simtime_t t) const</div><div class="ttdef"><b>Definition:</b> <a href="_mobile_host_obstacle_8cc_source.html#l00070">MobileHostObstacle.cc:70</a></div></div>
 <div class="ttc" id="aclassveins_1_1_mobile_host_obstacle_html_aaf2f68ff629004cf3f12bf056963051a"><div class="ttname"><a href="classveins_1_1_mobile_host_obstacle.html#aaf2f68ff629004cf3f12bf056963051a">veins::MobileHostObstacle::Coords</a></div><div class="ttdeci">std::vector&lt; Coord &gt; Coords</div><div class="ttdef"><b>Definition:</b> <a href="_mobile_host_obstacle_8h_source.html#l00041">MobileHostObstacle.h:41</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03_html_a4905f71256d96d9b1781ab9b31ec2a9e"><div class="ttname"><a href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a4905f71256d96d9b1781ab9b31ec2a9e">anonymous_namespace{MobileHostObstacle.cc}::isPointInObstacle</a></div><div class="ttdeci">bool isPointInObstacle(Coord point, const MobileHostObstacle::Coords &amp;shape)</div><div class="ttdef"><b>Definition:</b> <a href="_mobile_host_obstacle_8cc_source.html#l00034">MobileHostObstacle.cc:34</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03_html_a5d7ee91cc8c7d960c2adaf8c6c773604"><div class="ttname"><a href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a5d7ee91cc8c7d960c2adaf8c6c773604">anonymous_namespace{MobileHostObstacle.cc}::segmentsIntersectAt</a></div><div class="ttdeci">double segmentsIntersectAt(Coord p1From, Coord p1To, Coord p2From, Coord p2To)</div><div class="ttdef"><b>Definition:</b> <a href="_mobile_host_obstacle_8cc_source.html#l00051">MobileHostObstacle.cc:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_coord_8h_source.html#l00240">veins::Coord::distance()</a>, <a class="el" href="_mobile_host_obstacle_8cc_source.html#l00070">getShape()</a>, <a class="el" href="_mobile_host_obstacle_8cc_source.html#l00034">anonymous_namespace{MobileHostObstacle.cc}::isPointInObstacle()</a>, and <a class="el" href="_mobile_host_obstacle_8cc_source.html#l00051">anonymous_namespace{MobileHostObstacle.cc}::segmentsIntersectAt()</a>.</p>
+<p class="reference">References <a class="el" href="_coord_8h_source.html#l00240">veins::Coord::distance()</a>, and <a class="el" href="_mobile_host_obstacle_8cc_source.html#l00070">getShape()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_mobile_host_obstacle_aed1945c5faca9c93208913d9bf9abf79_cgraph.png" border="0" usemap="#aclassveins_1_1_mobile_host_obstacle_aed1945c5faca9c93208913d9bf9abf79_cgraph" alt=""/></div>
 <map name="aclassveins_1_1_mobile_host_obstacle_aed1945c5faca9c93208913d9bf9abf79_cgraph" id="aclassveins_1_1_mobile_host_obstacle_aed1945c5faca9c93208913d9bf9abf79_cgraph">
-<area shape="rect" title="return closest point (in meters) along (senderPos–receiverPos) where this obstacle overlaps,..." alt="" coords="5,338,201,379"/>
-<area shape="rect" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477" title="Returns the distance to Coord &#39;a&#39;." alt="" coords="264,119,431,145"/>
-<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a68f0e2e0e3d53d5f9a0f4dda6d169f3b" title=" " alt="" coords="249,301,445,342"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a4905f71256d96d9b1781ab9b31ec2a9e" title=" " alt="" coords="257,367,437,423"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_mobile_host_obstacle_8cc_03.html#a5d7ee91cc8c7d960c2adaf8c6c773604" title=" " alt="" coords="250,447,445,503"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04" title="On a torus the end and the begin of the axes are connected so you get a circle." alt="" coords="503,5,695,61"/>
-<area shape="rect" href="classveins_1_1_f_w_math.html#aa66a76d454bf3d91d8ec390c4737a7a1" title="Returns the remainder r on division of dividend a by divisor n, using floored division." alt="" coords="767,20,943,47"/>
-<area shape="rect" href="classveins_1_1_heading.html#a9d6cfb66c818140b87edaa53a5aa483e" title="Converts Coord to heading (with x pointing east and y pointing south)." alt="" coords="501,85,697,112"/>
-<area shape="rect" href="classveins_1_1_base_mobility.html#a9e647c3474d6195812dbe1680b687df3" title=" " alt="" coords="513,137,685,178"/>
-<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#ac2e5154efb2c6e0fd0b541ee2ec2864c" title=" " alt="" coords="501,202,697,243"/>
-<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a63d7c51d7d85f6c30304f93a2a22292c" title=" " alt="" coords="501,267,697,309"/>
-<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a5eebf14224f0bbc91fe86415ed755a1a" title=" " alt="" coords="501,333,697,374"/>
-<area shape="rect" href="classveins_1_1_base_mobility.html#abd802d0e5d919085a5422b99cd7c377d" title="Returns the current position at the given simulation time." alt="" coords="524,398,675,439"/>
-<area shape="rect" href="classveins_1_1_heading.html#afe01247cef32e057c6fa54c7f36b46bf" title="Returns the angle (in rad, with 0 degrees being east and 90 degrees being north)." alt="" coords="513,464,686,491"/>
-<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a536bcf22c33cdfba00338852286934e7" title=" " alt="" coords="501,515,697,557"/>
-<area shape="rect" href="classveins_1_1_move.html#a4964ba2446c15664192067c88f3157c1" title="Returns the orientation vector, i.e." alt="" coords="753,144,956,171"/>
-<area shape="rect" href="classveins_1_1_move.html#a2d86d39dfd7dedf10af25f1e42863d09" title="Returns the position of the Move (Host) at the specified point in time." alt="" coords="757,405,953,432"/>
-<area shape="rect" href="namespaceveins_1_1math.html#a8e7bde81401ddc00bf062333bf217491" title="Compare two floats for approximate equality." alt="" coords="1004,398,1156,439"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25" title="Return whether ray intersects with box." alt="" coords="493,581,705,622"/>
+<area shape="rect" title="return closest point (in meters) along (senderPos–receiverPos) where this obstacle overlaps,..." alt="" coords="5,209,201,250"/>
+<area shape="rect" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477" title="Returns the distance to Coord &#39;a&#39;." alt="" coords="264,96,431,123"/>
+<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a68f0e2e0e3d53d5f9a0f4dda6d169f3b" title=" " alt="" coords="249,238,445,279"/>
+<area shape="rect" href="classveins_1_1_coord.html#aa003fb9d6788186697029ce7653eb9e7" title="Returns the length of this Coords position vector." alt="" coords="515,5,667,32"/>
+<area shape="rect" href="classveins_1_1_heading.html#a9d6cfb66c818140b87edaa53a5aa483e" title="Converts Coord to heading (with x pointing east and y pointing south)." alt="" coords="493,56,689,83"/>
+<area shape="rect" href="classveins_1_1_base_mobility.html#a9e647c3474d6195812dbe1680b687df3" title=" " alt="" coords="505,107,677,149"/>
+<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#ac2e5154efb2c6e0fd0b541ee2ec2864c" title=" " alt="" coords="493,173,689,214"/>
+<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a63d7c51d7d85f6c30304f93a2a22292c" title=" " alt="" coords="493,238,689,279"/>
+<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a5eebf14224f0bbc91fe86415ed755a1a" title=" " alt="" coords="493,303,689,345"/>
+<area shape="rect" href="classveins_1_1_base_mobility.html#abd802d0e5d919085a5422b99cd7c377d" title="Returns the current position at the given simulation time." alt="" coords="516,369,667,410"/>
+<area shape="rect" href="classveins_1_1_heading.html#afe01247cef32e057c6fa54c7f36b46bf" title="Returns the angle (in rad, with 0 degrees being east and 90 degrees being north)." alt="" coords="505,435,678,461"/>
+<area shape="rect" href="classveins_1_1_mobile_host_obstacle.html#a536bcf22c33cdfba00338852286934e7" title=" " alt="" coords="493,486,689,527"/>
+<area shape="rect" href="classveins_1_1_move.html#a4964ba2446c15664192067c88f3157c1" title="Returns the orientation vector, i.e." alt="" coords="737,115,940,141"/>
+<area shape="rect" href="classveins_1_1_move.html#a2d86d39dfd7dedf10af25f1e42863d09" title="Returns the position of the Move (Host) at the specified point in time." alt="" coords="741,376,937,403"/>
+<area shape="rect" href="namespaceveins_1_1math.html#a8e7bde81401ddc00bf062333bf217491" title="Compare two floats for approximate equality." alt="" coords="988,369,1140,410"/>
 </map>
 </div>
 
@@ -1086,7 +1079,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_mobile_host_obstacle.html">MobileHostObstacle</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:20 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:25 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

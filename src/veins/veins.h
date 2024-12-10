@@ -21,7 +21,7 @@
 //
 
 /**
- * @mainpage %Veins - The open source vehicular network simulation framework.
+ * @mainpage %Veins.
  *
  * See the %Veins website <a href="http://veins.car2x.org/"> for a tutorial, documentation, and publications </a>.
  */
@@ -64,9 +64,7 @@ using namespace omnetpp;
 // Convenience macros
 #define RNGCONTEXT (cSimulation::getActiveSimulation()->getContext())->
 
-/**
- * %Veins - The open source vehicular network simulation framework.
- */
+
 namespace veins {
 #if (__cplusplus >= 201402L) || (defined __cpp_lib_make_unique)
 using std::make_unique;

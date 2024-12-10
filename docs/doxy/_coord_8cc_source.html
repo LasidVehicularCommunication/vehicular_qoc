@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: Coord.cc Source File</title>
+<title>My Project: Coord.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -117,7 +116,7 @@ $(document).ready(function(){initNavTree('_coord_8cc_source.html',''); initResiz
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a> <a class="code" href="classveins_1_1_coord.html#a2d291cbb8e58af4ce8c68e9c8671b5d6">Coord::ZERO</a> = <a class="code" href="classveins_1_1_coord.html">Coord</a>(0.0, 0.0, 0.0);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_coord_8cc_03.html">   32</a></span>&#160;<span class="keyword">namespace </span>{<span class="comment"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>{<span class="comment"></span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * On a torus the end and the begin of the axes are connected so you</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * get a circle. On a circle the distance between two points can&#39;t be greater</span></div>
@@ -125,7 +124,7 @@ $(document).ready(function(){initNavTree('_coord_8cc_source.html',''); initResiz
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * If the normal distance between two points on one axis is bigger than</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * half of the size there must be a &quot;shorter way&quot; over the border on this axis</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">   40</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a>(<span class="keywordtype">double</span> coord1, <span class="keywordtype">double</span> coord2, <span class="keywordtype">double</span> size)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">double</span> dist(<span class="keywordtype">double</span> coord1, <span class="keywordtype">double</span> coord2, <span class="keywordtype">double</span> size)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> difference = fabs(coord1 - coord2);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (difference == 0)</div>
@@ -133,17 +132,17 @@ $(document).ready(function(){initNavTree('_coord_8cc_source.html',''); initResiz
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        ASSERT(size != 0);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a> = <a class="code" href="classveins_1_1_f_w_math.html#aa66a76d454bf3d91d8ec390c4737a7a1">FWMath::modulo</a>(difference, size);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> std::min(<a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a>, size - <a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">double</span> dist = <a class="code" href="classveins_1_1_f_w_math.html#aa66a76d454bf3d91d8ec390c4737a7a1">FWMath::modulo</a>(difference, size);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> std::min(dist, size - dist);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classveins_1_1_coord.html#a4a4c16dee61dd77a82eda62d8a4448e6">   54</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_coord.html#a4a4c16dee61dd77a82eda62d8a4448e6">Coord::sqrTorusDist</a>(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; b, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; size)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">double</span> xDist = <a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a>(<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>, b.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>, size.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> yDist = <a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a>(<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>, b.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>, size.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> zDist = <a class="code" href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">dist</a>(<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>, b.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>, size.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">double</span> xDist = dist(<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>, b.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>, size.<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> yDist = dist(<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>, b.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>, size.<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> zDist = dist(<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>, b.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>, size.<a class="code" href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">z</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> xDist * xDist + yDist * yDist + zDist * zDist;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="ttc" id="a_coord_8h_html"><div class="ttname"><a href="_coord_8h.html">Coord.h</a></div></div>
@@ -154,15 +153,14 @@ $(document).ready(function(){initNavTree('_coord_8cc_source.html',''); initResiz
 <div class="ttc" id="aclassveins_1_1_coord_html_ab7f47cf79294153d0dbd61add30b09e4"><div class="ttname"><a href="classveins_1_1_coord.html#ab7f47cf79294153d0dbd61add30b09e4">veins::Coord::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00056">Coord.h:56</a></div></div>
 <div class="ttc" id="aclassveins_1_1_coord_html_afbd5e95b5fc320575a6ed64bb3849846"><div class="ttname"><a href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">veins::Coord::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00054">Coord.h:54</a></div></div>
 <div class="ttc" id="aclassveins_1_1_f_w_math_html_aa66a76d454bf3d91d8ec390c4737a7a1"><div class="ttname"><a href="classveins_1_1_f_w_math.html#aa66a76d454bf3d91d8ec390c4737a7a1">veins::FWMath::modulo</a></div><div class="ttdeci">static double modulo(double a, double n)</div><div class="ttdoc">Returns the remainder r on division of dividend a by divisor n, using floored division.</div><div class="ttdef"><b>Definition:</b> <a href="_f_w_math_8h_source.html#l00163">FWMath.h:163</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_coord_8cc_03_html_a8c0f9656a5c33ea4cd7240eb430fc1d6"><div class="ttname"><a href="namespaceanonymous__namespace_02_coord_8cc_03.html#a8c0f9656a5c33ea4cd7240eb430fc1d6">anonymous_namespace{Coord.cc}::dist</a></div><div class="ttdeci">static double dist(double coord1, double coord2, double size)</div><div class="ttdoc">On a torus the end and the begin of the axes are connected so you get a circle.</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8cc_source.html#l00040">Coord.cc:40</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_7ed75e2b1ee1c6cbf8e17dfb79841f91.html">base</a></li><li class="navelem"><a class="el" href="dir_ce47d2ba4da213e61fb69f121aae032d.html">utils</a></li><li class="navelem"><a class="el" href="_coord_8cc.html">Coord.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

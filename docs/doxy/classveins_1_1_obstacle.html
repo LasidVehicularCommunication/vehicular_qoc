@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: veins::Obstacle Class Reference</title>
+<title>My Project: veins::Obstacle</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +88,7 @@ $(document).ready(function(){initNavTree('classveins_1_1_obstacle.html',''); ini
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classveins_1_1_obstacle-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">veins::Obstacle Class Reference</div>  </div>
+<div class="title">veins::Obstacle</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -269,25 +268,23 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">bool</span> inYRangeDown = (point.y &gt;= j-&gt;y) &amp;&amp; (point.y &lt; i-&gt;y);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">bool</span> inYRange = inYRangeUp || inYRangeDown;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (!inYRange) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a> = point.x &lt; (i-&gt;x + ((point.y - i-&gt;y) * (j-&gt;x - i-&gt;x) / (j-&gt;y - i-&gt;y)));</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">bool</span> intersects = point.x &lt; (i-&gt;x + ((point.y - i-&gt;y) * (j-&gt;x - i-&gt;x) / (j-&gt;y - i-&gt;y)));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (!intersects) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        isInside = !isInside;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> isInside;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="ttc" id="aclassveins_1_1_obstacle_html_a6e4559fb9e1dcf379cf347b8378fc6b5"><div class="ttname"><a href="classveins_1_1_obstacle.html#a6e4559fb9e1dcf379cf347b8378fc6b5">veins::Obstacle::getShape</a></div><div class="ttdeci">const Coords &amp; getShape() const</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8cc_source.html#l00053">Obstacle.cc:53</a></div></div>
 <div class="ttc" id="aclassveins_1_1_obstacle_html_aef7623fe7b0a2890dd53f782dbed1a86"><div class="ttname"><a href="classveins_1_1_obstacle.html#aef7623fe7b0a2890dd53f782dbed1a86">veins::Obstacle::Coords</a></div><div class="ttdeci">std::vector&lt; Coord &gt; Coords</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8h_source.html#l00039">Obstacle.h:39</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_b_box_lookup_8cc_03_html_ad29edbecc2bba7cf9afb525f0aff0f25"><div class="ttname"><a href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">anonymous_namespace{BBoxLookup.cc}::intersects</a></div><div class="ttdeci">bool intersects(const Ray &amp;ray, const Box &amp;box)</div><div class="ttdoc">Return whether ray intersects with box.</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00074">BBoxLookup.cc:74</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_obstacle_8cc_source.html#l00053">getShape()</a>, <a class="el" href="_b_box_lookup_8cc_source.html#l00074">anonymous_namespace{BBoxLookup.cc}::intersects()</a>, <a class="el" href="_coord_8h_source.html#l00054">veins::Coord::x</a>, and <a class="el" href="_coord_8h_source.html#l00055">veins::Coord::y</a>.</p>
+<p class="reference">References <a class="el" href="_obstacle_8cc_source.html#l00053">getShape()</a>, <a class="el" href="_coord_8h_source.html#l00054">veins::Coord::x</a>, and <a class="el" href="_coord_8h_source.html#l00055">veins::Coord::y</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_obstacle_a3c29c3bd90ea0e05d70090a121d9df9f_cgraph.png" border="0" usemap="#aclassveins_1_1_obstacle_a3c29c3bd90ea0e05d70090a121d9df9f_cgraph" alt=""/></div>
 <map name="aclassveins_1_1_obstacle_a3c29c3bd90ea0e05d70090a121d9df9f_cgraph" id="aclassveins_1_1_obstacle_a3c29c3bd90ea0e05d70090a121d9df9f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,27,191,69"/>
-<area shape="rect" href="classveins_1_1_obstacle.html#a6e4559fb9e1dcf379cf347b8378fc6b5" title=" " alt="" coords="249,5,440,32"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25" title="Return whether ray intersects with box." alt="" coords="239,57,451,98"/>
+<area shape="rect" title=" " alt="" coords="5,5,191,47"/>
+<area shape="rect" href="classveins_1_1_obstacle.html#a6e4559fb9e1dcf379cf347b8378fc6b5" title=" " alt="" coords="239,13,429,39"/>
 </map>
 </div>
 
@@ -453,7 +450,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; c1 = *i;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; c2 = *j;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">double</span> i = <a class="code" href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c">segmentsIntersectAt</a>(senderPos, receiverPos, c1, c2);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">double</span> i = segmentsIntersectAt(senderPos, receiverPos, c1, c2);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (i != -1) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            intersectAt.push_back(i);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
@@ -462,17 +459,15 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> intersectAt;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 <div class="ttc" id="aclassveins_1_1_coord_html"><div class="ttname"><a href="classveins_1_1_coord.html">veins::Coord</a></div><div class="ttdoc">Class for storing 3D coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00046">Coord.h:46</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_obstacle_8cc_03_html_a46da0e8b4beb911bde581d7997d7312c"><div class="ttname"><a href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c">anonymous_namespace{Obstacle.cc}::segmentsIntersectAt</a></div><div class="ttdeci">double segmentsIntersectAt(const Coord &amp;p1From, const Coord &amp;p1To, const Coord &amp;p2From, const Coord &amp;p2To)</div><div class="ttdef"><b>Definition:</b> <a href="_obstacle_8cc_source.html#l00088">Obstacle.cc:88</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_obstacle_8cc_source.html#l00053">getShape()</a>, and <a class="el" href="_obstacle_8cc_source.html#l00088">anonymous_namespace{Obstacle.cc}::segmentsIntersectAt()</a>.</p>
+<p class="reference">References <a class="el" href="_obstacle_8cc_source.html#l00053">getShape()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_obstacle_a9362992355ee44e8306f88de8fe06542_cgraph.png" border="0" usemap="#aclassveins_1_1_obstacle_a9362992355ee44e8306f88de8fe06542_cgraph" alt=""/></div>
 <map name="aclassveins_1_1_obstacle_a9362992355ee44e8306f88de8fe06542_cgraph" id="aclassveins_1_1_obstacle_a9362992355ee44e8306f88de8fe06542_cgraph">
-<area shape="rect" title="get a list of points (in [0, 1]) along the line between sender and receiver where the beam intersects..." alt="" coords="5,35,240,61"/>
-<area shape="rect" href="classveins_1_1_obstacle.html#a6e4559fb9e1dcf379cf347b8378fc6b5" title=" " alt="" coords="323,5,513,32"/>
-<area shape="rect" href="namespaceanonymous__namespace_02_obstacle_8cc_03.html#a46da0e8b4beb911bde581d7997d7312c" title=" " alt="" coords="288,57,548,98"/>
+<area shape="rect" title="get a list of points (in [0, 1]) along the line between sender and receiver where the beam intersects..." alt="" coords="5,5,240,32"/>
+<area shape="rect" href="classveins_1_1_obstacle.html#a6e4559fb9e1dcf379cf347b8378fc6b5" title=" " alt="" coords="288,5,479,32"/>
 </map>
 </div>
 
@@ -816,7 +811,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_obstacle.html">Obstacle</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:20 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:25 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

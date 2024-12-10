@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: NedFunctions.cc Source File</title>
+<title>My Project: NedFunctions.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -110,11 +109,11 @@ $(document).ready(function(){initNavTree('_ned_functions_8cc_source.html',''); i
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="veins_8h.html">veins/veins.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html">   25</a></span>&#160;<span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if OMNETPP_BUILDNUM &gt;= 1020</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">static</span> cNEDValue <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* txt, cExpression::Context* context)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">static</span> cNEDValue opp_eval(<span class="keyword">const</span> <span class="keywordtype">char</span>* txt, cExpression::Context* context)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">   29</a></span>&#160;<span class="keyword">static</span> cNEDValue <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* txt, cComponent* context)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">static</span> cNEDValue opp_eval(<span class="keyword">const</span> <span class="keywordtype">char</span>* txt, cComponent* context)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">try</span> {</div>
@@ -172,12 +171,12 @@ $(document).ready(function(){initNavTree('_ned_functions_8cc_source.html',''); i
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#if OMNETPP_VERSION &gt;= 0x600</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(argv[idx + 1].stringValue(), context);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> opp_eval(argv[idx + 1].stringValue(), context);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#elif OMNETPP_BUILDNUM &gt;= 1020</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cExpression::Context context(component);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(argv[idx + 1].stringValue(), &amp;context);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> opp_eval(argv[idx + 1].stringValue(), &amp;context);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">opp_eval</a>(argv[idx + 1].stringValue(), component);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> opp_eval(argv[idx + 1].stringValue(), component);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
@@ -205,12 +204,11 @@ $(document).ready(function(){initNavTree('_ned_functions_8cc_source.html',''); i
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="stringliteral">&quot;Returns value of C++ OMNETPP_BUILDNUM macro&quot;</span>);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// namespace veins</span></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_ned_functions_8cc_03_html_a71c5d31605be60b7b1ae4d1a40c61da8"><div class="ttname"><a href="namespaceanonymous__namespace_02_ned_functions_8cc_03.html#a71c5d31605be60b7b1ae4d1a40c61da8">anonymous_namespace{NedFunctions.cc}::opp_eval</a></div><div class="ttdeci">static cNEDValue opp_eval(const char *txt, cComponent *context)</div><div class="ttdef"><b>Definition:</b> <a href="_ned_functions_8cc_source.html#l00029">NedFunctions.cc:29</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 <div class="ttc" id="anamespaceveins_html_a3850faf56e80c2744604c8fbae493087"><div class="ttname"><a href="namespaceveins.html#a3850faf56e80c2744604c8fbae493087">veins::Define_NED_Function2</a></div><div class="ttdeci">Define_NED_Function2(nedf_veins_eval_by_version, &quot;any veins_eval_by_version(int version, string defaultExpression, int minVersion1, string expression1, ...)&quot;, &quot;veins&quot;, &quot;Evaluates to expression1 if version &gt;= minVersion1, otherwise evaluates to defaultExpression&quot;)</div></div>
 <div class="ttc" id="anamespaceveins_html_a4d7230d0d338ce98f5496e18304a7904"><div class="ttname"><a href="namespaceveins.html#a4d7230d0d338ce98f5496e18304a7904">veins::nedf_veins_omnetpp_buildnum</a></div><div class="ttdeci">cNEDValue nedf_veins_omnetpp_buildnum(cComponent *component, cNEDValue argv[], int argc)</div><div class="ttdef"><b>Definition:</b> <a href="_ned_functions_8cc_source.html#l00104">NedFunctions.cc:104</a></div></div>
 <div class="ttc" id="anamespaceveins_html_ac5eacb0554c29e91a78c487e80a385bf"><div class="ttname"><a href="namespaceveins.html#ac5eacb0554c29e91a78c487e80a385bf">veins::nedf_veins_eval_by_version</a></div><div class="ttdeci">cNEDValue nedf_veins_eval_by_version(cComponent *component, cNEDValue argv[], int argc)</div><div class="ttdef"><b>Definition:</b> <a href="_ned_functions_8cc_source.html#l00054">NedFunctions.cc:54</a></div></div>
-<div class="ttc" id="anamespaceveins_html_aee21872360e72a7791bc53e0390569c0"><div class="ttname"><a href="namespaceveins.html#aee21872360e72a7791bc53e0390569c0">veins::intval_t</a></div><div class="ttdeci">long intval_t</div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00102">veins.h:102</a></div></div>
+<div class="ttc" id="anamespaceveins_html_aee21872360e72a7791bc53e0390569c0"><div class="ttname"><a href="namespaceveins.html#aee21872360e72a7791bc53e0390569c0">veins::intval_t</a></div><div class="ttdeci">long intval_t</div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00100">veins.h:100</a></div></div>
 <div class="ttc" id="aveins_8h_html"><div class="ttname"><a href="veins_8h.html">veins.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -218,7 +216,7 @@ $(document).ready(function(){initNavTree('_ned_functions_8cc_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_7ed75e2b1ee1c6cbf8e17dfb79841f91.html">base</a></li><li class="navelem"><a class="el" href="dir_ce47d2ba4da213e61fb69f121aae032d.html">utils</a></li><li class="navelem"><a class="el" href="_ned_functions_8cc.html">NedFunctions.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

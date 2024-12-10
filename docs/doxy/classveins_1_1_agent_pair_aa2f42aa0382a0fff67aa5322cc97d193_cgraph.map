@@ -1,7 +1,7 @@
 <map id="veins::AgentPair::infoTrace" name="veins::AgentPair::infoTrace">
 <area shape="rect" id="node1" title=" " alt="" coords="5,189,200,215"/>
 <area shape="rect" id="node2" href="$classveins_1_1_agent_pair.html#abd823ed71d8b4bd7d13ebe62d5401aed" title=" " alt="" coords="255,5,459,47"/>
-<area shape="rect" id="node3" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title=" " alt="" coords="285,71,429,98"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="285,71,429,98"/>
 <area shape="rect" id="node4" href="$classveins_1_1_agent_pair.html#a632bd914130b7a21bdd9d314195569db" title=" " alt="" coords="265,123,448,164"/>
 <area shape="rect" id="node5" href="$classveins_1_1_qo_c_info.html#acf97b56c18327e05ced693878a659ee8" title=" " alt="" coords="248,189,465,215"/>
 <area shape="rect" id="node6" href="$classveins_1_1_agent_pair_mobility.html#a64f2638cf06002d3095bc3b0c4fa8b9d" title=" " alt="" coords="267,240,447,281"/>

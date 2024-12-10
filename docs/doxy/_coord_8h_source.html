@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: Coord.h Source File</title>
+<title>My Project: Coord.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -327,8 +326,8 @@ $(document).ready(function(){initNavTree('_coord_8h_source.html',''); initResiza
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477">  240</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_coord.html#a8420e28c26b3855cbce79a4cf085d477">distance</a>(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; a)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="classveins_1_1_coord.html">Coord</a> <a class="code" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04">dist</a>(*<span class="keyword">this</span> - a);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04">dist</a>.length();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="classveins_1_1_coord.html">Coord</a> dist(*<span class="keyword">this</span> - a);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span> dist.<a class="code" href="classveins_1_1_coord.html#aa003fb9d6788186697029ce7653eb9e7">length</a>();</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">    /**</span></div>
@@ -336,14 +335,14 @@ $(document).ready(function(){initNavTree('_coord_8h_source.html',''); initResiza
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classveins_1_1_coord.html#a6307af5ac557c0c1400ff72006ba0c8d">  249</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_coord.html#a6307af5ac557c0c1400ff72006ba0c8d">sqrdist</a>(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; a)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="classveins_1_1_coord.html">Coord</a> <a class="code" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04">dist</a>(*<span class="keyword">this</span> - a);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04">dist</a>.squareLength();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="classveins_1_1_coord.html">Coord</a> dist(*<span class="keyword">this</span> - a);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> dist.<a class="code" href="classveins_1_1_coord.html#a97d38ff2838475fbf534d626c4172957">squareLength</a>();</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">    /**</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">     * @brief Returns the squared distance on a torus of this to Coord &#39;b&#39; (omits calling square root).</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a4c7285eb31fa2914adffc7da4255b6d2">sqrTorusDist</a>(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; b, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">double</span> sqrTorusDist(<span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; b, <span class="keyword">const</span> <a class="code" href="classveins_1_1_coord.html">Coord</a>&amp; size) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">    /**</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">     * @brief Returns the square of the length of this Coords position vector.</span></div>
@@ -464,10 +463,8 @@ $(document).ready(function(){initNavTree('_coord_8h_source.html',''); initResiza
 <div class="ttc" id="aclassveins_1_1_coord_html_acce12585c0e5cd22bbd59d2e75eb2925"><div class="ttname"><a href="classveins_1_1_coord.html#acce12585c0e5cd22bbd59d2e75eb2925">veins::Coord::flippedY</a></div><div class="ttdeci">Coord flippedY() const</div><div class="ttdoc">Returns this coord when after inverting y axis.</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00318">Coord.h:318</a></div></div>
 <div class="ttc" id="aclassveins_1_1_coord_html_addb83b1dd8cc7f96028fdd1f5325c5e5"><div class="ttname"><a href="classveins_1_1_coord.html#addb83b1dd8cc7f96028fdd1f5325c5e5">veins::Coord::Coord</a></div><div class="ttdeci">Coord()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00069">Coord.h:69</a></div></div>
 <div class="ttc" id="aclassveins_1_1_coord_html_afbd5e95b5fc320575a6ed64bb3849846"><div class="ttname"><a href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">veins::Coord::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00054">Coord.h:54</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_base_connection_manager_8cc_03_html_a03d2870486bee7d8198d066f67d00e04"><div class="ttname"><a href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a03d2870486bee7d8198d066f67d00e04">anonymous_namespace{BaseConnectionManager.cc}::dist</a></div><div class="ttdeci">static double dist(double coord1, double coord2, double size)</div><div class="ttdoc">On a torus the end and the begin of the axes are connected so you get a circle.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8cc_source.html#l00042">BaseConnectionManager.cc:42</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_base_connection_manager_8cc_03_html_a4c7285eb31fa2914adffc7da4255b6d2"><div class="ttname"><a href="namespaceanonymous__namespace_02_base_connection_manager_8cc_03.html#a4c7285eb31fa2914adffc7da4255b6d2">anonymous_namespace{BaseConnectionManager.cc}::sqrTorusDist</a></div><div class="ttdeci">double sqrTorusDist(Coord c, Coord b, Coord size)</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8cc_source.html#l00055">BaseConnectionManager.cc:55</a></div></div>
 <div class="ttc" id="anamespaceveins_1_1math_html_a8e7bde81401ddc00bf062333bf217491"><div class="ttname"><a href="namespaceveins_1_1math.html#a8e7bde81401ddc00bf062333bf217491">veins::math::almost_equal</a></div><div class="ttdeci">std::enable_if&lt; std::is_floating_point&lt; T &gt;::value, bool &gt;::type almost_equal(T x, T y, int ulp=1)</div><div class="ttdoc">Compare two floats for approximate equality.</div><div class="ttdef"><b>Definition:</b> <a href="_f_w_math_8h_source.html#l00119">FWMath.h:119</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 <div class="ttc" id="anamespaceveins_html_a7e340a38decf7a51e8d1e3c3f70a68e6"><div class="ttname"><a href="namespaceveins.html#a7e340a38decf7a51e8d1e3c3f70a68e6">veins::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Signal &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_signal_8cc_source.html#l00490">Signal.cc:490</a></div></div>
 <div class="ttc" id="aveins_8h_html_a4712e05eeaf6ada031e3059f531bb5de"><div class="ttname"><a href="veins_8h.html#a4712e05eeaf6ada031e3059f531bb5de">VEINS_API</a></div><div class="ttdeci">#define VEINS_API</div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00058">veins.h:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -476,7 +473,7 @@ $(document).ready(function(){initNavTree('_coord_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_7ed75e2b1ee1c6cbf8e17dfb79841f91.html">base</a></li><li class="navelem"><a class="el" href="dir_ce47d2ba4da213e61fb69f121aae032d.html">utils</a></li><li class="navelem"><a class="el" href="_coord_8h.html">Coord.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

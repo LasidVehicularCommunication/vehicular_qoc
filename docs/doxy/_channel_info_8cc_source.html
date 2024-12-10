@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Veins: ChannelInfo.cc Source File</title>
+<title>My Project: ChannelInfo.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Veins
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">The open source vehicular network simulation framework.</div>
   </td>
  </tr>
  </tbody>
@@ -199,17 +198,17 @@ $(document).ready(function(){initNavTree('_channel_info_8cc_source.html',''); in
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">for</span> (AirFrameTimeList::iterator it2 = it1-&gt;second.begin(); it2 != it1-&gt;second.end(); ++it2) {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            simtime_t_cref s0 = it2-&gt;first;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a> = (<a class="code" href="classveins_1_1_channel_info.html#a33a1c533389ce3ce4fbc086fc30a9b5b">recordStartTime</a> &gt; -1 &amp;&amp; <a class="code" href="classveins_1_1_channel_info.html#a33a1c533389ce3ce4fbc086fc30a9b5b">recordStartTime</a> &lt;= e0);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordtype">bool</span> intersects = (<a class="code" href="classveins_1_1_channel_info.html#a33a1c533389ce3ce4fbc086fc30a9b5b">recordStartTime</a> &gt; -1 &amp;&amp; <a class="code" href="classveins_1_1_channel_info.html#a33a1c533389ce3ce4fbc086fc30a9b5b">recordStartTime</a> &lt;= e0);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">for</span> (AirFrameMatrix::iterator it3 = <a class="code" href="classveins_1_1_channel_info.html#a8a0821808d6de551cd2d5c9624d0c45a">activeAirFrames</a>.begin(); it3 != <a class="code" href="classveins_1_1_channel_info.html#a8a0821808d6de551cd2d5c9624d0c45a">activeAirFrames</a>.end() &amp;&amp; !<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a>; ++it3) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">for</span> (AirFrameMatrix::iterator it3 = <a class="code" href="classveins_1_1_channel_info.html#a8a0821808d6de551cd2d5c9624d0c45a">activeAirFrames</a>.begin(); it3 != <a class="code" href="classveins_1_1_channel_info.html#a8a0821808d6de551cd2d5c9624d0c45a">activeAirFrames</a>.end() &amp;&amp; !intersects; ++it3) {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                simtime_t_cref e1 = it3-&gt;first;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">for</span> (AirFrameTimeList::iterator it4 = it3-&gt;second.begin(); it4 != it3-&gt;second.end() &amp;&amp; !<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a>; ++it4) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">for</span> (AirFrameTimeList::iterator it4 = it3-&gt;second.begin(); it4 != it3-&gt;second.end() &amp;&amp; !intersects; ++it4) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    simtime_t_cref s1 = it4-&gt;first;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="keywordflow">if</span> (e0 &gt;= s1 &amp;&amp; s0 &lt;= e1) <a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="keywordflow">if</span> (e0 &gt;= s1 &amp;&amp; s0 &lt;= e1) intersects = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            ASSERT(<a class="code" href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">intersects</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            ASSERT(intersects);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
@@ -332,15 +331,14 @@ $(document).ready(function(){initNavTree('_channel_info_8cc_source.html',''); in
 <div class="ttc" id="aclassveins_1_1_channel_info_html_aec072c13541b9a22bbdcc8e9103fe9e5"><div class="ttname"><a href="classveins_1_1_channel_info.html#aec072c13541b9a22bbdcc8e9103fe9e5">veins::ChannelInfo::deleteAirFrame</a></div><div class="ttdeci">void deleteAirFrame(AirFrameMatrix &amp;airFrames, AirFrame *a, simtime_t_cref startTime, simtime_t_cref endTime)</div><div class="ttdoc">Deletes an AirFrame from an AirFrameMatrix.</div><div class="ttdef"><b>Definition:</b> <a href="_channel_info_8cc_source.html#l00129">ChannelInfo.cc:129</a></div></div>
 <div class="ttc" id="aclassveins_1_1_channel_info_html_af9ee0be843528ee913df218f73d4d713"><div class="ttname"><a href="classveins_1_1_channel_info.html#af9ee0be843528ee913df218f73d4d713">veins::ChannelInfo::removeAirFrame</a></div><div class="ttdeci">simtime_t removeAirFrame(AirFrame *a)</div><div class="ttdoc">Tells the ChannelInfo that an AirFrame is over.</div><div class="ttdef"><b>Definition:</b> <a href="_channel_info_8cc_source.html#l00079">ChannelInfo.cc:79</a></div></div>
 <div class="ttc" id="aclassveins_1_1_channel_info_html_afb82a5aabeb57db696566fec27d97ac8"><div class="ttname"><a href="classveins_1_1_channel_info.html#afb82a5aabeb57db696566fec27d97ac8">veins::ChannelInfo::earliestInfoPoint</a></div><div class="ttdeci">simtime_t earliestInfoPoint</div><div class="ttdoc">Stores the point in history up to which we have some (but not necessarily all) channel information st...</div><div class="ttdef"><b>Definition:</b> <a href="_channel_info_8h_source.html#l00263">ChannelInfo.h:263</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_b_box_lookup_8cc_03_html_ad29edbecc2bba7cf9afb525f0aff0f25"><div class="ttname"><a href="namespaceanonymous__namespace_02_b_box_lookup_8cc_03.html#ad29edbecc2bba7cf9afb525f0aff0f25">anonymous_namespace{BBoxLookup.cc}::intersects</a></div><div class="ttdeci">bool intersects(const Ray &amp;ray, const Box &amp;box)</div><div class="ttdoc">Return whether ray intersects with box.</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_lookup_8cc_source.html#l00074">BBoxLookup.cc:74</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdoc">Veins - The open source vehicular network simulation framework.</div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_7ed75e2b1ee1c6cbf8e17dfb79841f91.html">base</a></li><li class="navelem"><a class="el" href="dir_af1514ba3c68d24357bf98a7604ab18c.html">phyLayer</a></li><li class="navelem"><a class="el" href="_channel_info_8cc.html">ChannelInfo.cc</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 15:00:17 for Veins by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 10 2024 20:37:23 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

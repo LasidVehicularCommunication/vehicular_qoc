@@ -1,7 +1,7 @@
 <map id="veins::Icarqoc::finish" name="veins::Icarqoc::finish">
 <area shape="rect" id="node1" title=" " alt="" coords="5,925,160,952"/>
 <area shape="rect" id="node2" href="$classveins_1_1_icarqoc.html#ae018054638599565090518a930e59a55" title=" " alt="" coords="208,681,416,722"/>
-<area shape="rect" id="node4" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title=" " alt="" coords="1013,707,1157,733"/>
+<area shape="rect" id="node4" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="1013,707,1157,733"/>
 <area shape="rect" id="node32" href="$classveins_1_1_icar_context.html#a8ab04ae3640b6d12d47f3d94e58a9595" title=" " alt="" coords="242,823,382,865"/>
 <area shape="rect" id="node33" href="$classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0" title=" " alt="" coords="679,977,928,1018"/>
 <area shape="rect" id="node34" href="$classveins_1_1_local_agent.html#a5a2e13c2e730b15a4e867e1a9e6f3a5d" title=" " alt="" coords="475,1006,620,1047"/>

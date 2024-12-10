@@ -112,7 +112,6 @@ var hierarchy =
     [ "veins::ForwardingNode", "classveins_1_1_forwarding_node.html", null ],
     [ "veins::FWMath", "classveins_1_1_f_w_math.html", null ],
     [ "veins::GeneralCommunicationService", "classveins_1_1_general_communication_service.html", null ],
-    [ "veins::SignalUtils::anonymous_namespace{SignalUtils.cc}::greaterByReceptionEnd< T >", "structveins_1_1_signal_utils_1_1anonymous__namespace_02_signal_utils_8cc_03_1_1greater_by_reception_end.html", null ],
     [ "veins::BaseConnectionManager::GridCoord", "classveins_1_1_base_connection_manager_1_1_grid_coord.html", null ],
     [ "veins::AnnotationManager::Group", "classveins_1_1_annotation_manager_1_1_group.html", null ],
     [ "veins::HasLogProxy", "classveins_1_1_has_log_proxy.html", [
@@ -180,7 +179,6 @@ var hierarchy =
     ] ],
     [ "veins::Radio", "classveins_1_1_radio.html", null ],
     [ "RadiusEstimatorAgentPair", "class_radius_estimator_agent_pair.html", null ],
-    [ "anonymous_namespace{BBoxLookup.cc}::Ray", "structanonymous__namespace_02_b_box_lookup_8cc_03_1_1_ray.html", null ],
     [ "veins::RemoteAgentGroup", "classveins_1_1_remote_agent_group.html", null ],
     [ "veins::TraCIConnection::Result", "classveins_1_1_tra_c_i_connection_1_1_result.html", null ],
     [ "veins::TraCICommandInterface::Road", "classveins_1_1_tra_c_i_command_interface_1_1_road.html", null ],
