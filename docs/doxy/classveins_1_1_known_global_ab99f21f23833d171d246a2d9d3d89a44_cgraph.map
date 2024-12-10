@@ -1,0 +1,9 @@
+<map id="veins::KnownGlobal::calcTraciDistanceMobility" name="veins::KnownGlobal::calcTraciDistanceMobility">
+<area shape="rect" id="node1" title=" " alt="" coords="5,159,201,200"/>
+<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#a57c43d6648243f76a1373da31f7293ea" title=" " alt="" coords="249,5,435,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_local_agent.html#af6721d8a6bcc7f2d9fc412f1f3dad48f" title=" " alt="" coords="269,71,415,112"/>
+<area shape="rect" id="node4" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="483,107,693,134"/>
+<area shape="rect" id="node5" href="$classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac" title=" " alt="" coords="251,188,433,229"/>
+<area shape="rect" id="node6" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="250,254,434,281"/>
+<area shape="rect" id="node7" href="$classveins_1_1_local_mobility.html#a05bc965d620ebfe3e5a45562895a567e" title=" " alt="" coords="266,305,418,347"/>
+</map>

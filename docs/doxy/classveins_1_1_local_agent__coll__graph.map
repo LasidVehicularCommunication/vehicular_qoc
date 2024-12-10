@@ -1,0 +1,13 @@
+<map id="veins::LocalAgent" name="veins::LocalAgent">
+<area shape="rect" id="node1" title=" " alt="" coords="239,499,376,525"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent.html" title=" " alt="" coords="256,423,359,449"/>
+<area shape="rect" id="node3" href="$classveins_1_1_mobility_info.html" title=" " alt="" coords="79,333,221,360"/>
+<area shape="rect" id="node4" href="$classveins_1_1_move.html" title="Class to store object position and movement." alt="" coords="65,215,166,241"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node6" href="$classveins_1_1_coord.html" title="Class for storing 3D coordinates." alt="" coords="63,81,165,108"/>
+<area shape="rect" id="node7" title=" " alt="" coords="263,81,351,108"/>
+<area shape="rect" id="node11" href="$class_timeliness.html" title=" " alt="" coords="263,215,357,241"/>
+<area shape="rect" id="node8" href="$classveins_1_1_comm_info.html" title=" " alt="" coords="390,333,523,360"/>
+<area shape="rect" id="node9" href="$class_comm_performance.html" title=" " alt="" coords="383,215,531,241"/>
+<area shape="rect" id="node10" href="$classveins_1_1_qo_c_info.html" title=" " alt="" coords="249,333,366,360"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="veins::MobilityInfo::calcAcceleration" name="veins::MobilityInfo::calcAcceleration">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,148,65"/>
+<area shape="rect" id="node2" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="208,5,379,32"/>
+<area shape="rect" id="node3" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="196,56,391,83"/>
+</map>

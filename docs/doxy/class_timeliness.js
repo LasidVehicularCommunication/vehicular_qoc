@@ -1,0 +1,26 @@
+var class_timeliness =
+[
+    [ "Timeliness", "class_timeliness.html#ac8cca17c30f26b552276b813684f47f9", null ],
+    [ "~Timeliness", "class_timeliness.html#a2a6d4e77a207306ff1ad90411ee2574a", null ],
+    [ "getAge", "class_timeliness.html#a5d2a67538e4f1981eadae3a2a8c7264d", null ],
+    [ "getCoConfianca", "class_timeliness.html#a74f774bd264a724cb4969a904ab72df7", null ],
+    [ "getTimeoutValidity", "class_timeliness.html#a7b1bba3d0ba777dcd5b670cb3dfb9c6b", null ],
+    [ "getTimeStampUpdate", "class_timeliness.html#a219270e3c3887dee6531c08aa2ccb3e5", null ],
+    [ "getValidity", "class_timeliness.html#a53013f1c04b19f946375c22787103799", null ],
+    [ "getValidityCoConfianca", "class_timeliness.html#a19e8065c850a308d1224dbffd472236d", null ],
+    [ "getValidityNow", "class_timeliness.html#a607700d7b070434ec24ca57bdbe53dee", null ],
+    [ "info", "class_timeliness.html#a47a470b45d138b93b0add89e91f9710f", null ],
+    [ "infoTrace", "class_timeliness.html#a85e61b773cb4c7272aeed1f29f4d1c13", null ],
+    [ "setAge", "class_timeliness.html#ab18a49da0236dbd1f40c6b3eb81d5565", null ],
+    [ "setCoConfianca", "class_timeliness.html#ad47d557a67dfe3307687d98f14c3c88f", null ],
+    [ "setTimeoutValidity", "class_timeliness.html#a6f05cdc3fceecb61d6ac0b7df22ad299", null ],
+    [ "setTimeStampUpdate", "class_timeliness.html#a8cd99fb5e462abc47aa870f990e33254", null ],
+    [ "setValidity", "class_timeliness.html#a06a73e9bd065fba4db622eab1bef523f", null ],
+    [ "age", "class_timeliness.html#af85dc82d11dc04614781da055f70163b", null ],
+    [ "coConfianca", "class_timeliness.html#ad5c869dfab5016ad4d42f946b4c2f26b", null ],
+    [ "priorAge", "class_timeliness.html#a1f411d1288fefa25ec19f0031c5b28bd", null ],
+    [ "timeCommSignal", "class_timeliness.html#acb6af4526841ecfc8b0ac34734a665c2", null ],
+    [ "timeoutValidity", "class_timeliness.html#a61f96e5414b79f8ec5ad6258eaa805f1", null ],
+    [ "timeStampUpdate", "class_timeliness.html#a37d8a2fdda30bcf5a6461605e836c80e", null ],
+    [ "validity", "class_timeliness.html#aefdd84bfbed271d98f05f229c7486822", null ]
+];

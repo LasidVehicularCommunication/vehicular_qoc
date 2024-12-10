@@ -1,0 +1,24 @@
+<map id="veins::MobilityInfo::getAngle" name="veins::MobilityInfo::getAngle">
+<area shape="rect" id="node1" title=" " alt="" coords="2003,129,2145,171"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent_pair_mobility.html#afd62de0c8eb0f59069e962e3df9565c2" title=" " alt="" coords="1765,64,1945,105"/>
+<area shape="rect" id="node15" href="$classveins_1_1_timeliness_agent_pair.html#adde08b1d0dae9f2be896a2097a765923" title=" " alt="" coords="1756,129,1955,171"/>
+<area shape="rect" id="node19" href="$classveins_1_1_message_manager.html#a8a4db062502651269a9a0791b4df8ca4" title=" " alt="" coords="1765,195,1945,236"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent_pair_mobility.html#a320df4e46ebbd261e5f978dee17fbc2e" title=" " alt="" coords="1519,5,1699,47"/>
+<area shape="rect" id="node4" href="$classveins_1_1_agent_pair_mobility.html#ad354facb6606d4b9e8a3695fa64c991f" title=" " alt="" coords="1267,64,1457,105"/>
+<area shape="rect" id="node5" href="$classveins_1_1_agent_pair.html#af192d43df9528d10cad6694a9470e395" title=" " alt="" coords="1025,64,1205,105"/>
+<area shape="rect" id="node6" href="$classveins_1_1_icar_context.html#a7264cdbdf48c8fe713840802e3392f7f" title=" " alt="" coords="805,108,949,149"/>
+<area shape="rect" id="node11" href="$classveins_1_1_agent_pair_list.html#ae3b535db6b219e0f898393d2071025bc" title=" " alt="" coords="785,43,968,84"/>
+<area shape="rect" id="node7" href="$classveins_1_1_icar_context.html#a2232cf5589c086af90c05901cd79d37b" title=" " alt="" coords="553,108,717,149"/>
+<area shape="rect" id="node8" href="$classveins_1_1_icarqoc.html#afcd0b1515688798306130eea655df704" title=" " alt="" coords="284,108,485,149"/>
+<area shape="rect" id="node9" href="$classveins_1_1_icarqoc.html#a443ae3c27f696c26f04664f0d02d4b6d" title=" " alt="" coords="13,174,229,201"/>
+<area shape="rect" id="node10" href="$classveins_1_1_icarqoc.html#a842c91486ed0b0d9ff323aef0954a5b0" title=" " alt="" coords="17,115,225,142"/>
+<area shape="rect" id="node12" href="$classveins_1_1_icar_context.html#a81d336509976cb543ee09623c4a9991c" title=" " alt="" coords="533,43,737,84"/>
+<area shape="rect" id="node13" href="$classveins_1_1_icar_context.html#a52d1d29eb3d17e0777c6ce03bf6c84ac" title=" " alt="" coords="293,43,477,84"/>
+<area shape="rect" id="node14" href="$classveins_1_1_icarqoc.html#a962ec770cf5f1fdc6ffe9fcc0211c400" title=" " alt="" coords="5,50,236,77"/>
+<area shape="rect" id="node16" href="$classveins_1_1_timeliness_agent_pair.html#afcc018bc6cc7ecf61e572b88a900b242" title=" " alt="" coords="1509,129,1708,171"/>
+<area shape="rect" id="node17" href="$classveins_1_1_timeliness_agent_pair.html#ac5b5cd7ff0f57834e38f965a8e21a9b3" title=" " alt="" coords="1263,129,1461,171"/>
+<area shape="rect" id="node18" href="$classveins_1_1_timeliness_agent_pair.html#a576059d6929d6a1705ef912388baf730" title=" " alt="" coords="1016,129,1215,171"/>
+<area shape="rect" id="node20" href="$classveins_1_1_message_manager.html#aeeb630feca277f96828191e37d8c7cd8" title=" " alt="" coords="540,195,731,236"/>
+<area shape="rect" id="node21" href="$classveins_1_1_icarqoc.html#a611ceda8410cd85902584474db8802cc" title=" " alt="" coords="298,174,471,201"/>
+<area shape="rect" id="node22" href="$classveins_1_1_icarqoc.html#ad710cf544af00239d987033c121250b0" title=" " alt="" coords="285,225,484,251"/>
+</map>

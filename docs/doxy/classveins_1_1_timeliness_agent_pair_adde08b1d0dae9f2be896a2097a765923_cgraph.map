@@ -1,0 +1,26 @@
+<map id="veins::TimelinessAgentPair::calcValidityTeste" name="veins::TimelinessAgentPair::calcValidityTeste">
+<area shape="rect" id="node1" title=" " alt="" coords="5,635,204,676"/>
+<area shape="rect" id="node2" href="$classveins_1_1_timeliness_agent_pair.html#a7f495944a575d3e29731ad5d42df0e98" title=" " alt="" coords="286,121,485,163"/>
+<area shape="rect" id="node5" href="$classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="571,187,773,214"/>
+<area shape="rect" id="node6" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="567,238,777,265"/>
+<area shape="rect" id="node8" href="$classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="283,289,487,315"/>
+<area shape="rect" id="node9" href="$classveins_1_1_agent_pair.html#ab480513c879b14f886baaf24996491b1" title=" " alt="" coords="288,340,483,381"/>
+<area shape="rect" id="node10" href="$classveins_1_1_mobility_info.html#aae003a0083cf99660e5ed116b2bcc49f" title=" " alt="" coords="314,405,457,447"/>
+<area shape="rect" id="node11" href="$classveins_1_1_agent_pair.html#abecf3fce73e6bd395c174e17c08a53af" title=" " alt="" coords="293,471,477,512"/>
+<area shape="rect" id="node12" href="$classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="252,536,519,577"/>
+<area shape="rect" id="node13" href="$classveins_1_1_agent_pair_mobility.html#a496d39c25bc5384e8a9973d83ece8206" title=" " alt="" coords="295,601,475,643"/>
+<area shape="rect" id="node16" href="$classveins_1_1_agent_pair_mobility.html#a0beb06a67b3b3368af48145406e7be91" title=" " alt="" coords="295,667,475,708"/>
+<area shape="rect" id="node17" href="$classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42" title="Returns a string with the value of the coordinate." alt="" coords="314,732,457,773"/>
+<area shape="rect" id="node18" href="$classveins_1_1_agent_pair_mobility.html#aa950e1e8c1f52a259f4fa39cbd34f815" title=" " alt="" coords="295,797,475,839"/>
+<area shape="rect" id="node19" href="$classveins_1_1_agent_pair_mobility.html#a63b6e952f485a8f82ef14bfb7aace383" title=" " alt="" coords="294,863,477,904"/>
+<area shape="rect" id="node20" href="$classveins_1_1_agent_pair_mobility.html#a31865f3284915b0bba77c10861c8b033" title=" " alt="" coords="295,928,475,969"/>
+<area shape="rect" id="node21" href="$classveins_1_1_agent_pair_mobility.html#a9d501837eeb88e05ac790ae8fcb0a374" title=" " alt="" coords="295,993,475,1035"/>
+<area shape="rect" id="node22" href="$classveins_1_1_agent_pair.html#ab564aea7900cfdae4da1037174812fac" title=" " alt="" coords="253,1059,517,1086"/>
+<area shape="rect" id="node23" href="$classveins_1_1_agent_pair.html#a7d2a9e4bad22a82600959e70af13427c" title=" " alt="" coords="261,1110,509,1137"/>
+<area shape="rect" id="node24" href="$classveins_1_1_agent_pair.html#a3849bdda0a707ada899d8c6d8bc9902f" title=" " alt="" coords="279,1161,491,1187"/>
+<area shape="rect" id="node3" href="$classveins_1_1_timeliness_agent_pair.html#a485dca3e08a7b4e4bc16d7c3f43908fb" title=" " alt="" coords="573,5,771,47"/>
+<area shape="rect" id="node4" href="$classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2" title=" " alt="" coords="601,71,743,112"/>
+<area shape="rect" id="node7" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="587,137,757,163"/>
+<area shape="rect" id="node14" href="$classveins_1_1_agent_pair_mobility.html#a2a923b5ff5c9fb92a450af692971f168" title=" " alt="" coords="579,631,765,672"/>
+<area shape="rect" id="node15" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="580,579,764,606"/>
+</map>

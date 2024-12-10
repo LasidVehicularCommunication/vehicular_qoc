@@ -1,0 +1,6 @@
+<map id="veins::Agent::info" name="veins::Agent::info">
+<area shape="rect" id="node1" title=" " alt="" coords="224,56,360,83"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent_pair.html#a472d4179a4cb34a3ef7678860c5f7375" title=" " alt="" coords="11,5,171,32"/>
+<area shape="rect" id="node3" href="$classveins_1_1_local_agent.html#a66a8a13f9513e7bbc84493f9d81ab82a" title=" " alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node4" href="$classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2" title=" " alt="" coords="13,107,168,149"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="veins::MobilityInfo::getPositionAtTime" name="veins::MobilityInfo::getPositionAtTime">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,156,90"/>
+<area shape="rect" id="node2" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="216,5,387,32"/>
+<area shape="rect" id="node3" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="209,56,393,83"/>
+<area shape="rect" id="node4" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="204,107,399,133"/>
+</map>

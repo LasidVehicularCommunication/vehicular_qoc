@@ -1,0 +1,13 @@
+<map id="veins::LocalAgent::infoTrace" name="veins::LocalAgent::infoTrace">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,151,105"/>
+<area shape="rect" id="node2" href="$classveins_1_1_local_agent.html#a5a2e13c2e730b15a4e867e1a9e6f3a5d" title=" " alt="" coords="211,5,357,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8" title=" " alt="" coords="199,71,369,98"/>
+<area shape="rect" id="node9" href="$classveins_1_1_local_comm_info.html#a700c99c50454320eaa5c3648e8c577d9" title=" " alt="" coords="201,129,367,171"/>
+<area shape="rect" id="node4" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="437,13,647,39"/>
+<area shape="rect" id="node5" href="$classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24" title="Returns information about the current state." alt="" coords="471,64,613,105"/>
+<area shape="rect" id="node6" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="727,21,897,47"/>
+<area shape="rect" id="node7" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="720,71,904,98"/>
+<area shape="rect" id="node8" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="715,122,909,149"/>
+<area shape="rect" id="node10" href="$classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0" title=" " alt="" coords="417,129,667,171"/>
+<area shape="rect" id="node11" href="$class_local_agent_comm_performance.html#a8175181303c57179e0fb7440a76f1132" title=" " alt="" coords="432,195,652,236"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="veins::RemoteMobility::updateMobilityInfo" name="veins::RemoteMobility::updateMobilityInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="5,201,175,243"/>
+<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#a1ecc6863b5daffc834e844904ffcb87c" title=" " alt="" coords="236,5,379,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_mobility_info.html#a89a5eb4d9bcb82f2abb4c9c8a1498017" title=" " alt="" coords="236,71,379,112"/>
+<area shape="rect" id="node4" href="$classveins_1_1_mobility_info.html#a01d0b8554b287d1e28753c28a3bf3a27" title=" " alt="" coords="236,136,379,177"/>
+<area shape="rect" id="node5" href="$classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318" title=" " alt="" coords="234,201,381,243"/>
+<area shape="rect" id="node6" href="$classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19" title=" " alt="" coords="236,267,379,308"/>
+<area shape="rect" id="node7" href="$classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22" title="Sets the current speed in meters per second." alt="" coords="223,333,392,359"/>
+<area shape="rect" id="node8" href="$classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092" title="Sets start position (components in meters) and start time." alt="" coords="227,383,387,410"/>
+</map>

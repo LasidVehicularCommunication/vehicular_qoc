@@ -1,0 +1,12 @@
+<map id="veins::RemoteAgent::infoTrace" name="veins::RemoteAgent::infoTrace">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,160,105"/>
+<area shape="rect" id="node2" href="$classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56" title=" " alt="" coords="215,5,423,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8" title=" " alt="" coords="234,71,405,98"/>
+<area shape="rect" id="node9" href="$classveins_1_1_remote_agent_comm_info.html#aa0ed7edea6c10bc50ba2c510f25b3eea" title=" " alt="" coords="208,123,431,164"/>
+<area shape="rect" id="node4" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="479,13,689,39"/>
+<area shape="rect" id="node5" href="$classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24" title="Returns information about the current state." alt="" coords="513,64,655,105"/>
+<area shape="rect" id="node6" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="749,21,920,47"/>
+<area shape="rect" id="node7" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="743,71,927,98"/>
+<area shape="rect" id="node8" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="737,122,932,149"/>
+<area shape="rect" id="node10" href="$classveins_1_1_comm_info.html#aa1b1fb6ef506c8a151775b0bb6454d7c" title=" " alt="" coords="484,130,684,157"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="veins::DeciderResult80211::getRecvPower_dBm" name="veins::DeciderResult80211::getRecvPower_dBm">
+<area shape="rect" id="node1" title="Returns the signal power in dBm." alt="" coords="240,5,436,47"/>
+<area shape="rect" id="node2" href="$classveins_1_1_message_manager.html#a882c00fb89ce942d6171e81d86501c8b" title=" " alt="" coords="5,5,192,47"/>
+</map>

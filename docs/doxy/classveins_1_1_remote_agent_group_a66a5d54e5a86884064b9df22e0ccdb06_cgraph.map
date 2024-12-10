@@ -1,0 +1,16 @@
+<map id="veins::RemoteAgentGroup::calcRemoteAgentGroupCommPerform" name="veins::RemoteAgentGroup::calcRemoteAgentGroupCommPerform">
+<area shape="rect" id="node1" title=" " alt="" coords="5,145,284,186"/>
+<area shape="rect" id="node2" href="$class_remote_agent_comm_performance.html#a0df0ebbd95f3d919225f32f138108041" title=" " alt="" coords="340,5,591,61"/>
+<area shape="rect" id="node3" href="$class_remote_agent_comm_performance.html#a35f31f85c26892c373e24ee78c1a13bf" title=" " alt="" coords="332,86,599,127"/>
+<area shape="rect" id="node4" href="$classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56" title=" " alt="" coords="654,163,862,205"/>
+<area shape="rect" id="node5" href="$classveins_1_1_remote_agent_comm_info.html#a3e62da2ae7f65f035f57b6d9114a6d87" title=" " alt="" coords="332,203,599,245"/>
+<area shape="rect" id="node6" href="$classveins_1_1_remote_agent.html#a44bd7b0ab5b453bdb0fbe555b9b5eb43" title=" " alt="" coords="388,269,543,310"/>
+<area shape="rect" id="node7" href="$classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8" title=" " alt="" coords="673,247,843,273"/>
+<area shape="rect" id="node13" href="$classveins_1_1_remote_agent_comm_info.html#aa0ed7edea6c10bc50ba2c510f25b3eea" title=" " alt="" coords="647,298,869,339"/>
+<area shape="rect" id="node8" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="917,188,1128,215"/>
+<area shape="rect" id="node9" href="$classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24" title="Returns information about the current state." alt="" coords="951,239,1094,281"/>
+<area shape="rect" id="node10" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="1188,196,1359,223"/>
+<area shape="rect" id="node11" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="1181,247,1365,273"/>
+<area shape="rect" id="node12" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="1176,297,1371,324"/>
+<area shape="rect" id="node14" href="$classveins_1_1_comm_info.html#aa1b1fb6ef506c8a151775b0bb6454d7c" title=" " alt="" coords="923,305,1123,332"/>
+</map>

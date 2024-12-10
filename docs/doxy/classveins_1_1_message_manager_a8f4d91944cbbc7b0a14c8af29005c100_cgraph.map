@@ -1,0 +1,5 @@
+<map id="veins::MessageManager::getMsgRecvSnr" name="veins::MessageManager::getMsgRecvSnr">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,185,80"/>
+<area shape="rect" id="node2" href="$classveins_1_1_phy_to_mac_control_info.html#aaf6576c40e08fb0c868752c71adf577e" title="Returns the result of the evaluation of the Decider." alt="" coords="233,5,436,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_decider_result80211.html#ae0921202a6cade427f29f07b4f32d348" title="Returns the signal to noise ratio of the transmission." alt="" coords="237,71,433,112"/>
+</map>

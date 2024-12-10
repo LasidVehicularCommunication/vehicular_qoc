@@ -1,0 +1,13 @@
+<map id="veins::MessageManager::prepareICRNode" name="veins::MessageManager::prepareICRNode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,283,185,324"/>
+<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#a723be5eefd7511edf14e8eead4a45088" title=" " alt="" coords="267,5,410,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2" title=" " alt="" coords="267,71,410,112"/>
+<area shape="rect" id="node4" href="$classveins_1_1_mobility_info.html#aae003a0083cf99660e5ed116b2bcc49f" title=" " alt="" coords="267,136,410,177"/>
+<area shape="rect" id="node5" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title=" " alt="" coords="267,202,411,229"/>
+<area shape="rect" id="node6" href="$classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42" title="Returns a string with the value of the coordinate." alt="" coords="267,253,410,295"/>
+<area shape="rect" id="node7" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="233,319,444,346"/>
+<area shape="rect" id="node8" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="253,370,424,397"/>
+<area shape="rect" id="node9" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="247,421,431,447"/>
+<area shape="rect" id="node10" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="241,471,436,498"/>
+<area shape="rect" id="node11" href="$classveins_1_1_i_c_r_node.html#a4341d05debfb9e7d456dd45c2278a653" title=" " alt="" coords="246,523,431,564"/>
+</map>

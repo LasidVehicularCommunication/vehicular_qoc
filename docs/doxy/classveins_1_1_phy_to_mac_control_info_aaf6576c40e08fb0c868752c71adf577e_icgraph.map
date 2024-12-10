@@ -1,0 +1,7 @@
+<map id="veins::PhyToMacControlInfo::getDeciderResult" name="veins::PhyToMacControlInfo::getDeciderResult">
+<area shape="rect" id="node1" title="Returns the result of the evaluation of the Decider." alt="" coords="300,104,503,145"/>
+<area shape="rect" id="node2" href="$classveins_1_1_phy_to_mac_control_info.html#a184023bbdfeb6a47f8fcb559c065bcb1" title="extracts the decider result from message &quot;control info&quot;." alt="" coords="5,5,252,47"/>
+<area shape="rect" id="node3" href="$classveins_1_1_message_manager.html#a882c00fb89ce942d6171e81d86501c8b" title=" " alt="" coords="35,71,222,112"/>
+<area shape="rect" id="node4" href="$classveins_1_1_message_manager.html#a8f4d91944cbbc7b0a14c8af29005c100" title=" " alt="" coords="39,136,219,177"/>
+<area shape="rect" id="node5" href="$classveins_1_1_mac1609__4.html#aa33e88d786741d77a486617749ddf6d0" title="Handle messages from lower layer." alt="" coords="33,201,224,243"/>
+</map>

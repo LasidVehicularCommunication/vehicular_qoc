@@ -1,0 +1,4 @@
+<map id="veins::LocalMobility::moveInfoTrace" name="veins::LocalMobility::moveInfoTrace">
+<area shape="rect" id="node1" title="Returns information about the current state." alt="" coords="5,5,157,47"/>
+<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#a20603e2f2900766ccf735b747ed4e491" title="Returns information about the current state." alt="" coords="205,5,348,47"/>
+</map>

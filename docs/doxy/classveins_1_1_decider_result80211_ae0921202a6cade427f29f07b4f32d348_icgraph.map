@@ -1,0 +1,4 @@
+<map id="veins::DeciderResult80211::getSnr" name="veins::DeciderResult80211::getSnr">
+<area shape="rect" id="node1" title="Returns the signal to noise ratio of the transmission." alt="" coords="233,5,429,47"/>
+<area shape="rect" id="node2" href="$classveins_1_1_message_manager.html#a8f4d91944cbbc7b0a14c8af29005c100" title=" " alt="" coords="5,5,185,47"/>
+</map>

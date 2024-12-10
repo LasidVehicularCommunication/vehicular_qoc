@@ -1,0 +1,16 @@
+<map id="GeneralCommunicationService.h" name="GeneralCommunicationService.h">
+<area shape="rect" id="node1" title=" " alt="" coords="350,5,586,32"/>
+<area shape="rect" id="node2" href="$_general_communication_service_8cc.html" title=" " alt="" coords="5,80,248,107"/>
+<area shape="rect" id="node3" href="$_icar_app_8h.html" title=" " alt="" coords="272,80,355,107"/>
+<area shape="rect" id="node5" href="$_icar_context_8h.html" title=" " alt="" coords="632,155,741,181"/>
+<area shape="rect" id="node9" href="$_icarqoc_8h.html" title=" " alt="" coords="419,229,501,256"/>
+<area shape="rect" id="node11" href="$_message_manager_8h.html" title=" " alt="" coords="654,304,802,331"/>
+<area shape="rect" id="node13" href="$_known_global_8h.html" title=" " alt="" coords="484,80,604,107"/>
+<area shape="rect" id="node4" href="$_icar_app_8cc.html" title=" " alt="" coords="265,155,354,181"/>
+<area shape="rect" id="node6" href="$_icar_context_8cc.html" title=" " alt="" coords="576,229,691,256"/>
+<area shape="rect" id="node7" href="$_icar_monitor_8h.html" title=" " alt="" coords="485,304,592,331"/>
+<area shape="rect" id="node8" href="$_icar_monitor_8cc.html" title=" " alt="" coords="482,379,595,405"/>
+<area shape="rect" id="node10" href="$_icarqoc_8cc.html" title=" " alt="" coords="374,304,461,331"/>
+<area shape="rect" id="node12" href="$_message_manager_8cc.html" title=" " alt="" coords="651,379,805,405"/>
+<area shape="rect" id="node14" href="$_known_global_8cc.html" title=" " alt="" coords="481,155,607,181"/>
+</map>

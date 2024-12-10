@@ -1,0 +1,28 @@
+var class_comm_state =
+[
+    [ "communicatingTransition", "class_comm_state.html#ae672b7a3e8d3dfa653448b458270f5ac", null ],
+    [ "faultyTransition", "class_comm_state.html#aee8c4a54d8b084a9309fdbce139b28bc", null ],
+    [ "noCommunicatingTransition", "class_comm_state.html#ad2af70ba4c9d978d644d5c41547f09bb", null ],
+    [ "receptorTransition", "class_comm_state.html#a860c4ab78df6d8f6658e4be8c3f94f2d", null ],
+    [ "transmittingTransition", "class_comm_state.html#a425ee05ce91743789da2ebabf69d5863", null ],
+    [ "updateCommnunicationState", "class_comm_state.html#aab81b824b06b6d363a7708a9efa90957", null ],
+    [ "communicating", "class_comm_state.html#ac54cd16cd625f3a97a19aeb73276769b", null ],
+    [ "erroMsg", "class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659", null ],
+    [ "faulty", "class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3", null ],
+    [ "knows", "class_comm_state.html#a091f2da1ae7b92cf537fe3d19e7c1031", null ],
+    [ "monitoringReqEvent", "class_comm_state.html#aba00375ad7609bea9d3cd15ebf6c3390", null ],
+    [ "neighbor", "class_comm_state.html#aec618c7919662ca01918ea4cf07cba35", null ],
+    [ "noCommunicating", "class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f", null ],
+    [ "noNeighbor", "class_comm_state.html#af88d6378abebdf540923c2c9eba02ed8", null ],
+    [ "nothing", "class_comm_state.html#a073c9a34854bf8cee984cc61f5998507", null ],
+    [ "received", "class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0", null ],
+    [ "receptor", "class_comm_state.html#a0704b0693969aad42a36d1bedb749dd0", null ],
+    [ "requestPack", "class_comm_state.html#a36ec94276c6883ebf608e1e44229c113", null ],
+    [ "responsePack", "class_comm_state.html#a69406547b15ed28437d74affb4925b6c", null ],
+    [ "sent", "class_comm_state.html#a776c3b51e1c01391185e88cafba0269c", null ],
+    [ "simulationBegin", "class_comm_state.html#a97897149685ec6e21871aa121368201e", null ],
+    [ "simulationFinal", "class_comm_state.html#aa6a2e3c6c0312b90540a2c2451bfc152", null ],
+    [ "transmitting", "class_comm_state.html#aaa9968cd519dce65c9542160bf49282b", null ],
+    [ "unKnowedNeighbor", "class_comm_state.html#a823133d000086ebf5513ffc3a229b088", null ],
+    [ "waitingMonitoringResponse", "class_comm_state.html#a533ad4ca52e30ad6764f0120531882fd", null ]
+];

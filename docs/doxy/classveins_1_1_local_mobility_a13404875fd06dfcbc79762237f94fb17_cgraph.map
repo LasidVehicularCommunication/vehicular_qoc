@@ -1,0 +1,15 @@
+<map id="veins::LocalMobility::LocalMobility" name="veins::LocalMobility::LocalMobility">
+<area shape="rect" id="node1" title=" " alt="" coords="5,152,157,193"/>
+<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19" title=" " alt="" coords="227,87,369,128"/>
+<area shape="rect" id="node3" href="$classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c" title=" " alt="" coords="222,152,374,193"/>
+<area shape="rect" id="node4" href="$classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355" title=" " alt="" coords="205,217,391,259"/>
+<area shape="rect" id="node5" href="$classveins_1_1_mobility_info.html#a8cc5b8b65642961b00177e2129d622a7" title=" " alt="" coords="459,5,602,47"/>
+<area shape="rect" id="node7" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="671,67,865,94"/>
+<area shape="rect" id="node8" href="$classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac" title=" " alt="" coords="439,123,622,164"/>
+<area shape="rect" id="node9" href="$classveins_1_1_tra_c_i_mobility.html#ae7c680f6f0bc1a3826f726a607c66bc1" title=" " alt="" coords="455,188,606,229"/>
+<area shape="rect" id="node10" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="439,254,623,281"/>
+<area shape="rect" id="node11" href="$classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318" title=" " alt="" coords="457,305,604,347"/>
+<area shape="rect" id="node12" href="$classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22" title="Sets the current speed in meters per second." alt="" coords="446,371,615,398"/>
+<area shape="rect" id="node13" href="$classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092" title="Sets start position (components in meters) and start time." alt="" coords="451,422,611,449"/>
+<area shape="rect" id="node6" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="683,13,853,39"/>
+</map>
