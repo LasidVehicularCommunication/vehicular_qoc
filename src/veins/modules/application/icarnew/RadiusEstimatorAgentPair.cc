@@ -40,7 +40,7 @@ double RadiusEstimatorAgentPair::getSignalRange(double transPower_dbm, double d_
       if (radiusSecurity>0){
             if (d<=radiusSecurity) return d;
             else return radiusSecurity;
-        }
+        } else return d;
 
 
 }

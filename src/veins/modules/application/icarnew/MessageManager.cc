@@ -119,9 +119,9 @@ void MessageManager::sendICRMessage(ICRMessage * wsm, std::string evento, std::s
             this->oIcarQoc->dataNetwork  << this->getMsgHeaderInfoTrace( wsm,evento, false, wsm->getTimestamp(), 32, this->oIcarQoc->getMyData()->getId()) << std::endl;
             this->oIcarQoc->oIcarContext->getMyData()->getLocalCommInfo()->getLocalAgentCommPerformance()->addCorrectMsgTransmittedMsg();
         }
-        std::cout  << "this->oIcarQoc->lostMsgAmount = " <<  this->oIcarQoc->lostMsgAmount <<
-                "oKnownGlobal->maxMsgAmountVehicle= " << this->oIcarQoc->oKnownGlobal->maxMsgAmountVehicle <<
-                "this->oIcarQoc->seqMsg = " << this->oIcarQoc->seqMsg << endl;
+        //std::cout  << "this->oIcarQoc->lostMsgAmount = " <<  this->oIcarQoc->lostMsgAmount <<
+        //        "oKnownGlobal->maxMsgAmountVehicle= " << this->oIcarQoc->oKnownGlobal->maxMsgAmountVehicle <<
+        //        "this->oIcarQoc->seqMsg = " << this->oIcarQoc->seqMsg << endl;
     }
 }
 
