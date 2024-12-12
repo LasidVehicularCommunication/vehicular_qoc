@@ -19,6 +19,7 @@ Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisõ
 - **[Tutorial de Execução da Simulação](#tutorial-de-execução-da-simulação)**
 - **[Diagrama de Classes](#diagrama-de-classes)**
 - **[Documentação do projeto](#documentação-do-projeto)**
+- **[Contato](#documentação-do-projeto)**
 
 
 ## Built With
@@ -89,7 +90,7 @@ Abaixo está o link para o PDF que ilustra a modelagem de classes utilizada na s
 **<a href="https://emerald-kizzie-19.tiiny.site/" target="_blank">📄 Diagrama de Classe - Modelagem</a>**
 
 
-## Documentações
+## Documentação do projeto
 
 Este projeto utiliza duas documentações diferentes, cada uma com finalidades distintas:
 
