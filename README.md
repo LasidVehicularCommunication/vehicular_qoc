@@ -89,13 +89,19 @@ Abaixo está o link para o PDF que ilustra a modelagem de classes utilizada na s
 **<a href="https://emerald-kizzie-19.tiiny.site/" target="_blank">📄 Diagrama de Classe - Modelagem</a>**
 
 
-## Documentação do Projeto
+## Documentações
 
-A documentação detalhada do projeto foi gerada utilizando o Neddoc do OMNeT++. Ela inclui informações sobre a estrutura das classes, funções, e outros aspectos importantes do sistema.
+Este projeto utiliza duas documentações diferentes, cada uma com finalidades distintas:
 
-Você pode acessar a documentação completa diretamente no repositório através do link abaixo:
+1. **Documentação do código-fonte**:
+   - **Descrição**:Detalha as classes, métodos, atributos e suas interações. É útil para entender a implementação e a lógica interna do sistema.
 
-**[📖 Documentação do Projeto](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/refDoc)**
+2. **Documentação da arquitetura de rede**:
+   - **Descrição**: Baseada nos arquivos `.NED`, apresenta uma visão clara e visual da arquitetura de rede, incluindo módulos, conexões e hierarquias. É ideal para quem busca compreender o design da simulação e a interação entre os componentes.
+   
+Ambas as documentações são complementares e fornecem diferentes perspectivas sobre o projeto:
+- Use a **[📖 Documentação do código-fonte](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/indexDoxy)** para explorar os detalhes técnicos do código.
+- Use a **[📖 Documentação da arquitetura de rede](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/indexNeddoc)** para entender o layout e as configurações da simulação.
 
 
 ## Contato
