@@ -95,7 +95,7 @@ A documentação detalhada do projeto foi gerada utilizando o Neddoc do OMNeT++.
 
 Você pode acessar a documentação completa diretamente no repositório através do link abaixo:
 
-**[📖 Documentação do Projeto](https://lasidvehicularcommunication.github.io/vehicular_qoc/)**
+**[📖 Documentação do Projeto](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/refDoc)**
 
 
 ## Contato
