@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="./assets/brasao_ufba.jpg" alt="Brasão da UFBA" width="200" height="300"/>
+  <img src="./assets/brasao_ufba.png" alt="Brasão da UFBA" width="200" height="300"/>
 </div>
+
 
 
 ## I-CARQOC
@@ -12,12 +13,12 @@ Por meio dessas regras, o I-CAR possibilita que agentes veiculares tomem decisõ
 
 ## Índice
 
-- [Built With](#built-with)
-- [Montagem de ambiente e configurações](#montagem-de-ambiente-e-configurações)
-- [Cenários da Simulação](#cenários-da-simulação)
-- [Tutorial de Execução da Simulação](#tutorial-de-execução-da-simulação)
-- [Diagrama de Classes](#diagrama-de-classes)
-- [Documentação do projeto](#documentação-do-projeto)
+- **[Built With](#built-with)**
+- **[Montagem de ambiente e configurações](#montagem-de-ambiente-e-configurações)**
+- **[Cenários da Simulação](#cenários-da-simulação)**
+- **[Tutorial de Execução da Simulação](#tutorial-de-execução-da-simulação)**
+- **[Diagrama de Classes](#diagrama-de-classes)**
+- **[Documentação do projeto](#documentação-do-projeto)**
 
 
 ## Built With
@@ -85,7 +86,7 @@ Agora você está pronto para rodar e analisar a simulação no OMNeT++!
 
 Abaixo está o link para o PDF que ilustra a modelagem de classes utilizada na simulação:
 
-<a href="https://emerald-kizzie-19.tiiny.site/" target="_blank">📄 Diagrama de Classe - Modelagem</a>
+**<a href="https://emerald-kizzie-19.tiiny.site/" target="_blank">📄 Diagrama de Classe - Modelagem</a>**
 
 
 ## Documentação do Projeto
@@ -94,7 +95,7 @@ A documentação detalhada do projeto foi gerada utilizando o Neddoc do OMNeT++.
 
 Você pode acessar a documentação completa diretamente no repositório através do link abaixo:
 
-[📖 Documentação do Projeto](https://lasidvehicularcommunication.github.io/vehicular_qoc/)
+**[📖 Documentação do Projeto](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/refDoc)**
 
 
 ## Contato
