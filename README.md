@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.ufba.br/sites/portal.ufba.br/files/brasao_ufba.jpg" alt="Imagem da UFBA" width="100" height="200"/>
+  <img src="https://www.ufba.br/sites/portal.ufba.br/files/brasao_ufba.jpg" alt="Imagem da UFBA" width="200" height="300"/>
 </div>
 
 
