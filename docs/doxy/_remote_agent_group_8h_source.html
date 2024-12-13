@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: RemoteAgentGroup.h Source File</title>
+<title>Contexto de Comunicação em VANET: RemoteAgentGroup.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_remote_agent_group_8h_source.html',''
 <div class="title">RemoteAgentGroup.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_remote_agent_group_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -104,21 +105,21 @@ $(document).ready(function(){initNavTree('_remote_agent_group_8h_source.html',''
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define AGENTGROUP_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_remote_agent_8h.html">RemoteAgent.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;RemoteAgent.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#a6c631ccb896109e2e1c812f3ddffc31b">   27</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#a6c631ccb896109e2e1c812f3ddffc31b">maxMessageTTime</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#a82c740136ad2a0446eb86eea6e9012f9">   28</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#a82c740136ad2a0446eb86eea6e9012f9">minMessageTTime</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#a71dab6173ebbdcb9ef8ffdb70fef35c3">   29</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#a71dab6173ebbdcb9ef8ffdb70fef35c3">minApplicationTime</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#a7fbb0ab940663cf0fc9eb3d58bc3a158">   30</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#a7fbb0ab940663cf0fc9eb3d58bc3a158">maxApplicationTime</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#a2ac38d95cd2386a19171b57150f5332b">   31</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#a2ac38d95cd2386a19171b57150f5332b">maxDistancelr</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#aba77d654045c9db4df9eafd31f51cb10">   32</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#aba77d654045c9db4df9eafd31f51cb10">minDistancelr</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#a5d2f3052d6d299e7620cb1d050c26093">   33</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#a5d2f3052d6d299e7620cb1d050c26093">maxSlr</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#ae0dadce547ebeaddd594a7446f0b18c7">   34</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_remote_agent_group.html#ae0dadce547ebeaddd594a7446f0b18c7">minSlr</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">double</span> maxMessageTTime;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">double</span> minMessageTTime;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">double</span> minApplicationTime;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">double</span> maxApplicationTime;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">double</span> maxDistancelr;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">double</span> minDistancelr;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">double</span> maxSlr;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">double</span> minSlr;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a>();</div>
@@ -132,7 +133,7 @@ $(document).ready(function(){initNavTree('_remote_agent_group_8h_source.html',''
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> setMinMessageTTime(<span class="keywordtype">double</span> minMessageTTime);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classveins_1_1_remote_agent.html">RemoteAgent</a>* getRemoteAgent(int64_t <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> getRemoteAgentIndex(int64_t <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent_group.html#abaab14486ea8d16d20441a4cc53ceb1c">   48</a></span>&#160;    vector &lt;RemoteAgent*&gt; <a class="code" href="classveins_1_1_remote_agent_group.html#abaab14486ea8d16d20441a4cc53ceb1c">knownRemoteAgents</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    vector &lt;RemoteAgent*&gt; knownRemoteAgents;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::string calcRemoteAgentGroupCommPerform(<span class="keywordtype">bool</span> header);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -140,26 +141,15 @@ $(document).ready(function(){initNavTree('_remote_agent_group_8h_source.html',''
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GROUPAGENT_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_remote_agent_8h_html"><div class="ttname"><a href="_remote_agent_8h.html">RemoteAgent.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html">veins::RemoteAgentGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00025">RemoteAgentGroup.h:25</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_a2ac38d95cd2386a19171b57150f5332b"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#a2ac38d95cd2386a19171b57150f5332b">veins::RemoteAgentGroup::maxDistancelr</a></div><div class="ttdeci">double maxDistancelr</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00031">RemoteAgentGroup.h:31</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_a5d2f3052d6d299e7620cb1d050c26093"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#a5d2f3052d6d299e7620cb1d050c26093">veins::RemoteAgentGroup::maxSlr</a></div><div class="ttdeci">double maxSlr</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00033">RemoteAgentGroup.h:33</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_a6c631ccb896109e2e1c812f3ddffc31b"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#a6c631ccb896109e2e1c812f3ddffc31b">veins::RemoteAgentGroup::maxMessageTTime</a></div><div class="ttdeci">double maxMessageTTime</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00027">RemoteAgentGroup.h:27</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_a71dab6173ebbdcb9ef8ffdb70fef35c3"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#a71dab6173ebbdcb9ef8ffdb70fef35c3">veins::RemoteAgentGroup::minApplicationTime</a></div><div class="ttdeci">double minApplicationTime</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00029">RemoteAgentGroup.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_a7fbb0ab940663cf0fc9eb3d58bc3a158"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#a7fbb0ab940663cf0fc9eb3d58bc3a158">veins::RemoteAgentGroup::maxApplicationTime</a></div><div class="ttdeci">double maxApplicationTime</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00030">RemoteAgentGroup.h:30</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_a82c740136ad2a0446eb86eea6e9012f9"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#a82c740136ad2a0446eb86eea6e9012f9">veins::RemoteAgentGroup::minMessageTTime</a></div><div class="ttdeci">double minMessageTTime</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00028">RemoteAgentGroup.h:28</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_aba77d654045c9db4df9eafd31f51cb10"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#aba77d654045c9db4df9eafd31f51cb10">veins::RemoteAgentGroup::minDistancelr</a></div><div class="ttdeci">double minDistancelr</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00032">RemoteAgentGroup.h:32</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_abaab14486ea8d16d20441a4cc53ceb1c"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#abaab14486ea8d16d20441a4cc53ceb1c">veins::RemoteAgentGroup::knownRemoteAgents</a></div><div class="ttdeci">vector&lt; RemoteAgent * &gt; knownRemoteAgents</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00048">RemoteAgentGroup.h:48</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_group_html_ae0dadce547ebeaddd594a7446f0b18c7"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html#ae0dadce547ebeaddd594a7446f0b18c7">veins::RemoteAgentGroup::minSlr</a></div><div class="ttdeci">double minSlr</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_group_8h_source.html#l00034">RemoteAgentGroup.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html"><div class="ttname"><a href="classveins_1_1_remote_agent.html">veins::RemoteAgent</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8h_source.html#l00027">RemoteAgent.h:27</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_remote_agent_group_html"><div class="ttname"><a href="classveins_1_1_remote_agent_group.html">veins::RemoteAgentGroup</a></div><div class="ttdef"><b>Definition:</b> RemoteAgentGroup.h:25</div></div>
+<div class="ttc" id="aclassveins_1_1_remote_agent_html"><div class="ttname"><a href="classveins_1_1_remote_agent.html">veins::RemoteAgent</a></div><div class="ttdef"><b>Definition:</b> RemoteAgent.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_remote_agent_group_8h.html">RemoteAgentGroup.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>RemoteAgentGroup.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

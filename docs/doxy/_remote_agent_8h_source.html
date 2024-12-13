@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: RemoteAgent.h Source File</title>
+<title>Contexto de Comunicação em VANET: RemoteAgent.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_remote_agent_8h_source.html',''); ini
 <div class="title">RemoteAgent.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_remote_agent_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -102,68 +103,53 @@ $(document).ready(function(){initNavTree('_remote_agent_8h_source.html',''); ini
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef REMOTEAGENT_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define REMOTEAGENT_H_</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_remote_mobility_8h.html">RemoteMobility.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_8h.html">Agent.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;RemoteMobility.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;Agent.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;math.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_remote_agent_comm_info_8h.html">RemoteAgentCommInfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_remote_agent_qo_c_8h.html">RemoteAgentQoC.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_c_r_node_8h.html">veins/modules/application/icarnew/messages/ICRNode.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;RemoteAgentCommInfo.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;RemoteAgentQoC.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;veins/modules/application/icarnew/messages/ICRNode.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classveins_1_1_remote_agent.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_remote_agent.html">RemoteAgent</a> : <span class="keyword">public</span> <a class="code" href="classveins_1_1_agent.html">Agent</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classveins_1_1_remote_agent.html#a62e076d5930b892b7b118d75c3c61ef9">RemoteAgent</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classveins_1_1_remote_agent.html">RemoteAgent</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classveins_1_1_remote_agent.html#a62e076d5930b892b7b118d75c3c61ef9">RemoteAgent</a>(simtime_t tsDataUpdating, int64_t <span class="keywordtype">id</span>, simtime_t sTimePosition, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y,  <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classveins_1_1_remote_agent.html">RemoteAgent</a>(simtime_t tsDataUpdating, int64_t <span class="keywordtype">id</span>, simtime_t sTimePosition, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y,  <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> setRadius,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            std::string <a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, <span class="keywordtype">float</span> acceleration, <span class="keywordtype">float</span> angle);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classveins_1_1_remote_agent.html#a62e076d5930b892b7b118d75c3c61ef9">RemoteAgent</a>(simtime_t tsDataUpdating, <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classveins_1_1_remote_agent.html">RemoteAgent</a>(simtime_t tsDataUpdating, <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, <span class="keywordtype">double</span> setRadius);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39">createAgent</a>(simtime_t tsDataUpdating, int64_t <span class="keywordtype">id</span>, simtime_t tsStart, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y,  <span class="keywordtype">double</span> z,<span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>,std::string <a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, <span class="keywordtype">float</span> acceleration, <span class="keywordtype">float</span> angle);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> createAgent(simtime_t tsDataUpdating, int64_t <span class="keywordtype">id</span>, simtime_t tsStart, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y,  <span class="keywordtype">double</span> z,<span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> setRadius,std::string <a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, <span class="keywordtype">float</span> acceleration, <span class="keywordtype">float</span> angle);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_remote_agent.html#accf788128684371c62b06ff740bfba58">~RemoteAgent</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_remote_agent.html">RemoteAgent</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4">updateRemoteAgent</a>(simtime_t tsDataUpdating, simtime_t tsMovement, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y,  <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> updateRemoteAgent(simtime_t tsDataUpdating, simtime_t tsMovement, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y,  <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> speed, <span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> setRadius,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">float</span> acceleration, <span class="keywordtype">float</span> angle);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4">updateRemoteAgent</a>(simtime_t tsDataUpdating, <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> updateRemoteAgent(simtime_t tsDataUpdating, <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, <span class="keywordtype">double</span> setRadius);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string <a class="code" href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2">info</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string <a class="code" href="classveins_1_1_remote_agent.html#a44bd7b0ab5b453bdb0fbe555b9b5eb43">infoTrace</a>(<span class="keywordtype">bool</span> header, std::string idagent);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classveins_1_1_mobility_info.html">MobilityInfo</a>* <a class="code" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classveins_1_1_remote_agent_comm_info.html">RemoteAgentCommInfo</a>* <a class="code" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">getRemoteAgentCommInfo</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string info();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string infoTrace(<span class="keywordtype">bool</span> header, std::string idagent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classveins_1_1_mobility_info.html">MobilityInfo</a>* getMobilityInfo();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classveins_1_1_remote_agent_comm_info.html">RemoteAgentCommInfo</a>* getRemoteAgentCommInfo();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* REMOTEAGENT_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_agent_8h_html"><div class="ttname"><a href="_agent_8h.html">Agent.h</a></div></div>
-<div class="ttc" id="a_i_c_r_node_8h_html"><div class="ttname"><a href="_i_c_r_node_8h.html">ICRNode.h</a></div></div>
-<div class="ttc" id="a_remote_agent_comm_info_8h_html"><div class="ttname"><a href="_remote_agent_comm_info_8h.html">RemoteAgentCommInfo.h</a></div></div>
-<div class="ttc" id="a_remote_agent_qo_c_8h_html"><div class="ttname"><a href="_remote_agent_qo_c_8h.html">RemoteAgentQoC.h</a></div></div>
-<div class="ttc" id="a_remote_mobility_8h_html"><div class="ttname"><a href="_remote_mobility_8h.html">RemoteMobility.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html"><div class="ttname"><a href="classveins_1_1_agent.html">veins::Agent</a></div><div class="ttdoc">Uma breve descrição da classe.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00034">Agent.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a3865c086e8a0cc367b924b944058133f"><div class="ttname"><a href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">veins::Agent::setRadius</a></div><div class="ttdeci">double setRadius</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00039">Agent.h:39</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a409f74492646575f5ec8c845a37e0080"><div class="ttname"><a href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">veins::Agent::agentName</a></div><div class="ttdeci">std::string agentName</div><div class="ttdoc">Armazena o valor da classe.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00037">Agent.h:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html">veins::ICRNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00026">ICRNode.h:26</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html"><div class="ttname"><a href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00029">MobilityInfo.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_comm_info_html"><div class="ttname"><a href="classveins_1_1_remote_agent_comm_info.html">veins::RemoteAgentCommInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_info_8h_source.html#l00024">RemoteAgentCommInfo.h:24</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html"><div class="ttname"><a href="classveins_1_1_remote_agent.html">veins::RemoteAgent</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8h_source.html#l00027">RemoteAgent.h:27</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_a12cf72a01c9db430e26bf516d4ee16b4"><div class="ttname"><a href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4">veins::RemoteAgent::updateRemoteAgent</a></div><div class="ttdeci">void updateRemoteAgent(simtime_t tsDataUpdating, simtime_t tsMovement, double x, double y, double z, double speed, double maxSpeed, double setRadius, float acceleration, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00058">RemoteAgent.cc:58</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_a44bd7b0ab5b453bdb0fbe555b9b5eb43"><div class="ttname"><a href="classveins_1_1_remote_agent.html#a44bd7b0ab5b453bdb0fbe555b9b5eb43">veins::RemoteAgent::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00081">RemoteAgent.cc:81</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_a62e076d5930b892b7b118d75c3c61ef9"><div class="ttname"><a href="classveins_1_1_remote_agent.html#a62e076d5930b892b7b118d75c3c61ef9">veins::RemoteAgent::RemoteAgent</a></div><div class="ttdeci">RemoteAgent()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00020">RemoteAgent.cc:20</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_accf788128684371c62b06ff740bfba58"><div class="ttname"><a href="classveins_1_1_remote_agent.html#accf788128684371c62b06ff740bfba58">veins::RemoteAgent::~RemoteAgent</a></div><div class="ttdeci">virtual ~RemoteAgent()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00069">RemoteAgent.cc:69</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_acd70d8253a8a12cf434afe5231c53e39"><div class="ttname"><a href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39">veins::RemoteAgent::createAgent</a></div><div class="ttdeci">void createAgent(simtime_t tsDataUpdating, int64_t id, simtime_t tsStart, double x, double y, double z, double speed, double maxSpeed, double setRadius, std::string agentName, float acceleration, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00036">RemoteAgent.cc:36</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_acf87cf2224e65affa229d8713b7968e2"><div class="ttname"><a href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2">veins::RemoteAgent::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00074">RemoteAgent.cc:74</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_aea03b066f342859500e7e3daa5867a56"><div class="ttname"><a href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">veins::RemoteAgent::getRemoteAgentCommInfo</a></div><div class="ttdeci">RemoteAgentCommInfo * getRemoteAgentCommInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00092">RemoteAgent.cc:92</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_aef1ae2746d637ed65f9b579af954eb1e"><div class="ttname"><a href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">veins::RemoteAgent::getMobilityInfo</a></div><div class="ttdeci">MobilityInfo * getMobilityInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00087">RemoteAgent.cc:87</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_agent_html"><div class="ttname"><a href="classveins_1_1_agent.html">veins::Agent</a></div><div class="ttdoc">Uma breve descrição da classe.</div><div class="ttdef"><b>Definition:</b> Agent.h:34</div></div>
+<div class="ttc" id="aclassveins_1_1_agent_html_a409f74492646575f5ec8c845a37e0080"><div class="ttname"><a href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">veins::Agent::agentName</a></div><div class="ttdeci">std::string agentName</div><div class="ttdoc">Armazena o valor da classe.</div><div class="ttdef"><b>Definition:</b> Agent.h:37</div></div>
+<div class="ttc" id="aclassveins_1_1_i_c_r_node_html"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html">veins::ICRNode</a></div><div class="ttdef"><b>Definition:</b> ICRNode.h:26</div></div>
+<div class="ttc" id="aclassveins_1_1_mobility_info_html"><div class="ttname"><a href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></div><div class="ttdef"><b>Definition:</b> MobilityInfo.h:29</div></div>
+<div class="ttc" id="aclassveins_1_1_remote_agent_comm_info_html"><div class="ttname"><a href="classveins_1_1_remote_agent_comm_info.html">veins::RemoteAgentCommInfo</a></div><div class="ttdef"><b>Definition:</b> RemoteAgentCommInfo.h:24</div></div>
+<div class="ttc" id="aclassveins_1_1_remote_agent_html"><div class="ttname"><a href="classveins_1_1_remote_agent.html">veins::RemoteAgent</a></div><div class="ttdef"><b>Definition:</b> RemoteAgent.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_remote_agent_8h.html">RemoteAgent.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>RemoteAgent.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

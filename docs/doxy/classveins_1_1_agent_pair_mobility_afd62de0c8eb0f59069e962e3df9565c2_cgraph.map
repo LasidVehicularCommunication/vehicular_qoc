@@ -1,10 +1,6 @@
 <map id="veins::AgentPairMobility::calcRelativeSpeed" name="veins::AgentPairMobility::calcRelativeSpeed">
-<area shape="rect" id="node1" title=" " alt="" coords="5,173,185,215"/>
-<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2" title=" " alt="" coords="267,5,410,47"/>
-<area shape="rect" id="node3" href="$classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="237,71,441,98"/>
-<area shape="rect" id="node4" href="$classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="237,122,440,149"/>
-<area shape="rect" id="node5" href="$classveins_1_1_mobility_info.html#aae003a0083cf99660e5ed116b2bcc49f" title=" " alt="" coords="267,173,410,215"/>
-<area shape="rect" id="node6" href="$classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42" title="Returns a string with the value of the coordinate." alt="" coords="267,239,410,280"/>
-<area shape="rect" id="node7" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="233,305,444,331"/>
-<area shape="rect" id="node8" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="253,355,424,382"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,185,90"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="233,5,437,32"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="234,56,437,83"/>
+<area shape="rect" id="node4" href="$classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42" title="Returns a string with the value of the coordinate." alt="" coords="264,107,407,149"/>
 </map>

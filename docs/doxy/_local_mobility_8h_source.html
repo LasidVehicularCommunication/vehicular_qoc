@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: LocalMobility.h Source File</title>
+<title>Contexto de Comunicação em VANET: LocalMobility.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_local_mobility_8h_source.html',''); i
 <div class="title">LocalMobility.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_local_mobility_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -102,72 +103,52 @@ $(document).ready(function(){initNavTree('_local_mobility_8h_source.html',''); i
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef LOCALMOBILITY_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define LOCALMOBILITY_H_</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mobility_info_8h.html">MobilityInfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_qo_c_info_8h.html">QoCInfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_local_mobility_traci_8h.html">veins/modules/application/icarnew/LocalMobilityTraci.h</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;MobilityInfo.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;QoCInfo.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;veins/modules/application/icarnew/LocalMobilityTraci.h&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//using Veins::TraCIMobility;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classveins_1_1_local_mobility.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a> : <span class="keyword">public</span> <a class="code" href="classveins_1_1_mobility_info.html">MobilityInfo</a>  {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Get vehicle coordinates from VeinsMobilityService</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">   29</a></span>&#160;    <a class="code" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a>* <a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a>* traci;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//variable to support the previous movement of the vehicle (lastMove)</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classveins_1_1_local_mobility.html#a9fb5936796a44ef0ca2485fbb0d076c2">   32</a></span>&#160;    <a class="code" href="classveins_1_1_move.html">Move</a> * <a class="code" href="classveins_1_1_local_mobility.html#a9fb5936796a44ef0ca2485fbb0d076c2">actualTemp</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Move * actualTemp;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html#a68ec03f94b80775bb9a24351f93360d8">LocalMobility</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classveins_1_1_local_mobility.html#ae6c3485221dc8151811157962fede230">   37</a></span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html#ae6c3485221dc8151811157962fede230">LocalMobility</a>(<a class="code" href="classveins_1_1_tra_c_i_mobility.html">TraCIMobility</a>* <a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>, simtime_t tsStart, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>, <span class="keywordtype">double</span> speed);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html#a68ec03f94b80775bb9a24351f93360d8">LocalMobility</a>(<a class="code" href="classveins_1_1_tra_c_i_mobility.html">TraCIMobility</a>* <a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>, <span class="keywordtype">float</span> pMaxSpeed);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_local_mobility.html#a82e3a94641c16a27992dcecd905147c3">~LocalMobility</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classveins_1_1_move.html">Move</a> * <a class="code" href="classveins_1_1_local_mobility.html#addcd3a00c2461b49ef213b1829485b20">getMove</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classveins_1_1_move.html">Move</a> * <a class="code" href="classveins_1_1_local_mobility.html#abff89593182b5fe02845bd3a0ae5d99d">getLastMove</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_local_mobility.html#aeafee28429b159c77978b4c1220753d2">getSensorPeriod</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_local_mobility.html#a977273b9805ffc8d9210eb4944837c8d">setSensorPeriod</a>(<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string <a class="code" href="classveins_1_1_local_mobility.html#a89175f9ca87fa8a5542506c93bb878b5">info</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> * <a class="code" href="classveins_1_1_local_mobility.html#a05bc965d620ebfe3e5a45562895a567e">getTraci</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c">setTraci</a>(<a class="code" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> * <a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355">updateLocalMobilityPos</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a>(TraCIMobility* traci, simtime_t tsStart, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> sensorPeriod, <span class="keywordtype">double</span> speed);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a>(TraCIMobility* traci, <span class="keywordtype">float</span> pMaxSpeed);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Move * getMove();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Move * getLastMove();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> getSensorPeriod();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setSensorPeriod(<span class="keywordtype">double</span> sensorPeriod);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::string info();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> * getTraci();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> setTraci(<a class="code" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> * traci);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> updateLocalMobilityPos();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::string <a class="code" href="classveins_1_1_local_mobility.html#aa60d29feef9095b628bd38bdba51528c">moveInfoTrace</a>(<span class="keywordtype">bool</span> header);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LOCALMOBILITY_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_local_mobility_traci_8h_html"><div class="ttname"><a href="_local_mobility_traci_8h.html">LocalMobilityTraci.h</a></div></div>
-<div class="ttc" id="a_mobility_info_8h_html"><div class="ttname"><a href="_mobility_info_8h.html">MobilityInfo.h</a></div></div>
-<div class="ttc" id="a_qo_c_info_8h_html"><div class="ttname"><a href="_qo_c_info_8h.html">QoCInfo.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html"><div class="ttname"><a href="classveins_1_1_local_mobility.html">veins::LocalMobility</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8h_source.html#l00026">LocalMobility.h:26</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a01e6f0a49f46c66b72e294771cfcb355"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355">veins::LocalMobility::updateLocalMobilityPos</a></div><div class="ttdeci">void updateLocalMobilityPos()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00047">LocalMobility.cc:47</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a05bc965d620ebfe3e5a45562895a567e"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a05bc965d620ebfe3e5a45562895a567e">veins::LocalMobility::getTraci</a></div><div class="ttdeci">LocalMobilityTraci * getTraci()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00123">LocalMobility.cc:123</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a25f0651b3fbd554f00c322d00667309c"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c">veins::LocalMobility::setTraci</a></div><div class="ttdeci">void setTraci(LocalMobilityTraci *traci)</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00132">LocalMobility.cc:132</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a68ec03f94b80775bb9a24351f93360d8"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a68ec03f94b80775bb9a24351f93360d8">veins::LocalMobility::LocalMobility</a></div><div class="ttdeci">LocalMobility()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00021">LocalMobility.cc:21</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a6bfa0d7c3b1c33fd0ae19b78a5a6593e"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">veins::LocalMobility::traci</a></div><div class="ttdeci">LocalMobilityTraci * traci</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8h_source.html#l00029">LocalMobility.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a82e3a94641c16a27992dcecd905147c3"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a82e3a94641c16a27992dcecd905147c3">veins::LocalMobility::~LocalMobility</a></div><div class="ttdeci">virtual ~LocalMobility()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00128">LocalMobility.cc:128</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a89175f9ca87fa8a5542506c93bb878b5"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a89175f9ca87fa8a5542506c93bb878b5">veins::LocalMobility::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00139">LocalMobility.cc:139</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a977273b9805ffc8d9210eb4944837c8d"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a977273b9805ffc8d9210eb4944837c8d">veins::LocalMobility::setSensorPeriod</a></div><div class="ttdeci">void setSensorPeriod(double sensorPeriod)</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00118">LocalMobility.cc:118</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a9fb5936796a44ef0ca2485fbb0d076c2"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a9fb5936796a44ef0ca2485fbb0d076c2">veins::LocalMobility::actualTemp</a></div><div class="ttdeci">Move * actualTemp</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8h_source.html#l00032">LocalMobility.h:32</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_aa60d29feef9095b628bd38bdba51528c"><div class="ttname"><a href="classveins_1_1_local_mobility.html#aa60d29feef9095b628bd38bdba51528c">veins::LocalMobility::moveInfoTrace</a></div><div class="ttdeci">std::string moveInfoTrace(bool header)</div><div class="ttdoc">Returns information about the current state.</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00147">LocalMobility.cc:147</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_abff89593182b5fe02845bd3a0ae5d99d"><div class="ttname"><a href="classveins_1_1_local_mobility.html#abff89593182b5fe02845bd3a0ae5d99d">veins::LocalMobility::getLastMove</a></div><div class="ttdeci">Move * getLastMove()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00042">LocalMobility.cc:42</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_addcd3a00c2461b49ef213b1829485b20"><div class="ttname"><a href="classveins_1_1_local_mobility.html#addcd3a00c2461b49ef213b1829485b20">veins::LocalMobility::getMove</a></div><div class="ttdeci">Move * getMove()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00037">LocalMobility.cc:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_ae6c3485221dc8151811157962fede230"><div class="ttname"><a href="classveins_1_1_local_mobility.html#ae6c3485221dc8151811157962fede230">veins::LocalMobility::LocalMobility</a></div><div class="ttdeci">LocalMobility(TraCIMobility *traci, simtime_t tsStart, double x, double y, double sensorPeriod, double speed)</div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_aeafee28429b159c77978b4c1220753d2"><div class="ttname"><a href="classveins_1_1_local_mobility.html#aeafee28429b159c77978b4c1220753d2">veins::LocalMobility::getSensorPeriod</a></div><div class="ttdeci">double getSensorPeriod()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00113">LocalMobility.cc:113</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_traci_html"><div class="ttname"><a href="classveins_1_1_local_mobility_traci.html">veins::LocalMobilityTraci</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_traci_8h_source.html#l00027">LocalMobilityTraci.h:27</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html"><div class="ttname"><a href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00029">MobilityInfo.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a08d0e8c158afa9697dba176492b3fd4a"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">veins::MobilityInfo::sensorPeriod</a></div><div class="ttdeci">float sensorPeriod</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00048">MobilityInfo.h:48</a></div></div>
-<div class="ttc" id="aclassveins_1_1_move_html"><div class="ttname"><a href="classveins_1_1_move.html">veins::Move</a></div><div class="ttdoc">Class to store object position and movement.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00044">Move.h:44</a></div></div>
-<div class="ttc" id="aclassveins_1_1_tra_c_i_mobility_html"><div class="ttname"><a href="classveins_1_1_tra_c_i_mobility.html">veins::TraCIMobility</a></div><div class="ttdoc">Used in modules created by the TraCIScenarioManager.</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_mobility_8h_source.html#l00059">TraCIMobility.h:59</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_local_mobility_html"><div class="ttname"><a href="classveins_1_1_local_mobility.html">veins::LocalMobility</a></div><div class="ttdef"><b>Definition:</b> LocalMobility.h:26</div></div>
+<div class="ttc" id="aclassveins_1_1_local_mobility_html_aa60d29feef9095b628bd38bdba51528c"><div class="ttname"><a href="classveins_1_1_local_mobility.html#aa60d29feef9095b628bd38bdba51528c">veins::LocalMobility::moveInfoTrace</a></div><div class="ttdeci">std::string moveInfoTrace(bool header)</div><div class="ttdoc">Returns information about the current state.</div><div class="ttdef"><b>Definition:</b> LocalMobility.cc:147</div></div>
+<div class="ttc" id="aclassveins_1_1_local_mobility_traci_html"><div class="ttname"><a href="classveins_1_1_local_mobility_traci.html">veins::LocalMobilityTraci</a></div><div class="ttdef"><b>Definition:</b> LocalMobilityTraci.h:27</div></div>
+<div class="ttc" id="aclassveins_1_1_mobility_info_html"><div class="ttname"><a href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></div><div class="ttdef"><b>Definition:</b> MobilityInfo.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_local_mobility_8h.html">LocalMobility.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>LocalMobility.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

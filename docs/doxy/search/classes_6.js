@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['generalcommunicationservice_2924',['GeneralCommunicationService',['../classveins_1_1_general_communication_service.html',1,'veins']]],
-  ['gridcoord_2925',['GridCoord',['../classveins_1_1_base_connection_manager_1_1_grid_coord.html',1,'veins::BaseConnectionManager']]],
-  ['group_2926',['Group',['../classveins_1_1_annotation_manager_1_1_group.html',1,'veins::AnnotationManager']]],
-  ['guiview_2927',['GuiView',['../classveins_1_1_tra_c_i_command_interface_1_1_gui_view.html',1,'veins::TraCICommandInterface']]]
+  ['localagent_117',['LocalAgent',['../classveins_1_1_local_agent.html',1,'veins']]],
+  ['localagentcommperformance_118',['LocalAgentCommPerformance',['../class_local_agent_comm_performance.html',1,'']]],
+  ['localcomminfo_119',['LocalCommInfo',['../classveins_1_1_local_comm_info.html',1,'veins']]],
+  ['localmobility_120',['LocalMobility',['../classveins_1_1_local_mobility.html',1,'veins']]],
+  ['localmobilitytraci_121',['LocalMobilityTraci',['../classveins_1_1_local_mobility_traci.html',1,'veins']]]
 ];

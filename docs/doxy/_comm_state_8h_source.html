@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: CommState.h Source File</title>
+<title>Contexto de Comunicação em VANET: CommState.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="title">CommState.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_comm_state_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * CommState.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * class represent the communication state of an agent</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 03/12/2015</span></div>
@@ -130,19 +131,19 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * list of communication states</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">   46</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">noCommunicating</a>=0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_comm_state.html#ac54cd16cd625f3a97a19aeb73276769b">   47</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#ac54cd16cd625f3a97a19aeb73276769b">communicating</a>=1;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">   48</a></span>&#160;   <span class="keyword">static</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">transmitting</a>=2;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_comm_state.html#a0704b0693969aad42a36d1bedb749dd0">   49</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a0704b0693969aad42a36d1bedb749dd0">receptor</a>=3;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">   50</a></span>&#160;   <span class="keyword">static</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>=4;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> noCommunicating=0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> communicating=1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <span class="keyword">static</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> transmitting=2;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> receptor=3;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <span class="keyword">static</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> faulty=4;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;   <span class="comment">/* type Message - type of package</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   * 10 - request package</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   * 11 - monitoring response package</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   *</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_comm_state.html#a36ec94276c6883ebf608e1e44229c113">   57</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a36ec94276c6883ebf608e1e44229c113">requestPack</a> = 10;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_comm_state.html#a69406547b15ed28437d74affb4925b6c">   58</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a69406547b15ed28437d74affb4925b6c">responsePack</a> = 11;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> requestPack = 10;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> responsePack = 11;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   <span class="comment">/*</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">   * field kind  of monitoring event</span></div>
@@ -150,9 +151,9 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">   * 11 - response of monitoring request</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   * 12 - wait monitoring response</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_comm_state.html#aba00375ad7609bea9d3cd15ebf6c3390">   66</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aba00375ad7609bea9d3cd15ebf6c3390">monitoringReqEvent</a> = 10;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> monitoringReqEvent = 10;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//static const int MonitoringResponseEvent = 11;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_comm_state.html#a533ad4ca52e30ad6764f0120531882fd">   68</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a533ad4ca52e30ad6764f0120531882fd">waitingMonitoringResponse</a> = 12;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> waitingMonitoringResponse = 12;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">/*</span></div>
@@ -160,47 +161,47 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">   76</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">received</a> = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> received = 0;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_comm_state.html#a776c3b51e1c01391185e88cafba0269c">   79</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a776c3b51e1c01391185e88cafba0269c">sent</a> = 1;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> sent = 1;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_comm_state.html#a091f2da1ae7b92cf537fe3d19e7c1031">   82</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a091f2da1ae7b92cf537fe3d19e7c1031">knows</a> = 2;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> knows = 2;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_comm_state.html#a073c9a34854bf8cee984cc61f5998507">   85</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a073c9a34854bf8cee984cc61f5998507">nothing</a> = 3;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> nothing = 3;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//error message event</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">   88</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">erroMsg</a> = 4;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> erroMsg = 4;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// end event of simulation</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_comm_state.html#aa6a2e3c6c0312b90540a2c2451bfc152">   91</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aa6a2e3c6c0312b90540a2c2451bfc152">simulationFinal</a> = 99;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> simulationFinal = 99;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// begin event of simulation</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_comm_state.html#a97897149685ec6e21871aa121368201e">   94</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a97897149685ec6e21871aa121368201e">simulationBegin</a> = 20;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> simulationBegin = 20;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;   <span class="comment">/*</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">    * list of neighborhood situation</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_comm_state.html#aec618c7919662ca01918ea4cf07cba35">  100</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aec618c7919662ca01918ea4cf07cba35">neighbor</a> = 1;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_comm_state.html#af88d6378abebdf540923c2c9eba02ed8">  101</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#af88d6378abebdf540923c2c9eba02ed8">noNeighbor</a> = 0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_comm_state.html#a823133d000086ebf5513ffc3a229b088">  102</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a823133d000086ebf5513ffc3a229b088">unKnowedNeighbor</a> = -1;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> neighbor = 1;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> noNeighbor = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> unKnowedNeighbor = -1;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_comm_state.html#aab81b824b06b6d363a7708a9efa90957">  104</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aab81b824b06b6d363a7708a9efa90957">updateCommnunicationState</a>(<span class="keywordtype">int</span> event, <span class="keywordtype">int</span> correntState){</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> updateCommnunicationState(<span class="keywordtype">int</span> event, <span class="keywordtype">int</span> correntState){</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">int</span> newState;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">switch</span> (correntState)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">noCommunicating</a>: newState = <a class="code" href="class_comm_state.html#ad2af70ba4c9d978d644d5c41547f09bb">noCommunicatingTransition</a>(event);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">case</span> noCommunicating: newState = noCommunicatingTransition(event);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#ac54cd16cd625f3a97a19aeb73276769b">communicating</a>:newState = <a class="code" href="class_comm_state.html#ae672b7a3e8d3dfa653448b458270f5ac">communicatingTransition</a>(event);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">case</span> communicating:newState = communicatingTransition(event);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">transmitting</a>: newState = <a class="code" href="class_comm_state.html#a425ee05ce91743789da2ebabf69d5863">transmittingTransition</a>(event);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">case</span> transmitting: newState = transmittingTransition(event);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a0704b0693969aad42a36d1bedb749dd0">receptor</a>: newState = <a class="code" href="class_comm_state.html#a860c4ab78df6d8f6658e4be8c3f94f2d">receptorTransition</a>(event);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">case</span> receptor: newState = receptorTransition(event);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>: newState = <a class="code" href="class_comm_state.html#aee8c4a54d8b084a9309fdbce139b28bc">faultyTransition</a>(event);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">case</span> faulty: newState = faultyTransition(event);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">default</span>: newState =  -1;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -210,13 +211,13 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_comm_state.html#ad2af70ba4c9d978d644d5c41547f09bb">  126</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#ad2af70ba4c9d978d644d5c41547f09bb">noCommunicatingTransition</a>(<span class="keywordtype">int</span> event)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> noCommunicatingTransition(<span class="keywordtype">int</span> event)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">int</span> newState;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">switch</span> (event)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">received</a> : newState = <a class="code" href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">transmitting</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">case</span> received : newState = transmitting;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">//case sent : newState = receptor;</span></div>
@@ -225,7 +226,7 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">// case knows : newState = communicating;</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">// break;</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">erroMsg</a>: newState = <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;         <span class="keywordflow">case</span> erroMsg: newState = faulty;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;         <span class="keywordflow">default</span>: newState = -1;</div>
@@ -236,7 +237,7 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_comm_state.html#ae672b7a3e8d3dfa653448b458270f5ac">  152</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#ae672b7a3e8d3dfa653448b458270f5ac">communicatingTransition</a>(<span class="keywordtype">int</span> event){</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> communicatingTransition(<span class="keywordtype">int</span> event){</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">int</span> newState=-1;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">switch</span> (event)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        {</div>
@@ -246,10 +247,10 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;         <span class="comment">//case knows : newState = communicating;</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;         <span class="comment">//break;</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a073c9a34854bf8cee984cc61f5998507">nothing</a>: newState = <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">noCommunicating</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;         <span class="keywordflow">case</span> nothing: newState = noCommunicating;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">erroMsg</a>: newState = <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;         <span class="keywordflow">case</span> erroMsg: newState = faulty;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;         <span class="keywordflow">default</span>: newState = -1;</div>
@@ -260,21 +261,21 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_comm_state.html#a425ee05ce91743789da2ebabf69d5863">  176</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a425ee05ce91743789da2ebabf69d5863">transmittingTransition</a>(<span class="keywordtype">int</span> event)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> transmittingTransition(<span class="keywordtype">int</span> event)</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">int</span> newState=-1;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">switch</span> (event)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">received</a>: newState = <a class="code" href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">transmitting</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;         <span class="keywordflow">case</span> received: newState = transmitting;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;         <span class="comment">//case knows : newState = communicating;</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;         <span class="comment">//break;</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a073c9a34854bf8cee984cc61f5998507">nothing</a>: newState = <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">noCommunicating</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;         <span class="keywordflow">case</span> nothing: newState = noCommunicating;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">erroMsg</a>: newState = <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;         <span class="keywordflow">case</span> erroMsg: newState = faulty;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;         <span class="keywordflow">default</span>: newState = -1;</div>
@@ -287,20 +288,20 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="class_comm_state.html#a860c4ab78df6d8f6658e4be8c3f94f2d">  203</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#a860c4ab78df6d8f6658e4be8c3f94f2d">receptorTransition</a>(<span class="keywordtype">int</span> event)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> receptorTransition(<span class="keywordtype">int</span> event)</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordtype">int</span> newState=-1;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">switch</span> (event)</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">received</a> : newState = <a class="code" href="class_comm_state.html#ac54cd16cd625f3a97a19aeb73276769b">communicating</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">case</span> received : newState = communicating;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a776c3b51e1c01391185e88cafba0269c">sent</a> : newState = <a class="code" href="class_comm_state.html#a0704b0693969aad42a36d1bedb749dd0">receptor</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;         <span class="keywordflow">case</span> sent : newState = receptor;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#a073c9a34854bf8cee984cc61f5998507">nothing</a>: newState = <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">noCommunicating</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;         <span class="keywordflow">case</span> nothing: newState = noCommunicating;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">erroMsg</a>: newState = <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;         <span class="keywordflow">case</span> erroMsg: newState = faulty;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;         <span class="keywordflow">default</span>: newState = -1;</div>
@@ -311,13 +312,13 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="class_comm_state.html#aee8c4a54d8b084a9309fdbce139b28bc">  227</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_comm_state.html#aee8c4a54d8b084a9309fdbce139b28bc">faultyTransition</a>(<span class="keywordtype">int</span> event)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> faultyTransition(<span class="keywordtype">int</span> event)</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordtype">int</span> newState=-1;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">switch</span> (event)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        {</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">received</a> : newState = <a class="code" href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">transmitting</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">case</span> received : newState = transmitting;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">//case sent : newState = receptor;</span></div>
@@ -326,7 +327,7 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">// case knows : newState = communicating;</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">// break;</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;         <span class="keywordflow">case</span> <a class="code" href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">erroMsg</a>: newState = <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">faulty</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;         <span class="keywordflow">case</span> erroMsg: newState = faulty;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;         <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;         <span class="keywordflow">default</span>: newState = -1;</div>
@@ -342,39 +343,14 @@ $(document).ready(function(){initNavTree('_comm_state_8h_source.html',''); initR
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMSTATE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclass_comm_state_html"><div class="ttname"><a href="class_comm_state.html">CommState</a></div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00040">CommState.h:40</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a0704b0693969aad42a36d1bedb749dd0"><div class="ttname"><a href="class_comm_state.html#a0704b0693969aad42a36d1bedb749dd0">CommState::receptor</a></div><div class="ttdeci">static const int receptor</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00049">CommState.h:49</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a073c9a34854bf8cee984cc61f5998507"><div class="ttname"><a href="class_comm_state.html#a073c9a34854bf8cee984cc61f5998507">CommState::nothing</a></div><div class="ttdeci">static const int nothing</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00085">CommState.h:85</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a091f2da1ae7b92cf537fe3d19e7c1031"><div class="ttname"><a href="class_comm_state.html#a091f2da1ae7b92cf537fe3d19e7c1031">CommState::knows</a></div><div class="ttdeci">static const int knows</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00082">CommState.h:82</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a36ec94276c6883ebf608e1e44229c113"><div class="ttname"><a href="class_comm_state.html#a36ec94276c6883ebf608e1e44229c113">CommState::requestPack</a></div><div class="ttdeci">static const int requestPack</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00057">CommState.h:57</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a425ee05ce91743789da2ebabf69d5863"><div class="ttname"><a href="class_comm_state.html#a425ee05ce91743789da2ebabf69d5863">CommState::transmittingTransition</a></div><div class="ttdeci">static const int transmittingTransition(int event)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00176">CommState.h:176</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a533ad4ca52e30ad6764f0120531882fd"><div class="ttname"><a href="class_comm_state.html#a533ad4ca52e30ad6764f0120531882fd">CommState::waitingMonitoringResponse</a></div><div class="ttdeci">static const int waitingMonitoringResponse</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00068">CommState.h:68</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a69406547b15ed28437d74affb4925b6c"><div class="ttname"><a href="class_comm_state.html#a69406547b15ed28437d74affb4925b6c">CommState::responsePack</a></div><div class="ttdeci">static const int responsePack</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00058">CommState.h:58</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a76a45544f1153b6c77363a96113f2dc3"><div class="ttname"><a href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">CommState::faulty</a></div><div class="ttdeci">static const int faulty</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00050">CommState.h:50</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a776c3b51e1c01391185e88cafba0269c"><div class="ttname"><a href="class_comm_state.html#a776c3b51e1c01391185e88cafba0269c">CommState::sent</a></div><div class="ttdeci">static const int sent</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00079">CommState.h:79</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a823133d000086ebf5513ffc3a229b088"><div class="ttname"><a href="class_comm_state.html#a823133d000086ebf5513ffc3a229b088">CommState::unKnowedNeighbor</a></div><div class="ttdeci">static const int unKnowedNeighbor</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00102">CommState.h:102</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a860c4ab78df6d8f6658e4be8c3f94f2d"><div class="ttname"><a href="class_comm_state.html#a860c4ab78df6d8f6658e4be8c3f94f2d">CommState::receptorTransition</a></div><div class="ttdeci">static const int receptorTransition(int event)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00203">CommState.h:203</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a9538d105fa2fe284a4ae88b8a450f69f"><div class="ttname"><a href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">CommState::noCommunicating</a></div><div class="ttdeci">static const int noCommunicating</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00046">CommState.h:46</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a97897149685ec6e21871aa121368201e"><div class="ttname"><a href="class_comm_state.html#a97897149685ec6e21871aa121368201e">CommState::simulationBegin</a></div><div class="ttdeci">static const int simulationBegin</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00094">CommState.h:94</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aa6a2e3c6c0312b90540a2c2451bfc152"><div class="ttname"><a href="class_comm_state.html#aa6a2e3c6c0312b90540a2c2451bfc152">CommState::simulationFinal</a></div><div class="ttdeci">static const int simulationFinal</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00091">CommState.h:91</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aa7082690d1f6ef1c50ae88b2aecb7cf0"><div class="ttname"><a href="class_comm_state.html#aa7082690d1f6ef1c50ae88b2aecb7cf0">CommState::received</a></div><div class="ttdeci">static const int received</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00076">CommState.h:76</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aaa9968cd519dce65c9542160bf49282b"><div class="ttname"><a href="class_comm_state.html#aaa9968cd519dce65c9542160bf49282b">CommState::transmitting</a></div><div class="ttdeci">static const int transmitting</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00048">CommState.h:48</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aab81b824b06b6d363a7708a9efa90957"><div class="ttname"><a href="class_comm_state.html#aab81b824b06b6d363a7708a9efa90957">CommState::updateCommnunicationState</a></div><div class="ttdeci">static const int updateCommnunicationState(int event, int correntState)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00104">CommState.h:104</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aba00375ad7609bea9d3cd15ebf6c3390"><div class="ttname"><a href="class_comm_state.html#aba00375ad7609bea9d3cd15ebf6c3390">CommState::monitoringReqEvent</a></div><div class="ttdeci">static const int monitoringReqEvent</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00066">CommState.h:66</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_ac54cd16cd625f3a97a19aeb73276769b"><div class="ttname"><a href="class_comm_state.html#ac54cd16cd625f3a97a19aeb73276769b">CommState::communicating</a></div><div class="ttdeci">static const int communicating</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00047">CommState.h:47</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_ad2af70ba4c9d978d644d5c41547f09bb"><div class="ttname"><a href="class_comm_state.html#ad2af70ba4c9d978d644d5c41547f09bb">CommState::noCommunicatingTransition</a></div><div class="ttdeci">static const int noCommunicatingTransition(int event)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00126">CommState.h:126</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_adcf7401d8fa419b1bd8a6a9f7dac2659"><div class="ttname"><a href="class_comm_state.html#adcf7401d8fa419b1bd8a6a9f7dac2659">CommState::erroMsg</a></div><div class="ttdeci">static const int erroMsg</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00088">CommState.h:88</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_ae672b7a3e8d3dfa653448b458270f5ac"><div class="ttname"><a href="class_comm_state.html#ae672b7a3e8d3dfa653448b458270f5ac">CommState::communicatingTransition</a></div><div class="ttdeci">static const int communicatingTransition(int event)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00152">CommState.h:152</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aec618c7919662ca01918ea4cf07cba35"><div class="ttname"><a href="class_comm_state.html#aec618c7919662ca01918ea4cf07cba35">CommState::neighbor</a></div><div class="ttdeci">static const int neighbor</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00100">CommState.h:100</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_aee8c4a54d8b084a9309fdbce139b28bc"><div class="ttname"><a href="class_comm_state.html#aee8c4a54d8b084a9309fdbce139b28bc">CommState::faultyTransition</a></div><div class="ttdeci">static const int faultyTransition(int event)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00227">CommState.h:227</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_af88d6378abebdf540923c2c9eba02ed8"><div class="ttname"><a href="class_comm_state.html#af88d6378abebdf540923c2c9eba02ed8">CommState::noNeighbor</a></div><div class="ttdeci">static const int noNeighbor</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00101">CommState.h:101</a></div></div>
+<div class="ttc" id="aclass_comm_state_html"><div class="ttname"><a href="class_comm_state.html">CommState</a></div><div class="ttdef"><b>Definition:</b> CommState.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_comm_state_8h.html">CommState.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>CommState.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

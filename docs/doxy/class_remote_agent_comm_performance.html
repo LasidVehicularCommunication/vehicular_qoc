@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: RemoteAgentCommPerformance</title>
+<title>Contexto de Comunicação em VANET: RemoteAgentCommPerformance</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -89,8 +90,6 @@ $(document).ready(function(){initNavTree('class_remote_agent_comm_performance.ht
 <div class="title">RemoteAgentCommPerformance</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_remote_agent_comm_performance_8h_source.html">RemoteAgentCommPerformance.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for RemoteAgentCommPerformance:</div>
 <div class="dyncontent">
@@ -112,445 +111,56 @@ Collaboration diagram for RemoteAgentCommPerformance:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa368dbc17b28f86924a1b474d7c4f040"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#aa368dbc17b28f86924a1b474d7c4f040">RemoteAgentCommPerformance</a> ()</td></tr>
-<tr class="separator:aa368dbc17b28f86924a1b474d7c4f040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae031b8c4232ab7e3410743b5a48d8c0b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#ae031b8c4232ab7e3410743b5a48d8c0b">~RemoteAgentCommPerformance</a> ()</td></tr>
-<tr class="separator:ae031b8c4232ab7e3410743b5a48d8c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa85c1b9053b46f86c7f9ec7ca6caf45"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#aaa85c1b9053b46f86c7f9ec7ca6caf45">info</a> ()</td></tr>
-<tr class="separator:aaa85c1b9053b46f86c7f9ec7ca6caf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f051df099f3969f8c545def6ca18546"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a8f051df099f3969f8c545def6ca18546">infoTrace</a> (bool header, std::string idagent)</td></tr>
-<tr class="separator:a8f051df099f3969f8c545def6ca18546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f31f85c26892c373e24ee78c1a13bf"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a35f31f85c26892c373e24ee78c1a13bf">getRateCorrectTransmittedMsgTemp</a> ()</td></tr>
-<tr class="separator:a35f31f85c26892c373e24ee78c1a13bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a3fb4e0d9bc7d534fdb7d48d9bcfcbc91">getRateCorrectTransmittedMsgToLocal</a> ()</td></tr>
-<tr class="separator:a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610f5038320bcd2c3d7cc1642b09eca5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a610f5038320bcd2c3d7cc1642b09eca5">getTotalCorrectMsgTransmittedToLocal</a> ()</td></tr>
-<tr class="separator:a610f5038320bcd2c3d7cc1642b09eca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0df0ebbd95f3d919225f32f138108041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a0df0ebbd95f3d919225f32f138108041">calRateCorrectTransmittedMsgPerPeriod</a> ()</td></tr>
-<tr class="separator:a0df0ebbd95f3d919225f32f138108041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989d19fcabb4c92d762af15388c334c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a989d19fcabb4c92d762af15388c334c4">addCorrectMsgTransmitted</a> ()</td></tr>
+<tr class="memitem:a989d19fcabb4c92d762af15388c334c4"><td class="memItemLeft" align="right" valign="top"><a id="a989d19fcabb4c92d762af15388c334c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addCorrectMsgTransmitted</b> ()</td></tr>
 <tr class="separator:a989d19fcabb4c92d762af15388c334c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df0ebbd95f3d919225f32f138108041"><td class="memItemLeft" align="right" valign="top"><a id="a0df0ebbd95f3d919225f32f138108041"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calRateCorrectTransmittedMsgPerPeriod</b> ()</td></tr>
+<tr class="separator:a0df0ebbd95f3d919225f32f138108041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f31f85c26892c373e24ee78c1a13bf"><td class="memItemLeft" align="right" valign="top"><a id="a35f31f85c26892c373e24ee78c1a13bf"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>getRateCorrectTransmittedMsgTemp</b> ()</td></tr>
+<tr class="separator:a35f31f85c26892c373e24ee78c1a13bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"><td class="memItemLeft" align="right" valign="top"><a id="a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>getRateCorrectTransmittedMsgToLocal</b> ()</td></tr>
+<tr class="separator:a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610f5038320bcd2c3d7cc1642b09eca5"><td class="memItemLeft" align="right" valign="top"><a id="a610f5038320bcd2c3d7cc1642b09eca5"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalCorrectMsgTransmittedToLocal</b> ()</td></tr>
+<tr class="separator:a610f5038320bcd2c3d7cc1642b09eca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa85c1b9053b46f86c7f9ec7ca6caf45"><td class="memItemLeft" align="right" valign="top"><a id="aaa85c1b9053b46f86c7f9ec7ca6caf45"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:aaa85c1b9053b46f86c7f9ec7ca6caf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f051df099f3969f8c545def6ca18546"><td class="memItemLeft" align="right" valign="top"><a id="a8f051df099f3969f8c545def6ca18546"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>infoTrace</b> (bool header, std::string idagent)</td></tr>
+<tr class="separator:a8f051df099f3969f8c545def6ca18546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_comm_performance"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_comm_performance')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_comm_performance.html">CommPerformance</a></td></tr>
-<tr class="memitem:a1f17bb4accc614251a23957fc82f8a93 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comm_performance.html#a1f17bb4accc614251a23957fc82f8a93">CommPerformance</a> ()</td></tr>
-<tr class="separator:a1f17bb4accc614251a23957fc82f8a93 inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a121c297ed31c685c4e180c69a4bbce9a inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comm_performance.html#a121c297ed31c685c4e180c69a4bbce9a">~CommPerformance</a> ()</td></tr>
-<tr class="separator:a121c297ed31c685c4e180c69a4bbce9a inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad14f1b9361db3f5ead782f992478e586 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comm_performance.html#ad14f1b9361db3f5ead782f992478e586">info</a> ()</td></tr>
-<tr class="separator:ad14f1b9361db3f5ead782f992478e586 inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea9f1642aa875c66e820ea20486897b inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comm_performance.html#afea9f1642aa875c66e820ea20486897b">infoTrace</a> (bool header)</td></tr>
-<tr class="separator:afea9f1642aa875c66e820ea20486897b inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcb8d271bb2cf4506debeda34ac67f21 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comm_performance.html#adcb8d271bb2cf4506debeda34ac67f21">getMeasurementPeriod</a> ()</td></tr>
+<tr class="memitem:adcb8d271bb2cf4506debeda34ac67f21 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top"><a id="adcb8d271bb2cf4506debeda34ac67f21"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getMeasurementPeriod</b> ()</td></tr>
 <tr class="separator:adcb8d271bb2cf4506debeda34ac67f21 inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d804a1fa732dba7f21f46ad8da8276 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comm_performance.html#a51d804a1fa732dba7f21f46ad8da8276">setMeasurementPeriod</a> (double <a class="el" href="class_comm_performance.html#a856f2604acd46b66930a298f4e78b980">measurementPeriod</a>)</td></tr>
+<tr class="memitem:ad14f1b9361db3f5ead782f992478e586 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top"><a id="ad14f1b9361db3f5ead782f992478e586"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:ad14f1b9361db3f5ead782f992478e586 inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea9f1642aa875c66e820ea20486897b inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top"><a id="afea9f1642aa875c66e820ea20486897b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>infoTrace</b> (bool header)</td></tr>
+<tr class="separator:afea9f1642aa875c66e820ea20486897b inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d804a1fa732dba7f21f46ad8da8276 inherit pub_methods_class_comm_performance"><td class="memItemLeft" align="right" valign="top"><a id="a51d804a1fa732dba7f21f46ad8da8276"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMeasurementPeriod</b> (double measurementPeriod)</td></tr>
 <tr class="separator:a51d804a1fa732dba7f21f46ad8da8276 inherit pub_methods_class_comm_performance"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1c3b069afd11fe2b2915d5496aa75547"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a></td></tr>
+<tr class="memitem:a1c3b069afd11fe2b2915d5496aa75547"><td class="memItemLeft" align="right" valign="top"><a id="a1c3b069afd11fe2b2915d5496aa75547"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>rateCorrectTransmittedMsgTemp</b></td></tr>
 <tr class="separator:a1c3b069afd11fe2b2915d5496aa75547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ee76952e8f6756f60fbafdb4fc6583"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a></td></tr>
+<tr class="memitem:a12ee76952e8f6756f60fbafdb4fc6583"><td class="memItemLeft" align="right" valign="top"><a id="a12ee76952e8f6756f60fbafdb4fc6583"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>rateCorrectTransmittedMsgToLocal</b></td></tr>
 <tr class="separator:a12ee76952e8f6756f60fbafdb4fc6583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e102616a45e13eda104dedaf29885f6"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a></td></tr>
+<tr class="memitem:a2e102616a45e13eda104dedaf29885f6"><td class="memItemLeft" align="right" valign="top"><a id="a2e102616a45e13eda104dedaf29885f6"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>totalCorrectMsgTransmittedToLocal</b></td></tr>
 <tr class="separator:a2e102616a45e13eda104dedaf29885f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00021">21</a> of file <a class="el" href="_remote_agent_comm_performance_8h_source.html">RemoteAgentCommPerformance.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa368dbc17b28f86924a1b474d7c4f040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa368dbc17b28f86924a1b474d7c4f040">&#9670;&nbsp;</a></span>RemoteAgentCommPerformance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RemoteAgentCommPerformance::RemoteAgentCommPerformance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00018">18</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                                       {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a> =0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a>=0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a> =0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a12ee76952e8f6756f60fbafdb4fc6583"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">RemoteAgentCommPerformance::rateCorrectTransmittedMsgToLocal</a></div><div class="ttdeci">long rateCorrectTransmittedMsgToLocal</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00024">RemoteAgentCommPerformance.h:24</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a1c3b069afd11fe2b2915d5496aa75547"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">RemoteAgentCommPerformance::rateCorrectTransmittedMsgTemp</a></div><div class="ttdeci">long rateCorrectTransmittedMsgTemp</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00023">RemoteAgentCommPerformance.h:23</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a2e102616a45e13eda104dedaf29885f6"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">RemoteAgentCommPerformance::totalCorrectMsgTransmittedToLocal</a></div><div class="ttdeci">long totalCorrectMsgTransmittedToLocal</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00025">RemoteAgentCommPerformance.h:25</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">rateCorrectTransmittedMsgTemp</a>, <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00024">rateCorrectTransmittedMsgToLocal</a>, and <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00025">totalCorrectMsgTransmittedToLocal</a>.</p>
-
-</div>
-</div>
-<a id="ae031b8c4232ab7e3410743b5a48d8c0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae031b8c4232ab7e3410743b5a48d8c0b">&#9670;&nbsp;</a></span>~RemoteAgentCommPerformance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">RemoteAgentCommPerformance::~RemoteAgentCommPerformance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00051">51</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a989d19fcabb4c92d762af15388c334c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a989d19fcabb4c92d762af15388c334c4">&#9670;&nbsp;</a></span>addCorrectMsgTransmitted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RemoteAgentCommPerformance::addCorrectMsgTransmitted </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00030">30</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                          {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a>++;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a>++;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">rateCorrectTransmittedMsgTemp</a>, and <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00025">totalCorrectMsgTransmittedToLocal</a>.</p>
-
-</div>
-</div>
-<a id="a0df0ebbd95f3d919225f32f138108041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0df0ebbd95f3d919225f32f138108041">&#9670;&nbsp;</a></span>calRateCorrectTransmittedMsgPerPeriod()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RemoteAgentCommPerformance::calRateCorrectTransmittedMsgPerPeriod </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00039">39</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a> = <a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a>= 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">rateCorrectTransmittedMsgTemp</a>, and <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00024">rateCorrectTransmittedMsgToLocal</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_group_8cc_source.html#l00095">veins::RemoteAgentGroup::calcRemoteAgentGroupCommPerform()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_remote_agent_comm_performance_a0df0ebbd95f3d919225f32f138108041_icgraph.png" border="0" usemap="#aclass_remote_agent_comm_performance_a0df0ebbd95f3d919225f32f138108041_icgraph" alt=""/></div>
-<map name="aclass_remote_agent_comm_performance_a0df0ebbd95f3d919225f32f138108041_icgraph" id="aclass_remote_agent_comm_performance_a0df0ebbd95f3d919225f32f138108041_icgraph">
-<area shape="rect" title=" " alt="" coords="332,5,583,61"/>
-<area shape="rect" href="classveins_1_1_remote_agent_group.html#a66a5d54e5a86884064b9df22e0ccdb06" title=" " alt="" coords="5,13,284,54"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a35f31f85c26892c373e24ee78c1a13bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35f31f85c26892c373e24ee78c1a13bf">&#9670;&nbsp;</a></span>getRateCorrectTransmittedMsgTemp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long RemoteAgentCommPerformance::getRateCorrectTransmittedMsgTemp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00025">25</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                                 {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">rateCorrectTransmittedMsgTemp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_group_8cc_source.html#l00095">veins::RemoteAgentGroup::calcRemoteAgentGroupCommPerform()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_remote_agent_comm_performance_a35f31f85c26892c373e24ee78c1a13bf_icgraph.png" border="0" usemap="#aclass_remote_agent_comm_performance_a35f31f85c26892c373e24ee78c1a13bf_icgraph" alt=""/></div>
-<map name="aclass_remote_agent_comm_performance_a35f31f85c26892c373e24ee78c1a13bf_icgraph" id="aclass_remote_agent_comm_performance_a35f31f85c26892c373e24ee78c1a13bf_icgraph">
-<area shape="rect" title=" " alt="" coords="332,5,599,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent_group.html#a66a5d54e5a86884064b9df22e0ccdb06" title=" " alt="" coords="5,5,284,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb4e0d9bc7d534fdb7d48d9bcfcbc91">&#9670;&nbsp;</a></span>getRateCorrectTransmittedMsgToLocal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long RemoteAgentCommPerformance::getRateCorrectTransmittedMsgToLocal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00035">35</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00024">rateCorrectTransmittedMsgToLocal</a>.</p>
-
-</div>
-</div>
-<a id="a610f5038320bcd2c3d7cc1642b09eca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a610f5038320bcd2c3d7cc1642b09eca5">&#9670;&nbsp;</a></span>getTotalCorrectMsgTransmittedToLocal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long RemoteAgentCommPerformance::getTotalCorrectMsgTransmittedToLocal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00045">45</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                     {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00025">totalCorrectMsgTransmittedToLocal</a>.</p>
-
-</div>
-</div>
-<a id="aaa85c1b9053b46f86c7f9ec7ca6caf45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa85c1b9053b46f86c7f9ec7ca6caf45">&#9670;&nbsp;</a></span>info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string RemoteAgentCommPerformance::info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00055">55</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                           {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ost &lt;&lt; <a class="code" href="class_comm_performance.html#ad14f1b9361db3f5ead782f992478e586">CommPerformance::info</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;  Remote rateCorrectTransmittedMsgTemporario: &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;  Remote rateCorrectTransmittedMsgToLocal: &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;  Remote totalCorrectMsgTransmittedToLocal: &quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="ttc" id="aclass_comm_performance_html_ad14f1b9361db3f5ead782f992478e586"><div class="ttname"><a href="class_comm_performance.html#ad14f1b9361db3f5ead782f992478e586">CommPerformance::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_comm_performance_8cc_source.html#l00037">CommPerformance.cc:37</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_comm_performance_8cc_source.html#l00037">CommPerformance::info()</a>, <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">rateCorrectTransmittedMsgTemp</a>, <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00024">rateCorrectTransmittedMsgToLocal</a>, and <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00025">totalCorrectMsgTransmittedToLocal</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_comm_info_8cc_source.html#l00035">veins::RemoteAgentCommInfo::info()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_cgraph.png" border="0" usemap="#aclass_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_cgraph" alt=""/></div>
-<map name="aclass_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_cgraph" id="aclass_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,243,47"/>
-<area shape="rect" href="class_comm_performance.html#ad14f1b9361db3f5ead782f992478e586" title=" " alt="" coords="291,13,472,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_icgraph.png" border="0" usemap="#aclass_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_icgraph" alt=""/></div>
-<map name="aclass_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_icgraph" id="aclass_remote_agent_comm_performance_aaa85c1b9053b46f86c7f9ec7ca6caf45_icgraph">
-<area shape="rect" title=" " alt="" coords="479,5,716,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent_comm_info.html#a943abad67f0bdbde6b346a4334912a51" title=" " alt="" coords="208,5,431,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2" title=" " alt="" coords="5,5,160,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8f051df099f3969f8c545def6ca18546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f051df099f3969f8c545def6ca18546">&#9670;&nbsp;</a></span>infoTrace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string RemoteAgentCommPerformance::infoTrace </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>header</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>idagent</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00064">64</a> of file <a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                                                      {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ost &lt;&lt; <a class="code" href="class_comm_performance.html#afea9f1642aa875c66e820ea20486897b">CommPerformance::infoTrace</a>(header);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (header)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;       ost &lt;&lt; <span class="stringliteral">&quot;;Remote rateCorrectTransmittedMsgTemporario; Remote rateCorrectTransmittedMsgToLocal;Remote totalCorrectMsgTransmittedToLocal: &quot;</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;       ost &lt;&lt; <span class="stringliteral">&quot;;&quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;           &lt;&lt; <span class="stringliteral">&quot;;&quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;           &lt;&lt; <span class="stringliteral">&quot;;&quot;</span> &lt;&lt; this-&gt;<a class="code" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="ttc" id="aclass_comm_performance_html_afea9f1642aa875c66e820ea20486897b"><div class="ttname"><a href="class_comm_performance.html#afea9f1642aa875c66e820ea20486897b">CommPerformance::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_performance_8cc_source.html#l00043">CommPerformance.cc:43</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_comm_performance_8cc_source.html#l00043">CommPerformance::infoTrace()</a>, <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">rateCorrectTransmittedMsgTemp</a>, <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00024">rateCorrectTransmittedMsgToLocal</a>, and <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00025">totalCorrectMsgTransmittedToLocal</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_remote_agent_comm_performance_a8f051df099f3969f8c545def6ca18546_cgraph.png" border="0" usemap="#aclass_remote_agent_comm_performance_a8f051df099f3969f8c545def6ca18546_cgraph" alt=""/></div>
-<map name="aclass_remote_agent_comm_performance_a8f051df099f3969f8c545def6ca18546_cgraph" id="aclass_remote_agent_comm_performance_a8f051df099f3969f8c545def6ca18546_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,243,47"/>
-<area shape="rect" href="class_comm_performance.html#afea9f1642aa875c66e820ea20486897b" title=" " alt="" coords="291,13,505,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1c3b069afd11fe2b2915d5496aa75547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3b069afd11fe2b2915d5496aa75547">&#9670;&nbsp;</a></span>rateCorrectTransmittedMsgTemp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">long RemoteAgentCommPerformance::rateCorrectTransmittedMsgTemp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00023">23</a> of file <a class="el" href="_remote_agent_comm_performance_8h_source.html">RemoteAgentCommPerformance.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00030">addCorrectMsgTransmitted()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00039">calRateCorrectTransmittedMsgPerPeriod()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00025">getRateCorrectTransmittedMsgTemp()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00055">info()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00064">infoTrace()</a>, and <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00018">RemoteAgentCommPerformance()</a>.</p>
-
-</div>
-</div>
-<a id="a12ee76952e8f6756f60fbafdb4fc6583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12ee76952e8f6756f60fbafdb4fc6583">&#9670;&nbsp;</a></span>rateCorrectTransmittedMsgToLocal</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">long RemoteAgentCommPerformance::rateCorrectTransmittedMsgToLocal</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00024">24</a> of file <a class="el" href="_remote_agent_comm_performance_8h_source.html">RemoteAgentCommPerformance.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00039">calRateCorrectTransmittedMsgPerPeriod()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00035">getRateCorrectTransmittedMsgToLocal()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00055">info()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00064">infoTrace()</a>, and <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00018">RemoteAgentCommPerformance()</a>.</p>
-
-</div>
-</div>
-<a id="a2e102616a45e13eda104dedaf29885f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e102616a45e13eda104dedaf29885f6">&#9670;&nbsp;</a></span>totalCorrectMsgTransmittedToLocal</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">long RemoteAgentCommPerformance::totalCorrectMsgTransmittedToLocal</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_comm_performance_8h_source.html#l00025">25</a> of file <a class="el" href="_remote_agent_comm_performance_8h_source.html">RemoteAgentCommPerformance.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00030">addCorrectMsgTransmitted()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00045">getTotalCorrectMsgTransmittedToLocal()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00055">info()</a>, <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00064">infoTrace()</a>, and <a class="el" href="_remote_agent_comm_performance_8cc_source.html#l00018">RemoteAgentCommPerformance()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_remote_agent_comm_performance_8h_source.html">RemoteAgentCommPerformance.h</a></li>
-<li><a class="el" href="_remote_agent_comm_performance_8cc_source.html">RemoteAgentCommPerformance.cc</a></li>
+<li>RemoteAgentCommPerformance.cc</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -558,7 +168,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_remote_agent_comm_performance.html">RemoteAgentCommPerformance</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:52 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

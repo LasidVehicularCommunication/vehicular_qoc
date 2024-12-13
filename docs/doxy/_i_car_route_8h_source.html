@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: ICarRoute.h Source File</title>
+<title>Contexto de Comunicação em VANET: ICarRoute.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_i_car_route_8h_source.html',''); init
 <div class="title">ICarRoute.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_car_route_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -106,51 +107,38 @@ $(document).ready(function(){initNavTree('_i_car_route_8h_source.html',''); init
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;omnetpp.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;messages/ICRMessage_m.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_pair_8h.html">AgentPair.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_remote_agent_8h.html">RemoteAgent.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_local_agent_8h.html">LocalAgent.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;AgentPair.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;RemoteAgent.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;LocalAgent.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classveins_1_1_i_car_route.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_i_car_route.html">ICarRoute</a> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classveins_1_1_i_car_route.html#a421d815b7c5b41170ace5cd471107ad5">ICarRoute</a>(ICRMessage * wsm, simtime_t pMsgReceivingTime, simtime_t pQocValidityTime, std::vector&lt;AgentPair *&gt; pRouteAgents);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classveins_1_1_i_car_route.html#a421d815b7c5b41170ace5cd471107ad5">ICarRoute</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_i_car_route.html#a3e3e264914d5e0e513e03ae0f9cfcf7b">~ICarRoute</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classveins_1_1_i_car_route.html#ad57bbb963fbdf557ffd04809d0edd5d3">   33</a></span>&#160;    simtime_t <a class="code" href="classveins_1_1_i_car_route.html#ad57bbb963fbdf557ffd04809d0edd5d3">qocValidityTime</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classveins_1_1_i_car_route.html#a06e633a7d60c3ad4c0912322ddc2ea37">   34</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_car_route.html#a06e633a7d60c3ad4c0912322ddc2ea37">qocConfidence</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classveins_1_1_i_car_route.html#a44815b2013f281aab8b191e6463b3e42">   35</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classveins_1_1_i_car_route.html#a44815b2013f281aab8b191e6463b3e42">hopNumber</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classveins_1_1_i_car_route.html#ac8e26972de6f977b6edee7e41156c3da">   36</a></span>&#160;    std::vector&lt;AgentPair *&gt; <a class="code" href="classveins_1_1_i_car_route.html#ac8e26972de6f977b6edee7e41156c3da">routeAgentPairs</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classveins_1_1_i_car_route.html#afbc3bc733f6c5ed4be63fadbb3d5ebb3">   37</a></span>&#160;    ICRMessage * <a class="code" href="classveins_1_1_i_car_route.html#afbc3bc733f6c5ed4be63fadbb3d5ebb3">actualWsm</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string <a class="code" href="classveins_1_1_i_car_route.html#a7edffae04fb66c395de5314ad71e7537">infoTrace</a>(<span class="keywordtype">bool</span> header);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classveins_1_1_i_car_route.html#a421d815b7c5b41170ace5cd471107ad5">ICarRoute</a>(simtime_t pQocValidityTime, <span class="keywordtype">double</span> pQocConfidence, <span class="keywordtype">int</span> phopNumber);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_i_car_route.html#ab49fa5b4d16455d23fc769649f6cdb78">update</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classveins_1_1_i_car_route.html">ICarRoute</a>(ICRMessage * wsm, simtime_t pMsgReceivingTime, simtime_t pQocValidityTime, std::vector&lt;AgentPair *&gt; pRouteAgents);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classveins_1_1_i_car_route.html">ICarRoute</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_i_car_route.html">ICarRoute</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    simtime_t qocValidityTime;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> qocConfidence;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hopNumber;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::vector&lt;AgentPair *&gt; routeAgentPairs;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ICRMessage * actualWsm;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string infoTrace(<span class="keywordtype">bool</span> header);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classveins_1_1_i_car_route.html">ICarRoute</a>(simtime_t pQocValidityTime, <span class="keywordtype">double</span> pQocConfidence, <span class="keywordtype">int</span> phopNumber);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> update();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_VEINS_MODULES_APPLICATION_ICARNEW_ICARROUTE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_agent_pair_8h_html"><div class="ttname"><a href="_agent_pair_8h.html">AgentPair.h</a></div></div>
-<div class="ttc" id="a_local_agent_8h_html"><div class="ttname"><a href="_local_agent_8h.html">LocalAgent.h</a></div></div>
-<div class="ttc" id="a_remote_agent_8h_html"><div class="ttname"><a href="_remote_agent_8h.html">RemoteAgent.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html"><div class="ttname"><a href="classveins_1_1_i_car_route.html">veins::ICarRoute</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8h_source.html#l00028">ICarRoute.h:28</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_a06e633a7d60c3ad4c0912322ddc2ea37"><div class="ttname"><a href="classveins_1_1_i_car_route.html#a06e633a7d60c3ad4c0912322ddc2ea37">veins::ICarRoute::qocConfidence</a></div><div class="ttdeci">double qocConfidence</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8h_source.html#l00034">ICarRoute.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_a3e3e264914d5e0e513e03ae0f9cfcf7b"><div class="ttname"><a href="classveins_1_1_i_car_route.html#a3e3e264914d5e0e513e03ae0f9cfcf7b">veins::ICarRoute::~ICarRoute</a></div><div class="ttdeci">virtual ~ICarRoute()</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8cc_source.html#l00042">ICarRoute.cc:42</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_a421d815b7c5b41170ace5cd471107ad5"><div class="ttname"><a href="classveins_1_1_i_car_route.html#a421d815b7c5b41170ace5cd471107ad5">veins::ICarRoute::ICarRoute</a></div><div class="ttdeci">ICarRoute()</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8cc_source.html#l00020">ICarRoute.cc:20</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_a44815b2013f281aab8b191e6463b3e42"><div class="ttname"><a href="classveins_1_1_i_car_route.html#a44815b2013f281aab8b191e6463b3e42">veins::ICarRoute::hopNumber</a></div><div class="ttdeci">unsigned int hopNumber</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8h_source.html#l00035">ICarRoute.h:35</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_a7edffae04fb66c395de5314ad71e7537"><div class="ttname"><a href="classveins_1_1_i_car_route.html#a7edffae04fb66c395de5314ad71e7537">veins::ICarRoute::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header)</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8cc_source.html#l00053">ICarRoute.cc:53</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_ab49fa5b4d16455d23fc769649f6cdb78"><div class="ttname"><a href="classveins_1_1_i_car_route.html#ab49fa5b4d16455d23fc769649f6cdb78">veins::ICarRoute::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8cc_source.html#l00046">ICarRoute.cc:46</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_ac8e26972de6f977b6edee7e41156c3da"><div class="ttname"><a href="classveins_1_1_i_car_route.html#ac8e26972de6f977b6edee7e41156c3da">veins::ICarRoute::routeAgentPairs</a></div><div class="ttdeci">std::vector&lt; AgentPair * &gt; routeAgentPairs</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8h_source.html#l00036">ICarRoute.h:36</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_ad57bbb963fbdf557ffd04809d0edd5d3"><div class="ttname"><a href="classveins_1_1_i_car_route.html#ad57bbb963fbdf557ffd04809d0edd5d3">veins::ICarRoute::qocValidityTime</a></div><div class="ttdeci">simtime_t qocValidityTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8h_source.html#l00033">ICarRoute.h:33</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_car_route_html_afbc3bc733f6c5ed4be63fadbb3d5ebb3"><div class="ttname"><a href="classveins_1_1_i_car_route.html#afbc3bc733f6c5ed4be63fadbb3d5ebb3">veins::ICarRoute::actualWsm</a></div><div class="ttdeci">ICRMessage * actualWsm</div><div class="ttdef"><b>Definition:</b> <a href="_i_car_route_8h_source.html#l00037">ICarRoute.h:37</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_i_car_route_html"><div class="ttname"><a href="classveins_1_1_i_car_route.html">veins::ICarRoute</a></div><div class="ttdef"><b>Definition:</b> ICarRoute.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_i_car_route_8h.html">ICarRoute.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>ICarRoute.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

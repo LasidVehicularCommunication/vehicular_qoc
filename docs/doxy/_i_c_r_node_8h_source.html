@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: ICRNode.h Source File</title>
+<title>Contexto de Comunicação em VANET: ICRNode.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_i_c_r_node_8h_source.html',''); initR
 <div class="title">ICRNode.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_c_r_node_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -107,60 +108,42 @@ $(document).ready(function(){initNavTree('_i_c_r_node_8h_source.html',''); initR
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;omnetpp.h&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../Agent.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>Icarqoc;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#ae291db721e6ba29865124e9b2998ea51">   28</a></span>&#160;    int64_t  <a class="code" href="classveins_1_1_i_c_r_node.html#ae291db721e6ba29865124e9b2998ea51">nodeId</a>;  <span class="comment">// source id node - 64bits</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a6433beaf5c33bdb5203864d8bc293f78">   29</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a6433beaf5c33bdb5203864d8bc293f78">posX</a>;  <span class="comment">//source x - 64 bits</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a63d88236c461ec91da851ab0054bcb58">   30</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a63d88236c461ec91da851ab0054bcb58">posY</a>; <span class="comment">// source y - 64 bits</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#adeeb58d2d37fcddbc740b25868171803">   31</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#adeeb58d2d37fcddbc740b25868171803">posZ</a>; <span class="comment">// source z - 64 bits</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#aecb83f9bad233cdfd799e73e7872c69d">   32</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#aecb83f9bad233cdfd799e73e7872c69d">maxSpeed</a>;  <span class="comment">// max speed node - 64 bits</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a85c240e52ca9064f10d8cd93bea05457">   33</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a85c240e52ca9064f10d8cd93bea05457">angle</a>;  <span class="comment">// angulo do agente de origem -  64 bits</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#ab6c869b0288be8d65ba490616c8ac5f8">   34</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#ab6c869b0288be8d65ba490616c8ac5f8">aceleration</a>;  <span class="comment">// aceleracao do agente de origem -  64 bits</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a2358d174c86a84b248606027dce96a36">   35</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a2358d174c86a84b248606027dce96a36">speed</a>;  <span class="comment">// speed value -  64 bits</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#afffb51c22fbb88df40328d2a2c978e13">   36</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classveins_1_1_i_c_r_node.html#afffb51c22fbb88df40328d2a2c978e13">neighber</a>; <span class="comment">// vizinho do proximo no</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a3e2751580ef324894000718b58319700">   37</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a3e2751580ef324894000718b58319700">confidence</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#aec70c90d5da54ac11ce7c5840017df4c">   38</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_i_c_r_node.html#aec70c90d5da54ac11ce7c5840017df4c">validityTimeToNext</a>; <span class="comment">// alcance do sinal de comunicacao do agente de origem  - 64 bits</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a10e32653f969e05ce8e961204aaa3535">   39</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="classveins_1_1_i_c_r_node.html#a10e32653f969e05ce8e961204aaa3535">posTimeStamp</a>; <span class="comment">// timestamp da da coleta da posicao do agente antecessor</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classveins_1_1_i_c_r_node.html#a96f9b32913d6a82430e9e4f8c2bf1f25">   40</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="classveins_1_1_i_c_r_node.html#a96f9b32913d6a82430e9e4f8c2bf1f25">msgTimeStamp</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classveins_1_1_i_c_r_node.html#a67d286673d14e81495111d31cb9efe90">ICRNode</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a145998098d2781ee65e2c7a5d1c06509">~ICRNode</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_i_c_r_node.html#ac00b986b3f96cfc7addc0b5dcec03e62">copyICRNode</a>(<span class="keyword">const</span> <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a>&amp; node);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_i_c_r_node.html#a4341d05debfb9e7d456dd45c2278a653">initializeICRNode</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    int64_t  nodeId;  <span class="comment">// source id node - 64bits</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">double</span> posX;  <span class="comment">//source x - 64 bits</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">double</span> posY; <span class="comment">// source y - 64 bits</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> posZ; <span class="comment">// source z - 64 bits</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> maxSpeed;  <span class="comment">// max speed node - 64 bits</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> angle;  <span class="comment">// angulo do agente de origem -  64 bits</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> aceleration;  <span class="comment">// aceleracao do agente de origem -  64 bits</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">double</span> speed;  <span class="comment">// speed value -  64 bits</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> neighber; <span class="comment">// vizinho do proximo no</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">double</span> confidence;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> validityTimeToNext; <span class="comment">// alcance do sinal de comunicacao do agente de origem  - 64 bits</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">double</span>  posTimeStamp; <span class="comment">// timestamp da da coleta da posicao do agente antecessor</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">double</span>  msgTimeStamp;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> copyICRNode(<span class="keyword">const</span> <a class="code" href="classveins_1_1_i_c_r_node.html">ICRNode</a>&amp; node);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> initializeICRNode();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//void preparetwo(float a) ;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_VEINS_MODULES_APPLICATION_ICARNEW_MESSAGES_ICRNODE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html">veins::ICRNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00026">ICRNode.h:26</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a10e32653f969e05ce8e961204aaa3535"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a10e32653f969e05ce8e961204aaa3535">veins::ICRNode::posTimeStamp</a></div><div class="ttdeci">double posTimeStamp</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00039">ICRNode.h:39</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a145998098d2781ee65e2c7a5d1c06509"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a145998098d2781ee65e2c7a5d1c06509">veins::ICRNode::~ICRNode</a></div><div class="ttdeci">virtual ~ICRNode()</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8cc_source.html#l00025">ICRNode.cc:25</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a2358d174c86a84b248606027dce96a36"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a2358d174c86a84b248606027dce96a36">veins::ICRNode::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00035">ICRNode.h:35</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a3e2751580ef324894000718b58319700"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a3e2751580ef324894000718b58319700">veins::ICRNode::confidence</a></div><div class="ttdeci">double confidence</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00037">ICRNode.h:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a4341d05debfb9e7d456dd45c2278a653"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a4341d05debfb9e7d456dd45c2278a653">veins::ICRNode::initializeICRNode</a></div><div class="ttdeci">void initializeICRNode()</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8cc_source.html#l00057">ICRNode.cc:57</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a63d88236c461ec91da851ab0054bcb58"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a63d88236c461ec91da851ab0054bcb58">veins::ICRNode::posY</a></div><div class="ttdeci">double posY</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00030">ICRNode.h:30</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a6433beaf5c33bdb5203864d8bc293f78"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a6433beaf5c33bdb5203864d8bc293f78">veins::ICRNode::posX</a></div><div class="ttdeci">double posX</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00029">ICRNode.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a67d286673d14e81495111d31cb9efe90"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a67d286673d14e81495111d31cb9efe90">veins::ICRNode::ICRNode</a></div><div class="ttdeci">ICRNode()</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8cc_source.html#l00020">ICRNode.cc:20</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a85c240e52ca9064f10d8cd93bea05457"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a85c240e52ca9064f10d8cd93bea05457">veins::ICRNode::angle</a></div><div class="ttdeci">double angle</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00033">ICRNode.h:33</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_a96f9b32913d6a82430e9e4f8c2bf1f25"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#a96f9b32913d6a82430e9e4f8c2bf1f25">veins::ICRNode::msgTimeStamp</a></div><div class="ttdeci">double msgTimeStamp</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00040">ICRNode.h:40</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_ab6c869b0288be8d65ba490616c8ac5f8"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#ab6c869b0288be8d65ba490616c8ac5f8">veins::ICRNode::aceleration</a></div><div class="ttdeci">double aceleration</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00034">ICRNode.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_ac00b986b3f96cfc7addc0b5dcec03e62"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#ac00b986b3f96cfc7addc0b5dcec03e62">veins::ICRNode::copyICRNode</a></div><div class="ttdeci">void copyICRNode(const ICRNode &amp;node)</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8cc_source.html#l00044">ICRNode.cc:44</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_adeeb58d2d37fcddbc740b25868171803"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#adeeb58d2d37fcddbc740b25868171803">veins::ICRNode::posZ</a></div><div class="ttdeci">double posZ</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00031">ICRNode.h:31</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_ae291db721e6ba29865124e9b2998ea51"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#ae291db721e6ba29865124e9b2998ea51">veins::ICRNode::nodeId</a></div><div class="ttdeci">int64_t nodeId</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00028">ICRNode.h:28</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_aec70c90d5da54ac11ce7c5840017df4c"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#aec70c90d5da54ac11ce7c5840017df4c">veins::ICRNode::validityTimeToNext</a></div><div class="ttdeci">double validityTimeToNext</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00038">ICRNode.h:38</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_aecb83f9bad233cdfd799e73e7872c69d"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#aecb83f9bad233cdfd799e73e7872c69d">veins::ICRNode::maxSpeed</a></div><div class="ttdeci">double maxSpeed</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00032">ICRNode.h:32</a></div></div>
-<div class="ttc" id="aclassveins_1_1_i_c_r_node_html_afffb51c22fbb88df40328d2a2c978e13"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html#afffb51c22fbb88df40328d2a2c978e13">veins::ICRNode::neighber</a></div><div class="ttdeci">bool neighber</div><div class="ttdef"><b>Definition:</b> <a href="_i_c_r_node_8h_source.html#l00036">ICRNode.h:36</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_i_c_r_node_html"><div class="ttname"><a href="classveins_1_1_i_c_r_node.html">veins::ICRNode</a></div><div class="ttdef"><b>Definition:</b> ICRNode.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="dir_b52b5a9daeb877ccb391d0664d91c6bd.html">messages</a></li><li class="navelem"><a class="el" href="_i_c_r_node_8h.html">ICRNode.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="dir_b52b5a9daeb877ccb391d0664d91c6bd.html">messages</a></li><li class="navelem"><b>ICRNode.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

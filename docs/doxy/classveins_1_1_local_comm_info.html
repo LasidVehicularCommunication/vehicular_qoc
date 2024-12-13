@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: veins::LocalCommInfo</title>
+<title>Contexto de Comunicação em VANET: veins::LocalCommInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -88,8 +89,6 @@ $(document).ready(function(){initNavTree('classveins_1_1_local_comm_info.html','
 <div class="title">veins::LocalCommInfo</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_local_comm_info_8h_source.html">LocalCommInfo.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for veins::LocalCommInfo:</div>
 <div class="dyncontent">
@@ -112,276 +111,65 @@ Collaboration diagram for veins::LocalCommInfo:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7b9f0cbf0a2851e1c998d1a77be7c4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_comm_info.html#aa7b9f0cbf0a2851e1c998d1a77be7c4e">LocalCommInfo</a> ()</td></tr>
-<tr class="separator:aa7b9f0cbf0a2851e1c998d1a77be7c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac70536474b41323fbb3c2e73db0cdfb5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_comm_info.html#ac70536474b41323fbb3c2e73db0cdfb5">~LocalCommInfo</a> ()</td></tr>
-<tr class="separator:ac70536474b41323fbb3c2e73db0cdfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c18c35c84056a5a4d0524f3b284e20"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_comm_info.html#a73c18c35c84056a5a4d0524f3b284e20">info</a> ()</td></tr>
-<tr class="separator:a73c18c35c84056a5a4d0524f3b284e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a700c99c50454320eaa5c3648e8c577d9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_comm_info.html#a700c99c50454320eaa5c3648e8c577d9">infoTrace</a> (bool header, std::string idagent)</td></tr>
-<tr class="separator:a700c99c50454320eaa5c3648e8c577d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0758e7e0b91044a5e6ee5384f86e44e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0">getLocalAgentCommPerformance</a> ()</td></tr>
+<tr class="memitem:a0758e7e0b91044a5e6ee5384f86e44e0"><td class="memItemLeft" align="right" valign="top"><a id="a0758e7e0b91044a5e6ee5384f86e44e0"></a>
+<a class="el" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLocalAgentCommPerformance</b> ()</td></tr>
 <tr class="separator:a0758e7e0b91044a5e6ee5384f86e44e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c18c35c84056a5a4d0524f3b284e20"><td class="memItemLeft" align="right" valign="top"><a id="a73c18c35c84056a5a4d0524f3b284e20"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:a73c18c35c84056a5a4d0524f3b284e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700c99c50454320eaa5c3648e8c577d9"><td class="memItemLeft" align="right" valign="top"><a id="a700c99c50454320eaa5c3648e8c577d9"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>infoTrace</b> (bool header, std::string idagent)</td></tr>
+<tr class="separator:a700c99c50454320eaa5c3648e8c577d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classveins_1_1_comm_info"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classveins_1_1_comm_info')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classveins_1_1_comm_info.html">veins::CommInfo</a></td></tr>
-<tr class="memitem:a7ea69e79c7f3c374f4c77ff2d302024c inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#a7ea69e79c7f3c374f4c77ff2d302024c">CommInfo</a> ()</td></tr>
-<tr class="separator:a7ea69e79c7f3c374f4c77ff2d302024c inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3816eb55ba3d0a0b60fb67b9b326110e inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#a3816eb55ba3d0a0b60fb67b9b326110e">~CommInfo</a> ()</td></tr>
-<tr class="separator:a3816eb55ba3d0a0b60fb67b9b326110e inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab939883e591465ad3ba319599819c24c inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#ab939883e591465ad3ba319599819c24c">info</a> ()</td></tr>
-<tr class="separator:ab939883e591465ad3ba319599819c24c inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b1fb6ef506c8a151775b0bb6454d7c inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#aa1b1fb6ef506c8a151775b0bb6454d7c">infoTrace</a> (bool header, std::string idagent)</td></tr>
-<tr class="separator:aa1b1fb6ef506c8a151775b0bb6454d7c inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0fffbc9dcce50de0d5d13c178d8f20b inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_comm_performance.html">CommPerformance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#af0fffbc9dcce50de0d5d13c178d8f20b">getCommPerformance</a> ()</td></tr>
+<tr class="memitem:af0fffbc9dcce50de0d5d13c178d8f20b inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="af0fffbc9dcce50de0d5d13c178d8f20b"></a>
+<a class="el" href="class_comm_performance.html">CommPerformance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCommPerformance</b> ()</td></tr>
 <tr class="separator:af0fffbc9dcce50de0d5d13c178d8f20b inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08eba5e38b85e3401e76185a99110286 inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#a08eba5e38b85e3401e76185a99110286">setCommPerformance</a> (<a class="el" href="class_comm_performance.html">CommPerformance</a> *<a class="el" href="classveins_1_1_comm_info.html#a06d2bc174145f814d8bc8631697b01ce">commPerformance</a>)</td></tr>
-<tr class="separator:a08eba5e38b85e3401e76185a99110286 inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5bc9ae6290f6e59b58cacc931ba9831 inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#ad5bc9ae6290f6e59b58cacc931ba9831">getRadius</a> ()</td></tr>
+<tr class="memitem:ad5bc9ae6290f6e59b58cacc931ba9831 inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="ad5bc9ae6290f6e59b58cacc931ba9831"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getRadius</b> ()</td></tr>
 <tr class="separator:ad5bc9ae6290f6e59b58cacc931ba9831 inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3935590398989bee8791fd6a065105e inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#ab3935590398989bee8791fd6a065105e">setRadius</a> (double <a class="el" href="classveins_1_1_comm_info.html#af199ea553a8ee13448bf2b74223e3c69">radius</a>)</td></tr>
-<tr class="separator:ab3935590398989bee8791fd6a065105e inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27131ea0bb8bd9a9ffee19282a33405 inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#ab27131ea0bb8bd9a9ffee19282a33405">getSenseGhz</a> ()</td></tr>
+<tr class="memitem:ab27131ea0bb8bd9a9ffee19282a33405 inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="ab27131ea0bb8bd9a9ffee19282a33405"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getSenseGhz</b> ()</td></tr>
 <tr class="separator:ab27131ea0bb8bd9a9ffee19282a33405 inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110afdc01c3514614ea84112fb85107b inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#a110afdc01c3514614ea84112fb85107b">setSenseGhz</a> (double senseGhz)</td></tr>
+<tr class="memitem:ab939883e591465ad3ba319599819c24c inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="ab939883e591465ad3ba319599819c24c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:ab939883e591465ad3ba319599819c24c inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b1fb6ef506c8a151775b0bb6454d7c inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="aa1b1fb6ef506c8a151775b0bb6454d7c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>infoTrace</b> (bool header, std::string idagent)</td></tr>
+<tr class="separator:aa1b1fb6ef506c8a151775b0bb6454d7c inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08eba5e38b85e3401e76185a99110286 inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="a08eba5e38b85e3401e76185a99110286"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCommPerformance</b> (<a class="el" href="class_comm_performance.html">CommPerformance</a> *commPerformance)</td></tr>
+<tr class="separator:a08eba5e38b85e3401e76185a99110286 inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3935590398989bee8791fd6a065105e inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="ab3935590398989bee8791fd6a065105e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRadius</b> (double radius)</td></tr>
+<tr class="separator:ab3935590398989bee8791fd6a065105e inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110afdc01c3514614ea84112fb85107b inherit pub_methods_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="a110afdc01c3514614ea84112fb85107b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSenseGhz</b> (double senseGhz)</td></tr>
 <tr class="separator:a110afdc01c3514614ea84112fb85107b inherit pub_methods_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classveins_1_1_comm_info"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classveins_1_1_comm_info')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classveins_1_1_comm_info.html">veins::CommInfo</a></td></tr>
-<tr class="memitem:af199ea553a8ee13448bf2b74223e3c69 inherit pro_attribs_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#af199ea553a8ee13448bf2b74223e3c69">radius</a></td></tr>
-<tr class="separator:af199ea553a8ee13448bf2b74223e3c69 inherit pro_attribs_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38f261d5ce04b631010e4629e56d4b9 inherit pro_attribs_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#ab38f261d5ce04b631010e4629e56d4b9">senseGHZ</a></td></tr>
-<tr class="separator:ab38f261d5ce04b631010e4629e56d4b9 inherit pro_attribs_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d2bc174145f814d8bc8631697b01ce inherit pro_attribs_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_comm_performance.html">CommPerformance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_comm_info.html#a06d2bc174145f814d8bc8631697b01ce">commPerformance</a></td></tr>
+<tr class="memitem:a06d2bc174145f814d8bc8631697b01ce inherit pro_attribs_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="a06d2bc174145f814d8bc8631697b01ce"></a>
+<a class="el" href="class_comm_performance.html">CommPerformance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>commPerformance</b></td></tr>
 <tr class="separator:a06d2bc174145f814d8bc8631697b01ce inherit pro_attribs_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af199ea553a8ee13448bf2b74223e3c69 inherit pro_attribs_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="af199ea553a8ee13448bf2b74223e3c69"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b></td></tr>
+<tr class="separator:af199ea553a8ee13448bf2b74223e3c69 inherit pro_attribs_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38f261d5ce04b631010e4629e56d4b9 inherit pro_attribs_classveins_1_1_comm_info"><td class="memItemLeft" align="right" valign="top"><a id="ab38f261d5ce04b631010e4629e56d4b9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>senseGHZ</b></td></tr>
+<tr class="separator:ab38f261d5ce04b631010e4629e56d4b9 inherit pro_attribs_classveins_1_1_comm_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_local_comm_info_8h_source.html#l00024">24</a> of file <a class="el" href="_local_comm_info_8h_source.html">LocalCommInfo.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa7b9f0cbf0a2851e1c998d1a77be7c4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b9f0cbf0a2851e1c998d1a77be7c4e">&#9670;&nbsp;</a></span>LocalCommInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::LocalCommInfo::LocalCommInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_comm_info_8cc_source.html#l00020">20</a> of file <a class="el" href="_local_comm_info_8cc_source.html">LocalCommInfo.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                             {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   this-&gt;<a class="code" href="classveins_1_1_comm_info.html#a06d2bc174145f814d8bc8631697b01ce">commPerformance</a> = <span class="keyword">new</span> <a class="code" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   this-&gt;<a class="code" href="classveins_1_1_comm_info.html#af199ea553a8ee13448bf2b74223e3c69">radius</a> = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   this-&gt;<a class="code" href="classveins_1_1_comm_info.html#ab38f261d5ce04b631010e4629e56d4b9">senseGHZ</a> = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html"><div class="ttname"><a href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00021">LocalAgentCommPerformance.h:21</a></div></div>
-<div class="ttc" id="aclassveins_1_1_comm_info_html_a06d2bc174145f814d8bc8631697b01ce"><div class="ttname"><a href="classveins_1_1_comm_info.html#a06d2bc174145f814d8bc8631697b01ce">veins::CommInfo::commPerformance</a></div><div class="ttdeci">CommPerformance * commPerformance</div><div class="ttdef"><b>Definition:</b> <a href="_comm_info_8h_source.html#l00031">CommInfo.h:31</a></div></div>
-<div class="ttc" id="aclassveins_1_1_comm_info_html_ab38f261d5ce04b631010e4629e56d4b9"><div class="ttname"><a href="classveins_1_1_comm_info.html#ab38f261d5ce04b631010e4629e56d4b9">veins::CommInfo::senseGHZ</a></div><div class="ttdeci">double senseGHZ</div><div class="ttdef"><b>Definition:</b> <a href="_comm_info_8h_source.html#l00029">CommInfo.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_comm_info_html_af199ea553a8ee13448bf2b74223e3c69"><div class="ttname"><a href="classveins_1_1_comm_info.html#af199ea553a8ee13448bf2b74223e3c69">veins::CommInfo::radius</a></div><div class="ttdeci">double radius</div><div class="ttdef"><b>Definition:</b> <a href="_comm_info_8h_source.html#l00028">CommInfo.h:28</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_comm_info_8h_source.html#l00031">veins::CommInfo::commPerformance</a>, <a class="el" href="_comm_info_8h_source.html#l00028">veins::CommInfo::radius</a>, and <a class="el" href="_comm_info_8h_source.html#l00029">veins::CommInfo::senseGHZ</a>.</p>
-
-</div>
-</div>
-<a id="ac70536474b41323fbb3c2e73db0cdfb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac70536474b41323fbb3c2e73db0cdfb5">&#9670;&nbsp;</a></span>~LocalCommInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::LocalCommInfo::~LocalCommInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_comm_info_8cc_source.html#l00027">27</a> of file <a class="el" href="_local_comm_info_8cc_source.html">LocalCommInfo.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                              {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0758e7e0b91044a5e6ee5384f86e44e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0758e7e0b91044a5e6ee5384f86e44e0">&#9670;&nbsp;</a></span>getLocalAgentCommPerformance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a> * veins::LocalCommInfo::getLocalAgentCommPerformance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_comm_info_8cc_source.html#l00032">32</a> of file <a class="el" href="_local_comm_info_8cc_source.html">LocalCommInfo.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a> *) this-&gt;<a class="code" href="classveins_1_1_comm_info.html#a06d2bc174145f814d8bc8631697b01ce">commPerformance</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_comm_info_8h_source.html#l00031">veins::CommInfo::commPerformance</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icarqoc_8cc_source.html#l00417">veins::Icarqoc::finish()</a>, <a class="el" href="_local_comm_info_8cc_source.html#l00037">info()</a>, <a class="el" href="_local_comm_info_8cc_source.html#l00044">infoTrace()</a>, <a class="el" href="_icarqoc_8cc_source.html#l00023">veins::Icarqoc::initialize()</a>, <a class="el" href="_message_manager_8cc_source.html#l00102">veins::MessageManager::sendICRMessage()</a>, and <a class="el" href="_icar_context_8cc_source.html#l00464">veins::IcarContext::updateContextfromMsg()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_comm_info_a0758e7e0b91044a5e6ee5384f86e44e0_icgraph.png" border="0" usemap="#aclassveins_1_1_local_comm_info_a0758e7e0b91044a5e6ee5384f86e44e0_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_comm_info_a0758e7e0b91044a5e6ee5384f86e44e0_icgraph" id="aclassveins_1_1_local_comm_info_a0758e7e0b91044a5e6ee5384f86e44e0_icgraph">
-<area shape="rect" title=" " alt="" coords="1027,143,1276,185"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a1d98896066149e742c2b1c0594acb57b" title=" " alt="" coords="291,60,446,87"/>
-<area shape="rect" href="classveins_1_1_local_comm_info.html#a73c18c35c84056a5a4d0524f3b284e20" title=" " alt="" coords="803,49,970,90"/>
-<area shape="rect" href="classveins_1_1_local_comm_info.html#a700c99c50454320eaa5c3648e8c577d9" title=" " alt="" coords="803,114,970,155"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#acb2a5e87c43fd0931e853838237ee053" title=" " alt="" coords="281,151,457,177"/>
-<area shape="rect" href="classveins_1_1_message_manager.html#aff7b8c2ae5150d34d092038a39518d19" title=" " alt="" coords="797,231,977,273"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a52d1d29eb3d17e0777c6ce03bf6c84ac" title=" " alt="" coords="795,297,979,338"/>
-<area shape="rect" href="classveins_1_1_local_agent.html#a0df18b6c42a5c3e4eb9303c14c8e55a1" title=" " alt="" coords="559,114,704,155"/>
-<area shape="rect" href="classveins_1_1_message_manager.html#aeeb630feca277f96828191e37d8c7cd8" title=" " alt="" coords="536,231,727,273"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a611ceda8410cd85902584474db8802cc" title=" " alt="" coords="282,235,455,261"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#ad710cf544af00239d987033c121250b0" title=" " alt="" coords="269,285,468,312"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a443ae3c27f696c26f04664f0d02d4b6d" title=" " alt="" coords="5,260,221,287"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a962ec770cf5f1fdc6ffe9fcc0211c400" title=" " alt="" coords="516,304,747,331"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a73c18c35c84056a5a4d0524f3b284e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c18c35c84056a5a4d0524f3b284e20">&#9670;&nbsp;</a></span>info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::LocalCommInfo::info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_comm_info_8cc_source.html#l00037">37</a> of file <a class="el" href="_local_comm_info_8cc_source.html">LocalCommInfo.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                              {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ost &lt;&lt; <a class="code" href="classveins_1_1_comm_info.html#ab939883e591465ad3ba319599819c24c">CommInfo::info</a>()</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        &lt;&lt; this-&gt;<a class="code" href="classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0">getLocalAgentCommPerformance</a>()-&gt;<a class="code" href="class_local_agent_comm_performance.html#a1f2f8b8d1caadf12be7ddb20c81e2052">info</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a1f2f8b8d1caadf12be7ddb20c81e2052"><div class="ttname"><a href="class_local_agent_comm_performance.html#a1f2f8b8d1caadf12be7ddb20c81e2052">LocalAgentCommPerformance::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00062">LocalAgentCommPerformance.cc:62</a></div></div>
-<div class="ttc" id="aclassveins_1_1_comm_info_html_ab939883e591465ad3ba319599819c24c"><div class="ttname"><a href="classveins_1_1_comm_info.html#ab939883e591465ad3ba319599819c24c">veins::CommInfo::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_comm_info_8cc_source.html#l00052">CommInfo.cc:52</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_comm_info_html_a0758e7e0b91044a5e6ee5384f86e44e0"><div class="ttname"><a href="classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0">veins::LocalCommInfo::getLocalAgentCommPerformance</a></div><div class="ttdeci">LocalAgentCommPerformance * getLocalAgentCommPerformance()</div><div class="ttdef"><b>Definition:</b> <a href="_local_comm_info_8cc_source.html#l00032">LocalCommInfo.cc:32</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_local_comm_info_8cc_source.html#l00032">getLocalAgentCommPerformance()</a>, <a class="el" href="_comm_info_8cc_source.html#l00052">veins::CommInfo::info()</a>, and <a class="el" href="_local_agent_comm_performance_8cc_source.html#l00062">LocalAgentCommPerformance::info()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_comm_info_a73c18c35c84056a5a4d0524f3b284e20_cgraph.png" border="0" usemap="#aclassveins_1_1_local_comm_info_a73c18c35c84056a5a4d0524f3b284e20_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_comm_info_a73c18c35c84056a5a4d0524f3b284e20_cgraph" id="aclassveins_1_1_local_comm_info_a73c18c35c84056a5a4d0524f3b284e20_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,172,105"/>
-<area shape="rect" href="classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0" title=" " alt="" coords="220,5,469,47"/>
-<area shape="rect" href="classveins_1_1_comm_info.html#ab939883e591465ad3ba319599819c24c" title=" " alt="" coords="261,71,428,98"/>
-<area shape="rect" href="class_local_agent_comm_performance.html#a1f2f8b8d1caadf12be7ddb20c81e2052" title=" " alt="" coords="235,123,455,164"/>
-<area shape="rect" href="class_comm_performance.html#ad14f1b9361db3f5ead782f992478e586" title=" " alt="" coords="517,101,699,127"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a700c99c50454320eaa5c3648e8c577d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a700c99c50454320eaa5c3648e8c577d9">&#9670;&nbsp;</a></span>infoTrace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::LocalCommInfo::infoTrace </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>header</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>idagent</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_comm_info_8cc_source.html#l00044">44</a> of file <a class="el" href="_local_comm_info_8cc_source.html">LocalCommInfo.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     ost <span class="comment">//&lt;&lt; CommInfo::infoTrace(header, idagent)</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        &lt;&lt; this-&gt;<a class="code" href="classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0">getLocalAgentCommPerformance</a>()-&gt;<a class="code" href="class_local_agent_comm_performance.html#a8175181303c57179e0fb7440a76f1132">infoTrace</a>(header, idagent);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a8175181303c57179e0fb7440a76f1132"><div class="ttname"><a href="class_local_agent_comm_performance.html#a8175181303c57179e0fb7440a76f1132">LocalAgentCommPerformance::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00074">LocalAgentCommPerformance.cc:74</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_local_comm_info_8cc_source.html#l00032">getLocalAgentCommPerformance()</a>, and <a class="el" href="_local_agent_comm_performance_8cc_source.html#l00074">LocalAgentCommPerformance::infoTrace()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_local_agent_8cc_source.html#l00041">veins::LocalAgent::infoTrace()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_cgraph.png" border="0" usemap="#aclassveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_cgraph" id="aclassveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,172,80"/>
-<area shape="rect" href="classveins_1_1_local_comm_info.html#a0758e7e0b91044a5e6ee5384f86e44e0" title=" " alt="" coords="220,5,469,47"/>
-<area shape="rect" href="class_local_agent_comm_performance.html#a8175181303c57179e0fb7440a76f1132" title=" " alt="" coords="235,71,455,112"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_icgraph.png" border="0" usemap="#aclassveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_icgraph" id="aclassveins_1_1_local_comm_info_a700c99c50454320eaa5c3648e8c577d9_icgraph">
-<area shape="rect" title=" " alt="" coords="423,23,589,65"/>
-<area shape="rect" href="classveins_1_1_local_agent.html#a0df18b6c42a5c3e4eb9303c14c8e55a1" title=" " alt="" coords="229,23,375,65"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a1d98896066149e742c2b1c0594acb57b" title=" " alt="" coords="16,5,171,32"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#acb2a5e87c43fd0931e853838237ee053" title=" " alt="" coords="5,56,181,83"/>
-</map>
-</div>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_local_comm_info_8h_source.html">LocalCommInfo.h</a></li>
-<li><a class="el" href="_local_comm_info_8cc_source.html">LocalCommInfo.cc</a></li>
+<li>LocalCommInfo.cc</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_local_comm_info.html">LocalCommInfo</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:52 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><b>veins</b></li><li class="navelem"><a class="el" href="classveins_1_1_local_comm_info.html">LocalCommInfo</a></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

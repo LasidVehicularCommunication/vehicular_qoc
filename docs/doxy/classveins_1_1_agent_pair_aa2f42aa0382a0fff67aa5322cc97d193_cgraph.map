@@ -1,15 +1,5 @@
 <map id="veins::AgentPair::infoTrace" name="veins::AgentPair::infoTrace">
-<area shape="rect" id="node1" title=" " alt="" coords="5,189,200,215"/>
-<area shape="rect" id="node2" href="$classveins_1_1_agent_pair.html#abd823ed71d8b4bd7d13ebe62d5401aed" title=" " alt="" coords="255,5,459,47"/>
-<area shape="rect" id="node3" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="285,71,429,98"/>
-<area shape="rect" id="node4" href="$classveins_1_1_agent_pair.html#a632bd914130b7a21bdd9d314195569db" title=" " alt="" coords="265,123,448,164"/>
-<area shape="rect" id="node5" href="$classveins_1_1_qo_c_info.html#acf97b56c18327e05ced693878a659ee8" title=" " alt="" coords="248,189,465,215"/>
-<area shape="rect" id="node6" href="$classveins_1_1_agent_pair_mobility.html#a64f2638cf06002d3095bc3b0c4fa8b9d" title=" " alt="" coords="267,240,447,281"/>
-<area shape="rect" id="node7" href="$classveins_1_1_timeliness_agent_pair.html#a68ef73b72fd43e90aaa960c4389aa09f" title=" " alt="" coords="257,305,456,347"/>
-<area shape="rect" id="node8" href="$classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8" title=" " alt="" coords="271,371,442,398"/>
-<area shape="rect" id="node9" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="513,342,724,369"/>
-<area shape="rect" id="node10" href="$classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24" title="Returns information about the current state." alt="" coords="547,393,690,435"/>
-<area shape="rect" id="node11" href="$classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="784,350,955,377"/>
-<area shape="rect" id="node12" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="777,401,961,427"/>
-<area shape="rect" id="node13" href="$classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="772,451,967,478"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,200,61"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="266,5,410,32"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent_pair_mobility.html#a64f2638cf06002d3095bc3b0c4fa8b9d" title=" " alt="" coords="248,57,428,98"/>
 </map>

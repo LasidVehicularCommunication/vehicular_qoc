@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: RemoteAgentCommPerformance.h Source File</title>
+<title>Contexto de Comunicação em VANET: RemoteAgentCommPerformance.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_remote_agent_comm_performance_8h_sour
 <div class="title">RemoteAgentCommPerformance.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_remote_agent_comm_performance_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -103,50 +104,37 @@ $(document).ready(function(){initNavTree('_remote_agent_comm_performance_8h_sour
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef SRC_VEINS_MODULES_APPLICATION_ICARNEW_REMOTEAGENTCOMMPERFORMANCE_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define SRC_VEINS_MODULES_APPLICATION_ICARNEW_REMOTEAGENTCOMMPERFORMANCE_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_comm_performance_8h.html">CommPerformance.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;CommPerformance.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_remote_agent_comm_performance.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_remote_agent_comm_performance.html">RemoteAgentCommPerformance</a> : <span class="keyword">public</span> <a class="code" href="class_comm_performance.html">CommPerformance</a>{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">   23</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">rateCorrectTransmittedMsgTemp</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">   24</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">rateCorrectTransmittedMsgToLocal</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">   25</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">totalCorrectMsgTransmittedToLocal</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">long</span> rateCorrectTransmittedMsgTemp;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">long</span> rateCorrectTransmittedMsgToLocal;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">long</span> totalCorrectMsgTransmittedToLocal;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_remote_agent_comm_performance.html#aa368dbc17b28f86924a1b474d7c4f040">RemoteAgentCommPerformance</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_remote_agent_comm_performance.html#ae031b8c4232ab7e3410743b5a48d8c0b">~RemoteAgentCommPerformance</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::string <a class="code" href="class_remote_agent_comm_performance.html#aaa85c1b9053b46f86c7f9ec7ca6caf45">info</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string <a class="code" href="class_remote_agent_comm_performance.html#a8f051df099f3969f8c545def6ca18546">infoTrace</a>(<span class="keywordtype">bool</span> header, std::string idagent);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_remote_agent_comm_performance.html#a35f31f85c26892c373e24ee78c1a13bf">getRateCorrectTransmittedMsgTemp</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_remote_agent_comm_performance.html">RemoteAgentCommPerformance</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_remote_agent_comm_performance.html">RemoteAgentCommPerformance</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::string info();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string infoTrace(<span class="keywordtype">bool</span> header, std::string idagent);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">long</span> getRateCorrectTransmittedMsgTemp();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//void setRateCorrectTransmittedMsgTemp(long rateCorrectTransmittedMsgTemp);</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_remote_agent_comm_performance.html#a3fb4e0d9bc7d534fdb7d48d9bcfcbc91">getRateCorrectTransmittedMsgToLocal</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_remote_agent_comm_performance.html#a610f5038320bcd2c3d7cc1642b09eca5">getTotalCorrectMsgTransmittedToLocal</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_remote_agent_comm_performance.html#a0df0ebbd95f3d919225f32f138108041">calRateCorrectTransmittedMsgPerPeriod</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_remote_agent_comm_performance.html#a989d19fcabb4c92d762af15388c334c4">addCorrectMsgTransmitted</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">long</span> getRateCorrectTransmittedMsgToLocal();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">long</span> getTotalCorrectMsgTransmittedToLocal();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> calRateCorrectTransmittedMsgPerPeriod();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> addCorrectMsgTransmitted();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_VEINS_MODULES_APPLICATION_ICARNEW_REMOTEAGENTCOMMPERFORMANCE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_comm_performance_8h_html"><div class="ttname"><a href="_comm_performance_8h.html">CommPerformance.h</a></div></div>
-<div class="ttc" id="aclass_comm_performance_html"><div class="ttname"><a href="class_comm_performance.html">CommPerformance</a></div><div class="ttdef"><b>Definition:</b> <a href="_comm_performance_8h_source.html#l00021">CommPerformance.h:21</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html"><div class="ttname"><a href="class_remote_agent_comm_performance.html">RemoteAgentCommPerformance</a></div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00021">RemoteAgentCommPerformance.h:21</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a0df0ebbd95f3d919225f32f138108041"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a0df0ebbd95f3d919225f32f138108041">RemoteAgentCommPerformance::calRateCorrectTransmittedMsgPerPeriod</a></div><div class="ttdeci">void calRateCorrectTransmittedMsgPerPeriod()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00039">RemoteAgentCommPerformance.cc:39</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a12ee76952e8f6756f60fbafdb4fc6583"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a12ee76952e8f6756f60fbafdb4fc6583">RemoteAgentCommPerformance::rateCorrectTransmittedMsgToLocal</a></div><div class="ttdeci">long rateCorrectTransmittedMsgToLocal</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00024">RemoteAgentCommPerformance.h:24</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a1c3b069afd11fe2b2915d5496aa75547"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a1c3b069afd11fe2b2915d5496aa75547">RemoteAgentCommPerformance::rateCorrectTransmittedMsgTemp</a></div><div class="ttdeci">long rateCorrectTransmittedMsgTemp</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00023">RemoteAgentCommPerformance.h:23</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a2e102616a45e13eda104dedaf29885f6"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a2e102616a45e13eda104dedaf29885f6">RemoteAgentCommPerformance::totalCorrectMsgTransmittedToLocal</a></div><div class="ttdeci">long totalCorrectMsgTransmittedToLocal</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8h_source.html#l00025">RemoteAgentCommPerformance.h:25</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a35f31f85c26892c373e24ee78c1a13bf"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a35f31f85c26892c373e24ee78c1a13bf">RemoteAgentCommPerformance::getRateCorrectTransmittedMsgTemp</a></div><div class="ttdeci">long getRateCorrectTransmittedMsgTemp()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00025">RemoteAgentCommPerformance.cc:25</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a3fb4e0d9bc7d534fdb7d48d9bcfcbc91"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a3fb4e0d9bc7d534fdb7d48d9bcfcbc91">RemoteAgentCommPerformance::getRateCorrectTransmittedMsgToLocal</a></div><div class="ttdeci">long getRateCorrectTransmittedMsgToLocal()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00035">RemoteAgentCommPerformance.cc:35</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a610f5038320bcd2c3d7cc1642b09eca5"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a610f5038320bcd2c3d7cc1642b09eca5">RemoteAgentCommPerformance::getTotalCorrectMsgTransmittedToLocal</a></div><div class="ttdeci">long getTotalCorrectMsgTransmittedToLocal()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00045">RemoteAgentCommPerformance.cc:45</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a8f051df099f3969f8c545def6ca18546"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a8f051df099f3969f8c545def6ca18546">RemoteAgentCommPerformance::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00064">RemoteAgentCommPerformance.cc:64</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_a989d19fcabb4c92d762af15388c334c4"><div class="ttname"><a href="class_remote_agent_comm_performance.html#a989d19fcabb4c92d762af15388c334c4">RemoteAgentCommPerformance::addCorrectMsgTransmitted</a></div><div class="ttdeci">void addCorrectMsgTransmitted()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00030">RemoteAgentCommPerformance.cc:30</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_aa368dbc17b28f86924a1b474d7c4f040"><div class="ttname"><a href="class_remote_agent_comm_performance.html#aa368dbc17b28f86924a1b474d7c4f040">RemoteAgentCommPerformance::RemoteAgentCommPerformance</a></div><div class="ttdeci">RemoteAgentCommPerformance()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00018">RemoteAgentCommPerformance.cc:18</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_aaa85c1b9053b46f86c7f9ec7ca6caf45"><div class="ttname"><a href="class_remote_agent_comm_performance.html#aaa85c1b9053b46f86c7f9ec7ca6caf45">RemoteAgentCommPerformance::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00055">RemoteAgentCommPerformance.cc:55</a></div></div>
-<div class="ttc" id="aclass_remote_agent_comm_performance_html_ae031b8c4232ab7e3410743b5a48d8c0b"><div class="ttname"><a href="class_remote_agent_comm_performance.html#ae031b8c4232ab7e3410743b5a48d8c0b">RemoteAgentCommPerformance::~RemoteAgentCommPerformance</a></div><div class="ttdeci">virtual ~RemoteAgentCommPerformance()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_performance_8cc_source.html#l00051">RemoteAgentCommPerformance.cc:51</a></div></div>
+<div class="ttc" id="aclass_comm_performance_html"><div class="ttname"><a href="class_comm_performance.html">CommPerformance</a></div><div class="ttdef"><b>Definition:</b> CommPerformance.h:21</div></div>
+<div class="ttc" id="aclass_remote_agent_comm_performance_html"><div class="ttname"><a href="class_remote_agent_comm_performance.html">RemoteAgentCommPerformance</a></div><div class="ttdef"><b>Definition:</b> RemoteAgentCommPerformance.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_remote_agent_comm_performance_8h.html">RemoteAgentCommPerformance.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>RemoteAgentCommPerformance.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

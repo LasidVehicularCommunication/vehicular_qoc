@@ -1,13 +1,9 @@
 <map id="veins::AgentPairList::calcMaxDistancelr" name="veins::AgentPairList::calcMaxDistancelr">
-<area shape="rect" id="node1" title=" " alt="" coords="5,211,156,252"/>
-<area shape="rect" id="node2" href="$classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2" title=" " alt="" coords="266,5,409,47"/>
-<area shape="rect" id="node3" href="$classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="235,71,439,98"/>
-<area shape="rect" id="node4" href="$classveins_1_1_agent_pair.html#ab480513c879b14f886baaf24996491b1" title=" " alt="" coords="240,123,435,164"/>
-<area shape="rect" id="node5" href="$classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="236,189,439,215"/>
-<area shape="rect" id="node6" href="$classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="204,240,471,281"/>
-<area shape="rect" id="node7" href="$classveins_1_1_agent_pair_mobility.html#a496d39c25bc5384e8a9973d83ece8206" title=" " alt="" coords="247,305,427,347"/>
-<area shape="rect" id="node10" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="265,371,409,398"/>
-<area shape="rect" id="node11" href="$classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="232,422,443,449"/>
-<area shape="rect" id="node8" href="$classveins_1_1_agent_pair_mobility.html#a2a923b5ff5c9fb92a450af692971f168" title=" " alt="" coords="519,276,704,317"/>
-<area shape="rect" id="node9" href="$classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="519,342,703,369"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,145,156,186"/>
+<area shape="rect" id="node2" href="$classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="235,5,439,32"/>
+<area shape="rect" id="node3" href="$classveins_1_1_agent_pair.html#ab480513c879b14f886baaf24996491b1" title=" " alt="" coords="240,57,435,98"/>
+<area shape="rect" id="node4" href="$classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="236,123,439,149"/>
+<area shape="rect" id="node5" href="$classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="204,174,471,215"/>
+<area shape="rect" id="node6" href="$classveins_1_1_agent_pair_mobility.html#a496d39c25bc5384e8a9973d83ece8206" title=" " alt="" coords="247,239,427,281"/>
+<area shape="rect" id="node7" href="$classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="265,305,409,332"/>
 </map>

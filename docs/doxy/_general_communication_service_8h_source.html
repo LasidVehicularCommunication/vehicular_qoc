@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: GeneralCommunicationService.h Source File</title>
+<title>Contexto de Comunicação em VANET: GeneralCommunicationService.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_general_communication_service_8h_sour
 <div class="title">GeneralCommunicationService.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_general_communication_service_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -104,56 +105,46 @@ $(document).ready(function(){initNavTree('_general_communication_service_8h_sour
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define GENERALCOMMUNICATIONSERVICE_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;omnetpp.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_local_agent_8h.html">LocalAgent.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;LocalAgent.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classveins_1_1_general_communication_service.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_general_communication_service.html">GeneralCommunicationService</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// tolerated delay of application</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classveins_1_1_general_communication_service.html#aa8bbd4801499466d8de7d7cf534539b8">   28</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_general_communication_service.html#aa8bbd4801499466d8de7d7cf534539b8">deliveryDelay</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <span class="keywordtype">double</span> deliveryDelay;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="comment">//  code of application type</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classveins_1_1_general_communication_service.html#aa6ba0540ce90161fded819f88b6ae7a3">   31</a></span>&#160;   <span class="keywordtype">int</span>   <a class="code" href="classveins_1_1_general_communication_service.html#aa6ba0540ce90161fded819f88b6ae7a3">appTypeId</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="keywordtype">int</span>   appTypeId;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   <span class="comment">// application message time in the network</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classveins_1_1_general_communication_service.html#a0b18ea5d0cf69813dab0087a55e59260">   34</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_general_communication_service.html#a0b18ea5d0cf69813dab0087a55e59260">timeToLive</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   <span class="keywordtype">double</span> timeToLive;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="comment">// period to send application messages</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classveins_1_1_general_communication_service.html#acf911b028ac8fdff902121db8a895b55">   37</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_general_communication_service.html#acf911b028ac8fdff902121db8a895b55">appPeriodLoadMsg</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <span class="keywordtype">double</span> appPeriodLoadMsg;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   <span class="keywordtype">int</span> <a class="code" href="classveins_1_1_general_communication_service.html#a80875fa22ae374a02f3449d5d8db477c">calcDestination</a>(std::vector &lt;LocalAgent *&gt; destinyVehicles);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   <span class="keywordtype">int</span> calcDestination(std::vector &lt;LocalAgent *&gt; destinyVehicles);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordtype">int</span> <a class="code" href="classveins_1_1_general_communication_service.html#a91fd6a58d5bc098cbf72b74d3383c183">getDestination</a>(std::vector &lt;LocalAgent *&gt; destinyVehicles, <span class="keywordtype">int</span> notThisId);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordtype">int</span> getDestination(std::vector &lt;LocalAgent *&gt; destinyVehicles, <span class="keywordtype">int</span> notThisId);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   <a class="code" href="classveins_1_1_general_communication_service.html#ad6245bcc0b8f8faee279c975ac3dfbb1">GeneralCommunicationService</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   <a class="code" href="classveins_1_1_general_communication_service.html">GeneralCommunicationService</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_general_communication_service.html#a668c45eb2e673c90ed3b3f1abc810610">~GeneralCommunicationService</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_general_communication_service.html">GeneralCommunicationService</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GENERALCOMMUNICATIONSERVICE_H_ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="ttc" id="a_local_agent_8h_html"><div class="ttname"><a href="_local_agent_8h.html">LocalAgent.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html"><div class="ttname"><a href="classveins_1_1_general_communication_service.html">veins::GeneralCommunicationService</a></div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8h_source.html#l00024">GeneralCommunicationService.h:24</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_a0b18ea5d0cf69813dab0087a55e59260"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#a0b18ea5d0cf69813dab0087a55e59260">veins::GeneralCommunicationService::timeToLive</a></div><div class="ttdeci">double timeToLive</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8h_source.html#l00034">GeneralCommunicationService.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_a668c45eb2e673c90ed3b3f1abc810610"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#a668c45eb2e673c90ed3b3f1abc810610">veins::GeneralCommunicationService::~GeneralCommunicationService</a></div><div class="ttdeci">virtual ~GeneralCommunicationService()</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8cc_source.html#l00028">GeneralCommunicationService.cc:28</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_a80875fa22ae374a02f3449d5d8db477c"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#a80875fa22ae374a02f3449d5d8db477c">veins::GeneralCommunicationService::calcDestination</a></div><div class="ttdeci">int calcDestination(std::vector&lt; LocalAgent * &gt; destinyVehicles)</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8cc_source.html#l00063">GeneralCommunicationService.cc:63</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_a91fd6a58d5bc098cbf72b74d3383c183"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#a91fd6a58d5bc098cbf72b74d3383c183">veins::GeneralCommunicationService::getDestination</a></div><div class="ttdeci">int getDestination(std::vector&lt; LocalAgent * &gt; destinyVehicles, int notThisId)</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8cc_source.html#l00035">GeneralCommunicationService.cc:35</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_aa6ba0540ce90161fded819f88b6ae7a3"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#aa6ba0540ce90161fded819f88b6ae7a3">veins::GeneralCommunicationService::appTypeId</a></div><div class="ttdeci">int appTypeId</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8h_source.html#l00031">GeneralCommunicationService.h:31</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_aa8bbd4801499466d8de7d7cf534539b8"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#aa8bbd4801499466d8de7d7cf534539b8">veins::GeneralCommunicationService::deliveryDelay</a></div><div class="ttdeci">double deliveryDelay</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8h_source.html#l00028">GeneralCommunicationService.h:28</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_acf911b028ac8fdff902121db8a895b55"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#acf911b028ac8fdff902121db8a895b55">veins::GeneralCommunicationService::appPeriodLoadMsg</a></div><div class="ttdeci">double appPeriodLoadMsg</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8h_source.html#l00037">GeneralCommunicationService.h:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_general_communication_service_html_ad6245bcc0b8f8faee279c975ac3dfbb1"><div class="ttname"><a href="classveins_1_1_general_communication_service.html#ad6245bcc0b8f8faee279c975ac3dfbb1">veins::GeneralCommunicationService::GeneralCommunicationService</a></div><div class="ttdeci">GeneralCommunicationService()</div><div class="ttdef"><b>Definition:</b> <a href="_general_communication_service_8cc_source.html#l00020">GeneralCommunicationService.cc:20</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_general_communication_service_html"><div class="ttname"><a href="classveins_1_1_general_communication_service.html">veins::GeneralCommunicationService</a></div><div class="ttdef"><b>Definition:</b> GeneralCommunicationService.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_general_communication_service_8h.html">GeneralCommunicationService.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>GeneralCommunicationService.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

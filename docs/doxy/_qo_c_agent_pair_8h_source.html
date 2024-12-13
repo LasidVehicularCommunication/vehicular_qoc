@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: QoCAgentPair.h Source File</title>
+<title>Contexto de Comunicação em VANET: QoCAgentPair.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_qo_c_agent_pair_8h_source.html',''); 
 <div class="title">QoCAgentPair.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_qo_c_agent_pair_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -104,40 +105,35 @@ $(document).ready(function(){initNavTree('_qo_c_agent_pair_8h_source.html',''); 
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define QOCCHANNEL_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_qo_c_info_8h.html">QoCInfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timeliness_agent_pair_8h.html">TimelinessAgentPair.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;QoCInfo.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;TimelinessAgentPair.h&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceomnetpp.html">omnetpp</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span>omnetpp;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>AgentPair;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>TimelinessAgentPair;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classveins_1_1_qo_c_agent_pair.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_qo_c_agent_pair.html">QoCAgentPair</a> : <span class="keyword">public</span> <a class="code" href="classveins_1_1_qo_c_info.html">QoCInfo</a> {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classveins_1_1_qo_c_agent_pair.html#af1813bdcc1c50637a34a9dc0a1d88a4e">   31</a></span>&#160;    <a class="code" href="classveins_1_1_qo_c_agent_pair.html#af1813bdcc1c50637a34a9dc0a1d88a4e">QoCAgentPair</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classveins_1_1_qo_c_agent_pair.html">QoCAgentPair</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classveins_1_1_qo_c_agent_pair.html">QoCAgentPair</a>(<a class="code" href="classveins_1_1_agent_pair.html">AgentPair</a> * c,  simtime_t dataValidity);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_qo_c_agent_pair.html">QoCAgentPair</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classveins_1_1_timeliness_agent_pair.html">TimelinessAgentPair</a> * getTimelinessAgentPair();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* QOCAGENTPAIR_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_qo_c_info_8h_html"><div class="ttname"><a href="_qo_c_info_8h.html">QoCInfo.h</a></div></div>
-<div class="ttc" id="a_timeliness_agent_pair_8h_html"><div class="ttname"><a href="_timeliness_agent_pair_8h.html">TimelinessAgentPair.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_pair_html"><div class="ttname"><a href="classveins_1_1_agent_pair.html">veins::AgentPair</a></div><div class="ttdef"><b>Definition:</b> <a href="_agent_pair_8h_source.html#l00053">AgentPair.h:53</a></div></div>
-<div class="ttc" id="aclassveins_1_1_qo_c_agent_pair_html"><div class="ttname"><a href="classveins_1_1_qo_c_agent_pair.html">veins::QoCAgentPair</a></div><div class="ttdef"><b>Definition:</b> <a href="_qo_c_agent_pair_8h_source.html#l00029">QoCAgentPair.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_qo_c_agent_pair_html_af1813bdcc1c50637a34a9dc0a1d88a4e"><div class="ttname"><a href="classveins_1_1_qo_c_agent_pair.html#af1813bdcc1c50637a34a9dc0a1d88a4e">veins::QoCAgentPair::QoCAgentPair</a></div><div class="ttdeci">QoCAgentPair()</div></div>
-<div class="ttc" id="aclassveins_1_1_qo_c_info_html"><div class="ttname"><a href="classveins_1_1_qo_c_info.html">veins::QoCInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_qo_c_info_8h_source.html#l00024">QoCInfo.h:24</a></div></div>
-<div class="ttc" id="aclassveins_1_1_timeliness_agent_pair_html"><div class="ttname"><a href="classveins_1_1_timeliness_agent_pair.html">veins::TimelinessAgentPair</a></div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_agent_pair_8h_source.html#l00036">TimelinessAgentPair.h:36</a></div></div>
-<div class="ttc" id="anamespaceomnetpp_html"><div class="ttname"><a href="namespaceomnetpp.html">omnetpp</a></div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00048">veins.h:48</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_agent_pair_html"><div class="ttname"><a href="classveins_1_1_agent_pair.html">veins::AgentPair</a></div><div class="ttdef"><b>Definition:</b> AgentPair.h:53</div></div>
+<div class="ttc" id="aclassveins_1_1_qo_c_agent_pair_html"><div class="ttname"><a href="classveins_1_1_qo_c_agent_pair.html">veins::QoCAgentPair</a></div><div class="ttdef"><b>Definition:</b> QoCAgentPair.h:29</div></div>
+<div class="ttc" id="aclassveins_1_1_qo_c_info_html"><div class="ttname"><a href="classveins_1_1_qo_c_info.html">veins::QoCInfo</a></div><div class="ttdef"><b>Definition:</b> QoCInfo.h:24</div></div>
+<div class="ttc" id="aclassveins_1_1_timeliness_agent_pair_html"><div class="ttname"><a href="classveins_1_1_timeliness_agent_pair.html">veins::TimelinessAgentPair</a></div><div class="ttdef"><b>Definition:</b> TimelinessAgentPair.h:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_qo_c_agent_pair_8h.html">QoCAgentPair.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>QoCAgentPair.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

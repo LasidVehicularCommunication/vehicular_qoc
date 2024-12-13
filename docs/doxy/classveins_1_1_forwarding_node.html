@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: veins::ForwardingNode</title>
+<title>Contexto de Comunicação em VANET: veins::ForwardingNode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -89,848 +90,96 @@ $(document).ready(function(){initNavTree('classveins_1_1_forwarding_node.html','
 <div class="title">veins::ForwardingNode</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for veins::ForwardingNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_forwarding_node__coll__graph.png" border="0" usemap="#aveins_1_1_forwarding_node_coll__map" alt="Collaboration graph"/></div>
 <map name="aveins_1_1_forwarding_node_coll__map" id="aveins_1_1_forwarding_node_coll__map">
-<area shape="rect" title=" " alt="" coords="1689,429,1859,456"/>
-<area shape="rect" href="classveins_1_1_agent.html" title="Uma breve descrição da classe." alt="" coords="1072,385,1175,412"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html" title=" " alt="" coords="1391,265,1517,292"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html" title=" " alt="" coords="729,75,871,101"/>
-<area shape="rect" href="classveins_1_1_agent_pair_mobility.html" title=" " alt="" coords="1684,220,1864,247"/>
-<area shape="rect" href="classveins_1_1_move.html" title="Class to store object position and movement." alt="" coords="423,79,525,105"/>
-<area shape="rect" title=" " alt="" coords="5,75,76,101"/>
-<area shape="rect" href="classveins_1_1_coord.html" title="Class for storing 3D coordinates." alt="" coords="125,44,228,71"/>
-<area shape="rect" title=" " alt="" coords="133,209,221,236"/>
-<area shape="rect" href="class_timeliness.html" title=" " alt="" coords="427,261,521,288"/>
-<area shape="rect" href="classveins_1_1_comm_info.html" title=" " alt="" coords="733,424,867,451"/>
-<area shape="rect" href="class_comm_performance.html" title=" " alt="" coords="400,424,548,451"/>
-<area shape="rect" href="classveins_1_1_qo_c_info.html" title=" " alt="" coords="741,299,859,325"/>
-<area shape="rect" href="classveins_1_1_qo_c_agent_pair.html" title=" " alt="" coords="1046,321,1201,348"/>
-<area shape="rect" href="class_radius_estimator_agent_pair.html" title=" " alt="" coords="1028,220,1219,247"/>
-<area shape="rect" title=" " alt="" coords="1080,271,1167,297"/>
+<area shape="rect" title=" " alt="" coords="1250,180,1421,207"/>
+<area shape="rect" href="classveins_1_1_agent.html" title="Uma breve descrição da classe." alt="" coords="649,111,752,137"/>
+<area shape="rect" href="classveins_1_1_agent_pair.html" title=" " alt="" coords="952,113,1079,140"/>
+<area shape="rect" href="classveins_1_1_mobility_info.html" title=" " alt="" coords="331,5,473,32"/>
+<area shape="rect" href="classveins_1_1_agent_pair_mobility.html" title=" " alt="" coords="1245,68,1425,95"/>
+<area shape="rect" href="classveins_1_1_comm_info.html" title=" " alt="" coords="335,72,469,99"/>
+<area shape="rect" href="class_comm_performance.html" title=" " alt="" coords="5,72,153,99"/>
+<area shape="rect" href="classveins_1_1_qo_c_info.html" title=" " alt="" coords="343,141,461,168"/>
+<area shape="rect" href="classveins_1_1_qo_c_agent_pair.html" title=" " alt="" coords="623,161,778,188"/>
+<area shape="rect" href="class_timeliness.html" title=" " alt="" coords="33,141,126,168"/>
+<area shape="rect" href="class_radius_estimator_agent_pair.html" title=" " alt="" coords="605,40,796,67"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa901f15691f21979ccc3bd178a4a10e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#aaa901f15691f21979ccc3bd178a4a10e">ForwardingNode</a> ()</td></tr>
-<tr class="separator:aaa901f15691f21979ccc3bd178a4a10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fe1165992dfb68cbcfa5693da138bd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a91fe1165992dfb68cbcfa5693da138bd">~ForwardingNode</a> ()</td></tr>
-<tr class="separator:a91fe1165992dfb68cbcfa5693da138bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543307034729baa2886bbe268a00a958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a543307034729baa2886bbe268a00a958">update</a> (std::string <a class="el" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>, int <a class="el" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a>, <a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *c, double periodvalidty)</td></tr>
-<tr class="separator:a543307034729baa2886bbe268a00a958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3cbf0340ab0f67cd95b59f4d5af4805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#ac3cbf0340ab0f67cd95b59f4d5af4805">update</a> (std::string <a class="el" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>, <a class="el" href="classveins_1_1_agent.html">Agent</a> *<a class="el" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a>, <a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *c, double periodvalidty)</td></tr>
-<tr class="separator:ac3cbf0340ab0f67cd95b59f4d5af4805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a2c9d565b14044c70a6b633da6c12e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#ae5a2c9d565b14044c70a6b633da6c12e">getDataValidity</a> ()</td></tr>
-<tr class="separator:ae5a2c9d565b14044c70a6b633da6c12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a839957289c24474fd6dbd92977e141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141">setDataValidity</a> (double <a class="el" href="classveins_1_1_forwarding_node.html#a8658c0b99bbe42360ba8ce79c20d40bd">dataValidity</a>)</td></tr>
-<tr class="separator:a2a839957289c24474fd6dbd92977e141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092648bda16197c47790798915dfe1f2"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a092648bda16197c47790798915dfe1f2">getFowardId</a> ()</td></tr>
-<tr class="separator:a092648bda16197c47790798915dfe1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d8ac3320ad39aa7b51dba8c792309a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a">setFowardId</a> (int64_t afowardId)</td></tr>
-<tr class="separator:a09d8ac3320ad39aa7b51dba8c792309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52bddaf3ba14f6c0fc2d9097202a13a2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a52bddaf3ba14f6c0fc2d9097202a13a2">getRule</a> ()</td></tr>
-<tr class="separator:a52bddaf3ba14f6c0fc2d9097202a13a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f40d4fc51222ce2df2441136d989f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1">setRule</a> (std::string <a class="el" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>)</td></tr>
-<tr class="separator:a82f40d4fc51222ce2df2441136d989f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf798dcade51f40ddf1f12c69a8a6319"><td class="memItemLeft" align="right" valign="top">const simtime_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#acf798dcade51f40ddf1f12c69a8a6319">getTimeoutValidity</a> ()</td></tr>
-<tr class="separator:acf798dcade51f40ddf1f12c69a8a6319"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07939ee05b02cfaf686f7c86fb19e0be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be">setTimeoutValidity</a> (simtime_t <a class="el" href="classveins_1_1_forwarding_node.html#ad7b6e709d183df561c3488aeed499467">timeoutValidity</a>)</td></tr>
-<tr class="separator:a07939ee05b02cfaf686f7c86fb19e0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec02325986cc554d7bf684ec9d1e3b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#aec02325986cc554d7bf684ec9d1e3b47">getAgentPair</a> ()</td></tr>
+<tr class="memitem:aec02325986cc554d7bf684ec9d1e3b47"><td class="memItemLeft" align="right" valign="top"><a id="aec02325986cc554d7bf684ec9d1e3b47"></a>
+<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getAgentPair</b> ()</td></tr>
 <tr class="separator:aec02325986cc554d7bf684ec9d1e3b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c3c44277ff736a14581079e426b50f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a2c3c44277ff736a14581079e426b50f0">setAgentPair</a> (<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *<a class="el" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a>)</td></tr>
+<tr class="memitem:ae5a2c9d565b14044c70a6b633da6c12e"><td class="memItemLeft" align="right" valign="top"><a id="ae5a2c9d565b14044c70a6b633da6c12e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getDataValidity</b> ()</td></tr>
+<tr class="separator:ae5a2c9d565b14044c70a6b633da6c12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092648bda16197c47790798915dfe1f2"><td class="memItemLeft" align="right" valign="top"><a id="a092648bda16197c47790798915dfe1f2"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>getFowardId</b> ()</td></tr>
+<tr class="separator:a092648bda16197c47790798915dfe1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bddaf3ba14f6c0fc2d9097202a13a2"><td class="memItemLeft" align="right" valign="top"><a id="a52bddaf3ba14f6c0fc2d9097202a13a2"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRule</b> ()</td></tr>
+<tr class="separator:a52bddaf3ba14f6c0fc2d9097202a13a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf798dcade51f40ddf1f12c69a8a6319"><td class="memItemLeft" align="right" valign="top"><a id="acf798dcade51f40ddf1f12c69a8a6319"></a>
+const simtime_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeoutValidity</b> ()</td></tr>
+<tr class="separator:acf798dcade51f40ddf1f12c69a8a6319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3c44277ff736a14581079e426b50f0"><td class="memItemLeft" align="right" valign="top"><a id="a2c3c44277ff736a14581079e426b50f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAgentPair</b> (<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *agentPair)</td></tr>
 <tr class="separator:a2c3c44277ff736a14581079e426b50f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a839957289c24474fd6dbd92977e141"><td class="memItemLeft" align="right" valign="top"><a id="a2a839957289c24474fd6dbd92977e141"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDataValidity</b> (double dataValidity)</td></tr>
+<tr class="separator:a2a839957289c24474fd6dbd92977e141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d8ac3320ad39aa7b51dba8c792309a"><td class="memItemLeft" align="right" valign="top"><a id="a09d8ac3320ad39aa7b51dba8c792309a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFowardId</b> (int64_t afowardId)</td></tr>
+<tr class="separator:a09d8ac3320ad39aa7b51dba8c792309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f40d4fc51222ce2df2441136d989f1"><td class="memItemLeft" align="right" valign="top"><a id="a82f40d4fc51222ce2df2441136d989f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRule</b> (std::string rule)</td></tr>
+<tr class="separator:a82f40d4fc51222ce2df2441136d989f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07939ee05b02cfaf686f7c86fb19e0be"><td class="memItemLeft" align="right" valign="top"><a id="a07939ee05b02cfaf686f7c86fb19e0be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTimeoutValidity</b> (simtime_t timeoutValidity)</td></tr>
+<tr class="separator:a07939ee05b02cfaf686f7c86fb19e0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cbf0340ab0f67cd95b59f4d5af4805"><td class="memItemLeft" align="right" valign="top"><a id="ac3cbf0340ab0f67cd95b59f4d5af4805"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (std::string rule, <a class="el" href="classveins_1_1_agent.html">Agent</a> *fowardingAgent, <a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *c, double periodvalidty)</td></tr>
+<tr class="separator:ac3cbf0340ab0f67cd95b59f4d5af4805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543307034729baa2886bbe268a00a958"><td class="memItemLeft" align="right" valign="top"><a id="a543307034729baa2886bbe268a00a958"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (std::string rule, int fowardingAgent, <a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *c, double periodvalidty)</td></tr>
+<tr class="separator:a543307034729baa2886bbe268a00a958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:acba3f37b050ad1c18aa56b519b8d9670"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#acba3f37b050ad1c18aa56b519b8d9670">fowardId</a></td></tr>
-<tr class="separator:acba3f37b050ad1c18aa56b519b8d9670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8658c0b99bbe42360ba8ce79c20d40bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a8658c0b99bbe42360ba8ce79c20d40bd">dataValidity</a></td></tr>
-<tr class="separator:a8658c0b99bbe42360ba8ce79c20d40bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7b6e709d183df561c3488aeed499467"><td class="memItemLeft" align="right" valign="top">simtime_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#ad7b6e709d183df561c3488aeed499467">timeoutValidity</a></td></tr>
-<tr class="separator:ad7b6e709d183df561c3488aeed499467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4703826adc6c0ae62dd2fe9f4fed32"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a></td></tr>
-<tr class="separator:a0f4703826adc6c0ae62dd2fe9f4fed32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb49b7dc1498542c3351cd1554173b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a></td></tr>
+<tr class="memitem:accb49b7dc1498542c3351cd1554173b9"><td class="memItemLeft" align="right" valign="top"><a id="accb49b7dc1498542c3351cd1554173b9"></a>
+<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>agentPair</b></td></tr>
 <tr class="separator:accb49b7dc1498542c3351cd1554173b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e60164033023446f658c87ac4622f45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_agent.html">Agent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a></td></tr>
+<tr class="memitem:a8658c0b99bbe42360ba8ce79c20d40bd"><td class="memItemLeft" align="right" valign="top"><a id="a8658c0b99bbe42360ba8ce79c20d40bd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>dataValidity</b></td></tr>
+<tr class="separator:a8658c0b99bbe42360ba8ce79c20d40bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba3f37b050ad1c18aa56b519b8d9670"><td class="memItemLeft" align="right" valign="top"><a id="acba3f37b050ad1c18aa56b519b8d9670"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>fowardId</b></td></tr>
+<tr class="separator:acba3f37b050ad1c18aa56b519b8d9670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e60164033023446f658c87ac4622f45"><td class="memItemLeft" align="right" valign="top"><a id="a3e60164033023446f658c87ac4622f45"></a>
+<a class="el" href="classveins_1_1_agent.html">Agent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fowardingAgent</b></td></tr>
 <tr class="separator:a3e60164033023446f658c87ac4622f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4703826adc6c0ae62dd2fe9f4fed32"><td class="memItemLeft" align="right" valign="top"><a id="a0f4703826adc6c0ae62dd2fe9f4fed32"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>rule</b></td></tr>
+<tr class="separator:a0f4703826adc6c0ae62dd2fe9f4fed32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b6e709d183df561c3488aeed499467"><td class="memItemLeft" align="right" valign="top"><a id="ad7b6e709d183df561c3488aeed499467"></a>
+simtime_t&#160;</td><td class="memItemRight" valign="bottom"><b>timeoutValidity</b></td></tr>
+<tr class="separator:ad7b6e709d183df561c3488aeed499467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00029">29</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aaa901f15691f21979ccc3bd178a4a10e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa901f15691f21979ccc3bd178a4a10e">&#9670;&nbsp;</a></span>ForwardingNode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::ForwardingNode::ForwardingNode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00020">20</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                               {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>=<span class="stringliteral">&quot;-1&quot;</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#acba3f37b050ad1c18aa56b519b8d9670">fowardId</a> = -1;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a> = NULL;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a0f4703826adc6c0ae62dd2fe9f4fed32"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">veins::ForwardingNode::rule</a></div><div class="ttdeci">std::string rule</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8h_source.html#l00034">ForwardingNode.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_acba3f37b050ad1c18aa56b519b8d9670"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#acba3f37b050ad1c18aa56b519b8d9670">veins::ForwardingNode::fowardId</a></div><div class="ttdeci">int64_t fowardId</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8h_source.html#l00031">ForwardingNode.h:31</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_accb49b7dc1498542c3351cd1554173b9"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">veins::ForwardingNode::agentPair</a></div><div class="ttdeci">AgentPair * agentPair</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8h_source.html#l00035">ForwardingNode.h:35</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00035">agentPair</a>, <a class="el" href="_forwarding_node_8h_source.html#l00031">fowardId</a>, and <a class="el" href="_forwarding_node_8h_source.html#l00034">rule</a>.</p>
-
-</div>
-</div>
-<a id="a91fe1165992dfb68cbcfa5693da138bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fe1165992dfb68cbcfa5693da138bd">&#9670;&nbsp;</a></span>~ForwardingNode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::ForwardingNode::~ForwardingNode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00091">91</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aec02325986cc554d7bf684ec9d1e3b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec02325986cc554d7bf684ec9d1e3b47">&#9670;&nbsp;</a></span>getAgentPair()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> * veins::ForwardingNode::getAgentPair </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00079">79</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                       {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00035">agentPair</a>.</p>
-
-</div>
-</div>
-<a id="ae5a2c9d565b14044c70a6b633da6c12e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5a2c9d565b14044c70a6b633da6c12e">&#9670;&nbsp;</a></span>getDataValidity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::ForwardingNode::getDataValidity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00028">28</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                      {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classveins_1_1_forwarding_node.html#a8658c0b99bbe42360ba8ce79c20d40bd">dataValidity</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a8658c0b99bbe42360ba8ce79c20d40bd"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a8658c0b99bbe42360ba8ce79c20d40bd">veins::ForwardingNode::dataValidity</a></div><div class="ttdeci">double dataValidity</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8h_source.html#l00032">ForwardingNode.h:32</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00032">dataValidity</a>.</p>
-
-</div>
-</div>
-<a id="a092648bda16197c47790798915dfe1f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a092648bda16197c47790798915dfe1f2">&#9670;&nbsp;</a></span>getFowardId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t veins::ForwardingNode::getFowardId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00059">59</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                   {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classveins_1_1_forwarding_node.html#acba3f37b050ad1c18aa56b519b8d9670">fowardId</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00031">fowardId</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_routing_8cc_source.html#l00130">veins::Routing::rule2()</a>, <a class="el" href="_routing_8cc_source.html#l00210">veins::Routing::rule3()</a>, <a class="el" href="_routing_8cc_source.html#l00246">veins::Routing::rule4()</a>, <a class="el" href="_routing_8cc_source.html#l00092">veins::Routing::searchNode()</a>, and <a class="el" href="_routing_8cc_source.html#l00408">veins::Routing::verifyAgentPairAneib()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a092648bda16197c47790798915dfe1f2_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a092648bda16197c47790798915dfe1f2_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a092648bda16197c47790798915dfe1f2_icgraph" id="aclassveins_1_1_forwarding_node_a092648bda16197c47790798915dfe1f2_icgraph">
-<area shape="rect" title=" " alt="" coords="773,99,944,141"/>
-<area shape="rect" href="classveins_1_1_routing.html#acd1165263c9fd50bd9714d6216a0ab74" title=" " alt="" coords="548,5,704,32"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,81,479,108"/>
-<area shape="rect" href="classveins_1_1_routing.html#a2adc4790344e2347c097f97aaf488ede" title=" " alt="" coords="548,107,704,133"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="548,157,704,184"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac43b2e2aca6e92607784ef73f0dd0be3" title=" " alt="" coords="527,209,725,250"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,81,231,108"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a52bddaf3ba14f6c0fc2d9097202a13a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52bddaf3ba14f6c0fc2d9097202a13a2">&#9670;&nbsp;</a></span>getRule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::ForwardingNode::getRule </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00067">67</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                 {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00034">rule</a>.</p>
-
-</div>
-</div>
-<a id="acf798dcade51f40ddf1f12c69a8a6319"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf798dcade51f40ddf1f12c69a8a6319">&#9670;&nbsp;</a></span>getTimeoutValidity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const simtime_t veins::ForwardingNode::getTimeoutValidity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00075">75</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                  {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classveins_1_1_forwarding_node.html#ad7b6e709d183df561c3488aeed499467">timeoutValidity</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_ad7b6e709d183df561c3488aeed499467"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#ad7b6e709d183df561c3488aeed499467">veins::ForwardingNode::timeoutValidity</a></div><div class="ttdeci">simtime_t timeoutValidity</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8h_source.html#l00033">ForwardingNode.h:33</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00033">timeoutValidity</a>.</p>
-
-</div>
-</div>
-<a id="a2c3c44277ff736a14581079e426b50f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c3c44277ff736a14581079e426b50f0">&#9670;&nbsp;</a></span>setAgentPair()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::setAgentPair </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td>
-          <td class="paramname"><em>agentPair</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00083">83</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                      {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a> = <a class="code" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00035">agentPair</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_routing_8cc_source.html#l00246">veins::Routing::rule4()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a2c3c44277ff736a14581079e426b50f0_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a2c3c44277ff736a14581079e426b50f0_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a2c3c44277ff736a14581079e426b50f0_icgraph" id="aclassveins_1_1_forwarding_node_a2c3c44277ff736a14581079e426b50f0_icgraph">
-<area shape="rect" title=" " alt="" coords="731,5,901,47"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="527,13,683,39"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,13,479,39"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,13,231,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a2a839957289c24474fd6dbd92977e141"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a839957289c24474fd6dbd92977e141">&#9670;&nbsp;</a></span>setDataValidity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::setDataValidity </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>dataValidity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00055">55</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a8658c0b99bbe42360ba8ce79c20d40bd">dataValidity</a> = <a class="code" href="classveins_1_1_forwarding_node.html#a8658c0b99bbe42360ba8ce79c20d40bd">dataValidity</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00032">dataValidity</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00032">update()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a2a839957289c24474fd6dbd92977e141_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a2a839957289c24474fd6dbd92977e141_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a2a839957289c24474fd6dbd92977e141_icgraph" id="aclassveins_1_1_forwarding_node_a2a839957289c24474fd6dbd92977e141_icgraph">
-<area shape="rect" title=" " alt="" coords="1491,115,1661,156"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a543307034729baa2886bbe268a00a958" title=" " alt="" coords="1272,115,1443,156"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169" title=" " alt="" coords="1043,5,1182,47"/>
-<area shape="rect" href="classveins_1_1_routing.html#acd1165263c9fd50bd9714d6216a0ab74" title=" " alt="" coords="527,71,683,98"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,147,479,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac2b9240a2c543f4ce4947d96ffbd9970" title=" " alt="" coords="1001,199,1224,240"/>
-<area shape="rect" href="classveins_1_1_routing.html#a35201661e99b4e5c7ad03260e6b59d18" title=" " alt="" coords="1001,321,1224,363"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,147,231,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#a9b54f7ecf558013b886420fe92b888fc" title=" " alt="" coords="731,173,953,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac43b2e2aca6e92607784ef73f0dd0be3" title=" " alt="" coords="743,224,941,265"/>
-<area shape="rect" href="classveins_1_1_routing.html#ad92b3c3dafde45758c1f7b28665d1a00" title=" " alt="" coords="743,289,941,331"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="527,173,683,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#aff7ea94d70bac4110ab82f1a3f5c2e9d" title=" " alt="" coords="743,355,941,396"/>
-<area shape="rect" href="classveins_1_1_routing.html#a2adc4790344e2347c097f97aaf488ede" title=" " alt="" coords="527,293,683,319"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a09d8ac3320ad39aa7b51dba8c792309a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09d8ac3320ad39aa7b51dba8c792309a">&#9670;&nbsp;</a></span>setFowardId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::setFowardId </td>
-          <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>afowardId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00063">63</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                 {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#acba3f37b050ad1c18aa56b519b8d9670">fowardId</a> = <a class="code" href="classveins_1_1_forwarding_node.html#acba3f37b050ad1c18aa56b519b8d9670">fowardId</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00031">fowardId</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_routing_8cc_source.html#l00246">veins::Routing::rule4()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00032">update()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a09d8ac3320ad39aa7b51dba8c792309a_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a09d8ac3320ad39aa7b51dba8c792309a_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a09d8ac3320ad39aa7b51dba8c792309a_icgraph" id="aclassveins_1_1_forwarding_node_a09d8ac3320ad39aa7b51dba8c792309a_icgraph">
-<area shape="rect" title=" " alt="" coords="1491,113,1661,155"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="527,142,683,169"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a543307034729baa2886bbe268a00a958" title=" " alt="" coords="1272,175,1443,216"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,235,479,262"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,235,231,262"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169" title=" " alt="" coords="1043,77,1182,119"/>
-<area shape="rect" href="classveins_1_1_routing.html#acd1165263c9fd50bd9714d6216a0ab74" title=" " alt="" coords="527,377,683,403"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac2b9240a2c543f4ce4947d96ffbd9970" title=" " alt="" coords="1001,208,1224,249"/>
-<area shape="rect" href="classveins_1_1_routing.html#a35201661e99b4e5c7ad03260e6b59d18" title=" " alt="" coords="1001,143,1224,184"/>
-<area shape="rect" href="classveins_1_1_routing.html#a9b54f7ecf558013b886420fe92b888fc" title=" " alt="" coords="731,143,953,170"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac43b2e2aca6e92607784ef73f0dd0be3" title=" " alt="" coords="743,260,941,301"/>
-<area shape="rect" href="classveins_1_1_routing.html#ad92b3c3dafde45758c1f7b28665d1a00" title=" " alt="" coords="743,195,941,236"/>
-<area shape="rect" href="classveins_1_1_routing.html#aff7ea94d70bac4110ab82f1a3f5c2e9d" title=" " alt="" coords="743,77,941,119"/>
-<area shape="rect" href="classveins_1_1_routing.html#a2adc4790344e2347c097f97aaf488ede" title=" " alt="" coords="527,87,683,114"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a82f40d4fc51222ce2df2441136d989f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82f40d4fc51222ce2df2441136d989f1">&#9670;&nbsp;</a></span>setRule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::setRule </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>rule</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00071">71</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                           {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a> = <a class="code" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00034">rule</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00032">update()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a82f40d4fc51222ce2df2441136d989f1_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a82f40d4fc51222ce2df2441136d989f1_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a82f40d4fc51222ce2df2441136d989f1_icgraph" id="aclassveins_1_1_forwarding_node_a82f40d4fc51222ce2df2441136d989f1_icgraph">
-<area shape="rect" title=" " alt="" coords="1491,115,1661,156"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a543307034729baa2886bbe268a00a958" title=" " alt="" coords="1272,115,1443,156"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169" title=" " alt="" coords="1043,5,1182,47"/>
-<area shape="rect" href="classveins_1_1_routing.html#acd1165263c9fd50bd9714d6216a0ab74" title=" " alt="" coords="527,71,683,98"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,147,479,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac2b9240a2c543f4ce4947d96ffbd9970" title=" " alt="" coords="1001,199,1224,240"/>
-<area shape="rect" href="classveins_1_1_routing.html#a35201661e99b4e5c7ad03260e6b59d18" title=" " alt="" coords="1001,321,1224,363"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,147,231,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#a9b54f7ecf558013b886420fe92b888fc" title=" " alt="" coords="731,173,953,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac43b2e2aca6e92607784ef73f0dd0be3" title=" " alt="" coords="743,224,941,265"/>
-<area shape="rect" href="classveins_1_1_routing.html#ad92b3c3dafde45758c1f7b28665d1a00" title=" " alt="" coords="743,289,941,331"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="527,173,683,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#aff7ea94d70bac4110ab82f1a3f5c2e9d" title=" " alt="" coords="743,355,941,396"/>
-<area shape="rect" href="classveins_1_1_routing.html#a2adc4790344e2347c097f97aaf488ede" title=" " alt="" coords="527,293,683,319"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a07939ee05b02cfaf686f7c86fb19e0be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07939ee05b02cfaf686f7c86fb19e0be">&#9670;&nbsp;</a></span>setTimeoutValidity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::setTimeoutValidity </td>
-          <td>(</td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>timeoutValidity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00087">87</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#ad7b6e709d183df561c3488aeed499467">timeoutValidity</a> = <a class="code" href="classveins_1_1_forwarding_node.html#ad7b6e709d183df561c3488aeed499467">timeoutValidity</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00033">timeoutValidity</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00032">update()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a07939ee05b02cfaf686f7c86fb19e0be_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a07939ee05b02cfaf686f7c86fb19e0be_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a07939ee05b02cfaf686f7c86fb19e0be_icgraph" id="aclassveins_1_1_forwarding_node_a07939ee05b02cfaf686f7c86fb19e0be_icgraph">
-<area shape="rect" title=" " alt="" coords="1491,115,1661,156"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a543307034729baa2886bbe268a00a958" title=" " alt="" coords="1272,115,1443,156"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169" title=" " alt="" coords="1043,5,1182,47"/>
-<area shape="rect" href="classveins_1_1_routing.html#acd1165263c9fd50bd9714d6216a0ab74" title=" " alt="" coords="527,71,683,98"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,147,479,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac2b9240a2c543f4ce4947d96ffbd9970" title=" " alt="" coords="1001,199,1224,240"/>
-<area shape="rect" href="classveins_1_1_routing.html#a35201661e99b4e5c7ad03260e6b59d18" title=" " alt="" coords="1001,321,1224,363"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,147,231,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#a9b54f7ecf558013b886420fe92b888fc" title=" " alt="" coords="731,173,953,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac43b2e2aca6e92607784ef73f0dd0be3" title=" " alt="" coords="743,224,941,265"/>
-<area shape="rect" href="classveins_1_1_routing.html#ad92b3c3dafde45758c1f7b28665d1a00" title=" " alt="" coords="743,289,941,331"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="527,173,683,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#aff7ea94d70bac4110ab82f1a3f5c2e9d" title=" " alt="" coords="743,355,941,396"/>
-<area shape="rect" href="classveins_1_1_routing.html#a2adc4790344e2347c097f97aaf488ede" title=" " alt="" coords="527,293,683,319"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac3cbf0340ab0f67cd95b59f4d5af4805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3cbf0340ab0f67cd95b59f4d5af4805">&#9670;&nbsp;</a></span>update() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::update </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>rule</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_agent.html">Agent</a> *&#160;</td>
-          <td class="paramname"><em>fowardingAgent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>periodvalidty</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00043">43</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                                                      {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a">setFowardId</a>(<a class="code" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a>-&gt;<a class="code" href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59">getId</a>());</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141">setDataValidity</a>(c-&gt;getQoCAgentPair()-&gt;getTimeliness()-&gt;getValidityNow());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//this-&gt;setDataValidity(periodvalidty);</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//this-&gt;setTimeoutValidity(((simtime_t)(simTime() + periodvalidty)));</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be">setTimeoutValidity</a>(c-&gt;getQoCAgentPair()-&gt;getTimeliness()-&gt;getTimeoutValidity());</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1">setRule</a>(<a class="code" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a> = c;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a> = <a class="code" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_html_aaa4e7653c55879456b59f102d95a5f59"><div class="ttname"><a href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59">veins::Agent::getId</a></div><div class="ttdeci">int64_t getId()</div><div class="ttdoc">Método para obter o valor atual.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00029">Agent.cc:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a07939ee05b02cfaf686f7c86fb19e0be"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be">veins::ForwardingNode::setTimeoutValidity</a></div><div class="ttdeci">void setTimeoutValidity(simtime_t timeoutValidity)</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8cc_source.html#l00087">ForwardingNode.cc:87</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a09d8ac3320ad39aa7b51dba8c792309a"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a">veins::ForwardingNode::setFowardId</a></div><div class="ttdeci">void setFowardId(int64_t afowardId)</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8cc_source.html#l00063">ForwardingNode.cc:63</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a2a839957289c24474fd6dbd92977e141"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141">veins::ForwardingNode::setDataValidity</a></div><div class="ttdeci">void setDataValidity(double dataValidity)</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8cc_source.html#l00055">ForwardingNode.cc:55</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a3e60164033023446f658c87ac4622f45"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">veins::ForwardingNode::fowardingAgent</a></div><div class="ttdeci">Agent * fowardingAgent</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8h_source.html#l00036">ForwardingNode.h:36</a></div></div>
-<div class="ttc" id="aclassveins_1_1_forwarding_node_html_a82f40d4fc51222ce2df2441136d989f1"><div class="ttname"><a href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1">veins::ForwardingNode::setRule</a></div><div class="ttdeci">void setRule(std::string rule)</div><div class="ttdef"><b>Definition:</b> <a href="_forwarding_node_8cc_source.html#l00071">ForwardingNode.cc:71</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00035">agentPair</a>, <a class="el" href="_forwarding_node_8h_source.html#l00036">fowardingAgent</a>, <a class="el" href="_agent_8cc_source.html#l00029">veins::Agent::getId()</a>, <a class="el" href="_agent_pair_8cc_source.html#l00413">veins::AgentPair::getQoCAgentPair()</a>, <a class="el" href="_qo_c_info_8cc_source.html#l00027">veins::QoCInfo::getTimeliness()</a>, <a class="el" href="_timeliness_8cc_source.html#l00063">Timeliness::getTimeoutValidity()</a>, <a class="el" href="_timeliness_8cc_source.html#l00071">Timeliness::getValidityNow()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00055">setDataValidity()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00063">setFowardId()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00071">setRule()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00087">setTimeoutValidity()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_ac3cbf0340ab0f67cd95b59f4d5af4805_cgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_ac3cbf0340ab0f67cd95b59f4d5af4805_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_ac3cbf0340ab0f67cd95b59f4d5af4805_cgraph" id="aclassveins_1_1_forwarding_node_ac3cbf0340ab0f67cd95b59f4d5af4805_cgraph">
-<area shape="rect" title=" " alt="" coords="5,201,176,242"/>
-<area shape="rect" href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="275,5,419,32"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#ac1abdefa9791132c133853a1d8f6c529" title=" " alt="" coords="224,56,469,83"/>
-<area shape="rect" href="classveins_1_1_qo_c_info.html#acf97b56c18327e05ced693878a659ee8" title=" " alt="" coords="238,107,455,133"/>
-<area shape="rect" href="class_timeliness.html#a7b1bba3d0ba777dcd5b670cb3dfb9c6b" title=" " alt="" coords="234,157,459,184"/>
-<area shape="rect" href="class_timeliness.html#a607700d7b070434ec24ca57bdbe53dee" title=" " alt="" coords="247,208,447,235"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141" title=" " alt="" coords="261,259,432,301"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a" title=" " alt="" coords="261,325,432,366"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1" title=" " alt="" coords="261,390,432,431"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be" title=" " alt="" coords="261,455,432,497"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a543307034729baa2886bbe268a00a958"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a543307034729baa2886bbe268a00a958">&#9670;&nbsp;</a></span>update() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::ForwardingNode::update </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>rule</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fowardingAgent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>periodvalidty</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8cc_source.html#l00032">32</a> of file <a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                                                  {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a">setFowardId</a>(<a class="code" href="classveins_1_1_forwarding_node.html#a3e60164033023446f658c87ac4622f45">fowardingAgent</a>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141">setDataValidity</a>(c-&gt;getQoCAgentPair()-&gt;getTimeliness()-&gt;getValidityNow());</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//this-&gt;setDataValidity(periodvalidty);</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//this-&gt;setTimeoutValidity(((simtime_t)(simTime() + periodvalidty)));</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be">setTimeoutValidity</a>(c-&gt;getQoCAgentPair()-&gt;getTimeliness()-&gt;getTimeoutValidity());</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1">setRule</a>(<a class="code" href="classveins_1_1_forwarding_node.html#a0f4703826adc6c0ae62dd2fe9f4fed32">rule</a>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_forwarding_node.html#accb49b7dc1498542c3351cd1554173b9">agentPair</a> = c;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_forwarding_node_8h_source.html#l00035">agentPair</a>, <a class="el" href="_agent_pair_8cc_source.html#l00413">veins::AgentPair::getQoCAgentPair()</a>, <a class="el" href="_qo_c_info_8cc_source.html#l00027">veins::QoCInfo::getTimeliness()</a>, <a class="el" href="_timeliness_8cc_source.html#l00063">Timeliness::getTimeoutValidity()</a>, <a class="el" href="_timeliness_8cc_source.html#l00071">Timeliness::getValidityNow()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00055">setDataValidity()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00063">setFowardId()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00071">setRule()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00087">setTimeoutValidity()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00113">veins::IcarRouting::getFowardNode()</a>, <a class="el" href="_routing_8cc_source.html#l00130">veins::Routing::rule2()</a>, <a class="el" href="_routing_8cc_source.html#l00092">veins::Routing::searchNode()</a>, <a class="el" href="_routing_8cc_source.html#l00448">veins::Routing::verifyConditionForwardAgent()</a>, and <a class="el" href="_routing_8cc_source.html#l00468">veins::Routing::verifyConditionForwardNotNeighbor()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_cgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_cgraph" id="aclassveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_cgraph">
-<area shape="rect" title=" " alt="" coords="5,179,176,221"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#ac1abdefa9791132c133853a1d8f6c529" title=" " alt="" coords="224,5,469,32"/>
-<area shape="rect" href="classveins_1_1_qo_c_info.html#acf97b56c18327e05ced693878a659ee8" title=" " alt="" coords="238,56,455,83"/>
-<area shape="rect" href="class_timeliness.html#a7b1bba3d0ba777dcd5b670cb3dfb9c6b" title=" " alt="" coords="234,107,459,133"/>
-<area shape="rect" href="class_timeliness.html#a607700d7b070434ec24ca57bdbe53dee" title=" " alt="" coords="247,157,447,184"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141" title=" " alt="" coords="261,209,432,250"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a" title=" " alt="" coords="261,274,432,315"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1" title=" " alt="" coords="261,339,432,381"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be" title=" " alt="" coords="261,405,432,446"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_icgraph.png" border="0" usemap="#aclassveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_icgraph" id="aclassveins_1_1_forwarding_node_a543307034729baa2886bbe268a00a958_icgraph">
-<area shape="rect" title=" " alt="" coords="1272,115,1443,156"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169" title=" " alt="" coords="1043,5,1182,47"/>
-<area shape="rect" href="classveins_1_1_routing.html#acd1165263c9fd50bd9714d6216a0ab74" title=" " alt="" coords="527,71,683,98"/>
-<area shape="rect" href="classveins_1_1_routing.html#adc1db164f98e888f0b0ee4f4f41d2be9" title=" " alt="" coords="279,147,479,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac2b9240a2c543f4ce4947d96ffbd9970" title=" " alt="" coords="1001,199,1224,240"/>
-<area shape="rect" href="classveins_1_1_routing.html#a35201661e99b4e5c7ad03260e6b59d18" title=" " alt="" coords="1001,321,1224,363"/>
-<area shape="rect" href="classveins_1_1_routing.html#a782a79151e8a0010de82bd7e84e7b977" title=" " alt="" coords="5,147,231,174"/>
-<area shape="rect" href="classveins_1_1_routing.html#a9b54f7ecf558013b886420fe92b888fc" title=" " alt="" coords="731,173,953,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#ac43b2e2aca6e92607784ef73f0dd0be3" title=" " alt="" coords="743,224,941,265"/>
-<area shape="rect" href="classveins_1_1_routing.html#ad92b3c3dafde45758c1f7b28665d1a00" title=" " alt="" coords="743,289,941,331"/>
-<area shape="rect" href="classveins_1_1_routing.html#a188e685a5ecfa503816b8a91c74b124b" title=" " alt="" coords="527,173,683,199"/>
-<area shape="rect" href="classveins_1_1_routing.html#aff7ea94d70bac4110ab82f1a3f5c2e9d" title=" " alt="" coords="743,355,941,396"/>
-<area shape="rect" href="classveins_1_1_routing.html#a2adc4790344e2347c097f97aaf488ede" title=" " alt="" coords="527,293,683,319"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="accb49b7dc1498542c3351cd1554173b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accb49b7dc1498542c3351cd1554173b9">&#9670;&nbsp;</a></span>agentPair</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a>* veins::ForwardingNode::agentPair</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00035">35</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00020">ForwardingNode()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00079">getAgentPair()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00083">setAgentPair()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00032">update()</a>.</p>
-
-</div>
-</div>
-<a id="a8658c0b99bbe42360ba8ce79c20d40bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8658c0b99bbe42360ba8ce79c20d40bd">&#9670;&nbsp;</a></span>dataValidity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::ForwardingNode::dataValidity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00032">32</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00028">getDataValidity()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00055">setDataValidity()</a>.</p>
-
-</div>
-</div>
-<a id="acba3f37b050ad1c18aa56b519b8d9670"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acba3f37b050ad1c18aa56b519b8d9670">&#9670;&nbsp;</a></span>fowardId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t veins::ForwardingNode::fowardId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00031">31</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00020">ForwardingNode()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00059">getFowardId()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00063">setFowardId()</a>.</p>
-
-</div>
-</div>
-<a id="a3e60164033023446f658c87ac4622f45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e60164033023446f658c87ac4622f45">&#9670;&nbsp;</a></span>fowardingAgent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_agent.html">Agent</a>* veins::ForwardingNode::fowardingAgent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00036">36</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00043">update()</a>.</p>
-
-</div>
-</div>
-<a id="a0f4703826adc6c0ae62dd2fe9f4fed32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f4703826adc6c0ae62dd2fe9f4fed32">&#9670;&nbsp;</a></span>rule</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::ForwardingNode::rule</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00034">34</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00020">ForwardingNode()</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00067">getRule()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00071">setRule()</a>.</p>
-
-</div>
-</div>
-<a id="ad7b6e709d183df561c3488aeed499467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7b6e709d183df561c3488aeed499467">&#9670;&nbsp;</a></span>timeoutValidity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">simtime_t veins::ForwardingNode::timeoutValidity</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_forwarding_node_8h_source.html#l00033">33</a> of file <a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_forwarding_node_8cc_source.html#l00075">getTimeoutValidity()</a>, and <a class="el" href="_forwarding_node_8cc_source.html#l00087">setTimeoutValidity()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_forwarding_node_8h_source.html">ForwardingNode.h</a></li>
-<li><a class="el" href="_forwarding_node_8cc_source.html">ForwardingNode.cc</a></li>
+<li>ForwardingNode.cc</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:52 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><b>veins</b></li><li class="navelem"><a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

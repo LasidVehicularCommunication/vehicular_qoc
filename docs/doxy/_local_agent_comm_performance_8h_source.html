@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: LocalAgentCommPerformance.h Source File</title>
+<title>Contexto de Comunicação em VANET: LocalAgentCommPerformance.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_local_agent_comm_performance_8h_sourc
 <div class="title">LocalAgentCommPerformance.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_local_agent_comm_performance_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -103,63 +104,44 @@ $(document).ready(function(){initNavTree('_local_agent_comm_performance_8h_sourc
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef SRC_VEINS_MODULES_APPLICATION_ICARNEW_LOCALAGENTCOMMPERFORMANCE_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define SRC_VEINS_MODULES_APPLICATION_ICARNEW_LOCALAGENTCOMMPERFORMANCE_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_comm_performance_8h.html">CommPerformance.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;CommPerformance.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a> : <span class="keyword">public</span> <a class="code" href="class_comm_performance.html">CommPerformance</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#a85d1fc1f507ddcf70ae7287a995fb1bf">   23</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#a85d1fc1f507ddcf70ae7287a995fb1bf">recievedMsgTemp</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#ace9ebab7b05312c146f73da9410cf0b7">   24</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#ace9ebab7b05312c146f73da9410cf0b7">rateRecievedMSGPperiod</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#ade4a6d7f713f08fdecddf43d3379a001">   25</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#ade4a6d7f713f08fdecddf43d3379a001">totalForwardedMsg</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#ae0806b9999b5da9149812d772b2853d1">   26</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#ae0806b9999b5da9149812d772b2853d1">totalReceivedMsg</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> recievedMsgTemp;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> rateRecievedMSGPperiod;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> totalForwardedMsg;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> totalReceivedMsg;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#a9707e0310e219970810e81589bc9c675">   28</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#a9707e0310e219970810e81589bc9c675">totalTransmittedMsg</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> totalTransmittedMsg;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_local_agent_comm_performance.html#a919cc5c88877741cf8ba334c724067f8">LocalAgentCommPerformance</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_local_agent_comm_performance.html#ad44d9ffbecf0b0a71894642493a2f74b">~LocalAgentCommPerformance</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string <a class="code" href="class_local_agent_comm_performance.html#a1f2f8b8d1caadf12be7ddb20c81e2052">info</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string <a class="code" href="class_local_agent_comm_performance.html#a8175181303c57179e0fb7440a76f1132">infoTrace</a>(<span class="keywordtype">bool</span> header, std::string idagent);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#aa1bb2ffc8143225542f494c187edf438">getTotalReceivedMsg</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_local_agent_comm_performance.html#af5cbeea600fd65c3a84b61b461df36d9">addCorrectMsgRecievedMsg</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_local_agent_comm_performance.html#a07436edcc28774f15d8727a195e65f6d">addCorrectMsgTransmittedMsg</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_local_agent_comm_performance.html#a19775db28525596376b02987e68a00f2">addCorrectMsgForwardedMsg</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_local_agent_comm_performance.html#ac3dbb9f39cadf9aaf8c06341b3e5363d">calcRateRecievedMsgPperiod</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#ac53955f7aa88f7b433a49192fcc61e07">getRecievedMsgTemp</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#af9a238c56063b52e348c2235b50add12">   41</a></span>&#160;     <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#af9a238c56063b52e348c2235b50add12">getRateRecievedMsgPperiod</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#a5dea5069abd87ae16d70067ff7cd680e">getTotalTransmittedMsg</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_local_agent_comm_performance.html#a72985619dd0ddc3842aaaf993037698f">   43</a></span>&#160;     <span class="keywordtype">long</span> <a class="code" href="class_local_agent_comm_performance.html#a72985619dd0ddc3842aaaf993037698f">gettotalForwardedMsg</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string info();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string infoTrace(<span class="keywordtype">bool</span> header, std::string idagent);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">long</span> getTotalReceivedMsg();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> addCorrectMsgRecievedMsg();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> addCorrectMsgTransmittedMsg();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> addCorrectMsgForwardedMsg();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> calcRateRecievedMsgPperiod();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">long</span> getRecievedMsgTemp();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     <span class="keywordtype">long</span> getRateRecievedMsgPperiod();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     <span class="keywordtype">long</span> getTotalTransmittedMsg();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keywordtype">long</span> gettotalForwardedMsg();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_VEINS_MODULES_APPLICATION_ICARNEW_LOCALAGENTCOMMPERFORMANCE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_comm_performance_8h_html"><div class="ttname"><a href="_comm_performance_8h.html">CommPerformance.h</a></div></div>
-<div class="ttc" id="aclass_comm_performance_html"><div class="ttname"><a href="class_comm_performance.html">CommPerformance</a></div><div class="ttdef"><b>Definition:</b> <a href="_comm_performance_8h_source.html#l00021">CommPerformance.h:21</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html"><div class="ttname"><a href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00021">LocalAgentCommPerformance.h:21</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a07436edcc28774f15d8727a195e65f6d"><div class="ttname"><a href="class_local_agent_comm_performance.html#a07436edcc28774f15d8727a195e65f6d">LocalAgentCommPerformance::addCorrectMsgTransmittedMsg</a></div><div class="ttdeci">void addCorrectMsgTransmittedMsg()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00050">LocalAgentCommPerformance.cc:50</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a19775db28525596376b02987e68a00f2"><div class="ttname"><a href="class_local_agent_comm_performance.html#a19775db28525596376b02987e68a00f2">LocalAgentCommPerformance::addCorrectMsgForwardedMsg</a></div><div class="ttdeci">void addCorrectMsgForwardedMsg()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00054">LocalAgentCommPerformance.cc:54</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a1f2f8b8d1caadf12be7ddb20c81e2052"><div class="ttname"><a href="class_local_agent_comm_performance.html#a1f2f8b8d1caadf12be7ddb20c81e2052">LocalAgentCommPerformance::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00062">LocalAgentCommPerformance.cc:62</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a5dea5069abd87ae16d70067ff7cd680e"><div class="ttname"><a href="class_local_agent_comm_performance.html#a5dea5069abd87ae16d70067ff7cd680e">LocalAgentCommPerformance::getTotalTransmittedMsg</a></div><div class="ttdeci">long getTotalTransmittedMsg()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00031">LocalAgentCommPerformance.cc:31</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a72985619dd0ddc3842aaaf993037698f"><div class="ttname"><a href="class_local_agent_comm_performance.html#a72985619dd0ddc3842aaaf993037698f">LocalAgentCommPerformance::gettotalForwardedMsg</a></div><div class="ttdeci">long gettotalForwardedMsg()</div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a8175181303c57179e0fb7440a76f1132"><div class="ttname"><a href="class_local_agent_comm_performance.html#a8175181303c57179e0fb7440a76f1132">LocalAgentCommPerformance::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00074">LocalAgentCommPerformance.cc:74</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a85d1fc1f507ddcf70ae7287a995fb1bf"><div class="ttname"><a href="class_local_agent_comm_performance.html#a85d1fc1f507ddcf70ae7287a995fb1bf">LocalAgentCommPerformance::recievedMsgTemp</a></div><div class="ttdeci">unsigned long recievedMsgTemp</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00023">LocalAgentCommPerformance.h:23</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a919cc5c88877741cf8ba334c724067f8"><div class="ttname"><a href="class_local_agent_comm_performance.html#a919cc5c88877741cf8ba334c724067f8">LocalAgentCommPerformance::LocalAgentCommPerformance</a></div><div class="ttdeci">LocalAgentCommPerformance()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00018">LocalAgentCommPerformance.cc:18</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_a9707e0310e219970810e81589bc9c675"><div class="ttname"><a href="class_local_agent_comm_performance.html#a9707e0310e219970810e81589bc9c675">LocalAgentCommPerformance::totalTransmittedMsg</a></div><div class="ttdeci">unsigned long totalTransmittedMsg</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00028">LocalAgentCommPerformance.h:28</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_aa1bb2ffc8143225542f494c187edf438"><div class="ttname"><a href="class_local_agent_comm_performance.html#aa1bb2ffc8143225542f494c187edf438">LocalAgentCommPerformance::getTotalReceivedMsg</a></div><div class="ttdeci">long getTotalReceivedMsg()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00027">LocalAgentCommPerformance.cc:27</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_ac3dbb9f39cadf9aaf8c06341b3e5363d"><div class="ttname"><a href="class_local_agent_comm_performance.html#ac3dbb9f39cadf9aaf8c06341b3e5363d">LocalAgentCommPerformance::calcRateRecievedMsgPperiod</a></div><div class="ttdeci">void calcRateRecievedMsgPperiod()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00040">LocalAgentCommPerformance.cc:40</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_ac53955f7aa88f7b433a49192fcc61e07"><div class="ttname"><a href="class_local_agent_comm_performance.html#ac53955f7aa88f7b433a49192fcc61e07">LocalAgentCommPerformance::getRecievedMsgTemp</a></div><div class="ttdeci">long getRecievedMsgTemp()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00035">LocalAgentCommPerformance.cc:35</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_ace9ebab7b05312c146f73da9410cf0b7"><div class="ttname"><a href="class_local_agent_comm_performance.html#ace9ebab7b05312c146f73da9410cf0b7">LocalAgentCommPerformance::rateRecievedMSGPperiod</a></div><div class="ttdeci">unsigned long rateRecievedMSGPperiod</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00024">LocalAgentCommPerformance.h:24</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_ad44d9ffbecf0b0a71894642493a2f74b"><div class="ttname"><a href="class_local_agent_comm_performance.html#ad44d9ffbecf0b0a71894642493a2f74b">LocalAgentCommPerformance::~LocalAgentCommPerformance</a></div><div class="ttdeci">virtual ~LocalAgentCommPerformance()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00058">LocalAgentCommPerformance.cc:58</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_ade4a6d7f713f08fdecddf43d3379a001"><div class="ttname"><a href="class_local_agent_comm_performance.html#ade4a6d7f713f08fdecddf43d3379a001">LocalAgentCommPerformance::totalForwardedMsg</a></div><div class="ttdeci">unsigned long totalForwardedMsg</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00025">LocalAgentCommPerformance.h:25</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_ae0806b9999b5da9149812d772b2853d1"><div class="ttname"><a href="class_local_agent_comm_performance.html#ae0806b9999b5da9149812d772b2853d1">LocalAgentCommPerformance::totalReceivedMsg</a></div><div class="ttdeci">unsigned long totalReceivedMsg</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8h_source.html#l00026">LocalAgentCommPerformance.h:26</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_af5cbeea600fd65c3a84b61b461df36d9"><div class="ttname"><a href="class_local_agent_comm_performance.html#af5cbeea600fd65c3a84b61b461df36d9">LocalAgentCommPerformance::addCorrectMsgRecievedMsg</a></div><div class="ttdeci">void addCorrectMsgRecievedMsg()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_comm_performance_8cc_source.html#l00045">LocalAgentCommPerformance.cc:45</a></div></div>
-<div class="ttc" id="aclass_local_agent_comm_performance_html_af9a238c56063b52e348c2235b50add12"><div class="ttname"><a href="class_local_agent_comm_performance.html#af9a238c56063b52e348c2235b50add12">LocalAgentCommPerformance::getRateRecievedMsgPperiod</a></div><div class="ttdeci">long getRateRecievedMsgPperiod()</div></div>
+<div class="ttc" id="aclass_comm_performance_html"><div class="ttname"><a href="class_comm_performance.html">CommPerformance</a></div><div class="ttdef"><b>Definition:</b> CommPerformance.h:21</div></div>
+<div class="ttc" id="aclass_local_agent_comm_performance_html"><div class="ttname"><a href="class_local_agent_comm_performance.html">LocalAgentCommPerformance</a></div><div class="ttdef"><b>Definition:</b> LocalAgentCommPerformance.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_local_agent_comm_performance_8h.html">LocalAgentCommPerformance.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>LocalAgentCommPerformance.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

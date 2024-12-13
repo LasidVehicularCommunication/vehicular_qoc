@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: veins::RemoteAgent</title>
+<title>Contexto de Comunicação em VANET: veins::RemoteAgent</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -88,8 +89,6 @@ $(document).ready(function(){initNavTree('classveins_1_1_remote_agent.html','');
 <div class="title">veins::RemoteAgent</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_remote_agent_8h_source.html">RemoteAgent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for veins::RemoteAgent:</div>
 <div class="dyncontent">
@@ -104,876 +103,110 @@ Collaboration diagram for veins::RemoteAgent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_remote_agent__coll__graph.png" border="0" usemap="#aveins_1_1_remote_agent_coll__map" alt="Collaboration graph"/></div>
 <map name="aveins_1_1_remote_agent_coll__map" id="aveins_1_1_remote_agent_coll__map">
-<area shape="rect" title=" " alt="" coords="230,499,385,525"/>
-<area shape="rect" href="classveins_1_1_agent.html" title="Uma breve descrição da classe." alt="" coords="256,423,359,449"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html" title=" " alt="" coords="79,333,221,360"/>
-<area shape="rect" href="classveins_1_1_move.html" title="Class to store object position and movement." alt="" coords="65,215,166,241"/>
-<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
-<area shape="rect" href="classveins_1_1_coord.html" title="Class for storing 3D coordinates." alt="" coords="63,81,165,108"/>
-<area shape="rect" title=" " alt="" coords="263,81,351,108"/>
-<area shape="rect" href="class_timeliness.html" title=" " alt="" coords="263,215,357,241"/>
-<area shape="rect" href="classveins_1_1_comm_info.html" title=" " alt="" coords="390,333,523,360"/>
-<area shape="rect" href="class_comm_performance.html" title=" " alt="" coords="383,215,531,241"/>
-<area shape="rect" href="classveins_1_1_qo_c_info.html" title=" " alt="" coords="249,333,366,360"/>
+<area shape="rect" title=" " alt="" coords="162,260,317,287"/>
+<area shape="rect" href="classveins_1_1_agent.html" title="Uma breve descrição da classe." alt="" coords="188,184,291,211"/>
+<area shape="rect" href="classveins_1_1_mobility_info.html" title=" " alt="" coords="5,95,148,121"/>
+<area shape="rect" href="classveins_1_1_comm_info.html" title=" " alt="" coords="173,95,306,121"/>
+<area shape="rect" href="class_comm_performance.html" title=" " alt="" coords="163,5,311,32"/>
+<area shape="rect" href="classveins_1_1_qo_c_info.html" title=" " alt="" coords="335,95,453,121"/>
+<area shape="rect" href="class_timeliness.html" title=" " alt="" coords="350,5,443,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a62e076d5930b892b7b118d75c3c61ef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#a62e076d5930b892b7b118d75c3c61ef9">RemoteAgent</a> ()</td></tr>
-<tr class="separator:a62e076d5930b892b7b118d75c3c61ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c513ea33007c8ac80b81969d8f59a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#a85c513ea33007c8ac80b81969d8f59a7">RemoteAgent</a> (simtime_t tsDataUpdating, int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>, simtime_t sTimePosition, double x, double y, double z, double speed, double maxSpeed, double <a class="el" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>, std::string <a class="el" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, float acceleration, float angle)</td></tr>
-<tr class="separator:a85c513ea33007c8ac80b81969d8f59a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5cf183b386e7bffca5c7747313f7483"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#ae5cf183b386e7bffca5c7747313f7483">RemoteAgent</a> (simtime_t tsDataUpdating, <a class="el" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, double <a class="el" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>)</td></tr>
-<tr class="separator:ae5cf183b386e7bffca5c7747313f7483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd70d8253a8a12cf434afe5231c53e39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39">createAgent</a> (simtime_t tsDataUpdating, int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>, simtime_t tsStart, double x, double y, double z, double speed, double maxSpeed, double <a class="el" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>, std::string <a class="el" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, float acceleration, float angle)</td></tr>
+<tr class="memitem:acd70d8253a8a12cf434afe5231c53e39"><td class="memItemLeft" align="right" valign="top"><a id="acd70d8253a8a12cf434afe5231c53e39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createAgent</b> (simtime_t tsDataUpdating, int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>, simtime_t tsStart, double x, double y, double z, double speed, double maxSpeed, double setRadius, std::string <a class="el" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, float acceleration, float angle)</td></tr>
 <tr class="separator:acd70d8253a8a12cf434afe5231c53e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf788128684371c62b06ff740bfba58"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#accf788128684371c62b06ff740bfba58">~RemoteAgent</a> ()</td></tr>
-<tr class="separator:accf788128684371c62b06ff740bfba58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12cf72a01c9db430e26bf516d4ee16b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4">updateRemoteAgent</a> (simtime_t tsDataUpdating, simtime_t tsMovement, double x, double y, double z, double speed, double maxSpeed, double <a class="el" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>, float acceleration, float angle)</td></tr>
-<tr class="separator:a12cf72a01c9db430e26bf516d4ee16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab862630ec85baf0b291be679b8523118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#ab862630ec85baf0b291be679b8523118">updateRemoteAgent</a> (simtime_t tsDataUpdating, <a class="el" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, double <a class="el" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>)</td></tr>
-<tr class="separator:ab862630ec85baf0b291be679b8523118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf87cf2224e65affa229d8713b7968e2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2">info</a> ()</td></tr>
-<tr class="separator:acf87cf2224e65affa229d8713b7968e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44bd7b0ab5b453bdb0fbe555b9b5eb43"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#a44bd7b0ab5b453bdb0fbe555b9b5eb43">infoTrace</a> (bool header, std::string idagent)</td></tr>
-<tr class="separator:a44bd7b0ab5b453bdb0fbe555b9b5eb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1ae2746d637ed65f9b579af954eb1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a> ()</td></tr>
+<tr class="memitem:aef1ae2746d637ed65f9b579af954eb1e"><td class="memItemLeft" align="right" valign="top"><a id="aef1ae2746d637ed65f9b579af954eb1e"></a>
+<a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMobilityInfo</b> ()</td></tr>
 <tr class="separator:aef1ae2746d637ed65f9b579af954eb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea03b066f342859500e7e3daa5867a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_remote_agent_comm_info.html">RemoteAgentCommInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">getRemoteAgentCommInfo</a> ()</td></tr>
+<tr class="memitem:aea03b066f342859500e7e3daa5867a56"><td class="memItemLeft" align="right" valign="top"><a id="aea03b066f342859500e7e3daa5867a56"></a>
+<a class="el" href="classveins_1_1_remote_agent_comm_info.html">RemoteAgentCommInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getRemoteAgentCommInfo</b> ()</td></tr>
 <tr class="separator:aea03b066f342859500e7e3daa5867a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf87cf2224e65affa229d8713b7968e2"><td class="memItemLeft" align="right" valign="top"><a id="acf87cf2224e65affa229d8713b7968e2"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:acf87cf2224e65affa229d8713b7968e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bd7b0ab5b453bdb0fbe555b9b5eb43"><td class="memItemLeft" align="right" valign="top"><a id="a44bd7b0ab5b453bdb0fbe555b9b5eb43"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>infoTrace</b> (bool header, std::string idagent)</td></tr>
+<tr class="separator:a44bd7b0ab5b453bdb0fbe555b9b5eb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cf183b386e7bffca5c7747313f7483"><td class="memItemLeft" align="right" valign="top"><a id="ae5cf183b386e7bffca5c7747313f7483"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteAgent</b> (simtime_t tsDataUpdating, <a class="el" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, double setRadius)</td></tr>
+<tr class="separator:ae5cf183b386e7bffca5c7747313f7483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c513ea33007c8ac80b81969d8f59a7"><td class="memItemLeft" align="right" valign="top"><a id="a85c513ea33007c8ac80b81969d8f59a7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteAgent</b> (simtime_t tsDataUpdating, int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>, simtime_t sTimePosition, double x, double y, double z, double speed, double maxSpeed, double setRadius, std::string <a class="el" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>, float acceleration, float angle)</td></tr>
+<tr class="separator:a85c513ea33007c8ac80b81969d8f59a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab862630ec85baf0b291be679b8523118"><td class="memItemLeft" align="right" valign="top"><a id="ab862630ec85baf0b291be679b8523118"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateRemoteAgent</b> (simtime_t tsDataUpdating, <a class="el" href="classveins_1_1_i_c_r_node.html">ICRNode</a> oIcrNode, double setRadius)</td></tr>
+<tr class="separator:ab862630ec85baf0b291be679b8523118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cf72a01c9db430e26bf516d4ee16b4"><td class="memItemLeft" align="right" valign="top"><a id="a12cf72a01c9db430e26bf516d4ee16b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateRemoteAgent</b> (simtime_t tsDataUpdating, simtime_t tsMovement, double x, double y, double z, double speed, double maxSpeed, double setRadius, float acceleration, float angle)</td></tr>
+<tr class="separator:a12cf72a01c9db430e26bf516d4ee16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classveins_1_1_agent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classveins_1_1_agent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classveins_1_1_agent.html">veins::Agent</a></td></tr>
-<tr class="memitem:aec7577f6dc801b7b0fb69acf124dbbfd inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#aec7577f6dc801b7b0fb69acf124dbbfd">Agent</a> (int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>, std::string name)</td></tr>
-<tr class="separator:aec7577f6dc801b7b0fb69acf124dbbfd inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3eaa0f91304516fba129e174afa0184 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#af3eaa0f91304516fba129e174afa0184">Agent</a> ()</td></tr>
 <tr class="memdesc:af3eaa0f91304516fba129e174afa0184 inherit pub_methods_classveins_1_1_agent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor padrão.  <a href="classveins_1_1_agent.html#af3eaa0f91304516fba129e174afa0184">More...</a><br /></td></tr>
 <tr class="separator:af3eaa0f91304516fba129e174afa0184 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffb2cd56c24cf84c7679d3f6e7ca24f inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#adffb2cd56c24cf84c7679d3f6e7ca24f">info</a> ()</td></tr>
-<tr class="separator:adffb2cd56c24cf84c7679d3f6e7ca24f inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d455c3859e8cc9cbcb76ebd048a84c8 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8">infoTrace</a> (bool header, std::string idagent)</td></tr>
-<tr class="separator:a7d455c3859e8cc9cbcb76ebd048a84c8 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7577f6dc801b7b0fb69acf124dbbfd inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="aec7577f6dc801b7b0fb69acf124dbbfd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Agent</b> (int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>, std::string name)</td></tr>
+<tr class="separator:aec7577f6dc801b7b0fb69acf124dbbfd inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc2645bd86959fa5286561a556c9d6c inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="acdc2645bd86959fa5286561a556c9d6c"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getAgentName</b> ()</td></tr>
+<tr class="separator:acdc2645bd86959fa5286561a556c9d6c inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44473bd0962f8d81bc884b9c98eb1be inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="af44473bd0962f8d81bc884b9c98eb1be"></a>
+<a class="el" href="classveins_1_1_comm_info.html">CommInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCommInfo</b> ()</td></tr>
+<tr class="separator:af44473bd0962f8d81bc884b9c98eb1be inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa4e7653c55879456b59f102d95a5f59 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59">getId</a> ()</td></tr>
 <tr class="memdesc:aaa4e7653c55879456b59f102d95a5f59 inherit pub_methods_classveins_1_1_agent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método para obter o valor atual.  <a href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59">More...</a><br /></td></tr>
 <tr class="separator:aaa4e7653c55879456b59f102d95a5f59 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da5e66419c91b969ba4a1597020a51e inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="a3da5e66419c91b969ba4a1597020a51e"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getSetRadius</b> ()</td></tr>
+<tr class="separator:a3da5e66419c91b969ba4a1597020a51e inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffb2cd56c24cf84c7679d3f6e7ca24f inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="adffb2cd56c24cf84c7679d3f6e7ca24f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:adffb2cd56c24cf84c7679d3f6e7ca24f inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d455c3859e8cc9cbcb76ebd048a84c8 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="a7d455c3859e8cc9cbcb76ebd048a84c8"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>infoTrace</b> (bool header, std::string idagent)</td></tr>
+<tr class="separator:a7d455c3859e8cc9cbcb76ebd048a84c8 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef696c244e458884035741c8117817a inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="abef696c244e458884035741c8117817a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAgentName</b> (std::string <a class="el" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>)</td></tr>
+<tr class="separator:abef696c244e458884035741c8117817a inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760b8566125de4b9b48611bef9c8f296 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="a760b8566125de4b9b48611bef9c8f296"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCommInfo</b> (<a class="el" href="classveins_1_1_comm_info.html">CommInfo</a> *commInfo)</td></tr>
+<tr class="separator:a760b8566125de4b9b48611bef9c8f296 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a72cab8bed72ece825a92b197dce0d9 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9">setId</a> (int64_t <a class="el" href="classveins_1_1_agent.html#a60cc80d468edfbf73cbd31cec4629aca">id</a>)</td></tr>
 <tr class="memdesc:a3a72cab8bed72ece825a92b197dce0d9 inherit pub_methods_classveins_1_1_agent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método para definir um valor.  <a href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9">More...</a><br /></td></tr>
 <tr class="separator:a3a72cab8bed72ece825a92b197dce0d9 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb151aa4a6b317bd0f4f71a7e49216b inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a7bb151aa4a6b317bd0f4f71a7e49216b">~Agent</a> ()</td></tr>
-<tr class="separator:a7bb151aa4a6b317bd0f4f71a7e49216b inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbe0f419eddf3af40c86a1d625aedd0 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0">setMobilityInfo</a> (<a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> *<a class="el" href="classveins_1_1_agent.html#a44c99c483d0199a2e21ef7406d057062">mobilityInfo</a>)</td></tr>
+<tr class="memitem:aabbe0f419eddf3af40c86a1d625aedd0 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="aabbe0f419eddf3af40c86a1d625aedd0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setMobilityInfo</b> (<a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> *mobilityInfo)</td></tr>
 <tr class="separator:aabbe0f419eddf3af40c86a1d625aedd0 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da5e66419c91b969ba4a1597020a51e inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a3da5e66419c91b969ba4a1597020a51e">getSetRadius</a> ()</td></tr>
-<tr class="separator:a3da5e66419c91b969ba4a1597020a51e inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0950f08f88a3cb670024ece82e4fd1b3 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3">setSetRadius</a> (double <a class="el" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>)</td></tr>
+<tr class="memitem:a0950f08f88a3cb670024ece82e4fd1b3 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="a0950f08f88a3cb670024ece82e4fd1b3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSetRadius</b> (double setRadius)</td></tr>
 <tr class="separator:a0950f08f88a3cb670024ece82e4fd1b3 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc2645bd86959fa5286561a556c9d6c inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#acdc2645bd86959fa5286561a556c9d6c">getAgentName</a> ()</td></tr>
-<tr class="separator:acdc2645bd86959fa5286561a556c9d6c inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abef696c244e458884035741c8117817a inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a">setAgentName</a> (std::string <a class="el" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>)</td></tr>
-<tr class="separator:abef696c244e458884035741c8117817a inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af44473bd0962f8d81bc884b9c98eb1be inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_comm_info.html">CommInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#af44473bd0962f8d81bc884b9c98eb1be">getCommInfo</a> ()</td></tr>
-<tr class="separator:af44473bd0962f8d81bc884b9c98eb1be inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a760b8566125de4b9b48611bef9c8f296 inherit pub_methods_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296">setCommInfo</a> (<a class="el" href="classveins_1_1_comm_info.html">CommInfo</a> *<a class="el" href="classveins_1_1_agent.html#a5e4b196272c7c297a99ec89bad322d8a">commInfo</a>)</td></tr>
-<tr class="separator:a760b8566125de4b9b48611bef9c8f296 inherit pub_methods_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classveins_1_1_agent"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classveins_1_1_agent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classveins_1_1_agent.html">veins::Agent</a></td></tr>
-<tr class="memitem:a44c99c483d0199a2e21ef7406d057062 inherit pub_attribs_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a44c99c483d0199a2e21ef7406d057062">mobilityInfo</a></td></tr>
-<tr class="separator:a44c99c483d0199a2e21ef7406d057062 inherit pub_attribs_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e4b196272c7c297a99ec89bad322d8a inherit pub_attribs_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_comm_info.html">CommInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#a5e4b196272c7c297a99ec89bad322d8a">commInfo</a></td></tr>
+<tr class="memitem:a5e4b196272c7c297a99ec89bad322d8a inherit pub_attribs_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="a5e4b196272c7c297a99ec89bad322d8a"></a>
+<a class="el" href="classveins_1_1_comm_info.html">CommInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>commInfo</b></td></tr>
 <tr class="separator:a5e4b196272c7c297a99ec89bad322d8a inherit pub_attribs_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae28638c42d99d4fac2d689fe92ef9e12 inherit pub_attribs_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_qo_c_info.html">QoCInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_agent.html#ae28638c42d99d4fac2d689fe92ef9e12">qocInfo</a></td></tr>
+<tr class="memitem:a44c99c483d0199a2e21ef7406d057062 inherit pub_attribs_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="a44c99c483d0199a2e21ef7406d057062"></a>
+<a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mobilityInfo</b></td></tr>
+<tr class="separator:a44c99c483d0199a2e21ef7406d057062 inherit pub_attribs_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28638c42d99d4fac2d689fe92ef9e12 inherit pub_attribs_classveins_1_1_agent"><td class="memItemLeft" align="right" valign="top"><a id="ae28638c42d99d4fac2d689fe92ef9e12"></a>
+<a class="el" href="classveins_1_1_qo_c_info.html">QoCInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>qocInfo</b></td></tr>
 <tr class="separator:ae28638c42d99d4fac2d689fe92ef9e12 inherit pub_attribs_classveins_1_1_agent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8h_source.html#l00027">27</a> of file <a class="el" href="_remote_agent_8h_source.html">RemoteAgent.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a62e076d5930b892b7b118d75c3c61ef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62e076d5930b892b7b118d75c3c61ef9">&#9670;&nbsp;</a></span>RemoteAgent() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::RemoteAgent::RemoteAgent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00020">20</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                         {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a85c513ea33007c8ac80b81969d8f59a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85c513ea33007c8ac80b81969d8f59a7">&#9670;&nbsp;</a></span>RemoteAgent() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::RemoteAgent::RemoteAgent </td>
-          <td>(</td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsDataUpdating</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>sTimePosition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maxSpeed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>setRadius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>agentName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>acceleration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00026">26</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                              {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#ae28638c42d99d4fac2d689fe92ef9e12">qocInfo</a> = <span class="keyword">new</span> RemoteAgentQoC();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9">setId</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0">setMobilityInfo</a>(<span class="keyword">new</span> RemoteMobility(tsStart, x, y, z, speed, maxSpeed, acceleration, angle));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3">setSetRadius</a>(<a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a">setAgentName</a>(<a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296">setCommInfo</a> (<span class="keyword">new</span> RemoteAgentCommInfo());</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a>()-&gt;<a class="code" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37">setAge</a>((tsDataUpdating - tsStart).dbl());</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a0950f08f88a3cb670024ece82e4fd1b3"><div class="ttname"><a href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3">veins::Agent::setSetRadius</a></div><div class="ttdeci">virtual void setSetRadius(double setRadius)</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00084">Agent.cc:84</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a3865c086e8a0cc367b924b944058133f"><div class="ttname"><a href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">veins::Agent::setRadius</a></div><div class="ttdeci">double setRadius</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00039">Agent.h:39</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a3a72cab8bed72ece825a92b197dce0d9"><div class="ttname"><a href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9">veins::Agent::setId</a></div><div class="ttdeci">void setId(int64_t id)</div><div class="ttdoc">Método para definir um valor.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00033">Agent.cc:33</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a409f74492646575f5ec8c845a37e0080"><div class="ttname"><a href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">veins::Agent::agentName</a></div><div class="ttdeci">std::string agentName</div><div class="ttdoc">Armazena o valor da classe.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00037">Agent.h:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a760b8566125de4b9b48611bef9c8f296"><div class="ttname"><a href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296">veins::Agent::setCommInfo</a></div><div class="ttdeci">void setCommInfo(CommInfo *commInfo)</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00076">Agent.cc:76</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_aabbe0f419eddf3af40c86a1d625aedd0"><div class="ttname"><a href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0">veins::Agent::setMobilityInfo</a></div><div class="ttdeci">virtual void setMobilityInfo(MobilityInfo *mobilityInfo)</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00088">Agent.cc:88</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_abef696c244e458884035741c8117817a"><div class="ttname"><a href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a">veins::Agent::setAgentName</a></div><div class="ttdeci">virtual void setAgentName(std::string agentName)</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00080">Agent.cc:80</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_ae28638c42d99d4fac2d689fe92ef9e12"><div class="ttname"><a href="classveins_1_1_agent.html#ae28638c42d99d4fac2d689fe92ef9e12">veins::Agent::qocInfo</a></div><div class="ttdeci">QoCInfo * qocInfo</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00045">Agent.h:45</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_accaac4c81655a94739e4b87df43a2a37"><div class="ttname"><a href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37">veins::MobilityInfo::setAge</a></div><div class="ttdeci">void setAge(double age)</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8cc_source.html#l00249">MobilityInfo.cc:249</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_aef1ae2746d637ed65f9b579af954eb1e"><div class="ttname"><a href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">veins::RemoteAgent::getMobilityInfo</a></div><div class="ttdeci">MobilityInfo * getMobilityInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00087">RemoteAgent.cc:87</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_8cc_source.html#l00087">getMobilityInfo()</a>, <a class="el" href="_agent_8h_source.html#l00045">veins::Agent::qocInfo</a>, <a class="el" href="_mobility_info_8cc_source.html#l00249">veins::MobilityInfo::setAge()</a>, <a class="el" href="_agent_8cc_source.html#l00080">veins::Agent::setAgentName()</a>, <a class="el" href="_agent_8cc_source.html#l00076">veins::Agent::setCommInfo()</a>, <a class="el" href="_agent_8cc_source.html#l00033">veins::Agent::setId()</a>, <a class="el" href="_agent_8cc_source.html#l00088">veins::Agent::setMobilityInfo()</a>, <a class="el" href="_agent_8h_source.html#l00039">veins::Agent::setRadius</a>, and <a class="el" href="_agent_8cc_source.html#l00084">veins::Agent::setSetRadius()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_a85c513ea33007c8ac80b81969d8f59a7_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_a85c513ea33007c8ac80b81969d8f59a7_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_a85c513ea33007c8ac80b81969d8f59a7_cgraph" id="aclassveins_1_1_remote_agent_a85c513ea33007c8ac80b81969d8f59a7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,180,160,221"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e" title=" " alt="" coords="235,5,390,47"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37" title=" " alt="" coords="241,71,384,112"/>
-<area shape="rect" href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a" title=" " alt="" coords="209,137,417,163"/>
-<area shape="rect" href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296" title=" " alt="" coords="213,187,412,214"/>
-<area shape="rect" href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9" title="Método para definir um valor." alt="" coords="241,238,384,265"/>
-<area shape="rect" href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0" title=" " alt="" coords="208,289,417,315"/>
-<area shape="rect" href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3" title=" " alt="" coords="215,339,411,366"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae5cf183b386e7bffca5c7747313f7483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5cf183b386e7bffca5c7747313f7483">&#9670;&nbsp;</a></span>RemoteAgent() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::RemoteAgent::RemoteAgent </td>
-          <td>(</td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsDataUpdating</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_i_c_r_node.html">ICRNode</a>&#160;</td>
-          <td class="paramname"><em>oIcrNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>setRadius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00046">46</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39">createAgent</a>(tsDataUpdating, oIcrNode.nodeId, oIcrNode.posTimeStamp,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            oIcrNode.posX, oIcrNode.posY,oIcrNode.posZ, oIcrNode.speed,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            oIcrNode.maxSpeed, <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>, std::to_string(oIcrNode.nodeId),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            oIcrNode.aceleration, oIcrNode.angle);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_acd70d8253a8a12cf434afe5231c53e39"><div class="ttname"><a href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39">veins::RemoteAgent::createAgent</a></div><div class="ttdeci">void createAgent(simtime_t tsDataUpdating, int64_t id, simtime_t tsStart, double x, double y, double z, double speed, double maxSpeed, double setRadius, std::string agentName, float acceleration, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00036">RemoteAgent.cc:36</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_i_c_r_node_8h_source.html#l00034">veins::ICRNode::aceleration</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00033">veins::ICRNode::angle</a>, <a class="el" href="_remote_agent_8cc_source.html#l00036">createAgent()</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00032">veins::ICRNode::maxSpeed</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00028">veins::ICRNode::nodeId</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00039">veins::ICRNode::posTimeStamp</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00029">veins::ICRNode::posX</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00030">veins::ICRNode::posY</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00031">veins::ICRNode::posZ</a>, <a class="el" href="_agent_8h_source.html#l00039">veins::Agent::setRadius</a>, and <a class="el" href="_i_c_r_node_8h_source.html#l00035">veins::ICRNode::speed</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_ae5cf183b386e7bffca5c7747313f7483_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_ae5cf183b386e7bffca5c7747313f7483_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_ae5cf183b386e7bffca5c7747313f7483_cgraph" id="aclassveins_1_1_remote_agent_ae5cf183b386e7bffca5c7747313f7483_cgraph">
-<area shape="rect" title=" " alt="" coords="5,180,160,221"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39" title=" " alt="" coords="208,180,363,221"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e" title=" " alt="" coords="438,5,593,47"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37" title=" " alt="" coords="444,71,587,112"/>
-<area shape="rect" href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a" title=" " alt="" coords="411,137,619,163"/>
-<area shape="rect" href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296" title=" " alt="" coords="416,187,615,214"/>
-<area shape="rect" href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9" title="Método para definir um valor." alt="" coords="444,238,587,265"/>
-<area shape="rect" href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0" title=" " alt="" coords="411,289,620,315"/>
-<area shape="rect" href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3" title=" " alt="" coords="417,339,613,366"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="accf788128684371c62b06ff740bfba58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accf788128684371c62b06ff740bfba58">&#9670;&nbsp;</a></span>~RemoteAgent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::RemoteAgent::~RemoteAgent </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00069">69</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                          {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">delete</span>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="acd70d8253a8a12cf434afe5231c53e39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd70d8253a8a12cf434afe5231c53e39">&#9670;&nbsp;</a></span>createAgent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::RemoteAgent::createAgent </td>
-          <td>(</td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsDataUpdating</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsStart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maxSpeed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>setRadius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>agentName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>acceleration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00036">36</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                              {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#ae28638c42d99d4fac2d689fe92ef9e12">qocInfo</a> = <span class="keyword">new</span> RemoteAgentQoC();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9">setId</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0">setMobilityInfo</a>(<span class="keyword">new</span> RemoteMobility(tsStart, x, y, z, speed, maxSpeed, acceleration, angle));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3">setSetRadius</a>(<a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a">setAgentName</a>(<a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296">setCommInfo</a> (<span class="keyword">new</span> RemoteAgentCommInfo());</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a>()-&gt;<a class="code" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37">setAge</a>((tsDataUpdating - tsStart).dbl());</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_8cc_source.html#l00087">getMobilityInfo()</a>, <a class="el" href="_agent_8h_source.html#l00045">veins::Agent::qocInfo</a>, <a class="el" href="_mobility_info_8cc_source.html#l00249">veins::MobilityInfo::setAge()</a>, <a class="el" href="_agent_8cc_source.html#l00080">veins::Agent::setAgentName()</a>, <a class="el" href="_agent_8cc_source.html#l00076">veins::Agent::setCommInfo()</a>, <a class="el" href="_agent_8cc_source.html#l00033">veins::Agent::setId()</a>, <a class="el" href="_agent_8cc_source.html#l00088">veins::Agent::setMobilityInfo()</a>, <a class="el" href="_agent_8h_source.html#l00039">veins::Agent::setRadius</a>, and <a class="el" href="_agent_8cc_source.html#l00084">veins::Agent::setSetRadius()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_8cc_source.html#l00046">RemoteAgent()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_cgraph" id="aclassveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_cgraph">
-<area shape="rect" title=" " alt="" coords="5,180,160,221"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e" title=" " alt="" coords="235,5,390,47"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37" title=" " alt="" coords="241,71,384,112"/>
-<area shape="rect" href="classveins_1_1_agent.html#abef696c244e458884035741c8117817a" title=" " alt="" coords="209,137,417,163"/>
-<area shape="rect" href="classveins_1_1_agent.html#a760b8566125de4b9b48611bef9c8f296" title=" " alt="" coords="213,187,412,214"/>
-<area shape="rect" href="classveins_1_1_agent.html#a3a72cab8bed72ece825a92b197dce0d9" title="Método para definir um valor." alt="" coords="241,238,384,265"/>
-<area shape="rect" href="classveins_1_1_agent.html#aabbe0f419eddf3af40c86a1d625aedd0" title=" " alt="" coords="208,289,417,315"/>
-<area shape="rect" href="classveins_1_1_agent.html#a0950f08f88a3cb670024ece82e4fd1b3" title=" " alt="" coords="215,339,411,366"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_icgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_icgraph" id="aclassveins_1_1_remote_agent_acd70d8253a8a12cf434afe5231c53e39_icgraph">
-<area shape="rect" title=" " alt="" coords="208,5,363,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#ae5cf183b386e7bffca5c7747313f7483" title=" " alt="" coords="5,5,160,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aef1ae2746d637ed65f9b579af954eb1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef1ae2746d637ed65f9b579af954eb1e">&#9670;&nbsp;</a></span>getMobilityInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_mobility_info.html">MobilityInfo</a> * veins::RemoteAgent::getMobilityInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2">veins::Agent</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00087">87</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                           {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> ((MobilityInfo*) <a class="code" href="classveins_1_1_agent.html#a44c99c483d0199a2e21ef7406d057062">mobilityInfo</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a44c99c483d0199a2e21ef7406d057062"><div class="ttname"><a href="classveins_1_1_agent.html#a44c99c483d0199a2e21ef7406d057062">veins::Agent::mobilityInfo</a></div><div class="ttdeci">MobilityInfo * mobilityInfo</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00043">Agent.h:43</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_agent_8h_source.html#l00043">veins::Agent::mobilityInfo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_8cc_source.html#l00036">createAgent()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00074">info()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00026">RemoteAgent()</a>, and <a class="el" href="_remote_agent_8cc_source.html#l00058">updateRemoteAgent()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_aef1ae2746d637ed65f9b579af954eb1e_icgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_aef1ae2746d637ed65f9b579af954eb1e_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_aef1ae2746d637ed65f9b579af954eb1e_icgraph" id="aclassveins_1_1_remote_agent_aef1ae2746d637ed65f9b579af954eb1e_icgraph">
-<area shape="rect" title=" " alt="" coords="1192,104,1347,145"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#acd70d8253a8a12cf434afe5231c53e39" title=" " alt="" coords="985,5,1139,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2" title=" " alt="" coords="985,71,1139,112"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#a85c513ea33007c8ac80b81969d8f59a7" title=" " alt="" coords="985,136,1139,177"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4" title=" " alt="" coords="980,201,1144,243"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#ae5cf183b386e7bffca5c7747313f7483" title=" " alt="" coords="773,5,927,47"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a82f5b5fdf44d0b521ebda0eb3e07ca9b" title=" " alt="" coords="774,168,926,209"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#ab862630ec85baf0b291be679b8523118" title=" " alt="" coords="768,233,932,275"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a81d336509976cb543ee09623c4a9991c" title=" " alt="" coords="516,168,720,209"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a52d1d29eb3d17e0777c6ce03bf6c84ac" title=" " alt="" coords="284,168,468,209"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a962ec770cf5f1fdc6ffe9fcc0211c400" title=" " alt="" coords="5,175,236,202"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aea03b066f342859500e7e3daa5867a56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea03b066f342859500e7e3daa5867a56">&#9670;&nbsp;</a></span>getRemoteAgentCommInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_remote_agent_comm_info.html">RemoteAgentCommInfo</a> * veins::RemoteAgent::getRemoteAgentCommInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00092">92</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                         {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> ((RemoteAgentCommInfo*) this-&gt;<a class="code" href="classveins_1_1_agent.html#a5e4b196272c7c297a99ec89bad322d8a">commInfo</a>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a5e4b196272c7c297a99ec89bad322d8a"><div class="ttname"><a href="classveins_1_1_agent.html#a5e4b196272c7c297a99ec89bad322d8a">veins::Agent::commInfo</a></div><div class="ttdeci">CommInfo * commInfo</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00044">Agent.h:44</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_agent_8h_source.html#l00044">veins::Agent::commInfo</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_group_8cc_source.html#l00095">veins::RemoteAgentGroup::calcRemoteAgentGroupCommPerform()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00074">info()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00081">infoTrace()</a>, and <a class="el" href="_remote_agent_8cc_source.html#l00058">updateRemoteAgent()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_aea03b066f342859500e7e3daa5867a56_icgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_aea03b066f342859500e7e3daa5867a56_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_aea03b066f342859500e7e3daa5867a56_icgraph" id="aclassveins_1_1_remote_agent_aea03b066f342859500e7e3daa5867a56_icgraph">
-<area shape="rect" title=" " alt="" coords="1307,62,1515,103"/>
-<area shape="rect" href="classveins_1_1_remote_agent_group.html#a66a5d54e5a86884064b9df22e0ccdb06" title=" " alt="" coords="768,15,1047,57"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2" title=" " alt="" coords="1099,29,1254,70"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#a44bd7b0ab5b453bdb0fbe555b9b5eb43" title=" " alt="" coords="1099,94,1254,135"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4" title=" " alt="" coords="1095,159,1259,201"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a82f5b5fdf44d0b521ebda0eb3e07ca9b" title=" " alt="" coords="831,126,983,167"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#ab862630ec85baf0b291be679b8523118" title=" " alt="" coords="825,191,989,233"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a81d336509976cb543ee09623c4a9991c" title=" " alt="" coords="516,126,720,167"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a52d1d29eb3d17e0777c6ce03bf6c84ac" title=" " alt="" coords="284,126,468,167"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a962ec770cf5f1fdc6ffe9fcc0211c400" title=" " alt="" coords="5,133,236,160"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="acf87cf2224e65affa229d8713b7968e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf87cf2224e65affa229d8713b7968e2">&#9670;&nbsp;</a></span>info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::RemoteAgent::info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00074">74</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                            {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    ost &lt;&lt; <a class="code" href="classveins_1_1_agent.html#adffb2cd56c24cf84c7679d3f6e7ca24f">Agent::info</a>()  &lt;&lt; <span class="stringliteral">&quot;  Remote Mobility: &quot;</span> &lt;&lt; ((RemoteMobility*) <a class="code" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a>())-&gt;<a class="code" href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2">info</a>()</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                          &lt;&lt; <span class="stringliteral">&quot;  Remote CommInfo: &quot;</span> &lt;&lt; this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">getRemoteAgentCommInfo</a>()-&gt;<a class="code" href="classveins_1_1_remote_agent_comm_info.html#a943abad67f0bdbde6b346a4334912a51">info</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_html_adffb2cd56c24cf84c7679d3f6e7ca24f"><div class="ttname"><a href="classveins_1_1_agent.html#adffb2cd56c24cf84c7679d3f6e7ca24f">veins::Agent::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00037">Agent.cc:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_comm_info_html_a943abad67f0bdbde6b346a4334912a51"><div class="ttname"><a href="classveins_1_1_remote_agent_comm_info.html#a943abad67f0bdbde6b346a4334912a51">veins::RemoteAgentCommInfo::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_info_8cc_source.html#l00035">RemoteAgentCommInfo.cc:35</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_acf87cf2224e65affa229d8713b7968e2"><div class="ttname"><a href="classveins_1_1_remote_agent.html#acf87cf2224e65affa229d8713b7968e2">veins::RemoteAgent::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00074">RemoteAgent.cc:74</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_aea03b066f342859500e7e3daa5867a56"><div class="ttname"><a href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">veins::RemoteAgent::getRemoteAgentCommInfo</a></div><div class="ttdeci">RemoteAgentCommInfo * getRemoteAgentCommInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00092">RemoteAgent.cc:92</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_8cc_source.html#l00087">getMobilityInfo()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00092">getRemoteAgentCommInfo()</a>, <a class="el" href="_agent_8cc_source.html#l00037">veins::Agent::info()</a>, and <a class="el" href="_remote_agent_comm_info_8cc_source.html#l00035">veins::RemoteAgentCommInfo::info()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_acf87cf2224e65affa229d8713b7968e2_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_acf87cf2224e65affa229d8713b7968e2_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_acf87cf2224e65affa229d8713b7968e2_cgraph" id="aclassveins_1_1_remote_agent_acf87cf2224e65affa229d8713b7968e2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,100,160,141"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e" title=" " alt="" coords="242,5,397,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56" title=" " alt="" coords="215,71,423,112"/>
-<area shape="rect" href="classveins_1_1_agent.html#adffb2cd56c24cf84c7679d3f6e7ca24f" title=" " alt="" coords="251,137,387,163"/>
-<area shape="rect" href="classveins_1_1_remote_agent_comm_info.html#a943abad67f0bdbde6b346a4334912a51" title=" " alt="" coords="208,188,431,229"/>
-<area shape="rect" href="classveins_1_1_remote_agent_comm_info.html#a3e62da2ae7f65f035f57b6d9114a6d87" title=" " alt="" coords="479,129,745,171"/>
-<area shape="rect" href="classveins_1_1_comm_info.html#ab939883e591465ad3ba319599819c24c" title=" " alt="" coords="529,195,695,222"/>
-<area shape="rect" href="class_remote_agent_comm_performance.html#aaa85c1b9053b46f86c7f9ec7ca6caf45" title=" " alt="" coords="493,247,731,288"/>
-<area shape="rect" href="class_comm_performance.html#ad14f1b9361db3f5ead782f992478e586" title=" " alt="" coords="793,225,975,251"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a44bd7b0ab5b453bdb0fbe555b9b5eb43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44bd7b0ab5b453bdb0fbe555b9b5eb43">&#9670;&nbsp;</a></span>infoTrace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::RemoteAgent::infoTrace </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>header</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>idagent</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00081">81</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ost &lt;&lt;  <a class="code" href="classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8">Agent::infoTrace</a>(header, idagent) &lt;&lt; this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">getRemoteAgentCommInfo</a>()-&gt;<a class="code" href="classveins_1_1_remote_agent_comm_info.html#aa0ed7edea6c10bc50ba2c510f25b3eea">infoTrace</a>(header, idagent);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a7d455c3859e8cc9cbcb76ebd048a84c8"><div class="ttname"><a href="classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8">veins::Agent::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8cc_source.html#l00044">Agent.cc:44</a></div></div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_comm_info_html_aa0ed7edea6c10bc50ba2c510f25b3eea"><div class="ttname"><a href="classveins_1_1_remote_agent_comm_info.html#aa0ed7edea6c10bc50ba2c510f25b3eea">veins::RemoteAgentCommInfo::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_comm_info_8cc_source.html#l00042">RemoteAgentCommInfo.cc:42</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_remote_agent_8cc_source.html#l00092">getRemoteAgentCommInfo()</a>, <a class="el" href="_agent_8cc_source.html#l00044">veins::Agent::infoTrace()</a>, and <a class="el" href="_remote_agent_comm_info_8cc_source.html#l00042">veins::RemoteAgentCommInfo::infoTrace()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_remote_agent_group_8cc_source.html#l00095">veins::RemoteAgentGroup::calcRemoteAgentGroupCommPerform()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_cgraph" id="aclassveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,160,105"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56" title=" " alt="" coords="215,5,423,47"/>
-<area shape="rect" href="classveins_1_1_agent.html#a7d455c3859e8cc9cbcb76ebd048a84c8" title=" " alt="" coords="234,71,405,98"/>
-<area shape="rect" href="classveins_1_1_remote_agent_comm_info.html#aa0ed7edea6c10bc50ba2c510f25b3eea" title=" " alt="" coords="208,123,431,164"/>
-<area shape="rect" href="classveins_1_1_agent.html#ac606856602671720d2bd1b83eb0917f2" title=" " alt="" coords="479,13,689,39"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24" title="Returns information about the current state." alt="" coords="513,64,655,105"/>
-<area shape="rect" href="classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="749,21,920,47"/>
-<area shape="rect" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="743,71,927,98"/>
-<area shape="rect" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="737,122,932,149"/>
-<area shape="rect" href="classveins_1_1_comm_info.html#aa1b1fb6ef506c8a151775b0bb6454d7c" title=" " alt="" coords="484,130,684,157"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_icgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_icgraph" id="aclassveins_1_1_remote_agent_a44bd7b0ab5b453bdb0fbe555b9b5eb43_icgraph">
-<area shape="rect" title=" " alt="" coords="332,5,487,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent_group.html#a66a5d54e5a86884064b9df22e0ccdb06" title=" " alt="" coords="5,5,284,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab862630ec85baf0b291be679b8523118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab862630ec85baf0b291be679b8523118">&#9670;&nbsp;</a></span>updateRemoteAgent() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::RemoteAgent::updateRemoteAgent </td>
-          <td>(</td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsDataUpdating</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_i_c_r_node.html">ICRNode</a>&#160;</td>
-          <td class="paramname"><em>oIcrNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>setRadius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00054">54</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                                                {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4">updateRemoteAgent</a>(tsDataUpdating, oIcrNode.posTimeStamp, oIcrNode.posX, oIcrNode.posY, oIcrNode.posZ, oIcrNode.speed, oIcrNode.maxSpeed, <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>, oIcrNode.aceleration, oIcrNode.angle);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_remote_agent_html_a12cf72a01c9db430e26bf516d4ee16b4"><div class="ttname"><a href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4">veins::RemoteAgent::updateRemoteAgent</a></div><div class="ttdeci">void updateRemoteAgent(simtime_t tsDataUpdating, simtime_t tsMovement, double x, double y, double z, double speed, double maxSpeed, double setRadius, float acceleration, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_remote_agent_8cc_source.html#l00058">RemoteAgent.cc:58</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_i_c_r_node_8h_source.html#l00034">veins::ICRNode::aceleration</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00033">veins::ICRNode::angle</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00032">veins::ICRNode::maxSpeed</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00039">veins::ICRNode::posTimeStamp</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00029">veins::ICRNode::posX</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00030">veins::ICRNode::posY</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00031">veins::ICRNode::posZ</a>, <a class="el" href="_agent_8h_source.html#l00039">veins::Agent::setRadius</a>, <a class="el" href="_i_c_r_node_8h_source.html#l00035">veins::ICRNode::speed</a>, and <a class="el" href="_remote_agent_8cc_source.html#l00058">updateRemoteAgent()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_ab862630ec85baf0b291be679b8523118_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_ab862630ec85baf0b291be679b8523118_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_ab862630ec85baf0b291be679b8523118_cgraph" id="aclassveins_1_1_remote_agent_ab862630ec85baf0b291be679b8523118_cgraph">
-<area shape="rect" title=" " alt="" coords="5,195,169,236"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#a12cf72a01c9db430e26bf516d4ee16b4" title=" " alt="" coords="217,195,381,236"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2" title=" " alt="" coords="462,5,605,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e" title=" " alt="" coords="456,71,611,112"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56" title=" " alt="" coords="429,136,637,177"/>
-<area shape="rect" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="436,202,631,229"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37" title=" " alt="" coords="462,253,605,295"/>
-<area shape="rect" href="classveins_1_1_comm_info.html#ab3935590398989bee8791fd6a065105e" title=" " alt="" coords="431,319,636,346"/>
-<area shape="rect" href="classveins_1_1_remote_mobility.html#a6fa0ba72d123f444db81c1298ff6e2d0" title=" " alt="" coords="449,371,618,412"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a1ecc6863b5daffc834e844904ffcb87c" title=" " alt="" coords="699,175,841,216"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a89a5eb4d9bcb82f2abb4c9c8a1498017" title=" " alt="" coords="699,240,841,281"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a01d0b8554b287d1e28753c28a3bf3a27" title=" " alt="" coords="699,305,841,347"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318" title=" " alt="" coords="697,371,843,412"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19" title=" " alt="" coords="699,436,841,477"/>
-<area shape="rect" href="classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22" title="Sets the current speed in meters per second." alt="" coords="685,502,855,529"/>
-<area shape="rect" href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092" title="Sets start position (components in meters) and start time." alt="" coords="690,553,850,579"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a12cf72a01c9db430e26bf516d4ee16b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12cf72a01c9db430e26bf516d4ee16b4">&#9670;&nbsp;</a></span>updateRemoteAgent() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::RemoteAgent::updateRemoteAgent </td>
-          <td>(</td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsDataUpdating</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsMovement</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>maxSpeed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>setRadius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>acceleration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_remote_agent_8cc_source.html#l00058">58</a> of file <a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                         {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    RemoteMobility* rm = ((RemoteMobility*) <a class="code" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a>());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (rm-&gt;getActualMove()-&gt;getStartTime()&lt; tsMobilityData){</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        rm-&gt;updateMobilityInfo(tsMobilityData, x, y, z, speed, maxSpeed, acceleration, angle);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//atualizao do raio de comunicao do agente remoto</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (radius!=0) this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56">getRemoteAgentCommInfo</a>()-&gt;<a class="code" href="classveins_1_1_comm_info.html#ab3935590398989bee8791fd6a065105e">setRadius</a>(radius);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e">getMobilityInfo</a>()-&gt;<a class="code" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37">setAge</a>((tsDataUpdating - tsMobilityData).dbl());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_comm_info_html_ab3935590398989bee8791fd6a065105e"><div class="ttname"><a href="classveins_1_1_comm_info.html#ab3935590398989bee8791fd6a065105e">veins::CommInfo::setRadius</a></div><div class="ttdeci">void setRadius(double radius)</div><div class="ttdef"><b>Definition:</b> <a href="_comm_info_8cc_source.html#l00036">CommInfo.cc:36</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8cc_source.html#l00060">veins::MobilityInfo::getActualMove()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00087">getMobilityInfo()</a>, <a class="el" href="_remote_agent_8cc_source.html#l00092">getRemoteAgentCommInfo()</a>, <a class="el" href="_move_8h_source.html#l00106">veins::Move::getStartTime()</a>, <a class="el" href="_mobility_info_8cc_source.html#l00249">veins::MobilityInfo::setAge()</a>, <a class="el" href="_comm_info_8cc_source.html#l00036">veins::CommInfo::setRadius()</a>, and <a class="el" href="_remote_mobility_8cc_source.html#l00031">veins::RemoteMobility::updateMobilityInfo()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_context_8cc_source.html#l00384">veins::IcarContext::updateAgentGroup()</a>, and <a class="el" href="_remote_agent_8cc_source.html#l00054">updateRemoteAgent()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_cgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_cgraph" id="aclassveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,195,169,236"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2" title=" " alt="" coords="250,5,393,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aef1ae2746d637ed65f9b579af954eb1e" title=" " alt="" coords="244,71,399,112"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#aea03b066f342859500e7e3daa5867a56" title=" " alt="" coords="217,136,425,177"/>
-<area shape="rect" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="224,202,419,229"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37" title=" " alt="" coords="250,253,393,295"/>
-<area shape="rect" href="classveins_1_1_comm_info.html#ab3935590398989bee8791fd6a065105e" title=" " alt="" coords="219,319,424,346"/>
-<area shape="rect" href="classveins_1_1_remote_mobility.html#a6fa0ba72d123f444db81c1298ff6e2d0" title=" " alt="" coords="237,371,406,412"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a1ecc6863b5daffc834e844904ffcb87c" title=" " alt="" coords="487,175,629,216"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a89a5eb4d9bcb82f2abb4c9c8a1498017" title=" " alt="" coords="487,240,629,281"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a01d0b8554b287d1e28753c28a3bf3a27" title=" " alt="" coords="487,305,629,347"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318" title=" " alt="" coords="485,371,631,412"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19" title=" " alt="" coords="487,436,629,477"/>
-<area shape="rect" href="classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22" title="Sets the current speed in meters per second." alt="" coords="473,502,643,529"/>
-<area shape="rect" href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092" title="Sets start position (components in meters) and start time." alt="" coords="478,553,638,579"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_icgraph.png" border="0" usemap="#aclassveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_icgraph" id="aclassveins_1_1_remote_agent_a12cf72a01c9db430e26bf516d4ee16b4_icgraph">
-<area shape="rect" title=" " alt="" coords="980,39,1144,80"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a82f5b5fdf44d0b521ebda0eb3e07ca9b" title=" " alt="" coords="774,5,926,47"/>
-<area shape="rect" href="classveins_1_1_remote_agent.html#ab862630ec85baf0b291be679b8523118" title=" " alt="" coords="768,71,932,112"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a81d336509976cb543ee09623c4a9991c" title=" " alt="" coords="516,5,720,47"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a52d1d29eb3d17e0777c6ce03bf6c84ac" title=" " alt="" coords="284,5,468,47"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a962ec770cf5f1fdc6ffe9fcc0211c400" title=" " alt="" coords="5,13,236,39"/>
-</map>
-</div>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_remote_agent_8h_source.html">RemoteAgent.h</a></li>
-<li><a class="el" href="_remote_agent_8cc_source.html">RemoteAgent.cc</a></li>
+<li>RemoteAgent.cc</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_remote_agent.html">RemoteAgent</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:53 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><b>veins</b></li><li class="navelem"><a class="el" href="classveins_1_1_remote_agent.html">RemoteAgent</a></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

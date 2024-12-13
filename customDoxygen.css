@@ -1,0 +1,113 @@
+#titlearea {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+.icon {
+  display: none;
+}
+.levels{
+  display: none;
+}
+.textblock{
+  display: none;
+}
+.headertitle{
+  display: none;
+}
+#nav-tree-contents > ul > li > ul > li:nth-child(1) {
+    display: none;
+}
+
+/* Estilização Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho Superior */
+#titlearea {
+    background-color: #004080; /* Substitua o azul padrão */
+    color: white;
+    padding: 15px;
+}
+
+#projectname {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Navegação Superior */
+#main-nav {
+    background-color: #003366; /* Substitua a cor padrão */
+    border-bottom: 2px solid #0066cc;
+}
+
+
+#main-nav a:hover {
+    background-color: #0066cc;
+}
+
+/* Menu Lateral */
+#side-nav {
+    background-color: #e6e6f0; /* Cor de fundo para o menu lateral */
+    border-right: 2px solid #ccccff;
+    padding: 10px;
+}
+
+
+#nav-tree a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#nav-tree a:hover {
+    //background-color: #d9e1f2; /* Destaque ao passar o mouse */
+}
+
+/* Botão de Sincronização no Menu */
+#nav-sync {
+    display:none;
+}
+
+
+
+/* Conteúdo do Documento */
+#doc-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 2px solid #ccccff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Links no Conteúdo */
+a {
+    color: #004080;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+/* Rodapé */
+#nav-path {
+    background-color: #e6e6f0;
+    border-top: 2px solid #ccccff;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#nav-path img.footer {
+    vertical-align: middle;
+}

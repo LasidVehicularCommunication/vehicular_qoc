@@ -1,16 +1,10 @@
 var searchData=
 [
-  ['backoff_3339',['backoff',['../classveins_1_1_mac1609__4_1_1_e_d_c_a.html#ab94c6c328029a01f40832b54ddc757ad',1,'veins::Mac1609_4::EDCA']]],
-  ['baseappllayer_3340',['BaseApplLayer',['../classveins_1_1_base_appl_layer.html#ab05a1dfa2440098b14e0815bf6904942',1,'veins::BaseApplLayer::BaseApplLayer()'],['../classveins_1_1_base_appl_layer.html#ac83c7fa6387c99bed5a6c9bc1978c653',1,'veins::BaseApplLayer::BaseApplLayer(unsigned stacksize)']]],
-  ['basebattery_3341',['BaseBattery',['../classveins_1_1_base_battery.html#ae9d2fc8317df572445638d9ec1ea0fb9',1,'veins::BaseBattery::BaseBattery()'],['../classveins_1_1_base_battery.html#af40204171f7f8fbbed00a044a9dc4d63',1,'veins::BaseBattery::BaseBattery(unsigned stacksize)']]],
-  ['basedecider_3342',['BaseDecider',['../classveins_1_1_base_decider.html#a39b31f3f49fec7d741f4514c2020d1b8',1,'veins::BaseDecider']]],
-  ['baseintersectioniterator_3343',['BaseIntersectionIterator',['../classveins_1_1_channel_info_1_1_base_intersection_iterator.html#a1c67a231b6b27bdaa6a5f4dcf28915b3',1,'veins::ChannelInfo::BaseIntersectionIterator']]],
-  ['baselayer_3344',['BaseLayer',['../classveins_1_1_base_layer.html#a68ab3ed1e8897eea805ed32c207db233',1,'veins::BaseLayer::BaseLayer()'],['../classveins_1_1_base_layer.html#ab46d83d656d86cf3d2c68f4c4844c8e1',1,'veins::BaseLayer::BaseLayer(unsigned stacksize)']]],
-  ['basemaclayer_3345',['BaseMacLayer',['../classveins_1_1_base_mac_layer.html#a993c8186be3ca212fd1410ae3164b93d',1,'veins::BaseMacLayer::BaseMacLayer(unsigned stacksize)'],['../classveins_1_1_base_mac_layer.html#af2515ab7f7edfa3352571fb98d59e777',1,'veins::BaseMacLayer::BaseMacLayer()']]],
-  ['basemobility_3346',['BaseMobility',['../classveins_1_1_base_mobility.html#a15457745146da27bc0a05dc3a534406e',1,'veins::BaseMobility::BaseMobility()'],['../classveins_1_1_base_mobility.html#a911e98f6eb04ab67801e206f57e9daec',1,'veins::BaseMobility::BaseMobility(unsigned stacksize)']]],
-  ['basemodule_3347',['BaseModule',['../classveins_1_1_base_module.html#a32a85543320f15e3852fc15201acd492',1,'veins::BaseModule::BaseModule()'],['../classveins_1_1_base_module.html#ab8e21b1eab02b58e24ab06858faa5104',1,'veins::BaseModule::BaseModule(unsigned stacksize)']]],
-  ['baseworldutility_3348',['BaseWorldUtility',['../classveins_1_1_base_world_utility.html#aff195a9524d2d3973de0bdbe19ab5ae5',1,'veins::BaseWorldUtility']]],
-  ['batteryaccess_3349',['BatteryAccess',['../classveins_1_1_battery_access.html#a91a34707835f0938bc9c1a1c470ad5fb',1,'veins::BatteryAccess::BatteryAccess()'],['../classveins_1_1_battery_access.html#af1956d05ad1d5a1b5e3b605e7238c4f6',1,'veins::BatteryAccess::BatteryAccess(unsigned stacksize)']]],
-  ['bboxlookup_3350',['BBoxLookup',['../classveins_1_1_b_box_lookup.html#a3104d5c4d87b177a61f2dd9498617963',1,'veins::BBoxLookup::BBoxLookup()=default'],['../classveins_1_1_b_box_lookup.html#a9033f70b5cc13985a1674c6c67bbc499',1,'veins::BBoxLookup::BBoxLookup(const std::vector&lt; Obstacle * &gt; &amp;obstacles, std::function&lt; BBoxLookup::Box(Obstacle *)&gt; makeBBox, double scenarioX, double scenarioY, int cellSize=250)']]],
-  ['breakpointpathlossmodel_3351',['BreakpointPathlossModel',['../classveins_1_1_breakpoint_pathloss_model.html#a657f1df396c4e69aa7ee3486f5ac993a',1,'veins::BreakpointPathlossModel']]]
+  ['calcdelaysendloadapp_139',['calcDelaySendLoadApp',['../class_icar_app.html#ae039dce6ec48c9501df21c688bf5750b',1,'IcarApp']]],
+  ['calcmaxdistancelr_140',['calcMaxDistancelr',['../classveins_1_1_agent_pair_list.html#a31d1fd1f0b2979f7d3a6e0e5092d6756',1,'veins::AgentPairList']]],
+  ['calcmaxslr_141',['calcMaxSlr',['../classveins_1_1_agent_pair_list.html#ac6e3c30302f6efc4cbb4a244f4608823',1,'veins::AgentPairList']]],
+  ['calcmindistancelr_142',['calcMinDistancelr',['../classveins_1_1_agent_pair_list.html#a66edd3cb1fd8b7a27ccbd32f26f1f373',1,'veins::AgentPairList']]],
+  ['calcminslr_143',['calcMinSlr',['../classveins_1_1_agent_pair_list.html#a27a919b691defd872f0c3185821f1f9d',1,'veins::AgentPairList']]],
+  ['calcrelativespeed_144',['calcRelativeSpeed',['../classveins_1_1_agent_pair_mobility.html#afd62de0c8eb0f59069e962e3df9565c2',1,'veins::AgentPairMobility']]],
+  ['changelocalmobility_145',['changeLocalMobility',['../classveins_1_1_icarqoc.html#afcd0b1515688798306130eea655df704',1,'veins::Icarqoc']]]
 ];

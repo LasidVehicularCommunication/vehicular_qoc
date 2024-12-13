@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: veins::LocalMobility</title>
+<title>Contexto de Comunicação em VANET: veins::LocalMobility</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -89,8 +90,6 @@ $(document).ready(function(){initNavTree('classveins_1_1_local_mobility.html',''
 <div class="title">veins::LocalMobility</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_local_mobility_8h_source.html">LocalMobility.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for veins::LocalMobility:</div>
 <div class="dyncontent">
@@ -105,808 +104,174 @@ Collaboration diagram for veins::LocalMobility:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_local_mobility__coll__graph.png" border="0" usemap="#aveins_1_1_local_mobility_coll__map" alt="Collaboration graph"/></div>
 <map name="aveins_1_1_local_mobility_coll__map" id="aveins_1_1_local_mobility_coll__map">
-<area shape="rect" title=" " alt="" coords="2175,71,2327,97"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html" title=" " alt="" coords="1527,71,1669,97"/>
-<area shape="rect" href="classveins_1_1_move.html" title="Class to store object position and movement." alt="" coords="870,77,971,104"/>
-<area shape="rect" href="classveins_1_1_base_mobility.html" title="Base module for all mobility modules." alt="" coords="1299,421,1449,448"/>
-<area shape="rect" title=" " alt="" coords="217,137,288,164"/>
-<area shape="rect" href="classveins_1_1_coord.html" title="Class for storing 3D coordinates." alt="" coords="437,367,540,393"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_mobility.html" title="Used in modules created by the TraCIScenarioManager." alt="" coords="1711,421,1861,448"/>
-<area shape="rect" href="classveins_1_1_base_world_utility.html" title="Provides information and utility methods for the whole simulation." alt="" coords="833,539,1008,565"/>
-<area shape="rect" title=" " alt="" coords="445,211,533,237"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_mobility_1_1_statistics.html" title=" " alt="" coords="1072,161,1223,202"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_scenario_manager.html" title="Creates and moves nodes controlled by a TraCI server." alt="" coords="1269,831,1479,857"/>
-<area shape="rect" href="classveins_1_1_local_mobility_traci.html" title=" " alt="" coords="1911,192,2093,219"/>
-<area shape="rect" href="classveins_1_1_battery_access.html" title="Extends BaseModule by several methods which provide access to the battery module." alt="" coords="841,488,1000,515"/>
-<area shape="rect" href="classveins_1_1_base_module.html" title="Base class for all simple modules of a host." alt="" coords="180,501,325,528"/>
-<area shape="rect" href="classveins_1_1_base_battery.html" title="Base class for any power source." alt="" coords="416,451,561,477"/>
-<area shape="rect" title=" " alt="" coords="5,904,128,931"/>
-<area shape="rect" href="classveins_1_1_annotation_manager.html" title="manages annotations on the OMNeT++ canvas." alt="" coords="392,904,585,931"/>
-<area shape="rect" href="classveins_1_1_vehicle_obstacle_control.html" title="VehicleObstacleControl models moving obstacles that block radio transmissions." alt="" coords="813,845,1029,872"/>
-<area shape="rect" title=" " alt="" coords="26,501,107,528"/>
-<area shape="rect" title=" " alt="" coords="877,703,964,729"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_command_interface_1_1_vehicle.html" title=" " alt="" coords="1263,510,1485,551"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_connection.html" title=" " alt="" coords="403,648,574,675"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_command_interface.html" title=" " alt="" coords="809,652,1032,679"/>
-<area shape="rect" href="classveins_1_1_has_log_proxy.html" title="Helper class for logging from classes not derived from cComponent." alt="" coords="177,693,328,720"/>
-<area shape="rect" href="structveins_1_1_tra_c_i_command_interface_1_1_version_config.html" title=" " alt="" coords="377,773,600,814"/>
-<area shape="rect" href="classveins_1_1_enum_bitset.html" title=" " alt="" coords="1299,262,1449,303"/>
-<area shape="rect" href="classveins_1_1_enum_bitset.html" title=" " alt="" coords="831,261,1010,288"/>
-<area shape="rect" href="classveins_1_1_heading.html" title="Stores a Heading in rad, with 0 degrees being east and 90 degrees being north." alt="" coords="1315,920,1433,947"/>
-<area shape="rect" title=" " alt="" coords="814,896,1027,923"/>
-<area shape="rect" href="classveins_1_1_annotation_manager_1_1_group.html" title=" " alt="" coords="392,838,585,879"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_region_of_interest.html" title="Can return whether a given position lies within the simulation&#39;s region of interest." alt="" coords="817,947,1024,973"/>
+<area shape="rect" title=" " alt="" coords="58,171,210,197"/>
+<area shape="rect" href="classveins_1_1_mobility_info.html" title=" " alt="" coords="5,81,148,108"/>
+<area shape="rect" href="classveins_1_1_local_mobility_traci.html" title=" " alt="" coords="172,81,355,108"/>
+<area shape="rect" title=" " alt="" coords="210,5,317,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a68ec03f94b80775bb9a24351f93360d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a68ec03f94b80775bb9a24351f93360d8">LocalMobility</a> ()</td></tr>
-<tr class="separator:a68ec03f94b80775bb9a24351f93360d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c3485221dc8151811157962fede230"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#ae6c3485221dc8151811157962fede230">LocalMobility</a> (<a class="el" href="classveins_1_1_tra_c_i_mobility.html">TraCIMobility</a> *<a class="el" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>, simtime_t tsStart, double x, double y, double <a class="el" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>, double speed)</td></tr>
-<tr class="separator:ae6c3485221dc8151811157962fede230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13404875fd06dfcbc79762237f94fb17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a13404875fd06dfcbc79762237f94fb17">LocalMobility</a> (<a class="el" href="classveins_1_1_tra_c_i_mobility.html">TraCIMobility</a> *<a class="el" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>, float pMaxSpeed)</td></tr>
-<tr class="separator:a13404875fd06dfcbc79762237f94fb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82e3a94641c16a27992dcecd905147c3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a82e3a94641c16a27992dcecd905147c3">~LocalMobility</a> ()</td></tr>
-<tr class="separator:a82e3a94641c16a27992dcecd905147c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addcd3a00c2461b49ef213b1829485b20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#addcd3a00c2461b49ef213b1829485b20">getMove</a> ()</td></tr>
-<tr class="separator:addcd3a00c2461b49ef213b1829485b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff89593182b5fe02845bd3a0ae5d99d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#abff89593182b5fe02845bd3a0ae5d99d">getLastMove</a> ()</td></tr>
+<tr class="memitem:abff89593182b5fe02845bd3a0ae5d99d"><td class="memItemLeft" align="right" valign="top"><a id="abff89593182b5fe02845bd3a0ae5d99d"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><b>getLastMove</b> ()</td></tr>
 <tr class="separator:abff89593182b5fe02845bd3a0ae5d99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeafee28429b159c77978b4c1220753d2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#aeafee28429b159c77978b4c1220753d2">getSensorPeriod</a> ()</td></tr>
+<tr class="memitem:addcd3a00c2461b49ef213b1829485b20"><td class="memItemLeft" align="right" valign="top"><a id="addcd3a00c2461b49ef213b1829485b20"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><b>getMove</b> ()</td></tr>
+<tr class="separator:addcd3a00c2461b49ef213b1829485b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafee28429b159c77978b4c1220753d2"><td class="memItemLeft" align="right" valign="top"><a id="aeafee28429b159c77978b4c1220753d2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getSensorPeriod</b> ()</td></tr>
 <tr class="separator:aeafee28429b159c77978b4c1220753d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a977273b9805ffc8d9210eb4944837c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a977273b9805ffc8d9210eb4944837c8d">setSensorPeriod</a> (double <a class="el" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>)</td></tr>
-<tr class="separator:a977273b9805ffc8d9210eb4944837c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89175f9ca87fa8a5542506c93bb878b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a89175f9ca87fa8a5542506c93bb878b5">info</a> ()</td></tr>
-<tr class="separator:a89175f9ca87fa8a5542506c93bb878b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05bc965d620ebfe3e5a45562895a567e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a05bc965d620ebfe3e5a45562895a567e">getTraci</a> ()</td></tr>
+<tr class="memitem:a05bc965d620ebfe3e5a45562895a567e"><td class="memItemLeft" align="right" valign="top"><a id="a05bc965d620ebfe3e5a45562895a567e"></a>
+<a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTraci</b> ()</td></tr>
 <tr class="separator:a05bc965d620ebfe3e5a45562895a567e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f0651b3fbd554f00c322d00667309c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c">setTraci</a> (<a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *<a class="el" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>)</td></tr>
-<tr class="separator:a25f0651b3fbd554f00c322d00667309c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01e6f0a49f46c66b72e294771cfcb355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355">updateLocalMobilityPos</a> ()</td></tr>
-<tr class="separator:a01e6f0a49f46c66b72e294771cfcb355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60d29feef9095b628bd38bdba51528c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#aa60d29feef9095b628bd38bdba51528c">moveInfoTrace</a> (bool header)</td></tr>
-<tr class="memdesc:aa60d29feef9095b628bd38bdba51528c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the current state.  <a href="classveins_1_1_local_mobility.html#aa60d29feef9095b628bd38bdba51528c">More...</a><br /></td></tr>
+<tr class="memitem:a89175f9ca87fa8a5542506c93bb878b5"><td class="memItemLeft" align="right" valign="top"><a id="a89175f9ca87fa8a5542506c93bb878b5"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:a89175f9ca87fa8a5542506c93bb878b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13404875fd06dfcbc79762237f94fb17"><td class="memItemLeft" align="right" valign="top"><a id="a13404875fd06dfcbc79762237f94fb17"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LocalMobility</b> (TraCIMobility *traci, float pMaxSpeed)</td></tr>
+<tr class="separator:a13404875fd06dfcbc79762237f94fb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c3485221dc8151811157962fede230"><td class="memItemLeft" align="right" valign="top"><a id="ae6c3485221dc8151811157962fede230"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LocalMobility</b> (TraCIMobility *traci, simtime_t tsStart, double x, double y, double sensorPeriod, double speed)</td></tr>
+<tr class="separator:ae6c3485221dc8151811157962fede230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60d29feef9095b628bd38bdba51528c"><td class="memItemLeft" align="right" valign="top"><a id="aa60d29feef9095b628bd38bdba51528c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#aa60d29feef9095b628bd38bdba51528c">moveInfoTrace</a> (bool header)</td></tr>
+<tr class="memdesc:aa60d29feef9095b628bd38bdba51528c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the current state. <br /></td></tr>
 <tr class="separator:aa60d29feef9095b628bd38bdba51528c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977273b9805ffc8d9210eb4944837c8d"><td class="memItemLeft" align="right" valign="top"><a id="a977273b9805ffc8d9210eb4944837c8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSensorPeriod</b> (double sensorPeriod)</td></tr>
+<tr class="separator:a977273b9805ffc8d9210eb4944837c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f0651b3fbd554f00c322d00667309c"><td class="memItemLeft" align="right" valign="top"><a id="a25f0651b3fbd554f00c322d00667309c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTraci</b> (<a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *traci)</td></tr>
+<tr class="separator:a25f0651b3fbd554f00c322d00667309c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e6f0a49f46c66b72e294771cfcb355"><td class="memItemLeft" align="right" valign="top"><a id="a01e6f0a49f46c66b72e294771cfcb355"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateLocalMobilityPos</b> ()</td></tr>
+<tr class="separator:a01e6f0a49f46c66b72e294771cfcb355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classveins_1_1_mobility_info"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classveins_1_1_mobility_info')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></td></tr>
-<tr class="memitem:a5ff13b5351e4201af18cbd27fd34b5a3 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a5ff13b5351e4201af18cbd27fd34b5a3">MobilityInfo</a> ()</td></tr>
-<tr class="separator:a5ff13b5351e4201af18cbd27fd34b5a3 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26544b17f2a2bd75e76dc0c5c5b8102 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ae26544b17f2a2bd75e76dc0c5c5b8102">~MobilityInfo</a> ()</td></tr>
-<tr class="separator:ae26544b17f2a2bd75e76dc0c5c5b8102 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ba57dcbe619e4b2daaed4d1776cbf9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ac8ba57dcbe619e4b2daaed4d1776cbf9">info</a> ()</td></tr>
-<tr class="separator:ac8ba57dcbe619e4b2daaed4d1776cbf9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef94a9b6ac9812e3b757d641bcbb1435 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#aef94a9b6ac9812e3b757d641bcbb1435">MobilityInfo</a> (<a class="el" href="classveins_1_1_move.html">Move</a> *mSrc)</td></tr>
-<tr class="separator:aef94a9b6ac9812e3b757d641bcbb1435 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76384d91650021900eb5a4482aa90b42 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42">getMaxSpeed</a> ()</td></tr>
-<tr class="memdesc:a76384d91650021900eb5a4482aa90b42 inherit pub_methods_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with the value of the coordinate.  <a href="classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42">More...</a><br /></td></tr>
-<tr class="separator:a76384d91650021900eb5a4482aa90b42 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeda53aa58bf79c320d7c63d3a3b1b19 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19">setMaxSpeed</a> (float <a class="el" href="classveins_1_1_mobility_info.html#a4df4c620853ad734a91b9c4b87e1b951">maxSpeed</a>)</td></tr>
-<tr class="separator:afeda53aa58bf79c320d7c63d3a3b1b19 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf7d7b74e8f5396dbeaf30d0bb5ceca inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a2bf7d7b74e8f5396dbeaf30d0bb5ceca">calcEuclideanDistanceAgentMoving</a> ()</td></tr>
+<tr class="memitem:a2bf7d7b74e8f5396dbeaf30d0bb5ceca inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a2bf7d7b74e8f5396dbeaf30d0bb5ceca"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>calcEuclideanDistanceAgentMoving</b> ()</td></tr>
 <tr class="separator:a2bf7d7b74e8f5396dbeaf30d0bb5ceca inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c43d6648243f76a1373da31f7293ea inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a57c43d6648243f76a1373da31f7293ea">calcEuclideanDistancelr</a> (<a class="el" href="classveins_1_1_coord.html">Coord</a> l, <a class="el" href="classveins_1_1_coord.html">Coord</a> r)</td></tr>
+<tr class="memitem:a57c43d6648243f76a1373da31f7293ea inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a57c43d6648243f76a1373da31f7293ea"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>calcEuclideanDistancelr</b> (Coord l, Coord r)</td></tr>
 <tr class="separator:a57c43d6648243f76a1373da31f7293ea inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8ac96bedd054215afde3c2a70623a24 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24">infoTrace</a> (bool header, std::string idagent)</td></tr>
-<tr class="memdesc:ab8ac96bedd054215afde3c2a70623a24 inherit pub_methods_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the current state.  <a href="classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24">More...</a><br /></td></tr>
-<tr class="separator:ab8ac96bedd054215afde3c2a70623a24 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a723be5eefd7511edf14e8eead4a45088 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a723be5eefd7511edf14e8eead4a45088">getAcceleration</a> ()</td></tr>
+<tr class="memitem:a723be5eefd7511edf14e8eead4a45088 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a723be5eefd7511edf14e8eead4a45088"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getAcceleration</b> ()</td></tr>
 <tr class="separator:a723be5eefd7511edf14e8eead4a45088 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecc6863b5daffc834e844904ffcb87c inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a1ecc6863b5daffc834e844904ffcb87c">setAcceleration</a> (float <a class="el" href="classveins_1_1_mobility_info.html#a8e236f51582d1cec64cfb4dbb736e187">acceleration</a>)</td></tr>
-<tr class="separator:a1ecc6863b5daffc834e844904ffcb87c inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f806c45fdf5f2629fa5f33b5b7ffdd2 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a3f806c45fdf5f2629fa5f33b5b7ffdd2">getActualMove</a> ()</td></tr>
+<tr class="memitem:a3f806c45fdf5f2629fa5f33b5b7ffdd2 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a3f806c45fdf5f2629fa5f33b5b7ffdd2"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><b>getActualMove</b> ()</td></tr>
 <tr class="separator:a3f806c45fdf5f2629fa5f33b5b7ffdd2 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a5eb4d9bcb82f2abb4c9c8a1498017 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a89a5eb4d9bcb82f2abb4c9c8a1498017">setActualMove</a> (<a class="el" href="classveins_1_1_move.html">Move</a> *<a class="el" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>)</td></tr>
-<tr class="separator:a89a5eb4d9bcb82f2abb4c9c8a1498017 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a11516a9fd2176b4e7e7969a1c71d9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#aa2a11516a9fd2176b4e7e7969a1c71d9">getSensorPeriod</a> ()</td></tr>
-<tr class="separator:aa2a11516a9fd2176b4e7e7969a1c71d9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeacb5255f38e6ebb4fc38954ee36f059 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#aeacb5255f38e6ebb4fc38954ee36f059">setSensorPeriod</a> (float <a class="el" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>)</td></tr>
-<tr class="separator:aeacb5255f38e6ebb4fc38954ee36f059 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74bccca7fe3c6c1879c92f137c886c30 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a74bccca7fe3c6c1879c92f137c886c30">getQuadrant</a> (double angleRad)</td></tr>
-<tr class="separator:a74bccca7fe3c6c1879c92f137c886c30 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae003a0083cf99660e5ed116b2bcc49f inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#aae003a0083cf99660e5ed116b2bcc49f">getAngle</a> ()</td></tr>
-<tr class="separator:aae003a0083cf99660e5ed116b2bcc49f inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5bd230f5f8fecc4dfa538cd155ac0b0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_coord.html">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ae5bd230f5f8fecc4dfa538cd155ac0b0">getPositionAtTime</a> (simtime_t pTime)</td></tr>
-<tr class="separator:ae5bd230f5f8fecc4dfa538cd155ac0b0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d0b8554b287d1e28753c28a3bf3a27 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a01d0b8554b287d1e28753c28a3bf3a27">setAngle</a> (float <a class="el" href="classveins_1_1_mobility_info.html#a068d71225cc7f24c5d9dcd907e07335b">angle</a>)</td></tr>
-<tr class="separator:a01d0b8554b287d1e28753c28a3bf3a27 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7489e390d45f7e803c0aeb490eceab0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ae7489e390d45f7e803c0aeb490eceab0">getAge</a> ()</td></tr>
+<tr class="memitem:ae7489e390d45f7e803c0aeb490eceab0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="ae7489e390d45f7e803c0aeb490eceab0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getAge</b> ()</td></tr>
 <tr class="separator:ae7489e390d45f7e803c0aeb490eceab0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accaac4c81655a94739e4b87df43a2a37 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#accaac4c81655a94739e4b87df43a2a37">setAge</a> (double <a class="el" href="classveins_1_1_mobility_info.html#a524fdf43342bc0bdb3ad6e2d03730ddb">age</a>)</td></tr>
-<tr class="separator:accaac4c81655a94739e4b87df43a2a37 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace37d3593de9bc876d568d221f2d2d48 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ace37d3593de9bc876d568d221f2d2d48">getCollectedMove</a> ()</td></tr>
+<tr class="memitem:aae003a0083cf99660e5ed116b2bcc49f inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="aae003a0083cf99660e5ed116b2bcc49f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getAngle</b> ()</td></tr>
+<tr class="separator:aae003a0083cf99660e5ed116b2bcc49f inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace37d3593de9bc876d568d221f2d2d48 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="ace37d3593de9bc876d568d221f2d2d48"></a>
+const Move *&#160;</td><td class="memItemRight" valign="bottom"><b>getCollectedMove</b> ()</td></tr>
 <tr class="separator:ace37d3593de9bc876d568d221f2d2d48 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e724a6364506cb72e4233c592836318 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318">setCollectedMove</a> (<a class="el" href="classveins_1_1_move.html">Move</a> *<a class="el" href="classveins_1_1_mobility_info.html#ab181651edbf2b793d4e3cafa998c4f25">collectedMove</a>)</td></tr>
+<tr class="memitem:a76384d91650021900eb5a4482aa90b42 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a76384d91650021900eb5a4482aa90b42"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a76384d91650021900eb5a4482aa90b42">getMaxSpeed</a> ()</td></tr>
+<tr class="memdesc:a76384d91650021900eb5a4482aa90b42 inherit pub_methods_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string with the value of the coordinate. <br /></td></tr>
+<tr class="separator:a76384d91650021900eb5a4482aa90b42 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bd230f5f8fecc4dfa538cd155ac0b0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="ae5bd230f5f8fecc4dfa538cd155ac0b0"></a>
+Coord&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionAtTime</b> (simtime_t pTime)</td></tr>
+<tr class="separator:ae5bd230f5f8fecc4dfa538cd155ac0b0 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bccca7fe3c6c1879c92f137c886c30 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a74bccca7fe3c6c1879c92f137c886c30"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getQuadrant</b> (double angleRad)</td></tr>
+<tr class="separator:a74bccca7fe3c6c1879c92f137c886c30 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a11516a9fd2176b4e7e7969a1c71d9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="aa2a11516a9fd2176b4e7e7969a1c71d9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getSensorPeriod</b> ()</td></tr>
+<tr class="separator:aa2a11516a9fd2176b4e7e7969a1c71d9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ba57dcbe619e4b2daaed4d1776cbf9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="ac8ba57dcbe619e4b2daaed4d1776cbf9"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>info</b> ()</td></tr>
+<tr class="separator:ac8ba57dcbe619e4b2daaed4d1776cbf9 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ac96bedd054215afde3c2a70623a24 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="ab8ac96bedd054215afde3c2a70623a24"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ab8ac96bedd054215afde3c2a70623a24">infoTrace</a> (bool header, std::string idagent)</td></tr>
+<tr class="memdesc:ab8ac96bedd054215afde3c2a70623a24 inherit pub_methods_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the current state. <br /></td></tr>
+<tr class="separator:ab8ac96bedd054215afde3c2a70623a24 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef94a9b6ac9812e3b757d641bcbb1435 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="aef94a9b6ac9812e3b757d641bcbb1435"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MobilityInfo</b> (Move *mSrc)</td></tr>
+<tr class="separator:aef94a9b6ac9812e3b757d641bcbb1435 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecc6863b5daffc834e844904ffcb87c inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a1ecc6863b5daffc834e844904ffcb87c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAcceleration</b> (float acceleration)</td></tr>
+<tr class="separator:a1ecc6863b5daffc834e844904ffcb87c inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a5eb4d9bcb82f2abb4c9c8a1498017 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a89a5eb4d9bcb82f2abb4c9c8a1498017"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setActualMove</b> (Move *<a class="el" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>)</td></tr>
+<tr class="separator:a89a5eb4d9bcb82f2abb4c9c8a1498017 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaac4c81655a94739e4b87df43a2a37 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="accaac4c81655a94739e4b87df43a2a37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAge</b> (double age)</td></tr>
+<tr class="separator:accaac4c81655a94739e4b87df43a2a37 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d0b8554b287d1e28753c28a3bf3a27 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a01d0b8554b287d1e28753c28a3bf3a27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAngle</b> (float angle)</td></tr>
+<tr class="separator:a01d0b8554b287d1e28753c28a3bf3a27 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e724a6364506cb72e4233c592836318 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a6e724a6364506cb72e4233c592836318"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCollectedMove</b> (Move *<a class="el" href="classveins_1_1_mobility_info.html#ab181651edbf2b793d4e3cafa998c4f25">collectedMove</a>)</td></tr>
 <tr class="separator:a6e724a6364506cb72e4233c592836318 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeda53aa58bf79c320d7c63d3a3b1b19 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="afeda53aa58bf79c320d7c63d3a3b1b19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxSpeed</b> (float maxSpeed)</td></tr>
+<tr class="separator:afeda53aa58bf79c320d7c63d3a3b1b19 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacb5255f38e6ebb4fc38954ee36f059 inherit pub_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="aeacb5255f38e6ebb4fc38954ee36f059"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSensorPeriod</b> (float sensorPeriod)</td></tr>
+<tr class="separator:aeacb5255f38e6ebb4fc38954ee36f059 inherit pub_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6bfa0d7c3b1c33fd0ae19b78a5a6593e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a></td></tr>
-<tr class="separator:a6bfa0d7c3b1c33fd0ae19b78a5a6593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb5936796a44ef0ca2485fbb0d076c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_local_mobility.html#a9fb5936796a44ef0ca2485fbb0d076c2">actualTemp</a></td></tr>
+<tr class="memitem:a9fb5936796a44ef0ca2485fbb0d076c2"><td class="memItemLeft" align="right" valign="top"><a id="a9fb5936796a44ef0ca2485fbb0d076c2"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><b>actualTemp</b></td></tr>
 <tr class="separator:a9fb5936796a44ef0ca2485fbb0d076c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfa0d7c3b1c33fd0ae19b78a5a6593e"><td class="memItemLeft" align="right" valign="top"><a id="a6bfa0d7c3b1c33fd0ae19b78a5a6593e"></a>
+<a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>traci</b></td></tr>
+<tr class="separator:a6bfa0d7c3b1c33fd0ae19b78a5a6593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classveins_1_1_mobility_info"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classveins_1_1_mobility_info')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></td></tr>
-<tr class="memitem:a1b3cbb6066e31da3e6992de6f012415e inherit pro_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a1b3cbb6066e31da3e6992de6f012415e">setLastMove</a> (<a class="el" href="classveins_1_1_move.html">Move</a> *pMove)</td></tr>
-<tr class="separator:a1b3cbb6066e31da3e6992de6f012415e inherit pro_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc5b8b65642961b00177e2129d622a7 inherit pro_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a8cc5b8b65642961b00177e2129d622a7">calcAcceleration</a> ()</td></tr>
+<tr class="memitem:a8cc5b8b65642961b00177e2129d622a7 inherit pro_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a8cc5b8b65642961b00177e2129d622a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calcAcceleration</b> ()</td></tr>
 <tr class="separator:a8cc5b8b65642961b00177e2129d622a7 inherit pro_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3cbb6066e31da3e6992de6f012415e inherit pro_methods_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a1b3cbb6066e31da3e6992de6f012415e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLastMove</b> (Move *pMove)</td></tr>
+<tr class="separator:a1b3cbb6066e31da3e6992de6f012415e inherit pro_methods_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classveins_1_1_mobility_info"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classveins_1_1_mobility_info')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classveins_1_1_mobility_info.html">veins::MobilityInfo</a></td></tr>
-<tr class="memitem:a1ba04f865e43c584a60f9ec484078da0 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a> = new <a class="el" href="classveins_1_1_move.html">Move</a>()</td></tr>
-<tr class="memdesc:a1ba04f865e43c584a60f9ec484078da0 inherit pro_attribs_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">current vehicle movement  <a href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">More...</a><br /></td></tr>
-<tr class="separator:a1ba04f865e43c584a60f9ec484078da0 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d164e1eba955a0f21470402a6cf954e inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">lastMove</a> = new <a class="el" href="classveins_1_1_move.html">Move</a>()</td></tr>
-<tr class="memdesc:a7d164e1eba955a0f21470402a6cf954e inherit pro_attribs_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">last vehicle movement before current position  <a href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">More...</a><br /></td></tr>
-<tr class="separator:a7d164e1eba955a0f21470402a6cf954e inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab181651edbf2b793d4e3cafa998c4f25 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_move.html">Move</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ab181651edbf2b793d4e3cafa998c4f25">collectedMove</a> = new <a class="el" href="classveins_1_1_move.html">Move</a>()</td></tr>
-<tr class="memdesc:ab181651edbf2b793d4e3cafa998c4f25 inherit pro_attribs_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">collected vehicle movement  <a href="classveins_1_1_mobility_info.html#ab181651edbf2b793d4e3cafa998c4f25">More...</a><br /></td></tr>
-<tr class="separator:ab181651edbf2b793d4e3cafa998c4f25 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df4c620853ad734a91b9c4b87e1b951 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a4df4c620853ad734a91b9c4b87e1b951">maxSpeed</a> =0</td></tr>
-<tr class="separator:a4df4c620853ad734a91b9c4b87e1b951 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d0e8c158afa9697dba176492b3fd4a inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a></td></tr>
-<tr class="separator:a08d0e8c158afa9697dba176492b3fd4a inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e236f51582d1cec64cfb4dbb736e187 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a8e236f51582d1cec64cfb4dbb736e187">acceleration</a></td></tr>
+<tr class="memitem:a8e236f51582d1cec64cfb4dbb736e187 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a8e236f51582d1cec64cfb4dbb736e187"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>acceleration</b></td></tr>
 <tr class="separator:a8e236f51582d1cec64cfb4dbb736e187 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a068d71225cc7f24c5d9dcd907e07335b inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a068d71225cc7f24c5d9dcd907e07335b">angle</a></td></tr>
-<tr class="separator:a068d71225cc7f24c5d9dcd907e07335b inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a524fdf43342bc0bdb3ad6e2d03730ddb inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a524fdf43342bc0bdb3ad6e2d03730ddb">age</a></td></tr>
+<tr class="memitem:a1ba04f865e43c584a60f9ec484078da0 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a1ba04f865e43c584a60f9ec484078da0"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a> = new Move()</td></tr>
+<tr class="memdesc:a1ba04f865e43c584a60f9ec484078da0 inherit pro_attribs_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">current vehicle movement <br /></td></tr>
+<tr class="separator:a1ba04f865e43c584a60f9ec484078da0 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524fdf43342bc0bdb3ad6e2d03730ddb inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a524fdf43342bc0bdb3ad6e2d03730ddb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>age</b></td></tr>
 <tr class="separator:a524fdf43342bc0bdb3ad6e2d03730ddb inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068d71225cc7f24c5d9dcd907e07335b inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a068d71225cc7f24c5d9dcd907e07335b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b></td></tr>
+<tr class="separator:a068d71225cc7f24c5d9dcd907e07335b inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab181651edbf2b793d4e3cafa998c4f25 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="ab181651edbf2b793d4e3cafa998c4f25"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#ab181651edbf2b793d4e3cafa998c4f25">collectedMove</a> = new Move()</td></tr>
+<tr class="memdesc:ab181651edbf2b793d4e3cafa998c4f25 inherit pro_attribs_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">collected vehicle movement <br /></td></tr>
+<tr class="separator:ab181651edbf2b793d4e3cafa998c4f25 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d164e1eba955a0f21470402a6cf954e inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a7d164e1eba955a0f21470402a6cf954e"></a>
+Move *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">lastMove</a> = new Move()</td></tr>
+<tr class="memdesc:a7d164e1eba955a0f21470402a6cf954e inherit pro_attribs_classveins_1_1_mobility_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">last vehicle movement before current position <br /></td></tr>
+<tr class="separator:a7d164e1eba955a0f21470402a6cf954e inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df4c620853ad734a91b9c4b87e1b951 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a4df4c620853ad734a91b9c4b87e1b951"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>maxSpeed</b> =0</td></tr>
+<tr class="separator:a4df4c620853ad734a91b9c4b87e1b951 inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d0e8c158afa9697dba176492b3fd4a inherit pro_attribs_classveins_1_1_mobility_info"><td class="memItemLeft" align="right" valign="top"><a id="a08d0e8c158afa9697dba176492b3fd4a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>sensorPeriod</b></td></tr>
+<tr class="separator:a08d0e8c158afa9697dba176492b3fd4a inherit pro_attribs_classveins_1_1_mobility_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8h_source.html#l00026">26</a> of file <a class="el" href="_local_mobility_8h_source.html">LocalMobility.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a68ec03f94b80775bb9a24351f93360d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ec03f94b80775bb9a24351f93360d8">&#9670;&nbsp;</a></span>LocalMobility() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::LocalMobility::LocalMobility </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00021">21</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                            {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a> = 0;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a08d0e8c158afa9697dba176492b3fd4a"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">veins::MobilityInfo::sensorPeriod</a></div><div class="ttdeci">float sensorPeriod</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00048">MobilityInfo.h:48</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00048">veins::MobilityInfo::sensorPeriod</a>.</p>
-
-</div>
-</div>
-<a id="ae6c3485221dc8151811157962fede230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6c3485221dc8151811157962fede230">&#9670;&nbsp;</a></span>LocalMobility() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::LocalMobility::LocalMobility </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_tra_c_i_mobility.html">TraCIMobility</a> *&#160;</td>
-          <td class="paramname"><em>traci</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">simtime_t&#160;</td>
-          <td class="paramname"><em>tsStart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sensorPeriod</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a13404875fd06dfcbc79762237f94fb17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13404875fd06dfcbc79762237f94fb17">&#9670;&nbsp;</a></span>LocalMobility() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::LocalMobility::LocalMobility </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_tra_c_i_mobility.html">TraCIMobility</a> *&#160;</td>
-          <td class="paramname"><em>traci</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>pMaxSpeed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00026">26</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                                  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a> = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c">setTraci</a>((LocalMobilityTraci *)<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19">setMaxSpeed</a>(pMaxSpeed);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//this-&gt;actualTemp = new Move();</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a> = <span class="keyword">new</span> Move();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//this-&gt;actualMove = this-&gt;traci-&gt;getMove();</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355">updateLocalMobilityPos</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a01e6f0a49f46c66b72e294771cfcb355"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355">veins::LocalMobility::updateLocalMobilityPos</a></div><div class="ttdeci">void updateLocalMobilityPos()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00047">LocalMobility.cc:47</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a25f0651b3fbd554f00c322d00667309c"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c">veins::LocalMobility::setTraci</a></div><div class="ttdeci">void setTraci(LocalMobilityTraci *traci)</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8cc_source.html#l00132">LocalMobility.cc:132</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html_a6bfa0d7c3b1c33fd0ae19b78a5a6593e"><div class="ttname"><a href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">veins::LocalMobility::traci</a></div><div class="ttdeci">LocalMobilityTraci * traci</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8h_source.html#l00029">LocalMobility.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a1ba04f865e43c584a60f9ec484078da0"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">veins::MobilityInfo::actualMove</a></div><div class="ttdeci">Move * actualMove</div><div class="ttdoc">current vehicle movement</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00036">MobilityInfo.h:36</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_afeda53aa58bf79c320d7c63d3a3b1b19"><div class="ttname"><a href="classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19">veins::MobilityInfo::setMaxSpeed</a></div><div class="ttdeci">void setMaxSpeed(float maxSpeed)</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8cc_source.html#l00083">MobilityInfo.cc:83</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00036">veins::MobilityInfo::actualMove</a>, <a class="el" href="_mobility_info_8h_source.html#l00048">veins::MobilityInfo::sensorPeriod</a>, <a class="el" href="_mobility_info_8cc_source.html#l00083">veins::MobilityInfo::setMaxSpeed()</a>, <a class="el" href="_local_mobility_8cc_source.html#l00132">setTraci()</a>, <a class="el" href="_local_mobility_8h_source.html#l00029">traci</a>, and <a class="el" href="_local_mobility_8cc_source.html#l00047">updateLocalMobilityPos()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_a13404875fd06dfcbc79762237f94fb17_cgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_a13404875fd06dfcbc79762237f94fb17_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_a13404875fd06dfcbc79762237f94fb17_cgraph" id="aclassveins_1_1_local_mobility_a13404875fd06dfcbc79762237f94fb17_cgraph">
-<area shape="rect" title=" " alt="" coords="5,152,157,193"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#afeda53aa58bf79c320d7c63d3a3b1b19" title=" " alt="" coords="227,87,369,128"/>
-<area shape="rect" href="classveins_1_1_local_mobility.html#a25f0651b3fbd554f00c322d00667309c" title=" " alt="" coords="222,152,374,193"/>
-<area shape="rect" href="classveins_1_1_local_mobility.html#a01e6f0a49f46c66b72e294771cfcb355" title=" " alt="" coords="205,217,391,259"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a8cc5b8b65642961b00177e2129d622a7" title=" " alt="" coords="459,5,602,47"/>
-<area shape="rect" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="671,67,865,94"/>
-<area shape="rect" href="classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac" title=" " alt="" coords="439,123,622,164"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_mobility.html#ae7c680f6f0bc1a3826f726a607c66bc1" title=" " alt="" coords="455,188,606,229"/>
-<area shape="rect" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="439,254,623,281"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318" title=" " alt="" coords="457,305,604,347"/>
-<area shape="rect" href="classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22" title="Sets the current speed in meters per second." alt="" coords="446,371,615,398"/>
-<area shape="rect" href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092" title="Sets start position (components in meters) and start time." alt="" coords="451,422,611,449"/>
-<area shape="rect" href="classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="683,13,853,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a82e3a94641c16a27992dcecd905147c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82e3a94641c16a27992dcecd905147c3">&#9670;&nbsp;</a></span>~LocalMobility()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::LocalMobility::~LocalMobility </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00128">128</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                              {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">//delete (this);</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="abff89593182b5fe02845bd3a0ae5d99d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abff89593182b5fe02845bd3a0ae5d99d">&#9670;&nbsp;</a></span>getLastMove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_move.html">Move</a> * veins::LocalMobility::getLastMove </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classveins_1_1_mobility_info.html#ae14266c03789a00c7880493585b977d3">veins::MobilityInfo</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00042">42</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                 {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//this-&gt;updateLocalMobilityPos();</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">lastMove</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a7d164e1eba955a0f21470402a6cf954e"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">veins::MobilityInfo::lastMove</a></div><div class="ttdeci">Move * lastMove</div><div class="ttdoc">last vehicle movement before current position</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00039">MobilityInfo.h:39</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00039">veins::MobilityInfo::lastMove</a>.</p>
-
-</div>
-</div>
-<a id="addcd3a00c2461b49ef213b1829485b20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addcd3a00c2461b49ef213b1829485b20">&#9670;&nbsp;</a></span>getMove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_move.html">Move</a> * veins::LocalMobility::getMove </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00037">37</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                             {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//this-&gt;updateLocalMobilityPos();</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00036">veins::MobilityInfo::actualMove</a>.</p>
-
-</div>
-</div>
-<a id="aeafee28429b159c77978b4c1220753d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeafee28429b159c77978b4c1220753d2">&#9670;&nbsp;</a></span>getSensorPeriod()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::LocalMobility::getSensorPeriod </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00113">113</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                     {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//this-&gt;updateLocalMobilityPos();</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00048">veins::MobilityInfo::sensorPeriod</a>.</p>
-
-</div>
-</div>
-<a id="a05bc965d620ebfe3e5a45562895a567e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05bc965d620ebfe3e5a45562895a567e">&#9670;&nbsp;</a></span>getTraci()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> * veins::LocalMobility::getTraci </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00123">123</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> (LocalMobilityTraci  * ) <a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_local_mobility_8h_source.html#l00029">traci</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_known_global_8cc_source.html#l00173">veins::KnownGlobal::calcTraciDistanceMobility()</a>, <a class="el" href="_known_global_8cc_source.html#l00218">veins::KnownGlobal::getTraci()</a>, <a class="el" href="_known_global_8cc_source.html#l00201">veins::KnownGlobal::getTraciMobility()</a>, and <a class="el" href="_icar_context_8cc_source.html#l00277">veins::IcarContext::textDataAgentPair()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_a05bc965d620ebfe3e5a45562895a567e_icgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_a05bc965d620ebfe3e5a45562895a567e_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_a05bc965d620ebfe3e5a45562895a567e_icgraph" id="aclassveins_1_1_local_mobility_a05bc965d620ebfe3e5a45562895a567e_icgraph">
-<area shape="rect" title=" " alt="" coords="1515,93,1667,135"/>
-<area shape="rect" href="classveins_1_1_known_global.html#ab99f21f23833d171d246a2d9d3d89a44" title=" " alt="" coords="1271,5,1467,47"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a67aad51c1aa9acd65cd4849f699003ad" title=" " alt="" coords="1055,96,1204,137"/>
-<area shape="rect" href="classveins_1_1_known_global.html#abeb9cd19f3453abde71abc76ae478024" title=" " alt="" coords="1293,123,1444,164"/>
-<area shape="rect" href="classveins_1_1_known_global.html#ab27a42bc7853dfd05977a906806b016d" title=" " alt="" coords="1293,188,1444,229"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#ad0189d58971a5044dd2ab5291e4feb7c" title=" " alt="" coords="1036,5,1223,47"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#ae018054638599565090518a930e59a55" title=" " alt="" coords="780,8,988,49"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#acb2a5e87c43fd0931e853838237ee053" title=" " alt="" coords="796,74,972,101"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a7264cdbdf48c8fe713840802e3392f7f" title=" " alt="" coords="812,125,956,167"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a81d336509976cb543ee09623c4a9991c" title=" " alt="" coords="782,191,986,232"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a1d98896066149e742c2b1c0594acb57b" title=" " alt="" coords="563,15,717,42"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a2232cf5589c086af90c05901cd79d37b" title=" " alt="" coords="558,125,722,167"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#afcd0b1515688798306130eea655df704" title=" " alt="" coords="284,125,485,167"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a443ae3c27f696c26f04664f0d02d4b6d" title=" " alt="" coords="5,107,221,134"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a842c91486ed0b0d9ff323aef0954a5b0" title=" " alt="" coords="9,158,217,185"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a52d1d29eb3d17e0777c6ce03bf6c84ac" title=" " alt="" coords="548,191,732,232"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a962ec770cf5f1fdc6ffe9fcc0211c400" title=" " alt="" coords="269,198,500,225"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a89175f9ca87fa8a5542506c93bb878b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89175f9ca87fa8a5542506c93bb878b5">&#9670;&nbsp;</a></span>info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::LocalMobility::info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00139">139</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                              {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    std::ostringstream ost;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">//ost &lt;&lt; &quot; sensor period: &quot; &lt;&lt; sensorPeriod &lt;&lt; &quot; acceleration: &quot; &lt;&lt; this-&gt;acceleration &lt;&lt; &quot; traci: &quot; &lt;&lt; traci-&gt;info();</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_local_agent_8cc_source.html#l00034">veins::LocalAgent::info()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_a89175f9ca87fa8a5542506c93bb878b5_icgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_a89175f9ca87fa8a5542506c93bb878b5_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_a89175f9ca87fa8a5542506c93bb878b5_icgraph" id="aclassveins_1_1_local_mobility_a89175f9ca87fa8a5542506c93bb878b5_icgraph">
-<area shape="rect" title=" " alt="" coords="224,5,376,47"/>
-<area shape="rect" href="classveins_1_1_local_agent.html#a66a8a13f9513e7bbc84493f9d81ab82a" title=" " alt="" coords="5,13,176,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa60d29feef9095b628bd38bdba51528c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa60d29feef9095b628bd38bdba51528c">&#9670;&nbsp;</a></span>moveInfoTrace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string veins::LocalMobility::moveInfoTrace </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>header</em> = <code>false</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns information about the current state. </p>
-
-<p>Reimplemented from <a class="el" href="classveins_1_1_mobility_info.html#a20603e2f2900766ccf735b747ed4e491">veins::MobilityInfo</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00147">147</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                                       {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;       std::ostringstream ost;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;       ost &lt;&lt; <span class="stringliteral">&quot;;&quot;</span> &lt;&lt; <a class="code" href="classveins_1_1_mobility_info.html#a20603e2f2900766ccf735b747ed4e491">MobilityInfo::moveInfoTrace</a>(header);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;       <span class="keywordflow">return</span> ost.str();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a20603e2f2900766ccf735b747ed4e491"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a20603e2f2900766ccf735b747ed4e491">veins::MobilityInfo::moveInfoTrace</a></div><div class="ttdeci">virtual std::string moveInfoTrace(bool header)</div><div class="ttdoc">Returns information about the current state.</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8cc_source.html#l00142">MobilityInfo.cc:142</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8cc_source.html#l00142">veins::MobilityInfo::moveInfoTrace()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_aa60d29feef9095b628bd38bdba51528c_cgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_aa60d29feef9095b628bd38bdba51528c_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_aa60d29feef9095b628bd38bdba51528c_cgraph" id="aclassveins_1_1_local_mobility_aa60d29feef9095b628bd38bdba51528c_cgraph">
-<area shape="rect" title="Returns information about the current state." alt="" coords="5,5,157,47"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a20603e2f2900766ccf735b747ed4e491" title="Returns information about the current state." alt="" coords="205,5,348,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a977273b9805ffc8d9210eb4944837c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a977273b9805ffc8d9210eb4944837c8d">&#9670;&nbsp;</a></span>setSensorPeriod()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::LocalMobility::setSensorPeriod </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sensorPeriod</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00118">118</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                                       {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//updateLocalMobilityPos();</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>=<a class="code" href="classveins_1_1_mobility_info.html#a08d0e8c158afa9697dba176492b3fd4a">sensorPeriod</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00048">veins::MobilityInfo::sensorPeriod</a>.</p>
-
-</div>
-</div>
-<a id="a25f0651b3fbd554f00c322d00667309c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f0651b3fbd554f00c322d00667309c">&#9670;&nbsp;</a></span>setTraci()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::LocalMobility::setTraci </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a> *&#160;</td>
-          <td class="paramname"><em>traci</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00132">132</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                                       {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a> = <a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_local_mobility_8h_source.html#l00029">traci</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_local_mobility_8cc_source.html#l00026">LocalMobility()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_a25f0651b3fbd554f00c322d00667309c_icgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_a25f0651b3fbd554f00c322d00667309c_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_a25f0651b3fbd554f00c322d00667309c_icgraph" id="aclassveins_1_1_local_mobility_a25f0651b3fbd554f00c322d00667309c_icgraph">
-<area shape="rect" title=" " alt="" coords="205,5,357,47"/>
-<area shape="rect" href="classveins_1_1_local_mobility.html#a13404875fd06dfcbc79762237f94fb17" title=" " alt="" coords="5,5,157,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a01e6f0a49f46c66b72e294771cfcb355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01e6f0a49f46c66b72e294771cfcb355">&#9670;&nbsp;</a></span>updateLocalMobilityPos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void veins::LocalMobility::updateLocalMobilityPos </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8cc_source.html#l00047">47</a> of file <a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>!=NULL)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>-&gt;isTerminated())</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;             <span class="comment">/* to keep the last move</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">             this-&gt;lastMove = this-&gt;actualTemp;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">             this-&gt;actualTemp = new Move();</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">             this-&gt;actualTemp-&gt;setStart(this-&gt;actualMove-&gt;getStartPosition(), this-&gt;actualMove-&gt;getStartTime());</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">             this-&gt;actualTemp-&gt;setSpeed(this-&gt;actualMove-&gt;getSpeed());</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">             this-&gt;actualMove = this-&gt;traci-&gt;getMove();</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">             double ay = actualMove-&gt;getStartPosition().y - this-&gt;lastMove-&gt;getStartPosition().y;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">             double ax = actualMove-&gt;getStartPosition().x - this-&gt;lastMove-&gt;getStartPosition().x;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">             this-&gt;angle = std::atan2(ay, ax);</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">             //this-&gt;angle = traci-&gt;getAngleRad();</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">             this-&gt;calcAcceleration();</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">             */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;             <span class="comment">//double ay = this-&gt;traci-&gt;getMove()-&gt;getStartPosition().y - this-&gt;lastMove-&gt;getStartPosition().y;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;             <span class="comment">//double ax = this-&gt;traci-&gt;getMove()-&gt;getStartPosition().x - this-&gt;lastMove-&gt;getStartPosition().x;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;             <span class="comment">//this-&gt;angle = std::atan2(ay, ax);</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;             <span class="comment">//this-&gt;angle = traci-&gt;getAngleRad();</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;             <span class="comment">/*std::cout &lt;&lt; endl &lt;&lt; &quot; velocidade= &quot; &lt;&lt; this-&gt;traci-&gt;getSpeed() &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">             std::cout &lt;&lt; endl &lt;&lt; &quot; posicao= &quot; &lt;&lt; this-&gt;traci-&gt;getMove()-&gt;getStartPosition() &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">             std::cout &lt;&lt; endl &lt;&lt; &quot; posicao STARTPOS= &quot; &lt;&lt; this-&gt;traci-&gt;getMove()-&gt;getStartPos()&lt;&lt; endl;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">             std::cout &lt;&lt; endl &lt;&lt; &quot; posicao SPEED MOVE= &quot; &lt;&lt; this-&gt;traci-&gt;getMove()-&gt;getSpeed()&lt;&lt; endl;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">             std::cout &lt;&lt; endl &lt;&lt; &quot; posicao TIME MOVE= &quot; &lt;&lt; this-&gt;traci-&gt;getMove()-&gt;getStartTime() &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">            */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">lastMove</a> = this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a> = <span class="keyword">new</span> Move();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092">setStart</a>(this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>-&gt;<a class="code" href="classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac">getMove</a>()-&gt;<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>(), this-&gt;traci-&gt;getMove()-&gt;getStartTime());</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;             <span class="comment">//this-&gt;actualMove-&gt;setSpeed(this-&gt;traci-&gt;getMove()-&gt;getSpeed());</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22">setSpeed</a>(this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>-&gt;<a class="code" href="classveins_1_1_tra_c_i_mobility.html#ae7c680f6f0bc1a3826f726a607c66bc1">getSpeed</a>());</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;             <span class="comment">//dados do sensor</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;             Move * om1 = <span class="keyword">new</span> Move();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;             om1-&gt;setStart( this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>(), this-&gt;actualMove-&gt;getStartTime());</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;             <span class="comment">//om1-&gt;setSpeed(this-&gt;actualMove-&gt;getSpeed());</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;             om1-&gt;setSpeed(this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>-&gt;<a class="code" href="classveins_1_1_tra_c_i_mobility.html#ae7c680f6f0bc1a3826f726a607c66bc1">getSpeed</a>());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318">setCollectedMove</a>(om1);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;             <span class="keywordtype">double</span> ay = <a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>().<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a> - this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">lastMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>().<a class="code" href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">y</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;             <span class="keywordtype">double</span> ax = <a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>().<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a> - this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a7d164e1eba955a0f21470402a6cf954e">lastMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">getStartPos</a>().<a class="code" href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">x</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;             <span class="keywordflow">if</span> (ay!=0 || ax!=0) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                 this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a068d71225cc7f24c5d9dcd907e07335b">angle</a> = std::atan2(ay, ax);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;             }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;             <span class="comment">//this-&gt;angle = traci-&gt;getAngleRad();</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a8cc5b8b65642961b00177e2129d622a7">calcAcceleration</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;             this-&gt;<a class="code" href="classveins_1_1_mobility_info.html#a524fdf43342bc0bdb3ad6e2d03730ddb">age</a> = this-&gt;<a class="code" href="classveins_1_1_local_mobility.html#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">traci</a>-&gt;<a class="code" href="classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac">getMove</a>()-&gt;<a class="code" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21">getStartTime</a>().dbl() - <a class="code" href="classveins_1_1_mobility_info.html#a1ba04f865e43c584a60f9ec484078da0">actualMove</a>-&gt;<a class="code" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21">getStartTime</a>().dbl();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;             <span class="comment">//std::cout &lt;&lt; endl &lt;&lt; &quot;eixo X &quot; &lt;&lt; actualMove-&gt;getStartPosition().x &lt;&lt; &quot;  -  &quot; &lt;&lt; this-&gt;lastMove-&gt;getStartPosition().x;</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;             <span class="comment">//std::cout &lt;&lt; endl &lt;&lt; &quot;eixo Y &quot; &lt;&lt; actualMove-&gt;getStartPosition().y &lt;&lt; &quot;  -  &quot; &lt;&lt; this-&gt;lastMove-&gt;getStartPosition().y;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;             <span class="comment">//std::cout &lt;&lt; endl &lt;&lt; &quot;angleLocal = &quot; &lt;&lt; this-&gt;angle;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;         }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_coord_html_a4eb6bafb5dfce3f57099601cdb1e9883"><div class="ttname"><a href="classveins_1_1_coord.html#a4eb6bafb5dfce3f57099601cdb1e9883">veins::Coord::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00055">Coord.h:55</a></div></div>
-<div class="ttc" id="aclassveins_1_1_coord_html_afbd5e95b5fc320575a6ed64bb3849846"><div class="ttname"><a href="classveins_1_1_coord.html#afbd5e95b5fc320575a6ed64bb3849846">veins::Coord::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_coord_8h_source.html#l00054">Coord.h:54</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_traci_html_a01e04d24be6eb526906be24b3fadd7ac"><div class="ttname"><a href="classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac">veins::LocalMobilityTraci::getMove</a></div><div class="ttdeci">Move * getMove()</div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_traci_8cc_source.html#l00029">LocalMobilityTraci.cc:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a068d71225cc7f24c5d9dcd907e07335b"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a068d71225cc7f24c5d9dcd907e07335b">veins::MobilityInfo::angle</a></div><div class="ttdeci">float angle</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00054">MobilityInfo.h:54</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a524fdf43342bc0bdb3ad6e2d03730ddb"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a524fdf43342bc0bdb3ad6e2d03730ddb">veins::MobilityInfo::age</a></div><div class="ttdeci">double age</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8h_source.html#l00057">MobilityInfo.h:57</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a6e724a6364506cb72e4233c592836318"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318">veins::MobilityInfo::setCollectedMove</a></div><div class="ttdeci">void setCollectedMove(Move *collectedMove)</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8cc_source.html#l00257">MobilityInfo.cc:257</a></div></div>
-<div class="ttc" id="aclassveins_1_1_mobility_info_html_a8cc5b8b65642961b00177e2129d622a7"><div class="ttname"><a href="classveins_1_1_mobility_info.html#a8cc5b8b65642961b00177e2129d622a7">veins::MobilityInfo::calcAcceleration</a></div><div class="ttdeci">void calcAcceleration()</div><div class="ttdef"><b>Definition:</b> <a href="_mobility_info_8cc_source.html#l00228">MobilityInfo.cc:228</a></div></div>
-<div class="ttc" id="aclassveins_1_1_move_html_a51a6f1befe0836b69a794efe32af2e22"><div class="ttname"><a href="classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22">veins::Move::setSpeed</a></div><div class="ttdeci">void setSpeed(double speed)</div><div class="ttdoc">Sets the current speed in meters per second.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00090">Move.h:90</a></div></div>
-<div class="ttc" id="aclassveins_1_1_move_html_a72b382a849acc025fc1391c29e90b4e8"><div class="ttname"><a href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8">veins::Move::getStartPos</a></div><div class="ttdeci">const Coord &amp; getStartPos() const</div><div class="ttdoc">Returns the start position.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00098">Move.h:98</a></div></div>
-<div class="ttc" id="aclassveins_1_1_move_html_a826dea89c416d925c3d1fca2cae08d21"><div class="ttname"><a href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21">veins::Move::getStartTime</a></div><div class="ttdeci">simtime_t_cref getStartTime() const</div><div class="ttdoc">Returns start time, i.e.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00106">Move.h:106</a></div></div>
-<div class="ttc" id="aclassveins_1_1_move_html_ae7135773d10fdf52bec4e5c9a398a092"><div class="ttname"><a href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092">veins::Move::setStart</a></div><div class="ttdeci">void setStart(const Coord &amp;startPos, simtime_t_cref startTime)</div><div class="ttdoc">Sets start position (components in meters) and start time.</div><div class="ttdef"><b>Definition:</b> <a href="_move_8h_source.html#l00114">Move.h:114</a></div></div>
-<div class="ttc" id="aclassveins_1_1_tra_c_i_mobility_html_ae7c680f6f0bc1a3826f726a607c66bc1"><div class="ttname"><a href="classveins_1_1_tra_c_i_mobility.html#ae7c680f6f0bc1a3826f726a607c66bc1">veins::TraCIMobility::getSpeed</a></div><div class="ttdeci">virtual double getSpeed() const</div><div class="ttdef"><b>Definition:</b> <a href="_tra_c_i_mobility_8h_source.html#l00123">TraCIMobility.h:123</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_mobility_info_8h_source.html#l00036">veins::MobilityInfo::actualMove</a>, <a class="el" href="_mobility_info_8h_source.html#l00057">veins::MobilityInfo::age</a>, <a class="el" href="_mobility_info_8h_source.html#l00054">veins::MobilityInfo::angle</a>, <a class="el" href="_mobility_info_8cc_source.html#l00228">veins::MobilityInfo::calcAcceleration()</a>, <a class="el" href="_local_mobility_traci_8cc_source.html#l00029">veins::LocalMobilityTraci::getMove()</a>, <a class="el" href="_tra_c_i_mobility_8h_source.html#l00123">veins::TraCIMobility::getSpeed()</a>, <a class="el" href="_move_8h_source.html#l00098">veins::Move::getStartPos()</a>, <a class="el" href="_move_8h_source.html#l00106">veins::Move::getStartTime()</a>, <a class="el" href="_mobility_info_8h_source.html#l00039">veins::MobilityInfo::lastMove</a>, <a class="el" href="_mobility_info_8cc_source.html#l00257">veins::MobilityInfo::setCollectedMove()</a>, <a class="el" href="_move_8h_source.html#l00090">veins::Move::setSpeed()</a>, <a class="el" href="_move_8h_source.html#l00114">veins::Move::setStart()</a>, <a class="el" href="_local_mobility_8h_source.html#l00029">traci</a>, <a class="el" href="_coord_8h_source.html#l00054">veins::Coord::x</a>, and <a class="el" href="_coord_8h_source.html#l00055">veins::Coord::y</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_context_8cc_source.html#l00237">veins::IcarContext::changeLocalMobility()</a>, and <a class="el" href="_local_mobility_8cc_source.html#l00026">LocalMobility()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_cgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_cgraph" id="aclassveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_cgraph">
-<area shape="rect" title=" " alt="" coords="5,217,191,259"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a8cc5b8b65642961b00177e2129d622a7" title=" " alt="" coords="259,5,402,47"/>
-<area shape="rect" href="classveins_1_1_move.html#a826dea89c416d925c3d1fca2cae08d21" title="Returns start time, i.e." alt="" coords="471,67,665,94"/>
-<area shape="rect" href="classveins_1_1_local_mobility_traci.html#a01e04d24be6eb526906be24b3fadd7ac" title=" " alt="" coords="239,123,422,164"/>
-<area shape="rect" href="classveins_1_1_tra_c_i_mobility.html#ae7c680f6f0bc1a3826f726a607c66bc1" title=" " alt="" coords="255,188,406,229"/>
-<area shape="rect" href="classveins_1_1_move.html#a72b382a849acc025fc1391c29e90b4e8" title="Returns the start position." alt="" coords="239,254,423,281"/>
-<area shape="rect" href="classveins_1_1_mobility_info.html#a6e724a6364506cb72e4233c592836318" title=" " alt="" coords="257,305,404,347"/>
-<area shape="rect" href="classveins_1_1_move.html#a51a6f1befe0836b69a794efe32af2e22" title="Sets the current speed in meters per second." alt="" coords="246,371,415,398"/>
-<area shape="rect" href="classveins_1_1_move.html#ae7135773d10fdf52bec4e5c9a398a092" title="Sets start position (components in meters) and start time." alt="" coords="251,422,411,449"/>
-<area shape="rect" href="classveins_1_1_move.html#a983899326db64c24fef47811e88c0216" title="Returns the current speed." alt="" coords="483,13,653,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_icgraph.png" border="0" usemap="#aclassveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_icgraph" id="aclassveins_1_1_local_mobility_a01e6f0a49f46c66b72e294771cfcb355_icgraph">
-<area shape="rect" title=" " alt="" coords="731,57,916,98"/>
-<area shape="rect" href="classveins_1_1_icar_context.html#a2232cf5589c086af90c05901cd79d37b" title=" " alt="" coords="519,23,683,65"/>
-<area shape="rect" href="classveins_1_1_local_mobility.html#a13404875fd06dfcbc79762237f94fb17" title=" " alt="" coords="525,89,677,130"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#afcd0b1515688798306130eea655df704" title=" " alt="" coords="269,23,471,65"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a443ae3c27f696c26f04664f0d02d4b6d" title=" " alt="" coords="5,5,221,32"/>
-<area shape="rect" href="classveins_1_1_icarqoc.html#a842c91486ed0b0d9ff323aef0954a5b0" title=" " alt="" coords="9,56,217,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9fb5936796a44ef0ca2485fbb0d076c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fb5936796a44ef0ca2485fbb0d076c2">&#9670;&nbsp;</a></span>actualTemp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_move.html">Move</a>* veins::LocalMobility::actualTemp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8h_source.html#l00032">32</a> of file <a class="el" href="_local_mobility_8h_source.html">LocalMobility.h</a>.</p>
-
-</div>
-</div>
-<a id="a6bfa0d7c3b1c33fd0ae19b78a5a6593e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bfa0d7c3b1c33fd0ae19b78a5a6593e">&#9670;&nbsp;</a></span>traci</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_local_mobility_traci.html">LocalMobilityTraci</a>* veins::LocalMobility::traci</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_local_mobility_8h_source.html#l00029">29</a> of file <a class="el" href="_local_mobility_8h_source.html">LocalMobility.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_local_mobility_8cc_source.html#l00123">getTraci()</a>, <a class="el" href="_local_mobility_8cc_source.html#l00026">LocalMobility()</a>, <a class="el" href="_local_mobility_8cc_source.html#l00132">setTraci()</a>, and <a class="el" href="_local_mobility_8cc_source.html#l00047">updateLocalMobilityPos()</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_local_mobility_8h_source.html">LocalMobility.h</a></li>
-<li><a class="el" href="_local_mobility_8cc_source.html">LocalMobility.cc</a></li>
+<li>LocalMobility.cc</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_local_mobility.html">LocalMobility</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:52 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><b>veins</b></li><li class="navelem"><a class="el" href="classveins_1_1_local_mobility.html">LocalMobility</a></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

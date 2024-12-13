@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: veins::IcarRouting</title>
+<title>Contexto de Comunicação em VANET: veins::IcarRouting</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -89,768 +90,82 @@ $(document).ready(function(){initNavTree('classveins_1_1_icar_routing.html','');
 <div class="title">veins::IcarRouting</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for veins::IcarRouting:</div>
 <div class="dyncontent">
 <div class="center"><img src="classveins_1_1_icar_routing__coll__graph.png" border="0" usemap="#aveins_1_1_icar_routing_coll__map" alt="Collaboration graph"/></div>
 <map name="aveins_1_1_icar_routing_coll__map" id="aveins_1_1_icar_routing_coll__map">
-<area shape="rect" title=" " alt="" coords="203,185,342,212"/>
-<area shape="rect" href="classveins_1_1_coord.html" title="Class for storing 3D coordinates." alt="" coords="5,81,108,108"/>
-<area shape="rect" title=" " alt="" coords="21,5,92,32"/>
-<area shape="rect" href="classveins_1_1_agent_pair_list.html" title=" " alt="" coords="197,81,348,108"/>
-<area shape="rect" href="classveins_1_1_remote_agent_group.html" title=" " alt="" coords="372,81,565,108"/>
+<area shape="rect" title=" " alt="" coords="109,95,247,121"/>
+<area shape="rect" href="classveins_1_1_agent_pair_list.html" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="classveins_1_1_remote_agent_group.html" title=" " alt="" coords="180,5,373,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aabb1d1bf2d31482930102bf872b8d134"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#aabb1d1bf2d31482930102bf872b8d134">IcarRouting</a> ()</td></tr>
-<tr class="separator:aabb1d1bf2d31482930102bf872b8d134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b9e2d150277b1df3814b16cf4dc7e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a92b9e2d150277b1df3814b16cf4dc7e2">selectForwardingNode</a> ()</td></tr>
-<tr class="separator:a92b9e2d150277b1df3814b16cf4dc7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99030e2b641da9145321bc69ff4f5e9d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a99030e2b641da9145321bc69ff4f5e9d">~IcarRouting</a> ()</td></tr>
-<tr class="separator:a99030e2b641da9145321bc69ff4f5e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a891ac7460410c3496454176eb3bd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a93a891ac7460410c3496454176eb3bd2">IcarRouting</a> (<a class="el" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a> *pGroupAgent, <a class="el" href="classveins_1_1_agent_pair_list.html">AgentPairList</a> *pAgentPairList)</td></tr>
-<tr class="separator:a93a891ac7460410c3496454176eb3bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90435769900e2ad0ada98adbedb51a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a90435769900e2ad0ada98adbedb51a77">verifyAgentPairContext</a> (int64_t pSource, int64_t pDestination, string rule, double msgTTime)</td></tr>
-<tr class="separator:a90435769900e2ad0ada98adbedb51a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18422926c3c03766b6bd481220392f10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a18422926c3c03766b6bd481220392f10">verifyAgentPairContext</a> (<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *c, double msgTTime)</td></tr>
-<tr class="separator:a18422926c3c03766b6bd481220392f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd59c2b29a161aab2352630a96cdac2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#abd59c2b29a161aab2352630a96cdac2f">verifyAgentPairRoute</a> (int64_t pSource, int64_t pDestination, double msgTTime)</td></tr>
-<tr class="separator:abd59c2b29a161aab2352630a96cdac2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa0857e5a024532ee91f34477d4b169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169">getFowardNode</a> (int64_t <a class="el" href="classveins_1_1_icar_routing.html#adfebd89b507c9caf729bfb33823411ce">destinationId</a>, int64_t <a class="el" href="classveins_1_1_icar_routing.html#a323ed760205fb3bc6e5f399bd5f6c9f9">sourceId</a>, int64_t localId, double <a class="el" href="classveins_1_1_icar_routing.html#a6261c7383b59a9ac81ecdeaaa004b868">msgTimeToLive</a>, <a class="el" href="classveins_1_1_coord.html">Coord</a> <a class="el" href="classveins_1_1_icar_routing.html#a342b0c2bbe32a71cb54d3e34fd2b992c">target1</a>, <a class="el" href="classveins_1_1_coord.html">Coord</a> <a class="el" href="classveins_1_1_icar_routing.html#a7e06a3310e67d09be052afa170b51644">target2</a>)</td></tr>
+<tr class="memitem:a5aa0857e5a024532ee91f34477d4b169"><td class="memItemLeft" align="right" valign="top"><a id="a5aa0857e5a024532ee91f34477d4b169"></a>
+<a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getFowardNode</b> (int64_t destinationId, int64_t sourceId, int64_t localId, double msgTimeToLive, Coord target1, Coord target2)</td></tr>
 <tr class="separator:a5aa0857e5a024532ee91f34477d4b169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a891ac7460410c3496454176eb3bd2"><td class="memItemLeft" align="right" valign="top"><a id="a93a891ac7460410c3496454176eb3bd2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IcarRouting</b> (<a class="el" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a> *pGroupAgent, <a class="el" href="classveins_1_1_agent_pair_list.html">AgentPairList</a> *pAgentPairList)</td></tr>
+<tr class="separator:a93a891ac7460410c3496454176eb3bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b9e2d150277b1df3814b16cf4dc7e2"><td class="memItemLeft" align="right" valign="top"><a id="a92b9e2d150277b1df3814b16cf4dc7e2"></a>
+<a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>selectForwardingNode</b> ()</td></tr>
+<tr class="separator:a92b9e2d150277b1df3814b16cf4dc7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18422926c3c03766b6bd481220392f10"><td class="memItemLeft" align="right" valign="top"><a id="a18422926c3c03766b6bd481220392f10"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>verifyAgentPairContext</b> (<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *c, double msgTTime)</td></tr>
+<tr class="separator:a18422926c3c03766b6bd481220392f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90435769900e2ad0ada98adbedb51a77"><td class="memItemLeft" align="right" valign="top"><a id="a90435769900e2ad0ada98adbedb51a77"></a>
+<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>verifyAgentPairContext</b> (int64_t pSource, int64_t pDestination, string rule, double msgTTime)</td></tr>
+<tr class="separator:a90435769900e2ad0ada98adbedb51a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd59c2b29a161aab2352630a96cdac2f"><td class="memItemLeft" align="right" valign="top"><a id="abd59c2b29a161aab2352630a96cdac2f"></a>
+<a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>verifyAgentPairRoute</b> (int64_t pSource, int64_t pDestination, double msgTTime)</td></tr>
+<tr class="separator:abd59c2b29a161aab2352630a96cdac2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5b4f831d47be240f317ab78236f5c19e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_agent_pair_list.html">AgentPairList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a5b4f831d47be240f317ab78236f5c19e">agentPairList</a></td></tr>
+<tr class="memitem:a5b4f831d47be240f317ab78236f5c19e"><td class="memItemLeft" align="right" valign="top"><a id="a5b4f831d47be240f317ab78236f5c19e"></a>
+<a class="el" href="classveins_1_1_agent_pair_list.html">AgentPairList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>agentPairList</b></td></tr>
 <tr class="separator:a5b4f831d47be240f317ab78236f5c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfebd89b507c9caf729bfb33823411ce"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#adfebd89b507c9caf729bfb33823411ce">destinationId</a></td></tr>
+<tr class="memitem:adfebd89b507c9caf729bfb33823411ce"><td class="memItemLeft" align="right" valign="top"><a id="adfebd89b507c9caf729bfb33823411ce"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>destinationId</b></td></tr>
 <tr class="separator:adfebd89b507c9caf729bfb33823411ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323ed760205fb3bc6e5f399bd5f6c9f9"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a323ed760205fb3bc6e5f399bd5f6c9f9">sourceId</a></td></tr>
-<tr class="separator:a323ed760205fb3bc6e5f399bd5f6c9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6261c7383b59a9ac81ecdeaaa004b868"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a6261c7383b59a9ac81ecdeaaa004b868">msgTimeToLive</a></td></tr>
-<tr class="separator:a6261c7383b59a9ac81ecdeaaa004b868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a342b0c2bbe32a71cb54d3e34fd2b992c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_coord.html">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a342b0c2bbe32a71cb54d3e34fd2b992c">target1</a></td></tr>
-<tr class="separator:a342b0c2bbe32a71cb54d3e34fd2b992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e06a3310e67d09be052afa170b51644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_coord.html">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a7e06a3310e67d09be052afa170b51644">target2</a></td></tr>
-<tr class="separator:a7e06a3310e67d09be052afa170b51644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b1ec9ebe61262e5e9252bd3765003d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a37b1ec9ebe61262e5e9252bd3765003d">validityTime</a></td></tr>
-<tr class="separator:a37b1ec9ebe61262e5e9252bd3765003d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4f7f4a6c2db4a0236634d819812cad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#aed4f7f4a6c2db4a0236634d819812cad">groupAgent</a></td></tr>
-<tr class="separator:aed4f7f4a6c2db4a0236634d819812cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d960ecbb302bfa059e305ca962b798f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#a3d960ecbb302bfa059e305ca962b798f">userMessageLifeTime</a></td></tr>
-<tr class="separator:a3d960ecbb302bfa059e305ca962b798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0e9e746c8003ff74898ee53489dd09"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classveins_1_1_icar_routing.html#adb0e9e746c8003ff74898ee53489dd09">expectedConfidence</a></td></tr>
+<tr class="memitem:adb0e9e746c8003ff74898ee53489dd09"><td class="memItemLeft" align="right" valign="top"><a id="adb0e9e746c8003ff74898ee53489dd09"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>expectedConfidence</b></td></tr>
 <tr class="separator:adb0e9e746c8003ff74898ee53489dd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4f7f4a6c2db4a0236634d819812cad"><td class="memItemLeft" align="right" valign="top"><a id="aed4f7f4a6c2db4a0236634d819812cad"></a>
+<a class="el" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>groupAgent</b></td></tr>
+<tr class="separator:aed4f7f4a6c2db4a0236634d819812cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6261c7383b59a9ac81ecdeaaa004b868"><td class="memItemLeft" align="right" valign="top"><a id="a6261c7383b59a9ac81ecdeaaa004b868"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>msgTimeToLive</b></td></tr>
+<tr class="separator:a6261c7383b59a9ac81ecdeaaa004b868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ed760205fb3bc6e5f399bd5f6c9f9"><td class="memItemLeft" align="right" valign="top"><a id="a323ed760205fb3bc6e5f399bd5f6c9f9"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>sourceId</b></td></tr>
+<tr class="separator:a323ed760205fb3bc6e5f399bd5f6c9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342b0c2bbe32a71cb54d3e34fd2b992c"><td class="memItemLeft" align="right" valign="top"><a id="a342b0c2bbe32a71cb54d3e34fd2b992c"></a>
+Coord&#160;</td><td class="memItemRight" valign="bottom"><b>target1</b></td></tr>
+<tr class="separator:a342b0c2bbe32a71cb54d3e34fd2b992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e06a3310e67d09be052afa170b51644"><td class="memItemLeft" align="right" valign="top"><a id="a7e06a3310e67d09be052afa170b51644"></a>
+Coord&#160;</td><td class="memItemRight" valign="bottom"><b>target2</b></td></tr>
+<tr class="separator:a7e06a3310e67d09be052afa170b51644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d960ecbb302bfa059e305ca962b798f"><td class="memItemLeft" align="right" valign="top"><a id="a3d960ecbb302bfa059e305ca962b798f"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>userMessageLifeTime</b></td></tr>
+<tr class="separator:a3d960ecbb302bfa059e305ca962b798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b1ec9ebe61262e5e9252bd3765003d"><td class="memItemLeft" align="right" valign="top"><a id="a37b1ec9ebe61262e5e9252bd3765003d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>validityTime</b></td></tr>
+<tr class="separator:a37b1ec9ebe61262e5e9252bd3765003d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00025">25</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aabb1d1bf2d31482930102bf872b8d134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabb1d1bf2d31482930102bf872b8d134">&#9670;&nbsp;</a></span>IcarRouting() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::IcarRouting::IcarRouting </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00027">27</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                         {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a99030e2b641da9145321bc69ff4f5e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99030e2b641da9145321bc69ff4f5e9d">&#9670;&nbsp;</a></span>~IcarRouting()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::IcarRouting::~IcarRouting </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00031">31</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                          {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a93a891ac7460410c3496454176eb3bd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a891ac7460410c3496454176eb3bd2">&#9670;&nbsp;</a></span>IcarRouting() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">veins::IcarRouting::IcarRouting </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a> *&#160;</td>
-          <td class="paramname"><em>pGroupAgent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_agent_pair_list.html">AgentPairList</a> *&#160;</td>
-          <td class="paramname"><em>pAgentPairList</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00020">20</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                       {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_icar_routing.html#a5b4f831d47be240f317ab78236f5c19e">agentPairList</a> = pAgentPairList;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;<a class="code" href="classveins_1_1_icar_routing.html#aed4f7f4a6c2db4a0236634d819812cad">groupAgent</a> = pGroupAgent;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_icar_routing_html_a5b4f831d47be240f317ab78236f5c19e"><div class="ttname"><a href="classveins_1_1_icar_routing.html#a5b4f831d47be240f317ab78236f5c19e">veins::IcarRouting::agentPairList</a></div><div class="ttdeci">AgentPairList * agentPairList</div><div class="ttdef"><b>Definition:</b> <a href="_icar_routing_8h_source.html#l00027">IcarRouting.h:27</a></div></div>
-<div class="ttc" id="aclassveins_1_1_icar_routing_html_aed4f7f4a6c2db4a0236634d819812cad"><div class="ttname"><a href="classveins_1_1_icar_routing.html#aed4f7f4a6c2db4a0236634d819812cad">veins::IcarRouting::groupAgent</a></div><div class="ttdeci">RemoteAgentGroup * groupAgent</div><div class="ttdef"><b>Definition:</b> <a href="_icar_routing_8h_source.html#l00034">IcarRouting.h:34</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_icar_routing_8h_source.html#l00027">agentPairList</a>, and <a class="el" href="_icar_routing_8h_source.html#l00034">groupAgent</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5aa0857e5a024532ee91f34477d4b169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5aa0857e5a024532ee91f34477d4b169">&#9670;&nbsp;</a></span>getFowardNode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a> * veins::IcarRouting::getFowardNode </td>
-          <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>destinationId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>sourceId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>localId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>msgTimeToLive</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_coord.html">Coord</a>&#160;</td>
-          <td class="paramname"><em>target1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_coord.html">Coord</a>&#160;</td>
-          <td class="paramname"><em>target2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00113">113</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                       {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        Agent * fowardingAgent;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        ForwardingNode* fw=NULL;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        AgentPair * c = <a class="code" href="classveins_1_1_icar_routing.html#a90435769900e2ad0ada98adbedb51a77">verifyAgentPairContext</a>(<a class="code" href="classveins_1_1_icar_routing.html#a323ed760205fb3bc6e5f399bd5f6c9f9">sourceId</a>, <a class="code" href="classveins_1_1_icar_routing.html#adfebd89b507c9caf729bfb33823411ce">destinationId</a>, <span class="stringliteral">&quot;teste&quot;</span>, <a class="code" href="classveins_1_1_icar_routing.html#a6261c7383b59a9ac81ecdeaaa004b868">msgTimeToLive</a>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (c!=NULL){</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">if</span> (c-&gt;getAgentS()-&gt;getId()==localId ){</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                fowardingAgent = c-&gt;getAgentD();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }<span class="keywordflow">else</span> fowardingAgent = c-&gt;getAgentS();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            fw = <span class="keyword">new</span> ForwardingNode();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            fw-&gt;update(<span class="stringliteral">&quot;teste&quot;</span>, fowardingAgent, c, 0);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> fw;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_icar_routing_html_a323ed760205fb3bc6e5f399bd5f6c9f9"><div class="ttname"><a href="classveins_1_1_icar_routing.html#a323ed760205fb3bc6e5f399bd5f6c9f9">veins::IcarRouting::sourceId</a></div><div class="ttdeci">int64_t sourceId</div><div class="ttdef"><b>Definition:</b> <a href="_icar_routing_8h_source.html#l00029">IcarRouting.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_icar_routing_html_a6261c7383b59a9ac81ecdeaaa004b868"><div class="ttname"><a href="classveins_1_1_icar_routing.html#a6261c7383b59a9ac81ecdeaaa004b868">veins::IcarRouting::msgTimeToLive</a></div><div class="ttdeci">double msgTimeToLive</div><div class="ttdef"><b>Definition:</b> <a href="_icar_routing_8h_source.html#l00030">IcarRouting.h:30</a></div></div>
-<div class="ttc" id="aclassveins_1_1_icar_routing_html_a90435769900e2ad0ada98adbedb51a77"><div class="ttname"><a href="classveins_1_1_icar_routing.html#a90435769900e2ad0ada98adbedb51a77">veins::IcarRouting::verifyAgentPairContext</a></div><div class="ttdeci">AgentPair * verifyAgentPairContext(int64_t pSource, int64_t pDestination, string rule, double msgTTime)</div><div class="ttdef"><b>Definition:</b> <a href="_icar_routing_8cc_source.html#l00091">IcarRouting.cc:91</a></div></div>
-<div class="ttc" id="aclassveins_1_1_icar_routing_html_adfebd89b507c9caf729bfb33823411ce"><div class="ttname"><a href="classveins_1_1_icar_routing.html#adfebd89b507c9caf729bfb33823411ce">veins::IcarRouting::destinationId</a></div><div class="ttdeci">int64_t destinationId</div><div class="ttdef"><b>Definition:</b> <a href="_icar_routing_8h_source.html#l00028">IcarRouting.h:28</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_icar_routing_8h_source.html#l00028">destinationId</a>, <a class="el" href="_agent_pair_8cc_source.html#l00181">veins::AgentPair::getAgentD()</a>, <a class="el" href="_agent_pair_8cc_source.html#l00189">veins::AgentPair::getAgentS()</a>, <a class="el" href="_agent_8cc_source.html#l00029">veins::Agent::getId()</a>, <a class="el" href="_icar_routing_8h_source.html#l00030">msgTimeToLive</a>, <a class="el" href="_icar_routing_8h_source.html#l00029">sourceId</a>, <a class="el" href="_forwarding_node_8cc_source.html#l00032">veins::ForwardingNode::update()</a>, and <a class="el" href="_icar_routing_8cc_source.html#l00091">verifyAgentPairContext()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_icar_routing_a5aa0857e5a024532ee91f34477d4b169_cgraph.png" border="0" usemap="#aclassveins_1_1_icar_routing_a5aa0857e5a024532ee91f34477d4b169_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_icar_routing_a5aa0857e5a024532ee91f34477d4b169_cgraph" id="aclassveins_1_1_icar_routing_a5aa0857e5a024532ee91f34477d4b169_cgraph">
-<area shape="rect" title=" " alt="" coords="5,109,144,150"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="735,10,939,36"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="735,122,938,148"/>
-<area shape="rect" href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="765,176,909,203"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a543307034729baa2886bbe268a00a958" title=" " alt="" coords="197,410,367,452"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a90435769900e2ad0ada98adbedb51a77" title=" " alt="" coords="192,109,372,150"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#ac1abdefa9791132c133853a1d8f6c529" title=" " alt="" coords="431,672,676,699"/>
-<area shape="rect" href="classveins_1_1_qo_c_info.html#acf97b56c18327e05ced693878a659ee8" title=" " alt="" coords="445,258,662,284"/>
-<area shape="rect" href="class_timeliness.html#a7b1bba3d0ba777dcd5b670cb3dfb9c6b" title=" " alt="" coords="441,308,666,335"/>
-<area shape="rect" href="class_timeliness.html#a607700d7b070434ec24ca57bdbe53dee" title=" " alt="" coords="453,359,653,386"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a2a839957289c24474fd6dbd92977e141" title=" " alt="" coords="468,410,639,452"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a09d8ac3320ad39aa7b51dba8c792309a" title=" " alt="" coords="468,476,639,517"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a82f40d4fc51222ce2df2441136d989f1" title=" " alt="" coords="468,541,639,582"/>
-<area shape="rect" href="classveins_1_1_forwarding_node.html#a07939ee05b02cfaf686f7c86fb19e0be" title=" " alt="" coords="468,606,639,648"/>
-<area shape="rect" href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550" title=" " alt="" coords="478,141,629,182"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="420,76,687,117"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a92b9e2d150277b1df3814b16cf4dc7e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92b9e2d150277b1df3814b16cf4dc7e2">&#9670;&nbsp;</a></span>selectForwardingNode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_forwarding_node.html">ForwardingNode</a>* veins::IcarRouting::selectForwardingNode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18422926c3c03766b6bd481220392f10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18422926c3c03766b6bd481220392f10">&#9670;&nbsp;</a></span>verifyAgentPairContext() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool veins::IcarRouting::verifyAgentPairContext </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> *&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>msgTTime</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00070">70</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> resp = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (c!=NULL)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">//verify the communication state and if is neighbor</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> ((c-&gt;getCommnunicationState()!= <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">CommState::noCommunicating</a></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                &amp;&amp; c-&gt;getCommnunicationState()!= <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">CommState::faulty</a>)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                &amp;&amp; ( simTime() + c-&gt;getMessageTTime()).dbl() &lt;= <a class="code" href="classveins_1_1_icar_routing.html#a6261c7383b59a9ac81ecdeaaa004b868">msgTimeToLive</a>)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                resp = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;     }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> resp;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="ttc" id="aclass_comm_state_html_a76a45544f1153b6c77363a96113f2dc3"><div class="ttname"><a href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">CommState::faulty</a></div><div class="ttdeci">static const int faulty</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00050">CommState.h:50</a></div></div>
-<div class="ttc" id="aclass_comm_state_html_a9538d105fa2fe284a4ae88b8a450f69f"><div class="ttname"><a href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">CommState::noCommunicating</a></div><div class="ttdeci">static const int noCommunicating</div><div class="ttdef"><b>Definition:</b> <a href="_comm_state_8h_source.html#l00046">CommState.h:46</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_comm_state_8h_source.html#l00050">CommState::faulty</a>, <a class="el" href="_agent_pair_8cc_source.html#l00238">veins::AgentPair::getCommnunicationState()</a>, <a class="el" href="_agent_pair_8cc_source.html#l00264">veins::AgentPair::getMessageTTime()</a>, <a class="el" href="_icar_routing_8h_source.html#l00030">msgTimeToLive</a>, and <a class="el" href="_comm_state_8h_source.html#l00046">CommState::noCommunicating</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_icar_routing_a18422926c3c03766b6bd481220392f10_cgraph.png" border="0" usemap="#aclassveins_1_1_icar_routing_a18422926c3c03766b6bd481220392f10_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_icar_routing_a18422926c3c03766b6bd481220392f10_cgraph" id="aclassveins_1_1_icar_routing_a18422926c3c03766b6bd481220392f10_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,185,80"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="233,5,500,47"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#abd2490797020c7ca8b044a5d7a690e44" title=" " alt="" coords="259,71,474,112"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a90435769900e2ad0ada98adbedb51a77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90435769900e2ad0ada98adbedb51a77">&#9670;&nbsp;</a></span>verifyAgentPairContext() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> * veins::IcarRouting::verifyAgentPairContext </td>
-          <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>pSource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>pDestination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>rule</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>msgTTime</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00091">91</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    AgentPair * resp = NULL;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    AgentPair *  c;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (pDestination!=-1)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        c = <a class="code" href="classveins_1_1_icar_routing.html#a5b4f831d47be240f317ab78236f5c19e">agentPairList</a>-&gt;<a class="code" href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550">getAgentPair</a>(pSource, pDestination);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (c!=NULL)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//verify the communication state and if is neighbor</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span> ((c-&gt;getCommnunicationState()!= <a class="code" href="class_comm_state.html#a9538d105fa2fe284a4ae88b8a450f69f">CommState::noCommunicating</a></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    &amp;&amp; c-&gt;getCommnunicationState()!= <a class="code" href="class_comm_state.html#a76a45544f1153b6c77363a96113f2dc3">CommState::faulty</a>))</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    <span class="comment">//&amp;&amp; c-&gt;isNeighbors() &amp;&amp; ( simTime() + c-&gt;getMessageTTime()).dbl() &lt;= msgTimeToLive)</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    resp = c;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> resp;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_pair_list_html_aff936a1d258cab59e1d98ff6a4948550"><div class="ttname"><a href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550">veins::AgentPairList::getAgentPair</a></div><div class="ttdeci">AgentPair * getAgentPair(int64_t sourceId, int64_t destinationId)</div><div class="ttdef"><b>Definition:</b> <a href="_agent_pair_list_8cc_source.html#l00026">AgentPairList.cc:26</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_icar_routing_8h_source.html#l00027">agentPairList</a>, <a class="el" href="_comm_state_8h_source.html#l00050">CommState::faulty</a>, <a class="el" href="_agent_pair_list_8cc_source.html#l00026">veins::AgentPairList::getAgentPair()</a>, <a class="el" href="_agent_pair_8cc_source.html#l00238">veins::AgentPair::getCommnunicationState()</a>, and <a class="el" href="_comm_state_8h_source.html#l00046">CommState::noCommunicating</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00113">getFowardNode()</a>, and <a class="el" href="_icar_routing_8cc_source.html#l00038">verifyAgentPairRoute()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_cgraph.png" border="0" usemap="#aclassveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_cgraph" id="aclassveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_cgraph">
-<area shape="rect" title=" " alt="" coords="5,82,185,123"/>
-<area shape="rect" href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550" title=" " alt="" coords="291,49,442,90"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="233,114,500,155"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="548,5,752,32"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="549,56,751,83"/>
-<area shape="rect" href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="578,107,722,133"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_icgraph.png" border="0" usemap="#aclassveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_icgraph" alt=""/></div>
-<map name="aclassveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_icgraph" id="aclassveins_1_1_icar_routing_a90435769900e2ad0ada98adbedb51a77_icgraph">
-<area shape="rect" title=" " alt="" coords="220,39,400,80"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a5aa0857e5a024532ee91f34477d4b169" title=" " alt="" coords="19,5,158,47"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#abd59c2b29a161aab2352630a96cdac2f" title=" " alt="" coords="5,71,172,112"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="abd59c2b29a161aab2352630a96cdac2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd59c2b29a161aab2352630a96cdac2f">&#9670;&nbsp;</a></span>verifyAgentPairRoute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_agent_pair.html">AgentPair</a> * veins::IcarRouting::verifyAgentPairRoute </td>
-          <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>pSource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>pDestination</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>msgTTime</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8cc_source.html#l00038">38</a> of file <a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    AgentPair *  pair= NULL;;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    AgentPair * c = this-&gt;<a class="code" href="classveins_1_1_icar_routing.html#a5b4f831d47be240f317ab78236f5c19e">agentPairList</a>-&gt;<a class="code" href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550">getAgentPair</a>(pSource, pDestination);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    c = <a class="code" href="classveins_1_1_icar_routing.html#a5b4f831d47be240f317ab78236f5c19e">agentPairList</a>-&gt;<a class="code" href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550">getAgentPair</a>(pSource, pDestination);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (c!=NULL)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">bool</span> answer=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">while</span> (i &lt; c-&gt;pairRoutes.size() &amp;&amp; !answer)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    ICarRoute * wRoute =  c-&gt;<a class="code" href="classveins_1_1_agent_pair.html#a6203e46c32872c48919447071e02ad5b">pairRoutes</a>.at(i);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">if</span> (wRoute-&gt;qocValidityTime &gt; simTime()) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            answer=<a class="code" href="classveins_1_1_icar_routing.html#a90435769900e2ad0ada98adbedb51a77">verifyAgentPairContext</a>( wRoute-&gt;routeAgentPairs.at(0), msgTTime);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                            <span class="keywordflow">if</span> (answer)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                pair = wRoute-&gt;routeAgentPairs.at(0);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    i++;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> pair;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="ttc" id="aclassveins_1_1_agent_pair_html_a6203e46c32872c48919447071e02ad5b"><div class="ttname"><a href="classveins_1_1_agent_pair.html#a6203e46c32872c48919447071e02ad5b">veins::AgentPair::pairRoutes</a></div><div class="ttdeci">std::vector&lt; ICarRoute * &gt; pairRoutes</div><div class="ttdef"><b>Definition:</b> <a href="_agent_pair_8h_source.html#l00145">AgentPair.h:145</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_icar_routing_8h_source.html#l00027">agentPairList</a>, <a class="el" href="_agent_pair_list_8cc_source.html#l00026">veins::AgentPairList::getAgentPair()</a>, <a class="el" href="_agent_pair_8h_source.html#l00145">veins::AgentPair::pairRoutes</a>, <a class="el" href="_i_car_route_8h_source.html#l00033">veins::ICarRoute::qocValidityTime</a>, <a class="el" href="_i_car_route_8h_source.html#l00036">veins::ICarRoute::routeAgentPairs</a>, and <a class="el" href="_icar_routing_8cc_source.html#l00091">verifyAgentPairContext()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classveins_1_1_icar_routing_abd59c2b29a161aab2352630a96cdac2f_cgraph.png" border="0" usemap="#aclassveins_1_1_icar_routing_abd59c2b29a161aab2352630a96cdac2f_cgraph" alt=""/></div>
-<map name="aclassveins_1_1_icar_routing_abd59c2b29a161aab2352630a96cdac2f_cgraph" id="aclassveins_1_1_icar_routing_abd59c2b29a161aab2352630a96cdac2f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,78,172,119"/>
-<area shape="rect" href="classveins_1_1_agent_pair_list.html#aff936a1d258cab59e1d98ff6a4948550" title=" " alt="" coords="506,49,657,90"/>
-<area shape="rect" href="classveins_1_1_icar_routing.html#a90435769900e2ad0ada98adbedb51a77" title=" " alt="" coords="220,107,400,149"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a29ec0ce3be7ebbcc8eb1f67805d36418" title=" " alt="" coords="763,5,967,32"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a52b5e6862493569594f23c698c749adf" title=" " alt="" coords="763,56,966,83"/>
-<area shape="rect" href="classveins_1_1_agent.html#aaa4e7653c55879456b59f102d95a5f59" title="Método para obter o valor atual." alt="" coords="793,107,937,133"/>
-<area shape="rect" href="classveins_1_1_agent_pair.html#a55fcfa884006561e519671678aecaee6" title=" " alt="" coords="448,114,715,155"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5b4f831d47be240f317ab78236f5c19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b4f831d47be240f317ab78236f5c19e">&#9670;&nbsp;</a></span>agentPairList</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_agent_pair_list.html">AgentPairList</a>* veins::IcarRouting::agentPairList</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00027">27</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00020">IcarRouting()</a>, <a class="el" href="_icar_routing_8cc_source.html#l00091">verifyAgentPairContext()</a>, and <a class="el" href="_icar_routing_8cc_source.html#l00038">verifyAgentPairRoute()</a>.</p>
-
-</div>
-</div>
-<a id="adfebd89b507c9caf729bfb33823411ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfebd89b507c9caf729bfb33823411ce">&#9670;&nbsp;</a></span>destinationId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t veins::IcarRouting::destinationId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00028">28</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00113">getFowardNode()</a>.</p>
-
-</div>
-</div>
-<a id="adb0e9e746c8003ff74898ee53489dd09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0e9e746c8003ff74898ee53489dd09">&#9670;&nbsp;</a></span>expectedConfidence</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::IcarRouting::expectedConfidence</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00036">36</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-</div>
-</div>
-<a id="aed4f7f4a6c2db4a0236634d819812cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed4f7f4a6c2db4a0236634d819812cad">&#9670;&nbsp;</a></span>groupAgent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_remote_agent_group.html">RemoteAgentGroup</a>* veins::IcarRouting::groupAgent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00034">34</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00020">IcarRouting()</a>.</p>
-
-</div>
-</div>
-<a id="a6261c7383b59a9ac81ecdeaaa004b868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6261c7383b59a9ac81ecdeaaa004b868">&#9670;&nbsp;</a></span>msgTimeToLive</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::IcarRouting::msgTimeToLive</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00030">30</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00113">getFowardNode()</a>, and <a class="el" href="_icar_routing_8cc_source.html#l00070">verifyAgentPairContext()</a>.</p>
-
-</div>
-</div>
-<a id="a323ed760205fb3bc6e5f399bd5f6c9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a323ed760205fb3bc6e5f399bd5f6c9f9">&#9670;&nbsp;</a></span>sourceId</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t veins::IcarRouting::sourceId</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00029">29</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_icar_routing_8cc_source.html#l00113">getFowardNode()</a>.</p>
-
-</div>
-</div>
-<a id="a342b0c2bbe32a71cb54d3e34fd2b992c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a342b0c2bbe32a71cb54d3e34fd2b992c">&#9670;&nbsp;</a></span>target1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_coord.html">Coord</a> veins::IcarRouting::target1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00031">31</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-</div>
-</div>
-<a id="a7e06a3310e67d09be052afa170b51644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e06a3310e67d09be052afa170b51644">&#9670;&nbsp;</a></span>target2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classveins_1_1_coord.html">Coord</a> veins::IcarRouting::target2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00032">32</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-</div>
-</div>
-<a id="a3d960ecbb302bfa059e305ca962b798f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d960ecbb302bfa059e305ca962b798f">&#9670;&nbsp;</a></span>userMessageLifeTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::IcarRouting::userMessageLifeTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00035">35</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-</div>
-</div>
-<a id="a37b1ec9ebe61262e5e9252bd3765003d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b1ec9ebe61262e5e9252bd3765003d">&#9670;&nbsp;</a></span>validityTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double veins::IcarRouting::validityTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_icar_routing_8h_source.html#l00033">33</a> of file <a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_icar_routing_8h_source.html">IcarRouting.h</a></li>
-<li><a class="el" href="_icar_routing_8cc_source.html">IcarRouting.cc</a></li>
+<li>IcarRouting.cc</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceveins.html">veins</a></li><li class="navelem"><a class="el" href="classveins_1_1_icar_routing.html">IcarRouting</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:52 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><b>veins</b></li><li class="navelem"><a class="el" href="classveins_1_1_icar_routing.html">IcarRouting</a></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

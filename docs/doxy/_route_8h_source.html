@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Route.h Source File</title>
+<title>Contexto de Comunicação em VANET: Route.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_route_8h_source.html',''); initResiza
 <div class="title">Route.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_route_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -103,73 +104,51 @@ $(document).ready(function(){initNavTree('_route_8h_source.html',''); initResiza
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef ROUTE_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define ROUTE_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_8h.html">Agent.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;Agent.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_route.html">Route</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html#ab3a2ca1961c6e3e0cdc8614de6116728">   27</a></span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a> * <a class="code" href="classveins_1_1_route.html#ab3a2ca1961c6e3e0cdc8614de6116728">sourceAgent</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a> * sourceAgent;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//Agent * destinationAgent;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html#ab7f15100faec4db7d29f5596c764d090">   29</a></span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a> * <a class="code" href="classveins_1_1_route.html#ab7f15100faec4db7d29f5596c764d090">nextAgent</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html#ac44b914c1e2744afae33b49a88326096">   30</a></span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a> * <a class="code" href="classveins_1_1_route.html#ac44b914c1e2744afae33b49a88326096">antecessorAgent</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html#ad2bb4a070c4d1299704dc2a0d2c918d7">   31</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#ad2bb4a070c4d1299704dc2a0d2c918d7">messageTTimeFromSource</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html#a09781811a6ef09cdd01f6e09887bde1a">   32</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#a09781811a6ef09cdd01f6e09887bde1a">messageTTimeFromAntecessor</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classveins_1_1_route.html#ada23e432c41b80477ad4a12b533a70d8">   33</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#ada23e432c41b80477ad4a12b533a70d8">timeoute</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a> * nextAgent;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a> * antecessorAgent;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> messageTTimeFromSource;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> messageTTimeFromAntecessor;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> timeoute;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//QoCRoute * qocRoute;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classveins_1_1_route.html#ae09eb67c24d77ec93c12bf34007d5066">Route</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_route.html#af707512e445ab174286ce489c2bf185a">~Route</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a>* <a class="code" href="classveins_1_1_route.html#a8c55cf7fbde095d5f0ac23c22b9f4ee2">getAntecessorAgent</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_route.html#a4264e9f33dcdb5761d16c9edebe9b656">setAntecessorAgent</a>(<a class="code" href="classveins_1_1_agent.html">Agent</a>* <a class="code" href="classveins_1_1_route.html#ac44b914c1e2744afae33b49a88326096">antecessorAgent</a>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#aaee93495b1f47910596c99548c27afdc">getMessageTTimeFromAntecessor</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_route.html#a4e505c220061d75fb01fdd4d58097cf4">setMessageTTimeFromAntecessor</a>(<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#a09781811a6ef09cdd01f6e09887bde1a">messageTTimeFromAntecessor</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#a1035b4b0c843910098859cda77f8e41a">getMessageTTimeFromSource</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_route.html#a64d7dc2e362851d0283e80915cada961">setMessageTTimeFromSource</a>(<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#ad2bb4a070c4d1299704dc2a0d2c918d7">messageTTimeFromSource</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a>* <a class="code" href="classveins_1_1_route.html#a61877650616592d241c17ff75ee05bb5">getNextAgent</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_route.html#ac951af2f022f2866220421e15d2a7773">setNextAgent</a>( <a class="code" href="classveins_1_1_agent.html">Agent</a>* <a class="code" href="classveins_1_1_route.html#ab7f15100faec4db7d29f5596c764d090">nextAgent</a>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a>* <a class="code" href="classveins_1_1_route.html#a98546dfbed72fe272a12a2aa815c74f2">getSourceAgent</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_route.html#a2b522ff0b67e4156ac1a445c10c84ec3">setSourceAgent</a>(<a class="code" href="classveins_1_1_agent.html">Agent</a>* <a class="code" href="classveins_1_1_route.html#ab3a2ca1961c6e3e0cdc8614de6116728">sourceAgent</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#af8c80ec3628e8a887f32aa9697211dd4">getTimeoute</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_route.html#ae7c5140879634d0fc50d2985b4081fd7">setTimeoute</a>(<span class="keywordtype">double</span> <a class="code" href="classveins_1_1_route.html#ada23e432c41b80477ad4a12b533a70d8">timeoute</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classveins_1_1_route.html">Route</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_route.html">Route</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a>* getAntecessorAgent();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setAntecessorAgent(<a class="code" href="classveins_1_1_agent.html">Agent</a>* antecessorAgent);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> getMessageTTimeFromAntecessor();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setMessageTTimeFromAntecessor(<span class="keywordtype">double</span> messageTTimeFromAntecessor);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> getMessageTTimeFromSource();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> setMessageTTimeFromSource(<span class="keywordtype">double</span> messageTTimeFromSource);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a>* getNextAgent();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> setNextAgent( <a class="code" href="classveins_1_1_agent.html">Agent</a>* nextAgent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classveins_1_1_agent.html">Agent</a>* getSourceAgent();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setSourceAgent(<a class="code" href="classveins_1_1_agent.html">Agent</a>* sourceAgent);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">double</span> getTimeoute();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setTimeoute(<span class="keywordtype">double</span> timeoute);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ROUTE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_agent_8h_html"><div class="ttname"><a href="_agent_8h.html">Agent.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html"><div class="ttname"><a href="classveins_1_1_agent.html">veins::Agent</a></div><div class="ttdoc">Uma breve descrição da classe.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00034">Agent.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html"><div class="ttname"><a href="classveins_1_1_route.html">veins::Route</a></div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00024">Route.h:24</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a09781811a6ef09cdd01f6e09887bde1a"><div class="ttname"><a href="classveins_1_1_route.html#a09781811a6ef09cdd01f6e09887bde1a">veins::Route::messageTTimeFromAntecessor</a></div><div class="ttdeci">double messageTTimeFromAntecessor</div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00032">Route.h:32</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a1035b4b0c843910098859cda77f8e41a"><div class="ttname"><a href="classveins_1_1_route.html#a1035b4b0c843910098859cda77f8e41a">veins::Route::getMessageTTimeFromSource</a></div><div class="ttdeci">double getMessageTTimeFromSource()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00047">Route.cc:47</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a2b522ff0b67e4156ac1a445c10c84ec3"><div class="ttname"><a href="classveins_1_1_route.html#a2b522ff0b67e4156ac1a445c10c84ec3">veins::Route::setSourceAgent</a></div><div class="ttdeci">void setSourceAgent(Agent *sourceAgent)</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00067">Route.cc:67</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a4264e9f33dcdb5761d16c9edebe9b656"><div class="ttname"><a href="classveins_1_1_route.html#a4264e9f33dcdb5761d16c9edebe9b656">veins::Route::setAntecessorAgent</a></div><div class="ttdeci">void setAntecessorAgent(Agent *antecessorAgent)</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00034">Route.cc:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a4e505c220061d75fb01fdd4d58097cf4"><div class="ttname"><a href="classveins_1_1_route.html#a4e505c220061d75fb01fdd4d58097cf4">veins::Route::setMessageTTimeFromAntecessor</a></div><div class="ttdeci">void setMessageTTimeFromAntecessor(double messageTTimeFromAntecessor)</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00043">Route.cc:43</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a61877650616592d241c17ff75ee05bb5"><div class="ttname"><a href="classveins_1_1_route.html#a61877650616592d241c17ff75ee05bb5">veins::Route::getNextAgent</a></div><div class="ttdeci">Agent * getNextAgent()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00055">Route.cc:55</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a64d7dc2e362851d0283e80915cada961"><div class="ttname"><a href="classveins_1_1_route.html#a64d7dc2e362851d0283e80915cada961">veins::Route::setMessageTTimeFromSource</a></div><div class="ttdeci">void setMessageTTimeFromSource(double messageTTimeFromSource)</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00051">Route.cc:51</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a8c55cf7fbde095d5f0ac23c22b9f4ee2"><div class="ttname"><a href="classveins_1_1_route.html#a8c55cf7fbde095d5f0ac23c22b9f4ee2">veins::Route::getAntecessorAgent</a></div><div class="ttdeci">Agent * getAntecessorAgent()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00030">Route.cc:30</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_a98546dfbed72fe272a12a2aa815c74f2"><div class="ttname"><a href="classveins_1_1_route.html#a98546dfbed72fe272a12a2aa815c74f2">veins::Route::getSourceAgent</a></div><div class="ttdeci">Agent * getSourceAgent()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00063">Route.cc:63</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_aaee93495b1f47910596c99548c27afdc"><div class="ttname"><a href="classveins_1_1_route.html#aaee93495b1f47910596c99548c27afdc">veins::Route::getMessageTTimeFromAntecessor</a></div><div class="ttdeci">double getMessageTTimeFromAntecessor()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00039">Route.cc:39</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ab3a2ca1961c6e3e0cdc8614de6116728"><div class="ttname"><a href="classveins_1_1_route.html#ab3a2ca1961c6e3e0cdc8614de6116728">veins::Route::sourceAgent</a></div><div class="ttdeci">Agent * sourceAgent</div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00027">Route.h:27</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ab7f15100faec4db7d29f5596c764d090"><div class="ttname"><a href="classveins_1_1_route.html#ab7f15100faec4db7d29f5596c764d090">veins::Route::nextAgent</a></div><div class="ttdeci">Agent * nextAgent</div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00029">Route.h:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ac44b914c1e2744afae33b49a88326096"><div class="ttname"><a href="classveins_1_1_route.html#ac44b914c1e2744afae33b49a88326096">veins::Route::antecessorAgent</a></div><div class="ttdeci">Agent * antecessorAgent</div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00030">Route.h:30</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ac951af2f022f2866220421e15d2a7773"><div class="ttname"><a href="classveins_1_1_route.html#ac951af2f022f2866220421e15d2a7773">veins::Route::setNextAgent</a></div><div class="ttdeci">void setNextAgent(Agent *nextAgent)</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00059">Route.cc:59</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ad2bb4a070c4d1299704dc2a0d2c918d7"><div class="ttname"><a href="classveins_1_1_route.html#ad2bb4a070c4d1299704dc2a0d2c918d7">veins::Route::messageTTimeFromSource</a></div><div class="ttdeci">double messageTTimeFromSource</div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00031">Route.h:31</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ada23e432c41b80477ad4a12b533a70d8"><div class="ttname"><a href="classveins_1_1_route.html#ada23e432c41b80477ad4a12b533a70d8">veins::Route::timeoute</a></div><div class="ttdeci">double timeoute</div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00033">Route.h:33</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ae09eb67c24d77ec93c12bf34007d5066"><div class="ttname"><a href="classveins_1_1_route.html#ae09eb67c24d77ec93c12bf34007d5066">veins::Route::Route</a></div><div class="ttdeci">Route()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00020">Route.cc:20</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_ae7c5140879634d0fc50d2985b4081fd7"><div class="ttname"><a href="classveins_1_1_route.html#ae7c5140879634d0fc50d2985b4081fd7">veins::Route::setTimeoute</a></div><div class="ttdeci">void setTimeoute(double timeoute)</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00075">Route.cc:75</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_af707512e445ab174286ce489c2bf185a"><div class="ttname"><a href="classveins_1_1_route.html#af707512e445ab174286ce489c2bf185a">veins::Route::~Route</a></div><div class="ttdeci">virtual ~Route()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00025">Route.cc:25</a></div></div>
-<div class="ttc" id="aclassveins_1_1_route_html_af8c80ec3628e8a887f32aa9697211dd4"><div class="ttname"><a href="classveins_1_1_route.html#af8c80ec3628e8a887f32aa9697211dd4">veins::Route::getTimeoute</a></div><div class="ttdeci">double getTimeoute()</div><div class="ttdef"><b>Definition:</b> <a href="_route_8cc_source.html#l00071">Route.cc:71</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_agent_html"><div class="ttname"><a href="classveins_1_1_agent.html">veins::Agent</a></div><div class="ttdoc">Uma breve descrição da classe.</div><div class="ttdef"><b>Definition:</b> Agent.h:34</div></div>
+<div class="ttc" id="aclassveins_1_1_route_html"><div class="ttname"><a href="classveins_1_1_route.html">veins::Route</a></div><div class="ttdef"><b>Definition:</b> Route.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_route_8h.html">Route.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>Route.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

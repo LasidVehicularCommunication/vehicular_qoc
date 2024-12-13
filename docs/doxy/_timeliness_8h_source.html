@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Timeliness.h Source File</title>
+<title>Contexto de Comunicação em VANET: Timeliness.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_timeliness_8h_source.html',''); initR
 <div class="title">Timeliness.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_timeliness_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -104,9 +105,9 @@ $(document).ready(function(){initNavTree('_timeliness_8h_source.html',''); initR
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define TIMELINESS_H_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//#include &lt;omnetpp.h&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_comm_state_8h.html">CommState.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;CommState.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;omnetpp.h&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceomnetpp.html">omnetpp</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using namespace </span>omnetpp;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_timeliness.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_timeliness.html">Timeliness</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
@@ -115,13 +116,13 @@ $(document).ready(function(){initNavTree('_timeliness_8h_source.html',''); initR
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     * Validity = -1 -- the time is old, there is no validity</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_timeliness.html#aefdd84bfbed271d98f05f229c7486822">   31</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_timeliness.html#aefdd84bfbed271d98f05f229c7486822">validity</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_timeliness.html#ad5c869dfab5016ad4d42f946b4c2f26b">   32</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_timeliness.html#ad5c869dfab5016ad4d42f946b4c2f26b">coConfianca</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_timeliness.html#af85dc82d11dc04614781da055f70163b">   33</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_timeliness.html#af85dc82d11dc04614781da055f70163b">age</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_timeliness.html#a1f411d1288fefa25ec19f0031c5b28bd">   34</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_timeliness.html#a1f411d1288fefa25ec19f0031c5b28bd">priorAge</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_timeliness.html#a61f96e5414b79f8ec5ad6258eaa805f1">   35</a></span>&#160;    simtime_t <a class="code" href="class_timeliness.html#a61f96e5414b79f8ec5ad6258eaa805f1">timeoutValidity</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_timeliness.html#a37d8a2fdda30bcf5a6461605e836c80e">   36</a></span>&#160;    simtime_t <a class="code" href="class_timeliness.html#a37d8a2fdda30bcf5a6461605e836c80e">timeStampUpdate</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_timeliness.html#acb6af4526841ecfc8b0ac34734a665c2">   37</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_timeliness.html#acb6af4526841ecfc8b0ac34734a665c2">timeCommSignal</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> validity;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> coConfianca;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> age;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> priorAge;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    simtime_t timeoutValidity;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    simtime_t timeStampUpdate;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">double</span> timeCommSignal;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_timeliness.html">Timeliness</a>();</div>
@@ -146,23 +147,14 @@ $(document).ready(function(){initNavTree('_timeliness_8h_source.html',''); initR
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TIMELINESS_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_comm_state_8h_html"><div class="ttname"><a href="_comm_state_8h.html">CommState.h</a></div></div>
-<div class="ttc" id="aclass_timeliness_html"><div class="ttname"><a href="class_timeliness.html">Timeliness</a></div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00024">Timeliness.h:24</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_a1f411d1288fefa25ec19f0031c5b28bd"><div class="ttname"><a href="class_timeliness.html#a1f411d1288fefa25ec19f0031c5b28bd">Timeliness::priorAge</a></div><div class="ttdeci">double priorAge</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00034">Timeliness.h:34</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_a37d8a2fdda30bcf5a6461605e836c80e"><div class="ttname"><a href="class_timeliness.html#a37d8a2fdda30bcf5a6461605e836c80e">Timeliness::timeStampUpdate</a></div><div class="ttdeci">simtime_t timeStampUpdate</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00036">Timeliness.h:36</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_a61f96e5414b79f8ec5ad6258eaa805f1"><div class="ttname"><a href="class_timeliness.html#a61f96e5414b79f8ec5ad6258eaa805f1">Timeliness::timeoutValidity</a></div><div class="ttdeci">simtime_t timeoutValidity</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00035">Timeliness.h:35</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_acb6af4526841ecfc8b0ac34734a665c2"><div class="ttname"><a href="class_timeliness.html#acb6af4526841ecfc8b0ac34734a665c2">Timeliness::timeCommSignal</a></div><div class="ttdeci">double timeCommSignal</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00037">Timeliness.h:37</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_ad5c869dfab5016ad4d42f946b4c2f26b"><div class="ttname"><a href="class_timeliness.html#ad5c869dfab5016ad4d42f946b4c2f26b">Timeliness::coConfianca</a></div><div class="ttdeci">double coConfianca</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00032">Timeliness.h:32</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_aefdd84bfbed271d98f05f229c7486822"><div class="ttname"><a href="class_timeliness.html#aefdd84bfbed271d98f05f229c7486822">Timeliness::validity</a></div><div class="ttdeci">double validity</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00031">Timeliness.h:31</a></div></div>
-<div class="ttc" id="aclass_timeliness_html_af85dc82d11dc04614781da055f70163b"><div class="ttname"><a href="class_timeliness.html#af85dc82d11dc04614781da055f70163b">Timeliness::age</a></div><div class="ttdeci">double age</div><div class="ttdef"><b>Definition:</b> <a href="_timeliness_8h_source.html#l00033">Timeliness.h:33</a></div></div>
-<div class="ttc" id="anamespaceomnetpp_html"><div class="ttname"><a href="namespaceomnetpp.html">omnetpp</a></div><div class="ttdef"><b>Definition:</b> <a href="veins_8h_source.html#l00048">veins.h:48</a></div></div>
+<div class="ttc" id="aclass_timeliness_html"><div class="ttname"><a href="class_timeliness.html">Timeliness</a></div><div class="ttdef"><b>Definition:</b> Timeliness.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_timeliness_8h.html">Timeliness.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>Timeliness.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

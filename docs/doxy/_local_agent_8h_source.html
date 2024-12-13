@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: LocalAgent.h Source File</title>
+<title>Contexto de Comunicação em VANET: LocalAgent.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customDoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -25,7 +26,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Contexto de Comunicação em VANET
    </div>
   </td>
  </tr>
@@ -85,7 +86,7 @@ $(document).ready(function(){initNavTree('_local_agent_8h_source.html',''); init
 <div class="title">LocalAgent.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_local_agent_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
@@ -102,50 +103,38 @@ $(document).ready(function(){initNavTree('_local_agent_8h_source.html',''); init
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef LOCALAGENT_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define LOCALAGENT_H_</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_local_mobility_8h.html">LocalMobility.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_8h.html">Agent.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_local_comm_info_8h.html">LocalCommInfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;LocalMobility.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;Agent.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;LocalCommInfo.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceveins.html">veins</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>veins{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classveins_1_1_local_agent.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classveins_1_1_local_agent.html">LocalAgent</a> : <span class="keyword">public</span> <a class="code" href="classveins_1_1_agent.html">Agent</a>{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//private:</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classveins_1_1_local_agent.html#a76a2d50555aedcda1ff96c5467d62cd1">LocalAgent</a>(int64_t <span class="keywordtype">id</span>, <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a>* lm, std::string <a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>  );</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="keyword">virtual</span> <a class="code" href="classveins_1_1_local_agent.html#ae7f3996539f09057d8ef76746bb7e747">~LocalAgent</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classveins_1_1_local_agent.html#afda1c2a9f4936af9b254fa8b722b46b3">updateLocalAgent</a>(<span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> <a class="code" href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">setRadius</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string <a class="code" href="classveins_1_1_local_agent.html#a66a8a13f9513e7bbc84493f9d81ab82a">info</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string <a class="code" href="classveins_1_1_local_agent.html#a0df18b6c42a5c3e4eb9303c14c8e55a1">infoTrace</a>(<span class="keywordtype">bool</span> header, std::string idagent);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a> * <a class="code" href="classveins_1_1_local_agent.html#af6721d8a6bcc7f2d9fc412f1f3dad48f">getLocalMobility</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classveins_1_1_local_comm_info.html">LocalCommInfo</a>* <a class="code" href="classveins_1_1_local_agent.html#a5a2e13c2e730b15a4e867e1a9e6f3a5d">getLocalCommInfo</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classveins_1_1_local_agent.html">LocalAgent</a>(int64_t <span class="keywordtype">id</span>, <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a>* lm, std::string <a class="code" href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">agentName</a>  );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="keyword">virtual</span> ~<a class="code" href="classveins_1_1_local_agent.html">LocalAgent</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="keywordtype">void</span> updateLocalAgent(<span class="keywordtype">double</span> maxSpeed, <span class="keywordtype">double</span> setRadius);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string info();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string infoTrace(<span class="keywordtype">bool</span> header, std::string idagent);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classveins_1_1_local_mobility.html">LocalMobility</a> * getLocalMobility();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classveins_1_1_local_comm_info.html">LocalCommInfo</a>* getLocalCommInfo();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LOCALAGENT_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_agent_8h_html"><div class="ttname"><a href="_agent_8h.html">Agent.h</a></div></div>
-<div class="ttc" id="a_local_comm_info_8h_html"><div class="ttname"><a href="_local_comm_info_8h.html">LocalCommInfo.h</a></div></div>
-<div class="ttc" id="a_local_mobility_8h_html"><div class="ttname"><a href="_local_mobility_8h.html">LocalMobility.h</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html"><div class="ttname"><a href="classveins_1_1_agent.html">veins::Agent</a></div><div class="ttdoc">Uma breve descrição da classe.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00034">Agent.h:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a3865c086e8a0cc367b924b944058133f"><div class="ttname"><a href="classveins_1_1_agent.html#a3865c086e8a0cc367b924b944058133f">veins::Agent::setRadius</a></div><div class="ttdeci">double setRadius</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00039">Agent.h:39</a></div></div>
-<div class="ttc" id="aclassveins_1_1_agent_html_a409f74492646575f5ec8c845a37e0080"><div class="ttname"><a href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">veins::Agent::agentName</a></div><div class="ttdeci">std::string agentName</div><div class="ttdoc">Armazena o valor da classe.</div><div class="ttdef"><b>Definition:</b> <a href="_agent_8h_source.html#l00037">Agent.h:37</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html"><div class="ttname"><a href="classveins_1_1_local_agent.html">veins::LocalAgent</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8h_source.html#l00024">LocalAgent.h:24</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_a0df18b6c42a5c3e4eb9303c14c8e55a1"><div class="ttname"><a href="classveins_1_1_local_agent.html#a0df18b6c42a5c3e4eb9303c14c8e55a1">veins::LocalAgent::infoTrace</a></div><div class="ttdeci">std::string infoTrace(bool header, std::string idagent)</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00041">LocalAgent.cc:41</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_a5a2e13c2e730b15a4e867e1a9e6f3a5d"><div class="ttname"><a href="classveins_1_1_local_agent.html#a5a2e13c2e730b15a4e867e1a9e6f3a5d">veins::LocalAgent::getLocalCommInfo</a></div><div class="ttdeci">LocalCommInfo * getLocalCommInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00060">LocalAgent.cc:60</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_a66a8a13f9513e7bbc84493f9d81ab82a"><div class="ttname"><a href="classveins_1_1_local_agent.html#a66a8a13f9513e7bbc84493f9d81ab82a">veins::LocalAgent::info</a></div><div class="ttdeci">std::string info()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00034">LocalAgent.cc:34</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_a76a2d50555aedcda1ff96c5467d62cd1"><div class="ttname"><a href="classveins_1_1_local_agent.html#a76a2d50555aedcda1ff96c5467d62cd1">veins::LocalAgent::LocalAgent</a></div><div class="ttdeci">LocalAgent(int64_t id, LocalMobility *lm, std::string agentName)</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00020">LocalAgent.cc:20</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_ae7f3996539f09057d8ef76746bb7e747"><div class="ttname"><a href="classveins_1_1_local_agent.html#ae7f3996539f09057d8ef76746bb7e747">veins::LocalAgent::~LocalAgent</a></div><div class="ttdeci">virtual ~LocalAgent()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00029">LocalAgent.cc:29</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_af6721d8a6bcc7f2d9fc412f1f3dad48f"><div class="ttname"><a href="classveins_1_1_local_agent.html#af6721d8a6bcc7f2d9fc412f1f3dad48f">veins::LocalAgent::getLocalMobility</a></div><div class="ttdeci">LocalMobility * getLocalMobility()</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00055">LocalAgent.cc:55</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_agent_html_afda1c2a9f4936af9b254fa8b722b46b3"><div class="ttname"><a href="classveins_1_1_local_agent.html#afda1c2a9f4936af9b254fa8b722b46b3">veins::LocalAgent::updateLocalAgent</a></div><div class="ttdeci">void updateLocalAgent(double maxSpeed, double setRadius)</div><div class="ttdef"><b>Definition:</b> <a href="_local_agent_8cc_source.html#l00048">LocalAgent.cc:48</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_comm_info_html"><div class="ttname"><a href="classveins_1_1_local_comm_info.html">veins::LocalCommInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_comm_info_8h_source.html#l00024">LocalCommInfo.h:24</a></div></div>
-<div class="ttc" id="aclassveins_1_1_local_mobility_html"><div class="ttname"><a href="classveins_1_1_local_mobility.html">veins::LocalMobility</a></div><div class="ttdef"><b>Definition:</b> <a href="_local_mobility_8h_source.html#l00026">LocalMobility.h:26</a></div></div>
-<div class="ttc" id="anamespaceveins_html"><div class="ttname"><a href="namespaceveins.html">veins</a></div><div class="ttdef"><b>Definition:</b> <a href="_base_connection_manager_8h_source.html#l00033">BaseConnectionManager.h:33</a></div></div>
+<div class="ttc" id="aclassveins_1_1_agent_html"><div class="ttname"><a href="classveins_1_1_agent.html">veins::Agent</a></div><div class="ttdoc">Uma breve descrição da classe.</div><div class="ttdef"><b>Definition:</b> Agent.h:34</div></div>
+<div class="ttc" id="aclassveins_1_1_agent_html_a409f74492646575f5ec8c845a37e0080"><div class="ttname"><a href="classveins_1_1_agent.html#a409f74492646575f5ec8c845a37e0080">veins::Agent::agentName</a></div><div class="ttdeci">std::string agentName</div><div class="ttdoc">Armazena o valor da classe.</div><div class="ttdef"><b>Definition:</b> Agent.h:37</div></div>
+<div class="ttc" id="aclassveins_1_1_local_agent_html"><div class="ttname"><a href="classveins_1_1_local_agent.html">veins::LocalAgent</a></div><div class="ttdef"><b>Definition:</b> LocalAgent.h:24</div></div>
+<div class="ttc" id="aclassveins_1_1_local_comm_info_html"><div class="ttname"><a href="classveins_1_1_local_comm_info.html">veins::LocalCommInfo</a></div><div class="ttdef"><b>Definition:</b> LocalCommInfo.h:24</div></div>
+<div class="ttc" id="aclassveins_1_1_local_mobility_html"><div class="ttname"><a href="classveins_1_1_local_mobility.html">veins::LocalMobility</a></div><div class="ttdef"><b>Definition:</b> LocalMobility.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><a class="el" href="_local_agent_8h.html">LocalAgent.h</a></li>
-    <li class="footer">Generated on Tue Dec 10 2024 20:52:51 for My Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_17ef6c0fecec40d654af52c879dcf6bd.html">veins</a></li><li class="navelem"><a class="el" href="dir_9a350b5a4b1db77a4c811625b6e998c8.html">modules</a></li><li class="navelem"><a class="el" href="dir_8c62ac428a85dd6600311d6afcb1a45e.html">application</a></li><li class="navelem"><a class="el" href="dir_e133047a1703b071fcfa0b32dfe9ae71.html">icarnew</a></li><li class="navelem"><b>LocalAgent.h</b></li>
+    <li class="footer">Generated on Fri Dec 13 2024 14:59:27 for Contexto de Comunicação em VANET by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
