@@ -107,7 +107,6 @@ Ambas as documentações são complementares e fornecem diferentes perspectivas 
 
 ## Contato
 
-Para perguntas ou feedback, entre em contato através dos seguintes e-mails:
+Para perguntas ou feedback, entre em contato através do seguinte e-mail:
 
-- **Email 1:** clovis.grj@gmal.com
-- **Email 2:** margaretessa@gmail.com
+- **Email:** lasidvehicularcommunication@gmail.com
