@@ -71,21 +71,12 @@ private:
      * Mobilidade do canal
      */
 
-
-
-    RadiusEstimatorAgentPair * radiusEstimator;
-
     double outOfRadiusRange;
-
 
     /*
      * raio estimado da origem ao destino
      */
     double calcRadius;
-    /*
-     * @brief txReceived_dBm power received from phy layer
-    */
-    double txReceived_dBm;
 
     /**
      * @brief Stores the signal to noise ratio of the transmission
@@ -139,9 +130,16 @@ private:
 
 
 public:
+    RadiusEstimatorAgentPair * radiusEstimator;
+    /*
+     * @brief txReceived_dBm power received from phy layer
+    */
+    double txReceived_dBm;
 
     char lastEvent;
     double drlRadius;
+    double measureRadius;
+
     std::vector<ICarRoute *> pairRoutes;
     AgentPairMobility * agentPairMobility;
     AgentPair();

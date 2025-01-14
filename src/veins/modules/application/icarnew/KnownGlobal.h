@@ -23,14 +23,15 @@
 #include "RemoteAgent.h"
 #include "LocalAgent.h"
 #include "RemoteAgentGroup.h"
-#include "messages/ICMessage_m.h"
 #include "../../mobility/traci/TraCIMobility.h"
 #include "Routing.h"
 #include <time.h>
 #include <veins/modules/application/icarnew/AgentPair.h>
 #include <veins/modules/application/icarnew/AgentPairList.h>
 #include <veins/modules/application/icarnew/RadiusEstimatorAgentPair.h>
+#include <veins/modules/application/icarnew/SimulationFiles.h>
 #include <ctime>
+
 using namespace omnetpp;
 
 namespace veins{
@@ -40,7 +41,7 @@ namespace veins{
  */
 class KnownGlobal : public cSimpleModule
 {
-  public:
+public:
 
    //"OutOfRadius - updating pair from Received Message"
    //updating pair from Received Message
@@ -60,13 +61,7 @@ class KnownGlobal : public cSimpleModule
    std::vector <LocalAgent *> knownVehicles;
    // ManagerFile * mf;
    double measureDistance=0;
-   fstream fileMessages;
-   fstream fileChannels;
-   ofstream  fileLocalAgents;
-   fstream fileRemoteAgents;
-   fstream fileReceivedMessages;
-   fstream fileChannelsMinslr;
-   fstream fileCommPerformance;
+
    stringstream instantTimeSimulation;
    RadiusEstimatorAgentPair * oRadiusEstimatorAgentPair;
    GeneralCommunicationService oGeneralCommunicationService;
@@ -90,29 +85,12 @@ class KnownGlobal : public cSimpleModule
    int getIntNamefromIdAgent(int agentId);
    bool simulationDataheaderLine;
    std::string getStringNamefromIdAgent(int agentId);
-   std::string observationNameFile;
-   void createGlobalTraces(int idVehicle);
-   stringstream getFilePreFix(int idVehicle);
+   //std::string observationNameFile;
+   //std::string oFilesDirectory;
+   SimulationFiles * oISFilles;
 
-   ////// STATISTIC ///////////
-  // buffer file trace Channel;
-   std::stringstream QoCQoSdataAgentPair;
-
-  // buffer file trace Channel;
-   std::stringstream dataAgentPair;
-
-   // buffer file trace Minslr;
-   std::stringstream dataMinslr;
-
-   // buffer file trace Remote Agent;
-   std::stringstream dataRemoteAgent;
-
-   // buffer file trace Remote Agent;
-   std::stringstream dataLocalAgent;
-
-   // buffer file trace Communication performance;
-   std::stringstream dataCommPerformance;
-   ////// STATISTIC ///////////
+   //void createGlobalTraces(int idVehicle);
+   //stringstream getFilePreFix(int idVehicle);
 
    void closeFiles();
   protected:

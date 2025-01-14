@@ -87,8 +87,7 @@ Agora você está pronto para rodar e analisar a simulação no OMNeT++!
 
 Abaixo está o link para o PDF que ilustra a modelagem de classes utilizada na simulação:
 
-**<a href="https://emerald-kizzie-19.tiiny.site/" target="_blank">📄 Diagrama de Classe - Modelagem</a>**
-
+**<a href="https://ibb.co/Q64fD5D" target="_blank">📄 Diagrama de Classe - Modelagem</a>**
 
 ## Documentação do projeto
 
@@ -99,7 +98,8 @@ Este projeto utiliza duas documentações diferentes, cada uma com finalidades d
 
 2. **Documentação da arquitetura de rede**:
    - **Descrição**: Baseada nos arquivos `.NED`, apresenta uma visão clara e visual da arquitetura de rede, incluindo módulos, conexões e hierarquias. É ideal para quem busca compreender o design da simulação e a interação entre os componentes.
-   
+
+
 Ambas as documentações são complementares e fornecem diferentes perspectivas sobre o projeto:
 - Use a **[📖 Documentação do código-fonte](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/indexDoxy)** para explorar os detalhes técnicos do código.
 - Use a **[📖 Documentação da arquitetura de rede](https://lasidvehicularcommunication.github.io/vehicular_qoc/docs/indexNeddoc)** para entender o layout e as configurações da simulação.
@@ -107,7 +107,6 @@ Ambas as documentações são complementares e fornecem diferentes perspectivas 
 
 ## Contato
 
-Para perguntas ou feedback, entre em contato através dos seguintes e-mails:
+Para perguntas ou feedback, entre em contato através do seguinte e-mail:
 
-- **Email 1:** clovis.grj@gmal.com
-- **Email 2:** margaretessa@gmail.com
+- **Email:** lasidvehicularcommunication@gmail.com
