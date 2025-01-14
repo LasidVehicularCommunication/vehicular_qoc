@@ -63,7 +63,7 @@ AgentPair* AgentPairList::getAgentPair(int64_t sourceId, int64_t destinationId, 
     bool find=false;
     unsigned int index = 0;
     //std::cout << "buscar canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
-    std::cout << "NEWbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
+    //std::cout << "NEWbuscar " << "canal origem=" << sourceId << "   destino=" << destinationId << std::endl;
 
     while (!find && aAgentPairs.size()> index)
     {

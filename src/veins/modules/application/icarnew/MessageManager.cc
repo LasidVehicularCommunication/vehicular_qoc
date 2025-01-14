@@ -144,10 +144,22 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
                  << ";hopNumber"
                  << ";ValidityDataTimeStamp";
                  //<< ";Data";
-
+                char typeNode;
                 for (int i=0; i < 4; i++)
                 {
-                    ost  << ";nodeId_" << i  // source id node - 32bits
+
+                    switch(i) {
+                      case 0: typeNode = 'S';
+                        break;
+                      case 1: typeNode = 'T';
+                       break;
+                      case 2: typeNode = 'N';
+                       break;
+                      case 3: typeNode = 'D';
+                       break;
+                    }
+
+                    ost  << ";nodeId_" << typeNode  // source id node - 32bits
                     << ";posX"  //source x - 32 bits
                     << ";posY" // source y - 32 bits
                     << ";posZ" // source z - 32 bits
@@ -183,7 +195,7 @@ std::string MessageManager::getMsgHeaderInfoTrace(ICRMessage * wsm, std::string 
 
     }
 
-             return ost.str();
+    return ost.str();
 }
 
 std::string  MessageManager::getMsgHeaderInfoTraceNode(ICRNode  pNode)

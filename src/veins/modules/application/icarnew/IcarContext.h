@@ -46,7 +46,7 @@ class Icarqoc;
 
 class IcarContext {
 public:
-     ////// STATISTIC ///////////
+     ////// ANALYZE ///////////
     // buffer file trace Channel;
      std::stringstream QoCQoSdataAgentPair;
 

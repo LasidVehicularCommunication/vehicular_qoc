@@ -23,6 +23,7 @@ Define_Module(KnownGlobal);
 void KnownGlobal::initialize()
 {
     // TODO - Generated method body
+
 }
 
 void KnownGlobal::initialize(int stage) {
@@ -86,87 +87,22 @@ void KnownGlobal::initialize(int stage) {
        // the estimator of channel radius
        this->oRadiusEstimatorAgentPair = new RadiusEstimatorAgentPair(this->setRadius);
 
-       observationNameFile = par("observation").stdstringValue();
 
-       // current date/time based on current system
-       time_t now = time(0);
-       tm *ltm = localtime(&now);
-       instantTimeSimulation << 1900 + ltm->tm_year << "."
-               << 1 + ltm->tm_mon << "." << ltm->tm_mday << "." << ltm->tm_hour << "."
-               << ltm->tm_min<< "_";
+       oISFilles = new SimulationFiles(this->vehicleAmout, this->lostMessageRate, this->loadPeriodApp,
+                this->mobilityPeriod, this->monitorPeriod,this->setRadius);
+
+       //// Files data simulation
+       oISFilles ->observationNameFile = par("observation").stdstringValue();
+
+       oISFilles->oFilesDirectory = par("filesDirectory").stdstringValue();
+
        // creating trace files
-       this->createGlobalTraces(-1);
+       this->oISFilles->createGlobalTraces(-1);
+
 
     }
 }
 
-stringstream KnownGlobal::getFilePreFix(int idVehicle){
-    stringstream sufixo;
-    /// =====
-
-    stringstream idVehicleStr;
-
-    //sufixo << par("filesDirectory").stdstringValue() << instantTimeSimulation.str()
-    sufixo << par("filesDirectory").stdstringValue()
-            << idVehicleStr.str()
-            << par("observation").stdstringValue();
-
-    if (idVehicle >=0) sufixo << "V" << idVehicle;
-    sufixo  << "Amount" << this->vehicleAmout
-            << "lostRate" << this->lostMessageRate
-            << "AppLoad" << loadPeriodApp
-            << "MobPeriod" << mobilityPeriod
-            << "beaconLoad" << monitorPeriod
-            << "radius" << this->setRadius;
-
-    return sufixo;
-}
-
-void KnownGlobal::createGlobalTraces(int idVehicle){
-    // trace message file
-    stringstream nameFileMessage;
-
-    string aux=getFilePreFix(idVehicle).str();
-
-    nameFileMessage << aux << "Messages.csv";
-    this->fileMessages.open(nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-    //std::cout << nameFileMessage.str() << endl;
-
-    nameFileMessage.str("");
-    nameFileMessage << aux << "PairAgents.csv";
-    this->fileChannels.open(nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-
-    nameFileMessage.str("");
-    nameFileMessage << aux << "LocalAgents.csv";
-    this->fileLocalAgents.open (nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-    //this->fileLocalAgents.open (nameFileMessage.str());
-    //this->fileLocalAgents << this->dataLocalAgent.str();
-    //std::cout <<  this->dataLocalAgent.str()  << endl;
-    //this->fileLocalAgents.close();
-
-    nameFileMessage.str("");
-    nameFileMessage  << aux << "RemoteAgents.csv";
-    this->fileRemoteAgents.open (nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-    //std::cout << nameFileMessage.str() << endl;
-
-   nameFileMessage.str("");
-   nameFileMessage  << aux << "CommPerformance.csv";
-   this->fileCommPerformance.open(nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-
-   //std::cout << nameFileMessage.str() << endl;
-
-   nameFileMessage.str("");
-   nameFileMessage  << aux << "traceMinslr.csv";
-   this->fileChannelsMinslr.open(nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-
-   //std::cout << nameFileMessage.str() << endl;
-
-   nameFileMessage.str("");
-  nameFileMessage  << aux << "ReceivedMessages.csv";
-  this->fileReceivedMessages.open(nameFileMessage.str(), fstream::in | fstream::out | fstream::app);
-  //std::cout << nameFileMessage.str() << endl;
-
-}
 /*
  *
  */

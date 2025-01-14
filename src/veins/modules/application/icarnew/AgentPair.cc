@@ -53,7 +53,7 @@ AgentPair::AgentPair(Agent* agentS, Agent* agentD, simtime_t msgReceivingTime, s
  this->agentPairMobility = new AgentPairMobility(this);
  //this->agentPairMobility = new AgentPairMobility();
  this->addReceivedMsg();
-
+ this->measureRadius=0;
  if (agentS->getSetRadius()<=0) // consider fixe radius
  {
      //std::cout << endl << "begin  setCalcRadius AgentPair updateAgentPairsFromMsg "<< endl;
@@ -219,7 +219,8 @@ void AgentPair::setCalcRadius() {
    //         this->agent_d->getMobilityInfo()->getActualMove()));
     Coord r = this->getAgentS()->getMobilityInfo()->getPositionAtTime(simTime());
     Coord l = this->getAgentD()->getMobilityInfo()->getPositionAtTime(simTime());
-    drlRadius = this->getAgentPairMobility()->calcEuclideanDistancelr(this->getAgentD()->getMobilityInfo()->getActualMove()->getStartPos(), r);
+    //drlRadius = this->getAgentPairMobility()->calcEuclideanDistancelr(this->getAgentD()->getMobilityInfo()->getActualMove()->getStartPos(), r);
+    drlRadius = this->getAgentPairMobility()->calcEuclideanDistancelr(l, r);
     //double drlNext = this->getAgentPairMobility()->calcEuclideanDistancelr(l, r);
     //this->calcRadius = this->radiusEstimator->getSignalRange(this->txReceived_dBm,
     //        this->agentPairMobility->getDistancelr());

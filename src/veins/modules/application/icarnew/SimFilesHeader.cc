@@ -13,23 +13,5 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-#include "QoCAgentPair.h"
+#include <veins/modules/application/icarnew/SimFilesHeader.h>
 
-namespace veins{
-
-
-QoCAgentPair::QoCAgentPair(AgentPair * c, simtime_t dataValidity) {
-    // TODO Auto-generated constructor stub
-    this->timeliness = new TimelinessAgentPair(c, dataValidity);
-}
-
-QoCAgentPair::~QoCAgentPair() {
-    // TODO Auto-generated destructor stub
-    delete (this);
-
-}
-
-TimelinessAgentPair * QoCAgentPair::getTimelinessAgentPair(){
-    return ((TimelinessAgentPair *) this->timeliness);
-}
-}

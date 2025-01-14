@@ -15,6 +15,6 @@
 	<route id="route4menor" edges="-gneE5.2309"/> <!-- from east to west -->
 	<route id="route1menor" edges="gneE5.0"/> <!-- from west to east -->
 	  
-	<flow id="flow0" type="vtOppositeDir" route="route1menor" begin="0" period="1" number="50" departLane="0" lane="0"/> 
-    <flow id="flow2" type="vtOppositeDir" route="route4menor" begin="0" period="1" number="50" departLane="0" lane="0"/>  
+	<flow id="flow0" type="vtOppositeDir" route="route1menor" begin="0" period="1" number="2" departLane="0" lane="0"/> 
+    <flow id="flow2" type="vtOppositeDir" route="route4menor" begin="0" period="1" number="2" departLane="0" lane="0"/>  
 </routes>

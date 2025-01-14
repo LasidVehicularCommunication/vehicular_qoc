@@ -89,15 +89,12 @@ public:
         double perforMesurementPeriod; //period of communication performance measurement
         cMessage * monitorMsg; //monitor message event
         GeneralCommunicationService vfs;
-        IcarContext * oVision; // vehicular agent vision
-
         LocalAgent * myData;
         TraCIScenarioManager* managerx;
 
         // buffer file trace netwok;
 
-         // buffer file trace dataMsgTeste;
-         std::stringstream dataMsgTeste;
+
 
          // ManagerFile * mf;
          fstream fileNetwork;
@@ -127,7 +124,7 @@ public:
            virtual void finish();
            void receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj, cObject* details) override;
            void scheduleLoad(double appPeriod, int AppTypeId, string name,  cMessage *m1 );
-           std::string getMsgHeaderInfoTrace(ICMessage * wsm, std::string evento, bool header, simtime_t pEventTime);
+           //std::string getMsgHeaderInfoTrace(ICMessage * wsm, std::string evento, bool header, simtime_t pEventTime);
            void loadMonitor(cMessage *msg);
            void scheduleLoadMobility();
            bool verifyRuleRadiusSet(ICRMessage  *wsm);
@@ -139,7 +136,7 @@ public:
              *
              * @param
              */
-            std::string msgInfoTraceTransmitting(ICMessage * wsm, std::string event, std::string ruleRoute, bool header, simtime_t eventTime);
+            //std::string msgInfoTraceTransmitting(ICMessage * wsm, std::string event, std::string ruleRoute, bool header, simtime_t eventTime);
 
             LocalAgent* getMyData() ;
 
