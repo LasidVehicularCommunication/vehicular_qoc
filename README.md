@@ -85,7 +85,7 @@ Agora você está pronto para rodar e analisar a simulação no OMNeT++!
 
 ## Diagrama de Classes
 
-Abaixo está o link para o PDF que ilustra a modelagem de classes utilizada na simulação:
+Abaixo está o link que ilustra a modelagem de classes utilizada na simulação:
 
 **<a href="https://ibb.co/Q64fD5D" target="_blank">📄 Diagrama de Classe - Modelagem</a>**
 
