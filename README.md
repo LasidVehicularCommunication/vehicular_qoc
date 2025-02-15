@@ -4,7 +4,7 @@
 
 
 
-## I-CARQOC
+## I-CAR
 
 
 O I-CAR** (Intelligent Communication Mechanism for Multi-Agent Vehicular Applications) é uma proposta de serviços inteligentes de comunicação para aplicações veiculares, desenvolvida para otimizar a troca de informações entre veículos e infraestrutura em redes veiculares dinâmicas. Baseado em regras, o I-CAR utiliza a qualidade de contexto para adaptar a comunicação, levando em conta o ambiente e as condições das redes, como a capacidade de conexão dos nós e a movimentação dos veículos.
